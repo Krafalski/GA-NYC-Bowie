@@ -14,7 +14,8 @@ var c;
 
 // Write an expression here which computes
 // the correct value of c based on the values of a and b
-
+Math.sqrt((a*a)+(b*b));
+2.23606797749979
 // Log your answer (the value of c) to the console
 
 
@@ -56,4 +57,3 @@ var timeToDownload;
 // Compute the number of cups
 
 // Log the answer to the console
-
