@@ -51,7 +51,7 @@ This repo has a wiki which you are encouraged to explore and expand as you learn
 |Razaik Boparai|@razaik|https://github.com/Razaik25|
 |Jimmy Lin|@jimmylin|https://github.com/JimmyJLin|
 |Viorel Belfiore|@vbelfiore|https://github.com/fantomknight1|
-|Karoline Rafalski|@karolin|https://github.com/Krafaski|
+|Karoline Rafalski|@karolin|https://github.com/Krafalski|
 |Peter Nguyen|@penguyen|https://github.com/penguyen1|
 |Daniel Lawrence|@waffle_iron|https://github.com/dlawr|
 |Bryce Krah|@brycek|https://github.com/BryceKrah|
