@@ -23,10 +23,10 @@ This repo has a wiki which you are encouraged to explore and expand as you learn
 | Role                   | Name               | Slack       | Email         | GitHub |
 |------------------------|--------------------|:-------------:|:-------------:|:------:|
 | **Instructional Lead** | Jason Seminara | @jasonseminara | jason.seminara@generalassemb.ly | [jasonseminara][jasonseminara] |
-| **Instructional Lead** | Colin Hart | @colinhart | colin.hart@generalassemb.ly | [ColinTheRobot][ColinTheRobot] |
-| **Instructional Associate** | Peter Petrov | @pppetrov | peter.petrov@generalassemb.ly | [pppetrov][pppetrov] |
-| **Teaching Assistant** | KP | @KP | kerstein.perez@generalassemb.ly | [kersteinperez][kersteinperez] |
-| **Code Mentor** | Rachel Smyth | @rs | rachel.smyth@generalassemb.ly | [RachelScodes][RachelScodes] |
+| **Instructional Lead** | Colin Hart | @colinhart | colin.hart@generalassemb.ly | [ColinTheRobot](https://github.com/ColinTheRobot) |
+| **Instructional Associate** | Peter Petrov | @pppetrov | peter.petrov@generalassemb.ly | [pppetrov](https://github.com/pppetrov) |
+| **Teaching Assistant** | KP | @KP | kerstein.perez@generalassemb.ly | [kersteinperez](https://github.com/kersteinperez) |
+| **Code Mentor** | Rachel Smyth | @rs | rachel.smyth@generalassemb.ly | [RachelScodes](https://github.com/RachelScodes) |
 
 ### Class Roster
 
