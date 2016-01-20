@@ -22,7 +22,7 @@ This repo has a wiki which you are encouraged to explore and expand as you learn
 
 | Role                   | Name               | Slack       | Email         | GitHub |
 |------------------------|--------------------|:-------------:|:-------------:|:------:|
-| **Instructional Lead** | Jason Seminara | @jasonseminara | jason.seminara@generalassemb.ly | [jasonseminara][jasonseminara] |
+| **Instructional Lead** | Jason Seminara | @jasonseminara | jason.seminara@generalassemb.ly | [jasonseminara](https://github.com/jasonseminara) |
 | **Instructional Lead** | Colin Hart | @colinhart | colin.hart@generalassemb.ly | [ColinTheRobot](https://github.com/ColinTheRobot) |
 | **Instructional Associate** | Peter Petrov | @pppetrov | peter.petrov@generalassemb.ly | [pppetrov](https://github.com/pppetrov) |
 | **Teaching Assistant** | KP | @KP | kerstein.perez@generalassemb.ly | [kersteinperez](https://github.com/kersteinperez) |
@@ -32,34 +32,34 @@ This repo has a wiki which you are encouraged to explore and expand as you learn
 
 | Name | @Slack | Github |
 | :--: | :----: | :----: |
-|Yue Hou|@auvemma|AuvEmma|
-|Maxwell Rayman|@mxray333|namyarxam|
-|Elton Cheng|@elton912|Ellun|
-|Sara Horowitz|@sarahorowitz|shorowitz|
-|Seif Dorani|@seif|dorani|
-|Emine Koc|@eminekoc|emineKoc|
-|Ari Ingber|@ariingber|ariingber|
-|Shoshana Greenman|@shani|srmintz|
-|Caleb Rechten|@umbrellagun|umbrellagun|
-|James Roberts|@webdevj|webdevj|
-|Dan DiIorio|@trampolinetales|TrampolineTales|
-|Lauren Golik|@lgolik|lgolik|
-|Tyler Gates|@tyler_gates|TylerKGates|
-|Jonathan Feudi|@feudi|jonathanfeudi|
-|Carrie Streed|@carriestreed|carriestreed|
-|Arthur Chen|@ac|AC287|
-|Razaik Boparai|@razaik|Razaik25|
-|Jimmy Lin|@jimmylin|JimmyJLin|
-|Viorel Belfiore|@vbelfiore|fantomknight1|
-|Karoline Rafalski|@karolin|Krafaski|
-|Peter Nguyen|@penguyen|penguyen1|
-|Daniel Lawrence|@waffle_iron|dlawr|
-|Bryce Krah|@brycek|BryceKrah|
-|Patrick McWilliams|@patrickm|MelanistOnca|
-|Douglas Walker|@douglas|douglaswissett|
-|Adam Kriger|@adamscottkriger|adamskriger|
-|Harry Ganz|@harryg|harryganz|
-|Jasmine Vollherbst|@jasminev|jvollherbst|
+|Yue Hou|@auvemma|https://github.com/AuvEmma|
+|Maxwell Rayman|@mxray333|https://github.com/namyarxam|
+|Elton Cheng|@elton912|https://github.com/Ellun|
+|Sara Horowitz|@sarahorowitz|https://github.com/shorowitz|
+|Seif Dorani|@seif|https://github.com/dorani|
+|Emine Koc|@eminekoc|https://github.com/emineKoc|
+|Ari Ingber|@ariingber|https://github.com/ariingber|
+|Shoshana Greenman|@shani|https://github.com/srmintz|
+|Caleb Rechten|@umbrellagun|https://github.com/umbrellagun|
+|James Roberts|@webdevj|https://github.com/webdevj|
+|Dan DiIorio|@trampolinetales|https://github.com/TrampolineTales|
+|Lauren Golik|@lgolik|https://github.com/lgolik|
+|Tyler Gates|@tyler_gates|https://github.com/TylerKGates|
+|Jonathan Feudi|@feudi|https://github.com/jonathanfeudi|
+|Carrie Streed|@carriestreed|https://github.com/carriestreed|
+|Arthur Chen|@ac|https://github.com/AC287|
+|Razaik Boparai|@razaik|https://github.com/Razaik25|
+|Jimmy Lin|@jimmylin|https://github.com/JimmyJLin|
+|Viorel Belfiore|@vbelfiore|https://github.com/fantomknight1|
+|Karoline Rafalski|@karolin|https://github.com/Krafaski|
+|Peter Nguyen|@penguyen|https://github.com/penguyen1|
+|Daniel Lawrence|@waffle_iron|https://github.com/dlawr|
+|Bryce Krah|@brycek|https://github.com/BryceKrah|
+|Patrick McWilliams|@patrickm|https://github.com/MelanistOnca|
+|Douglas Walker|@douglas|https://github.com/douglaswissett|
+|Adam Kriger|@adamscottkriger|https://github.com/adamskriger|
+|Harry Ganz|@harryg|https://github.com/harryganz|
+|Jasmine Vollherbst|@jasminev|https://github.com/jvollherbst|
 
 ## Important Dates
 
