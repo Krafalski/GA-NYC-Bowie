@@ -32,34 +32,34 @@ This repo has a wiki which you are encouraged to explore and expand as you learn
 
 | Name | @Slack | Github |
 | :--: | :----: | :----: |
-|Yue Hou|@auvemma|https://github.com/AuvEmma|
-|Maxwell Rayman|@mxray333|https://github.com/namyarxam|
-|Elton Cheng|@elton912|https://github.com/Ellun|
-|Sara Horowitz|@sarahorowitz|https://github.com/shorowitz|
-|Seif Dorani|@seif|https://github.com/dorani|
-|Emine Koc|@eminekoc|https://github.com/emineKoc|
-|Ari Ingber|@ariingber|https://github.com/ariingber|
-|Shoshana Greenman|@shani|https://github.com/srmintz|
-|Caleb Rechten|@umbrellagun|https://github.com/umbrellagun|
-|James Roberts|@webdevj|https://github.com/webdevj|
-|Dan DiIorio|@trampolinetales|https://github.com/TrampolineTales|
-|Lauren Golik|@lgolik|https://github.com/lgolik|
-|Tyler Gates|@tyler_gates|https://github.com/TylerKGates|
-|Jonathan Feudi|@feudi|https://github.com/jonathanfeudi|
-|Carrie Streed|@carriestreed|https://github.com/carriestreed|
-|Arthur Chen|@ac|https://github.com/AC287|
-|Razaik Boparai|@razaik|https://github.com/Razaik25|
-|Jimmy Lin|@jimmylin|https://github.com/JimmyJLin|
-|Viorel Belfiore|@vbelfiore|https://github.com/fantomknight1|
-|Karoline Rafalski|@karolin|https://github.com/Krafalski|
-|Peter Nguyen|@penguyen|https://github.com/penguyen1|
-|Daniel Lawrence|@waffle_iron|https://github.com/dlawr|
-|Bryce Krah|@brycek|https://github.com/BryceKrah|
-|Patrick McWilliams|@patrickm|https://github.com/MelanistOnca|
-|Douglas Walker|@douglas|https://github.com/douglaswissett|
-|Adam Kriger|@adamscottkriger|https://github.com/adamskriger|
-|Harry Ganz|@harryg|https://github.com/harryganz|
-|Jasmine Vollherbst|@jasminev|https://github.com/jvollherbst|
+|Yue Hou|@auvemma|[AuvEmma](https://github.com/AuvEmma)|
+|Maxwell Rayman|@mxray333|[namyarxam](https://github.com/namyarxam)|
+|Elton Cheng|@elton912|[Ellun](https://github.com/Ellun)|
+|Sara Horowitz|@sarahorowitz|[shorowitz](https://github.com/shorowitz)|
+|Seif Dorani|@seif|[dorani](https://github.com/dorani)|
+|Emine Koc|@eminekoc|[emineKoc](https://github.com/emineKoc)|
+|Ari Ingber|@ariingber|[ariingber](https://github.com/ariingber)|
+|Shoshana Greenman|@shani|[srmintz](https://github.com/srmintz)|
+|Caleb Rechten|@umbrellagun|[umbrellagun](https://github.com/umbrellagun)|
+|James Roberts|@webdevj|[webdevj](https://github.com/webdevj)|
+|Dan DiIorio|@trampolinetales|[TrampolineTales](https://github.com/TrampolineTales)|
+|Lauren Golik|@lgolik|[lgolik](https://github.com/lgolik)|
+|Tyler Gates|@tyler_gates|[TylerGates](https://github.com/TylerKGates)|
+|Jonathan Feudi|@feudi|[jonathanfeudi](https://github.com/jonathanfeudi)|
+|Carrie Streed|@carriestreed|[carriestreed](https://github.com/carriestreed)|
+|Arthur Chen|@ac|[AC287](https://github.com/AC287)|
+|Razaik Boparai|@razaik|[Razaik25](https://github.com/Razaik25)|
+|Jimmy Lin|@jimmylin|[JimmyJLin](https://github.com/JimmyJLin)|
+|Viorel Belfiore|@vbelfiore|[fantomknight1](https://github.com/fantomknight1)|
+|Karoline Rafalski|@karolin|[Krafaski](https://github.com/Krafalski)|
+|Peter Nguyen|@penguyen|[penguyen1](https://github.com/penguyen1)|
+|Daniel Lawrence|@waffle_iron|[dlawr](https://github.com/dlawr)|
+|Bryce Krah|@brycek|[BryceKrah](https://github.com/BryceKrah)|
+|Patrick McWilliams|@patrickm|[MelanistOnca](https://github.com/MelanistOnca)|
+|Douglas Walker|@douglas|[douglaswissett](https://github.com/douglaswissett)|
+|Adam Kriger|@adamscottkriger|[adamskriger](https://github.com/adamskriger)|
+|Harry Ganz|@harryg|[harryganz](https://github.com/harryganz)|
+|Jasmine Vollherbst|@jasminev|[jvollherbst](https://github.com/jvollherbst)|
 
 ## Important Dates
 
