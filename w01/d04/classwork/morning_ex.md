@@ -1,6 +1,6 @@
 # Javascript with Node
 
-This morning you are going to practice writing small javascript applications, which you are going to run with Node.JS. 
+This morning you are going to practice writing small javascript applications, which you are going to run with Node.JS.
 
 Go ahead and create a new directory in today's classwork folder called `node-apps` and go into it. For every part create a separate `js` file which will contain your solution.
 
@@ -13,18 +13,18 @@ Create a file named `hello.js`. Write a command line application which prints th
   ```
 
 ### Hello Someone
-Create a file named `hello_someone.js`. Write an application which takes **one** command line argument and logs the string 'Hello, <argument>' to the console, where <argument> is replaced by the appropriate cammand line argument
+Create a file named `hello_someone.js`. Write an application which takes **one** command line argument and logs the string 'Hello, argument' to the console, where <argument> is replaced by the appropriate cammand line argument
 
 For Example:
   ```sh
   node hello_someone.js Peter
   ```
-Displays the string "Hello, Peter" on the console. 
+Displays the string "Hello, Peter" on the console.
 
 ## Math Fun
 
 ### Addition
-Create a file named `add.js`, which takes **two** command line arguments, which are both integers and log their sum to the console. 
+Create a file named `add.js`, which takes **two** command line arguments, which are both integers and log their sum to the console.
 
 For Example
   ```sh
@@ -39,7 +39,7 @@ Create a file named `subtract.js`, which behaves just like the `add.js`, but sub
 In a file named `multiply.js`, write code to achieve multiplication of two numbers.
 
 ### Division
-In a file named `divide.js`, write code to achieve division of two numbers. 
+In a file named `divide.js`, write code to achieve division of two numbers.
 
 # Bonus
 
@@ -63,7 +63,3 @@ For Example
   node calculator.js subtract 2 3 => -1
   node calculator.js multiply 4 5 => 20
   ```
-
-
-
-
