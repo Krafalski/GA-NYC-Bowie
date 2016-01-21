@@ -17,7 +17,7 @@ Create a file named `hello_someone.js`. Write an application which takes **one**
 
 For Example:
   ```sh
-  node hello_someone.js Peter 
+  node hello_someone.js Peter
   ```
 Displays the string "Hello, Peter" on the console. 
 
