@@ -14,7 +14,7 @@ Create a file named `hello.js`. Write a command line application which prints th
   ```
 
 ### Hello Someone
-Create a file named `hello_someone.js`. Write an application which takes **one** command line argument and logs the string 'Hello, <argument>' to the console, where <argument> is replaced by the appropriate cammand line argument
+Create a file named `hello_someone.js`. Write an application which takes **one** command line argument and logs the string 'Hello, argument' to the console, where <argument> is replaced by the appropriate cammand line argument
 
 For Example:
   ```sh
