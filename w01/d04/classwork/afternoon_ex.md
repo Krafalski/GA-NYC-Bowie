@@ -33,6 +33,48 @@ Iterate through your data structure and log to the console
 Make sure your code does not have any **hard coded** information. All your specific line and stop names and their number come from your `mta` variable.
 
 
+## Deeper into Arrays
+You will need to look up the [array object documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) to lookup some of the following functions needed. Finish as much as you can in the 45 allotted minutes and then we'll go over when we are done.
+
+1. Spend the next 10 minutes going over the documentation.
+<br><br>
+1. Given the following array
+```javascript
+var instructors = ['Jason','Colin','Peter','Rachel'];
+```
+  - Find a method to remove `'Colin'` from the array (he's an imposter), and then using another array method to add `'KP'`.
+  - If I wanted the last element of `instructors` without knowing the value of index that it sits in, how would I get it?
+<br><br>
+1. Look up the functions `indexOf()` and `includes()`in the documentation. Both of these functions can be used to see whether or not an array contains an element. What range of values do both of them return and how are they different?
+<br><br>
+1. Run the following command:
+```javascript
+Array(16).join('Na') + " Batman!"
+```
+  - What does it return?
+  - What does `Array(n)`, where `n` is an arbitrary number return?
+  - What does `join()` do?
+<br><br>
+1. What do `shift()` and `unshift()` do?
+  - How do you use them?
+<br><br>
+1. Run the following code:
+```javascript
+var str = "...won tnereffid skool siht ,haoW"
+// 1.
+str = str.split('');
+// 2.
+str = str.reverse();
+// 3.
+str = str.join('');
+// 4.
+console.log(str);
+```
+  - What do `split()`, `reverse()`,and `join()` return?
+  - What data type is the state of `str` at: `1.`, `2.`, `3.`, and `4.`?
+<br><br>
+
+
 ## Fizz Buzz
 
 Fizz buzz is a game about division. Create a program that will iterate through numbers from 1 to 101 and log each number in the console.
@@ -53,7 +95,6 @@ Example
     node calculator.js subtract 2 3 => -1
     node calculator.js multiply 4 5 => 20
     ```
-
 
 
 
