@@ -1,0 +1,50 @@
+//mta activity
+//
+// var nLine = ["Times Square", "34th Street", "23rd Street", "Union Square" , "8th Street"];
+//
+// console.log (nLine[0]);
+// console.log (nLine[4]);
+// console.log (nLine[5]);
+//
+// for (var i=0; i<nLine.length; i++){
+//  console.log (nLine[i]);
+// }
+
+// for (var i=nLine.length; i>0; i--){
+//   console.log (nLine[i]);
+// }
+
+//objects
+
+var mta ={
+n: ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"],
+l: ["8th", "6th", "Union Square", "3rd", "1st"],
+six:["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"]
+}
+//Access all the stops for the **L** line. (note that you should be able to access the **L** line through its name, and not its index)
+lLength = Object.keys(mta.n)
+for (var i=0; i< lLength.length; i++){
+  console.log(mta.l[i]);
+}
+//or
+console.log(mta.l);
+
+//- Access the 3rd stop of the **6** line
+console.log(mta.six[2]);
+
+//Access the last stop of the **N** line
+console.log(mta.n[5]);
+
+//bonus
+nLength = Object.keys(mta.n)
+for (var i=0; i< nLength.length; i++){
+  console.log(mta.n[i]);
+}
+  lLength = Object.keys(mta.l)
+  for (var i=0; i< lLength.length; i++){
+    console.log(mta.l[i]);
+  }
+sixLength = Object.keys(mta.six)
+  for (var i=0; i< sixLength.length; i++){
+    console.log(mta.six[i]);
+  }
