@@ -4,7 +4,7 @@
 
 Today you are going to write JavaScript statements to solve the following problems. This assignment is to get you to started thinking like a developer. The most important part of the assignment is to practice your git workflow, work on a separate branch, make commits after every completed part, embrace git! After you are done push your branch to github and submit a pull request.
 
-You will be working in the `w01/d03/homework/` directory where you will find this exercise prompt and a starter js file has been provided
+You will be working in the `w01/d03/homework/` directory where you will find this exercise prompt and a starter js file.
 
 Your solutions will go in their respective places in the `starter.js` file
 
