@@ -95,6 +95,3 @@ Example
     node calculator.js subtract 2 3 => -1
     node calculator.js multiply 4 5 => 20
     ```
-
-
-
