@@ -57,7 +57,6 @@ Scope is built during the Lexical Analysis part of the Compilation phase. When s
 
 Let's see how it works. Here's the code we'll work with:
 
-> Note: You might want to ask students to take a few minutes to break down the functionality in these functions.
 
 ```javascript
 var firstName = 'John'; // 1
@@ -126,7 +125,7 @@ Put these in the function's scope.
 
 
 
-## The Terminology of Scope - Codealong (10 mins)
+## The Terminology of Scope
 
 
 There are different terminologies to talk about scope in Javascript. If you read about `(function|global|lexical|public/private)scope` or `closure` or `namespace`, all these keywords are referring to the `scope`, one way or another.
