@@ -7,8 +7,12 @@
 //   console.log("I'm happy that you're good!")
 // }
 
+
 var rls = require('readline-sync');
 
+var running = true;
+
+while (running === true) {
 
 var response1 = rls.question("please enter first digit");
 var operation = rls.question("please enter + - * / ");
@@ -52,5 +56,11 @@ break;
 case "/" :
 console.log(number1 / number2)
 break;
+////
+case "q":
+running = false;
+
+
+}
 
 }
