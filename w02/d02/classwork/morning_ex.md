@@ -1,38 +1,38 @@
-##Tamagotchi
+## Tamagotchi
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/f/f2/Tamagotchi_0124_ubt.jpeg" width=50% >
 
 For those who don't remember (or choose to forget), Tamagotchis were "digital pets" that you could carry around with you and feed them, clean up after them, pet them, and try to keep them happy.
 
-Make a ```Tamagotchi``` constructor. Give it the following properties: 
+Make a ```Tamagotchi``` constructor. Give it the following properties:
 1. a hungry property (initially false)
 2. a sick property (initially false)
 3. an age of 0
 
 and give it the following methods:
 
-1. ```feed()``` - if hungry is true, print "That was yummy!" and set hungry to false.  If hungry is false, print "No thanks, I'm full." and set hungry to true. 
+1. ```feed()``` - if hungry is true, print "That was yummy!" and set hungry to false.  If hungry is false, print "No thanks, I'm full." and set hungry to true.
 2. ```sleep()``` - prints out "zzzzzzz" (use as many z's as you want)
 3. ```medicate()``` - if sick is true, print "I feel much better!" and set sick to false.  If sick is false, print "No thanks, I feel fine." and set sick to true.
 4. ```increaseAge()``` - increase the age by one and print "Happy Birthday to me! I am " + age + " years old!"
 
-Now make a variable named dog that is set to a new Tamagotchi. 
+Now make a variable named dog that is set to a new Tamagotchi.
 
-Add the following methods to it: 
-1. ```bark()``` - prints out "ruff ruff" 
-2. ```goOutside()``` - prints out "I own that tree now!" 
+Add the following methods to it:
+1. ```bark()``` - prints out "ruff ruff"
+2. ```goOutside()``` - prints out "I own that tree now!"
 
-Make a variable named cat that is set to a new Tamagotchi.  Add the following methods to it: 
-1. ```meow()``` - prints out "Meow!" 
-2. ```useLitterBox()``` - "Burried treasure!" 
+Make a variable named cat that is set to a new Tamagotchi.  Add the following methods to it:
+1. ```meow()``` - prints out "Meow!"
+2. ```useLitterBox()``` - "Burried treasure!"
 
-Make a variable named fish that is set to a new Tamagotchi.  Add the following method to it: 
-1. ```swim()``` - prints out "Just keep swimming..." 
+Make a variable named fish that is set to a new Tamagotchi.  Add the following method to it:
+1. ```swim()``` - prints out "Just keep swimming..."
 
 Try the following:
 1. Feed the dog twice.
 2. Increase the dog's age twice.
-3. Make the dog bark 
+3. Make the dog bark
 4. Make the dog go outside.
 5. Make the cat meow.
 6. Make the cat sleep.
@@ -40,8 +40,8 @@ Try the following:
 8. Give the fish medicine twice.
 9. Make the fish swim.
 
-##Tamagochi 2.0
-Use your new found power as programmers to create a zoo of Tamagochis. 
+## Tamagochi 2.0
+Use your new found power as programmers to create a zoo of Tamagochis.
 
 Make a ```Zoo``` constructor. Give each instance of zoo the following properties
 1. ```animals``` which is initially an empty array.
