@@ -6,18 +6,13 @@ var rls = require('readline-sync');
 
 //input creates new??????
 
-var words = ['aabaa','space', 'oddity', 'sold','world', 'changes',
-'life', 'mars', 'daydream', 'suffragette', 'city', 'young', 'dudes','americans',
-'rebel', 'diamond','dogs','fame', 'golden', 'years','sound','vision','heroes',
-'ashes','fashion', 'scary', 'monsters', 'under', 'pressure', 'dance', 'girl',
-'modern', 'love','jean','dancing','streets', 'absolute', 'beginners','time', 'jump',
-'swinging','station','sense','doubt'];
+
 
 
  function chooseWord(){
      //randomly chooses a word from words array
-     var pickIndex = Math.round(Math.random() * words.length);
-     var word = words[pickIndex];//change back to pickIndex! enter 0 for testcase
+     var pickIndex = Math.round(Math.random() * game.words.length);
+     var word = game.words[pickIndex];//change back to pickIndex! enter 0 for testcase
      return word;
  }
 
@@ -67,6 +62,10 @@ function Word() {
         var roundResults="";
        //access in letters array, object,
 
+
+       //temp code for testing
+       console.log("The word is " + letterCheck);
+
          for (i=0; i< letterCheck.length; i++){
              if (testLetter === letterCheck[i].value){
                  letters[i].hidden = true;
@@ -105,7 +104,7 @@ function Word() {
               // return render();
              }}
               game.guessedLetters.push(testLetter);
-                game.guesses =game.guesses +1;
+                game.guesses =game.guesses -1;
               return console.log (
                   "letters that don't match " +
                   game.guessedLetters +
@@ -156,10 +155,20 @@ function Word() {
 
  var game ={
       guesses: 0 ,//up to 10
-      guessedLetters: []//starts empty, fills up during game play
-//      words: "fill in later ",//an array of strings DONE! paste when ready
+      guessedLetters: [],//starts empty, fills up during game play
+      words : ['aabaa','space', 'oddity', 'sold','world', 'changes',
+      'life', 'mars', 'daydream', 'suffragette', 'city', 'young', 'dudes','americans',
+      'rebel', 'diamond','dogs','fame', 'golden', 'years','sound','vision','heroes',
+      'ashes','fashion', 'scary', 'monsters', 'under', 'pressure', 'dance', 'girl',
+      'modern', 'love','jean','dancing','streets', 'absolute', 'beginners','time', 'jump',
+      'swinging','station','sense','doubt'],
+
+    //  startGame: StartGame(){}
+
+
 //      currentWord: "",//empty string
 //      startGame: startGame(wordsArray){},//no clue what this does
+c : new Word(),
 //      guess: guess(letter){},//input from user check
 //      isOver: isOver(){},//checks if the game should end
 //      overMessage: overMessage(),//end ...and begin?
@@ -172,8 +181,8 @@ function Word() {
 
 var testLetter = rls.question("Guess a letter!");
 //function playGame()  {
- c = new Word();
- var letters = c.getLetters();
+
+ var letters = game.c.getLetters();
 
 
 
