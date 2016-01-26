@@ -1,0 +1,30 @@
+body {
+  /*background: red;*/
+}
+
+p {
+  color: orange;
+}
+
+div {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.first-class {
+  color: red;
+  text-decoration: underline;
+}
+
+#first-id {
+  color: blue;
+}
+
+
+
+/*
+selector {
+  property: value;
+}
+*/
