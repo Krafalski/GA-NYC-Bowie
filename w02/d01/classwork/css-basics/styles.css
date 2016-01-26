@@ -1,0 +1,27 @@
+body  {
+  /*background:dodgerblue;*/
+}
+
+p {
+  color:orange;
+}
+div {
+  border-width: 1px;
+  border-style: solid;
+  boder-color: black;
+}
+
+.first-class {
+  color: red;
+  text-decoration:underline;
+}
+
+#first-id {
+  color:blue;
+}
+
+/*
+selector {
+  property: value;
+}
+*/
