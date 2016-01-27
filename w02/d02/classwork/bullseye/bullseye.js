@@ -11,7 +11,7 @@
 
 function updateScore(score) {
     var scoreElement = document.querySelector('.score');
-    scoreElement.innerHTML(score + ' points');
+    scoreElement.innerHTML = score + ' points';
 }
 
 document.body.addEventListener('click', function(event) {
@@ -22,3 +22,25 @@ document.body.addEventListener('click', function(event) {
 });
 
 // Your code goes here:
+
+var ring1 = document.getElementsByClassName('ring-1');
+ring1[0].addEventListener('click', function(event) {
+    event.stopPropagation();
+    alert('Nice Shot You Hit The 3rd Ring');
+}
+);
+
+var ring2 = document.getElementsByClassName('ring-2');
+ring2[0].addEventListener('click', function(event) {
+    event.stopPropagation();
+    alert('Nice Shot You Hit The 2nd Ring');
+}
+
+);
+
+var ring3 = document.getElementsByClassName('ring-3');
+ring3[0].addEventListener('click', function(event) {
+    event.stopPropagation();
+    alert('Nice Shot You Hit The Bullseye ');
+}
+);
