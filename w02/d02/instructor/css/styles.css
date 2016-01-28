@@ -1,0 +1,35 @@
+
+
+
+
+#container{
+	height:500px;
+	width: 500px;
+	background-color: #aaa;
+}
+
+.square{
+	height:100px;
+	width:100px;
+	border:10px solid blue;
+	display:inline-block;
+}
+
+
+#square1 .square{
+	background-color: red; /* todo: change this to hex*/
+	height:200px;
+	width:200px;
+}
+
+#square2{
+	background-color: green; /* todo: change this to hex*/
+}
+
+#square3{
+	background-color: blue; /* todo: change this to hex*/
+}
+
+#square4{
+	background-color: white; /* todo: change this to hex*/
+}
