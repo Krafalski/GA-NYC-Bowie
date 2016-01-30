@@ -1,0 +1,64 @@
+body {
+	background-color:lightblue;
+}
+/*not working yet*/
+#content div {
+	background-color:coral;
+	color:steelblue;
+	margin: 10px 10px 10px 150px;
+	padding: 100px;
+	text-align:center;
+}
+
+#header {
+	font-size:100px;
+	color:steelblue;
+	text-align:center;
+	margin-bottom: 20px;
+}
+
+#title {
+	font-family:Garamond;
+}
+
+#game{
+	margin: auto;
+}
+
+button {
+	font-family:Garamond;
+	font-size:50px;
+	color: cadetblue;
+	background-color:blanchedalmond;
+
+}
+/*from memory css, don't know what it does*/
+.row {
+	clear:both;
+}
+
+#column {
+	border: 3px solid cornflowerblue;
+	float: left;
+	font-family: Garamond;
+	font-size: 50px ;
+	height: 100px;
+	width: 100px ;
+	margin: 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#column:hover {
+	background-color: darkblue;
+	color: floralwhite;
+}
+
+/*when clicked add properties*/
+.played {
+	background-color:turquoise;
+	color: honeydew;
+}
+
+
+
