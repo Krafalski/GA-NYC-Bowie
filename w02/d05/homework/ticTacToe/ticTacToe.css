@@ -1,0 +1,46 @@
+
+
+#mainTitle {
+
+  color: red;
+}
+
+.box {
+
+  border-color: green;
+  border-style: solid;
+  border-width: medium;
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+}
+
+#mainContainer {
+
+  left: 50%;
+  right: 50%;
+
+}
+/*
+.row1 {
+
+  display: table-cell;
+}
+
+.row2 {
+  display: table-cell;
+
+}
+
+.row3 {
+  display: table-cell;
+
+}*/
+
+
+
+#board {
+
+  border-color: black;
+  border-style: solid;
+  border-width: medium;
