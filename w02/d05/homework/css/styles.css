@@ -37,7 +37,7 @@ button {
 	clear:both;
 }
 
-#column {
+.cell {
 	border: 3px solid cornflowerblue;
 	float: left;
 	font-family: Garamond;
@@ -49,7 +49,7 @@ button {
 	vertical-align: middle;
 }
 
-#column:hover {
+#cell:hover {
 	background-color: darkblue;
 	color: floralwhite;
 }
