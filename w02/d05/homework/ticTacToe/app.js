@@ -11,12 +11,12 @@ var counter= 0;
 function Cell(value) {
 
     this.value = value;
-    this.setCell = function(event) {
-      //set the clicked square to the value of the cell
-        //the innerText of the clicked square = value
-    var target =  event.target;
-    target.value = value;
-    }
+    // this.setCell = function(event) {
+    //   //set the clicked square to the value of the cell
+    //     //the innerText of the clicked square = value
+    // var target =  event.target;
+    // target.value = value;
+    // }
 
 }
 
@@ -37,8 +37,7 @@ $("#boardContainer .box").click(function(){
   console.log("This is: " + counter)
   };
 
-  counting();
-
+    counting();
     $(this).html(cell1.value);
 
     counter++;
