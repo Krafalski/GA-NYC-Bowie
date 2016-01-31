@@ -1,3 +1,5 @@
+//FOR GIT!
+
 // alert ("connection successful!")
 
 $( document ).ready(function () {
