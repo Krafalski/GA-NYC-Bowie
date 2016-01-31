@@ -1,68 +1,174 @@
 $( document ).ready(function() {
 
-
-    console.log("ready!");
-
-
-    // [                [ ],[ ],[ ],
-    //                  [ ],[ ],[ ],
-    //                  [ ],[ ],[ ]       ]
-
-    //clicking this button clears the board
-              $("#startButton").click(function(){
-                $(".box").html("");
-              })
-
-var board = [ ];
+var counter= 0;
+  //clicking this button clears the board
+            $("#startButton").click(function(){
+              $(".box").html("");
+              counter =0;
+            })
 
 
+function Cell(value) {
 
-//create a constructor function for cell value
-      function Cell (value) {
-//clicking causes an xo to show up:
-      this.setState = $(".box").click(function(){
-      $(".box").append("")
-  })
-
-  this.playable = true;
+    this.value = value;
+    this.setCell = function(event) {
+      //set the clicked square to the value of the cell
+        //the innerText of the clicked square = value
+    var target =  event.target;
+    target.value = value;
+    }
 
 }
 
-  //create an instance of Cell
 
-  var cell1 = new Cell();
-
+var cell1 = new Cell();
 
 
-var counter = 2;
-$(".box").click(function(){
 
-console.log(counter);
+$("#boardContainer .box").click(function(){
+
+  var counting = function() {
+
+  if (counter % 2 === 0) {
+    cell1.value = "x";
+
+  } else if (counter %2 !== 0){cell1.value= "o";}
+
+  console.log("This is: " + counter)
+  };
+
+  counting();
+
+    $(this).html(cell1.value);
+
+    counter++;
+
+    console.log ("The value of box 1 is: " + $("#box1").html());
+    console.log ("The value of box 2 is: " + $("#box2").html());
+    console.log ("The value of box 3 is: " + $("#box3").html());
+
+
+    if ($("#box1").html() === "x" && $("#box2").html() === "x" && $("#box3").html() === "x" ) {
+      console.log("Player 1 wins");
+      $('#boardContainer').prepend("<div> Player 1 Wins</div>");
+    }
+    else if ($("#box4").html() === "x" && $("#box5").html() === "x" && $("#box6").html() === "x" ) {
+      console.log("Player 1 wins");
+      $('#boardContainer').prepend("<div> Player 1 Wins</div>");
+
+    }
+    else if ($("#box7").html() === "x" && $("#box8").html() === "x" && $("#box9").html() === "x" ) {
+      console.log("Player 1 wins");
+      $('#boardContainer').prepend("<div> Player 1 Wins</div>");
+
+    }
+    else if ($("#box1").html() === "x" && $("#box4").html() === "x" && $("#box7").html() === "x" ) {
+      console.log("Player 1 wins");
+      $('#boardContainer').prepend("<div> Player 1 Wins</div>");
+
+    }
+    else if ($("#box2").html() === "x" && $("#box5").html() === "x" && $("#box8").html() === "x" ) {
+      console.log("Player 1 wins");
+      $('#boardContainer').prepend("<div> Player 1 Wins</div>");
+
+    }
+    else if ($("#box3").html() === "x" && $("#box6").html() === "x" && $("#box9").html() === "x" ) {
+      console.log("Player 1 wins");
+      $('#boardContainer').prepend("<div> Player 1 Wins</div>");
+
+    }
+    else if ($("#box1").html() === "x" && $("#box5").html() === "x" && $("#box9").html() === "x" ) {
+      console.log("Player 1 wins");
+      $('#boardContainer').prepend("<div> Player 1 Wins</div>");
+
+    }
+    else if ($("#box3").html() === "x" && $("#box5").html() === "x" && $("#box7").html() === "x" ) {
+      console.log("Player 1 wins");
+      $('#boardContainer').prepend("<div> Player 1 Wins</div>");
+
+    }
+
+    //
+
+    if ($("#box1").html() === "o" && $("#box3").html() === "o" && $("#box3").html() === "o" ) {
+      console.log("Player 2 wins");
+      $('#boardContainer').prepend("<div> Player 2 Wins</div>");
+
+    }
+    else if ($("#box4").html() === "o" && $("#box5").html() === "o" && $("#box6").html() === "o" ) {
+      console.log("Player 2 wins");
+      $('#boardContainer').prepend("<div> Player 2 Wins</div>");
+
+    }
+    else if ($("#box7").html() === "o" && $("#box8").html() === "o" && $("#box9").html() === "o" ) {
+      console.log("Player 2 wins");
+      $('#boardContainer').prepend("<div> Player 2 Wins</div>");
+
+    }
+    else if ($("#box1").html() === "o" && $("#box4").html() === "o" && $("#box7").html() === "o" ) {
+      console.log("Player 2 wins");
+      $('#boardContainer').prepend("<div> Player 2 Wins</div>");
+
+    }
+    else if ($("#box2").html() === "o" && $("#box5").html() === "o" && $("#box8").html() === "o" ) {
+      console.log("Player 2 wins");
+      $('#boardContainer').prepend("<div> Player 2 Wins</div>");
+
+    }
+    else if ($("#box3").html() === "o" && $("#box6").html() === "o" && $("#box9").html() === "o" ) {
+      console.log("Player 2 wins");
+      $('#boardContainer').prepend("<div> Player 2 Wins</div>");
+
+    }
+    else if ($("#box1").html() === "o" && $("#box5").html() === "o" && $("#box9").html() === "o" ) {
+      console.log("Player 2 wins");
+      $('#boardContainer').prepend("<div> Player 2 Wins</div>");
+
+    }
+    else if ($("#box3").html() === "o" && $("#box5").html() === "o" && $("#box7").html() === "o" ) {
+      console.log("Player 2 wins");
+      $('#boardContainer').prepend("<div> Player 2 Wins</div>");
+
+    }
 
 });
 
-var run = function() {
-if (counter % 2 !== 0) {
-
-  $(".box").click(function(){
-  $(".box").append("x")
-    counter++;
-    })
 
 
-}
+// $(".box").click(function(event) {
+//
+//       counter++;
+//       console.log(counter);
+//
+// });
 
-  else if (counter % 2 === 0) {
+//
+// function Board() {
+//   this.cell2 = function() {
+//     $('#box2').onclick(function(){
+//       $('#box2').html("x");
+//     })
+//   }
+//   this.cell2;
+//   this.cell3;
+//   this.cell4;
+//   this.cell5;
+//   this.cell6;
+//   this.cell7;
+//   this.cell8;
+//   this.cell9;
+//
+//
+// }
+//
+// var mainBoard = new Board();
+// mainBoard.cell2;
+//
+//
 
-    $(".box").click(function(){
-    $(".box").append("z")
-      counter++;
-    })
 
 
-  }
-};
-run();
 
-  ///end of document.ready//////
+
+  ///end of document.ready///
 });
