@@ -97,7 +97,7 @@ var game ={
 			arrayofCells.push(createCellObjects);
 		};
 		function addEventsToCells() {
-			$('.cell').on('click', testAlert);
+			$('.cell').on('click', makePlay);
 		}
 		addEventsToCells();
 	
