@@ -47,17 +47,3 @@ addEventsToTiles();
 
 
 });
-
-
-// USE THIS TO SHUFFLE YOUR ARRAYS
-
-
-
-
-
-
-
-
-
-// $( "p" ).add( "div" ).addClass( "widget" );
-// var pdiv = $( "p" ).add( "div" );
