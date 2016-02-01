@@ -47,3 +47,5 @@ ul li{ text-indent: -5px; }
   font-size: 1.5em;
   text-indent: -12px;
 }
+
+var terminatorImage = document.querySelector('.terminator')
