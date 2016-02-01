@@ -11,19 +11,9 @@ var counter= 0;
 function Cell(value) {
 
     this.value = value;
-    // this.setCell = function(event) {
-    //   //set the clicked square to the value of the cell
-    //     //the innerText of the clicked square = value
-    // var target =  event.target;
-    // target.value = value;
-    // }
-
 }
 
-
 var cell1 = new Cell();
-
-
 
 $("#boardContainer .box").click(function(){
 
@@ -32,7 +22,9 @@ $("#boardContainer .box").click(function(){
   if (counter % 2 === 0) {
     cell1.value = "x";
 
-  } else if (counter %2 !== 0){cell1.value= "o";}
+  } else if (counter %2 !== 0){
+    cell1.value= "o";
+  }
 
   console.log("This is: " + counter)
   };
@@ -129,6 +121,14 @@ $("#boardContainer .box").click(function(){
       $('#boardContainer').prepend("<div> Player 2 Wins</div>");
 
     }
+
+    else if ($("#box1").html().length >= 1 && $("#box2").html().length >= 1 && $("#box3").html().length >= 1 && $("#box4").html().length >= 1 && $("#box5").html().length >= 1 && $("#box6").html().length >= 1 && $("#box7").html().length >= 1 && $("#box8").html().length >= 1 && $("#box9").html().length >= 1){
+      console.log("The Game is a Tie")
+      $('#boardContainer').prepend("<div>The game is a tie!</div>")
+
+
+    };
+
 
 });
 
