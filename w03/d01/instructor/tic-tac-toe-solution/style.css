@@ -1,0 +1,16 @@
+.X {
+    background-color: red;
+}
+
+.O {
+    background-color: green;
+}
+
+table {
+    width: 200px;
+    height: 200px;
+}
+
+td {
+    border: solid;
+}
