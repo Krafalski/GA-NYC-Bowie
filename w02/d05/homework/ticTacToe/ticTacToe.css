@@ -1,12 +1,22 @@
+body {
+  background-image: url(background.jpg);
+
+}
 
 #wrapper {
     width: 500px;
     margin: 0 auto;
 }
 
-#mainTitle {
+#theX {
+  font-size: 44;
+}
 
-  color: black;
+#mainTitle {
+  font-family: cursive;
+  font-size: 40px;
+  text-align: center;
+  color: white;
   display: block;
   align-content: center;
   margin-left: auto;
@@ -38,14 +48,16 @@ font-size: 24;
 
 .box {
 
-  border-color: black;
+  border-color: white;
   border-style: solid;
   border-width: medium;
   height: 150px;
   width: 150px;
   display: inline-block;
   vertical-align: top;
-font-size: 24;
+  font-size: 42; !important
+  text-align: center;
+  opacity: .4;
 
 }
 /*

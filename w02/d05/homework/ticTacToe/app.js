@@ -30,7 +30,7 @@ $("#boardContainer .box").click(function(){
   };
 
     counting();
-    $(this).html(cell1.value);
+    $(this).html(cell1.value).css("font-size", "98px").css("color","white").css("text-align","center");
 
     counter++;
 
@@ -41,11 +41,11 @@ $("#boardContainer .box").click(function(){
 
     if ($("#box1").html() === "x" && $("#box2").html() === "x" && $("#box3").html() === "x" ) {
       console.log("Player 1 wins");
-      $('#boardContainer').prepend("<div> Player 1 Wins</div>");
+      $('#boardContainer').prepend("<div> Player 1 Wins</div>").css("color","white").css("float", "right");
     }
     else if ($("#box4").html() === "x" && $("#box5").html() === "x" && $("#box6").html() === "x" ) {
       console.log("Player 1 wins");
-      $('#boardContainer').prepend("<div> Player 1 Wins</div>");
+      $('#boardContainer').prepend("<div> Player 1 Wins</div>").css("color","white");
 
     }
     else if ($("#box7").html() === "x" && $("#box8").html() === "x" && $("#box9").html() === "x" ) {
