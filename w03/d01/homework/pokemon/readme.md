@@ -24,43 +24,43 @@ var enemies = [
 
 ### Game Rules/Workflow:
 
--You have 100 health. 
+-You have 100 health.
 
--Enemy is picked randomly at the start. 
+-Enemy is picked randomly at the start.
 
--You can attack or heal by clicking the buttons provided in the starter code. 
+-You can attack or heal by clicking the buttons provided in the starter code.
 
--When you attack, there is a 10% chance you miss (nothing happens). 
+-When you attack, there is a 10% chance you miss (nothing happens).
 
--If you attack successfully, it will subtract 5-30 from the overall health of the opponent. 
+-If you attack successfully, it will subtract 5-30 from the overall health of the opponent.
 
--When the enemy attacks, there is a 10% chance the enemy misses (nothing happens). 
- 
--If they attack successfully, you subtract between 5-30 from your health. 
+-When the enemy attacks, there is a 10% chance the enemy misses (nothing happens).
 
--If you heal, you are healed for 25-50 health points. 
+-If they attack successfully, you subtract between 5-30 from your health.
+
+-If you heal, you are healed for 25-50 health points.
 
 -After you heal or attack, it waits 3 seconds, then the enemy will auto attack. **During this time the buttons should be hidden.**
 
 -If at any time your health is less than or equal to zero, display a game over message. **Buttons should not reappear.**
 
--If at any time the enemy heath drops at or below 0, display a win message. 
+-If at any time the enemy heath drops at or below 0, display a win message.
 
 Bonus:
 
-- Game restarts automatically after win/lose state is triggered. 
+- Game restarts automatically after win/lose state is triggered.
 - Build interface to choose starting pokemon.
 
 ### Example Videos:
 
--There are two example videos in the folder. Pay careful attenton to the text being displayed and what elements are changing. 
+-There are two example videos in the folder. Pay careful attention to the text being displayed and what elements are changing.
 
 
-### Getting Started: 
+### Getting Started:
 
 -You won't need to edit the pokemon.html file. You will need to look at it to get IDs and class names of elements.
 
--You won't need to edit the pokemon.css file. 
+-You won't need to edit the pokemon.css file.
 
 -Use the pokemon.js file provided to get started. (or don't)
 
@@ -99,7 +99,7 @@ Methods:
     - Create a new `Pokemon` with the name of *pikachu* and assign in to the player attribute.
     - Create a new `Pokemon` with properties from the array of enemies and assign it to enemy.
 2. `attack()`
-    The current player attacks the other player. 
+    The current player attacks the other player.
 3. `heal()`
     The current player heals.    
 4. `win()`
@@ -113,4 +113,4 @@ Methods:
 
 -Add animations to the game. Start by making the pokemon wiggle left and right when damaged and tip over when defeated! Like so: http://gfycat.com/InsignificantExaltedBlowfish
 
--Explore adding a 'damage multiplier' to the Pokemon objects. Use this to have stronger/weaker pokemon do more/less damage. 
+-Explore adding a 'damage multiplier' to the Pokemon objects. Use this to have stronger/weaker pokemon do more/less damage.
