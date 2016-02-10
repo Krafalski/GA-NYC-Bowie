@@ -16,30 +16,30 @@ server.on('request', function(request, response){
 
     if(path === "/") {
 
-      response.writeHead(200, { 'Content-Type': 'text/html' });
-      response.write('<!DOCTYPE html><html lang="en"><head></head>');
-      response.write('<body><h1>Welcome to the Open Tom Cruise Database!!!</h1></body>')
-      response.write('</html>')
-      response.end();
+        response.writeHead(200, { 'Content-Type': 'text/html' });
+        response.write('<!DOCTYPE html><html lang="en"><head></head>');
+        response.write('<body><h1>Welcome to the Open Tom Cruise Database!!!</h1></body>');
+        response.write('</html>');
+        response.end();
 
     } else if (path === "/movies") {
 
-      response.writeHead(200, { 'Content-Type': 'text/html' });
-      response.write('<!DOCTYPE html><html lang="en"><head></head>');
-      response.write('<body><h1>Tom Cruise has been in A LOT of movies!!!</h1>');
-      response.write("<ol>");
-      cruiseDB.forEach(function(movie) {
-          response.write("<li>"+movie.Title + "</li>");
-      });
-      response.write("</ol>");
-      response.write('</body></html>')
-      response.end();
+        response.writeHead(200, { 'Content-Type': 'text/html' });
+        response.write('<!DOCTYPE html><html lang="en"><head></head>');
+        response.write('<body><h1>Tom Cruise has been in A LOT of movies!!!</h1>');
+        response.write("<ol>");
+        cruiseDB.forEach(function(movie) {
+            response.write("<li>"+movie.Title + "</li>");
+        });
+        response.write("</ol>");
+        response.write('</body></html>');
+        response.end();
 
     } else {
 
-      response.writeHead(400, { 'Content-Type': 'text/html' });
-      response.write('Bad Request');
-      response.end();
+        response.writeHead(400, { 'Content-Type': 'text/html' });
+        response.write('Bad Request');
+        response.end();
 
     }
 
