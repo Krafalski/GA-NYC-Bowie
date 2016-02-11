@@ -7,11 +7,11 @@ Did you know that not all numbers are valid credit card numbers. One of the simp
 3. If the total is divisible by 10 you have a valid number.
 
 Test your application:
-Some Valid Numbers:
+1. Some Valid Numbers:
 - `4501039878866379`
 - `4061232917948892`
 - `4336830788510706`
-Some Invalid Numbers
+2. Some Invalid Numbers
 - `4501039878866378`
 - `4501039878863456`
 - `3421039878863456`
