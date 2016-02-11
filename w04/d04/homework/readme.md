@@ -38,6 +38,7 @@ When you click on the submit button this will send a `GET` request to the path `
 
 
 **BONUS**
+
 1. Explore the javascript `Date` object and the HTML input field `type="date"`. Implement a range date search.
 2. Explore the html input field `type="select"` and allow for the user to select a state from a list.
 3. Use client side javascript to generate a list of cities to select from, based on the state.
