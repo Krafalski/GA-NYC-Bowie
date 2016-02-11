@@ -2,7 +2,7 @@
 
 Did you know that not all numbers are valid credit card numbers. One of the simplest checks that every website does is using [Luhn's Algorigthm](https://en.wikipedia.org/wiki/Luhn_algorithm). It is used to quickly check for possible typos on part of the user. Write a command line application `validator.js` which checks if a credit card number is valid based in Luhn's Algorithm. The procedure is the following:
 
-1. Start at the right most digit, and moving left double every other digit. If the result of doubling it is a two digit number add the two digits.
+1. Start at the second to right most digit, and moving left double every other digit. If the result of doubling it is a two digit number add the two digits.
 2. Take the sum of all digits
 3. If the total is divisible by 10 you have a valid number.
 
