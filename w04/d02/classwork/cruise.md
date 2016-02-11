@@ -1,7 +1,7 @@
 ## Implement the otcmdb (the Tom Cruise Open Movie Database)
 
 
-  Parameter | Description | Example 
+  Parameter | Description | Example
   ------ | ------ | ------
    t | title | ```http://127.0.0.1:3000/?t=top+gun```
    id | omdb id | ```http://127.0.0.1:3000/?id=tt0092099```
@@ -19,13 +19,13 @@ var server       = http.createServer();
 var cruiseDBText = fs.readFileSync("cruise_data.json", "utf8");
 var cruiseDB     = JSON.parse(cruiseDBText);
 
-/* 
+/*
  * Setup the server.
  * Have the HTTP server listen for requests and handle them.
  * The requestEventHandlerCallback will be passed
  * both the request object and a partially prepared response object.
  */
-server.on('request', function(request, response){ 
+server.on('request', function(request, response){
     var urlObj = url.parse(request.url);
 
     if(urlObj.query){
@@ -33,7 +33,7 @@ server.on('request', function(request, response){
 
       if(queryPortion[0]==="t"){
           var foundIt = false;
-          
+
           // Look through each movie in the database for a match.
           cruiseDB.forEach(function(movie){
             var targetMovie = queryPortion[1].replace("+"," ");
@@ -60,7 +60,11 @@ server.on('request', function(request, response){
             response.end();
       }
     }
-   
+
+    
+
+
+
 });
 
 // "Start" the server by having it listen on a port.

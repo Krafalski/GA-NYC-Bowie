@@ -18,7 +18,7 @@
 ```javascript
 npm install -g cowsay
 ```
-This gives you access to a command line application `cowsay` which you can use from your terminal. 
+This gives you access to a command line application `cowsay` which you can use from your terminal.
 
 3. Make the cow say things. Try out `cowthink`, and make the cow wonder about the meaning of life, the universe and everything.
 
@@ -43,50 +43,7 @@ npm install cowsay
 
 9. Take this array
 ```javascript
-var students = [
-    {first: 'Yue', last: 'Hou'},
-    {first: 'Maxwell', last: 'Rayman'},
-    {first: 'Elton', last: 'Cheng'},
-    {first: 'Sara', last: 'Horowitz'},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    {first: 'Seif', last: 'Dorani'},
-    {first: 'Emine', last: 'Koc'},
-    {first: 'Ari', last: 'Ingber'},
-    {first: 'Caleb', last: 'Rechten'},
-    {first: 'James', last: 'Roberts'},
-    {first: 'Dan', last: 'DiIorio'},
-    {first: 'Lauren', last: 'Golik'},
-    {first: 'Jonathan', last: 'Feudi'},
-    {first: 'Arthur', last: 'Chen'},
-    {first: 'Razaik', last: 'Boparai'},
-    {first: 'Jimmy', last: 'Lin'},
-    {first: 'Viorel', last: 'Belfiore'},
-    {first: 'Peter', last: 'Nguyen'},
-    {first: 'Daniel', last: 'Lawrence'},
-    {first: 'Bryce', last: 'Krah'},
-    {first: 'Patrick', last: 'McWilliams'},
-    {first: 'Douglas', last: 'Walker'},
-    {first: 'Adam', last: 'Kriger'},
-    {first: 'Harry', last: 'Ganz'},
-    {first: 'Jasmine', last: 'Vollherbst'},
-    {first: 'Karoline', last: 'Rafaski'];
+                  ``          
     ```
 
 Log to the console each name in a random color. **Bonus** Arrange the names alphabetically.
@@ -100,5 +57,3 @@ Initialize your `package.json`, and include cowsay and chalk as dependencies. Di
 1. make the eyes of the cow red.
 
 2. add an extra option to cow to always say moo at the end.
-
-
