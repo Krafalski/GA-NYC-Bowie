@@ -48,24 +48,6 @@ var students = [
     {first: 'Maxwell', last: 'Rayman'},
     {first: 'Elton', last: 'Cheng'},
     {first: 'Sara', last: 'Horowitz'},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {first: 'Seif', last: 'Dorani'},
     {first: 'Emine', last: 'Koc'},
     {first: 'Ari', last: 'Ingber'},
@@ -86,7 +68,7 @@ var students = [
     {first: 'Adam', last: 'Kriger'},
     {first: 'Harry', last: 'Ganz'},
     {first: 'Jasmine', last: 'Vollherbst'},
-    {first: 'Karoline', last: 'Rafaski'];
+    {first: 'Karoline', last: 'Rafaski'}];
     ```
 
 Log to the console each name in a random color. **Bonus** Arrange the names alphabetically.
