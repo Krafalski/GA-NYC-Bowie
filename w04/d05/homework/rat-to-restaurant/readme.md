@@ -12,7 +12,7 @@ Data:
 
 You can view the end points for each dataset and the query parameters (field names) that you can pass to these two endpoints by clicking the export tab at the top right.
 
-![data](data.png =400x400)
+![data](data.png)
 
 
 
