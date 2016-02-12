@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Xpress Files</title>
+  </head>
+
+  <body>
+    <h1>X-Finder</h1>
+    <form action="/search" method="get">
+      <label for="city">City</label>
+      <input type="text" name="city"/>
+      <button type="submit">Search</button>
+      <% for ( var i = 0; i < sightingsDB.length; i++ ) { %>
+        <% if (sightingsDB[i].city === city) { %>
+        <p><%= "Date : " + sightingsDB[i].date %></p>
+        <p><%= "City : " + sightingsDB[i].city %></p>
+        <p><%= "State : " + sightingsDB[i].state %></p>
+        <p><%= "Shape : " + sightingsDB[i].shape %></p>
+        <p><%= "Duration : " + sightingsDB[i].duration %></p>
+        <p><%= "Description : " + sightingsDB[i].description %></p>
+        <p> ===================================</p>
+     <% }} %>
+    </form>
+  </body>
+</html>
