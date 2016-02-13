@@ -1,4 +1,4 @@
-'use strict'
+//'use strict'
 var request   = require('request');
 var express 	= require('express');
 var logger 		= require('morgan');
@@ -18,5 +18,3 @@ app.listen(3000, function () {
 app.get('/search',(req,res)=>
   res.sendfile('restaurantSearch.html', {root: './public'})
 )
-
-

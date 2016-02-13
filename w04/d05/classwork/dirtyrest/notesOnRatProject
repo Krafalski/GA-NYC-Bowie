@@ -1,0 +1,16 @@
+rats notes
+
+1. mkdir rats
+2. in the directory:
+  npm init
+3. follow the prompts (change entry point to server.js (or whatever name for server))
+4. JSON.package created
+5. now install express, morgan, ejs, request
+  npm install express --save
+  npm install ejs --save
+  npm install morgan --save
+  npm install request --save
+
+6. if not done already touch server.js (or whatever name for the server)
+
+8. inside server js:

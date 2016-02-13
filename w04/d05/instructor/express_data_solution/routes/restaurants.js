@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 var request     = require('request');
 var express     = require('express');
 var restaurants = express.Router();
@@ -22,10 +22,10 @@ module.exports = restaurants;
 
 function parseData( err,res,body){
   var data = JSON.parse(body)
- 	
+
  	/* filter things by grade*/
  	// .filter(el=>el.grade !== 'A')
- 	
+
  	// sort by recordDate
  	.sort( (a,b) => {
 
@@ -38,16 +38,16 @@ function parseData( err,res,body){
     // lets always present in reverse order
     var d2 = new Date(a.inspection_date);
  		var d1 = new Date(b.inspection_date);
- 		
+
  		// they're in order, no swapping
  		if(d1<d2) return -1
 
  		// if they're out of order, swap 'em
  		if(d1>d2) return 1
- 		
- 		// we can't really tell if two times are equal because they're two different objects	
+
+ 		// we can't really tell if two times are equal because they're two different objects
  		return 0
- 	}) 
+ 	})
 
  	/* group the records by establishment */
  	.reduce( (p,c)=>{
