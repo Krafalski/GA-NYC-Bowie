@@ -46,15 +46,15 @@ var server = app.listen(port, function (){
 
 
 app.get('/rats', function (req, res){
-  var hello = 'this is just a quick test';
-  res.render('rat_sighting_results.html.ejs', {
+  var hello = 'this is the new form!';
+  res.render('rat_sighting_form.html.ejs', {
     hello:hello
   });
 });
 
 app.get('/violations', function(req, res){
-  var howdy='this is just to see if this works';
-  res.render('violation_results.html.ejs' , {
+  var howdy='this is the other new form!';
+  res.render('violations_form.html.ejs' , {
    howdy:howdy
   });
 });

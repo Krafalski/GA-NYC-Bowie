@@ -5,7 +5,6 @@ var app         = express();
 
 var violationsRemoteData = 'https://data.cityofnewyork.us/resource/43nn-pn8j.json';
 
-//console.log("from violations JS file!!!!!")
 
 violations.get('/results', function (req, res){
   request.get( {url: violationsRemoteData, qs: req.query}, parseData.bind(res) );
@@ -25,10 +24,10 @@ module.exports = violations;
 
 //parse data function - return to route that called it
 function parseData(err, response, body) {    //body is jsut JSON string when it comes
-  var data = JSON.parse(body)
+  var data = JSON.parse(body);
   var interestingData = data.map(function(obj){
     return{ zipcode: obj.zipcode, boro: obj.boro, dba: obj.dba, grade: obj.grade, street: obj.street, action: obj.action, violation_description: obj.violation_description};
-  })
+  });
   //no semicolon on above line! we are chaining and putting the chains on different lines
   //sort by date
 //   .sort( (a,b) => {
@@ -57,6 +56,8 @@ function parseData(err, response, body) {    //body is jsut JSON string when it 
   //     newData.push(data[i]);
   //   }
   // }
-  this.send(interestingData)
+  this.render('violation_results.html.ejs', {
+    interestingData:interestingData
+  });
 
 }

@@ -5,12 +5,21 @@
     <title>Violations</title>
   </head>
   <body>
-    <h2><%= howdy %> </h2>
     <p></p>
-    <form action="/violations/results" method="get">
-      <label for="zipcode">Zip Code</label>
-      <input type="text" name="zipcode"/>
-      <button type="submit">Search</button>
+    <ul>
+      <ul>
+        <% for(var i=0; i< Object.keys(interestingData).length; i++) { %>
+        <li>Zip code: <%= JSON.stringify(interestingData[i].zipcode) %></li>
+        <li>Borough: <%= JSON.stringify(interestingData[i].boro) %></li>
+        <li>Restuarant: <%= JSON.stringify(interestingData[i].dba) %></li>
+        <li>Grade: <%= JSON.stringify(interestingData[i].grade) %></li>
+        <li>Street: <%= JSON.stringify(interestingData[i].street) %></li>
+        <li>Action: <%= JSON.stringify(interestingData[i].action) %></li>
+        <li>Violation: <%= JSON.stringify(interestingData[i].violation_description) %></li>
+
+        <% } %>
+      </ul>
+    </ul>
     </form>
   </body>
 </html>

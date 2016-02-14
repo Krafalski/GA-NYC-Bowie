@@ -39,5 +39,7 @@ function parseData (err,response, body) {
   //   }
   // }
   //make this back to data when above loop is removed
-  this.send(interestingData);
+  this.render('rat_sighting_results.html.ejs', {
+    interestingData:interestingData
+  });
 }
