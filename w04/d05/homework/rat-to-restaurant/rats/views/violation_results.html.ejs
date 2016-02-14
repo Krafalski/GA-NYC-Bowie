@@ -5,9 +5,12 @@
     <title>Violations</title>
   </head>
   <body>
-    <h2><%= hello %> </h2>
-    <h1><%= extraCrap %>
-    <h4><%= violationsRemoteData %></h4>
-    <p> add search field here </p>
+    <h2><%= howdy %> </h2>
+    <p></p>
+    <form action="/violations/results" method="get">
+      <label for="zipcode">Zip Code</label>
+      <input type="text" name="zipcode"/>
+      <button type="submit">Search</button>
+    </form>
   </body>
 </html>

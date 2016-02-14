@@ -6,6 +6,11 @@
   </head>
   <body>
     <h3><%= hello %></h3>
-    <p> add search field here </p>
+    <p></p>
+    <form action="/rats/results" method="get">
+      <label for="incident_zip">Zip Code</label>
+      <input type="text" name="incident_zip"/>
+      <button type="submit">Search</button>
+    </form>
   </body>
 </html>
