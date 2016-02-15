@@ -6,10 +6,10 @@
     <title>Violations</title>
   </head>
   <body>
-    <p></p>
+    <div class="container">
     <ul>
-      <ul>
         <% for(var i=0; i< Object.keys(interestingData).length; i++) { %>
+          <div class ="card">
         <li>Zip code: <%= JSON.stringify(interestingData[i].zipcode) %></li>
         <li>Borough: <%= JSON.stringify(interestingData[i].boro) %></li>
         <li>Restuarant: <%= JSON.stringify(interestingData[i].dba) %></li>
@@ -17,10 +17,9 @@
         <li>Street: <%= JSON.stringify(interestingData[i].street) %></li>
         <li>Action: <%= JSON.stringify(interestingData[i].action) %></li>
         <li>Violation: <%= JSON.stringify(interestingData[i].violation_description) %></li>
-
+      </div>
         <% } %>
       </ul>
-    </ul>
-    </form>
+    </div>
   </body>
 </html>

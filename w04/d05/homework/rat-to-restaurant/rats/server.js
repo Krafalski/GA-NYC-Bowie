@@ -12,6 +12,7 @@ var app = express();//maybe need to move this lower below other requires?
 //require the routes
 var violations = require('./routes/violations');
 var rats = require('./routes/rats');
+var restaurants = require('./routes/restaurants')
 
 
 //logs requests for 'middleware' for node.js
@@ -29,6 +30,7 @@ app.use( express.static('public') );
 //set up above route violations - connects to violations.js in the routes directory --use this to see ALL the data in JSON
 app.use('/violations', violations);
 app.use('/rats', rats);
+app.use('/restaurants', restaurants);
 
 //set variables for the incoming data from the websites and then parse them
 var ratsDB = 'https://data.cityofnewyork.us/resource/3q43-55fe.json'
@@ -60,3 +62,10 @@ app.get('/violations', function(req, res){
    howdy:howdy
   });
 });
+
+app.get('/restaurants', function(req, res){
+  var welcome = "this way to sort by restaurant(eventually)";
+  res.render('restaurants_form.html.ejs', {
+    welcome:welcome
+  })
+})

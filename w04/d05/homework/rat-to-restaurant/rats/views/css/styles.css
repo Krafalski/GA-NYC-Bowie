@@ -1,3 +1,21 @@
 body {
   background-color:blanchedalmond;
 }
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+  order:1;
+  border: 1px solid black;
+  padding: 1px;
+  margin: 1px;
+  flex: 1 20%;
+}
+
+li {
+  list-style-type:none;
+}
