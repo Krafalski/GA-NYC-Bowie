@@ -14,6 +14,9 @@ We're going to use what we've learned already about searching with SQL commands,
 - Use the clues.sql file as your "answer sheet"
 - From the command line, let's create a new database called ```carmen``` and populate it with the SQL found in ```world.sql```
 
+You can do this in two ways:
+
+1. Use the postgres shell:
 ```
 # Enter psql
 psql
@@ -26,8 +29,7 @@ CREATE DATABASE carmen;
 \i world.SQL
 ```
 
-**Pro Tip:** You can do this in two step from the command line:
-
+2. Use psql bash helpers:
 ```bash
 createdb carmen
 psql -d carmen -f /your/path/to/this/file/starter-code/world.sql
