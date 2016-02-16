@@ -7,18 +7,18 @@
   </head>
   <body>
     <div class="container">
-    <ul>
+
       <% for(var i=0; i< Object.keys(interestingData).length; i++) { %>
-        <div class="card">
-      <li>Zip code: <%= JSON.stringify(interestingData[i].incident_zip) %></li>
-      <li>Borough: <%= JSON.stringify(interestingData[i].borough) %></li>
+        <div class="card">  <ul>
       <li>Location Type: <%= JSON.stringify(interestingData[i].location_type) %></li>
+      <li>Borough: <%= JSON.stringify(interestingData[i].borough) %></li>
+      <li>Zip code: <%= JSON.stringify(interestingData[i].incident_zip) %></li>  
       <li>Latitude: <%= JSON.stringify(interestingData[i].latitude) %></li>
       <li>Longitude: <%= JSON.stringify(interestingData[i].longitude) %></li>
-      <li>Descriptor: <%= JSON.stringify(interestingData[i].descriptor) %></li>
+      <li>Descriptor: <%= JSON.stringify(interestingData[i].descriptor) %></li></ul>
     </div>
       <% } %>
     </div>
-    </ul>
+
   </body>
 </html>
