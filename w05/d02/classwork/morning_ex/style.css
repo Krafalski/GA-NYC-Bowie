@@ -21,6 +21,10 @@ html {
     border-bottom:0;
 }
 
+.checkme {
+  background:#F9F9F9;
+  text-decoration: line-through;
+}
 
 input:checked + p {
     background:#F9F9F9;
