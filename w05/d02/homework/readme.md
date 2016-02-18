@@ -1,6 +1,6 @@
 ### SQL SQL SQL SQL SQL
 
-Tonight's homework if three-fold
+Tonight's homework is three-fold
 
 #### Part 1: Carmen Sandiego
 
