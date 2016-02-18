@@ -1,8 +1,12 @@
 var express = require('express');
 var morgan = require('morgan');
 var db = require('./db/pg');
+var dotenv = require('dotenv');
 var app = express();
 
+dotenv.load()
+
+app.use(express.static('./public/'))
 app.use(morgan('short'));
 
 app.set('views', './views');
@@ -27,6 +31,24 @@ app.get('/', db.showKabul, function(req, res) {
   res.render('kabul.html.ejs', res.rows)
   // console.log('hey')
 })
+
+app.get('/cities', db.showAllCities, function(req, res){
+  res.render('cities.html.ejs', {cities: res.rows})
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 var port = process.env.PORT || 3000;

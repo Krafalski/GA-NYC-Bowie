@@ -1,5 +1,5 @@
 {
-  "name": "test_app",
+  "name": "famous_cats",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^2.0.0",
+    "body-parser": "^1.15.0",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
     "morgan": "^1.6.1",
