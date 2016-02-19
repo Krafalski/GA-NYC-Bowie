@@ -1,0 +1,20 @@
+.container {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  max-width: 900px;
+}
+
+ul {
+  list-style-type: none;
+  padding:0;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+li{
+  font-size: 1em;
+  /*letter-spacing: ;*/
+}

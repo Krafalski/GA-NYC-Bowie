@@ -1,0 +1,22 @@
+<!-- CHANGE THE VARIABLES!!!!!!! -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Buffy Characters</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <div class ="container">
+    <% characters.forEach (function (characters){ %>
+      <ul>
+      <% for (var attr in characters){ %>
+        <li><%= characters[attr] %></li>
+    <% } %>
+      </ul>
+    <% }) %>
+</div>
+  </body>
+</html>
