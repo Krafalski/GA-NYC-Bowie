@@ -10,8 +10,8 @@ have
 1. A type of meat
 2. A type of doneness.
 3. A type of bread
-4. Many types of cheeses
-5. Many types of toppings
+4. 0 or Many types of cheeses
+5. 0 or Many types of toppings
 
 You only deal with seasonal items, so you should be able to control
 the types of toppings, cheeses, breads, meats which are available to
