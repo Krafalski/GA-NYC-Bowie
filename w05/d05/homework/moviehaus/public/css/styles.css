@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+  color:white;
+}
+
+header {
+  font-size: 3em;
+  color: blanchedalmond;
+  margin: auto;
+  text-align: center;
+}
+
+.container {
+
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  width:300px;
+  background-color: #181818;
+  border: 1px solid blanchedalmond;
+  padding-bottom:20px;
+  margin-left:10px;
+  margin-bottom:10px;
+
+}
+
+img{
+  max-width: 300px;
+}
+
+button {
+  margin-left: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #48036f;
+  color: #ffffcc;
+}
+
+.search-container {
+  display:block;
+  padding:10px;
+  text-align:center;
+}
+input {
+  min-width:100px;
+}
+
+a{
+  text-decoration:none;
+  color:blanchedalmond;
+}
