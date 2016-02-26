@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <% cities.forEach(function(city) { %>
+      <ul>
+      <% for (var attr in city) { %>
+        <li><%= city[attr] %></li>
+      <% } %>
+    </ul>
+    <% }) %>
+  </div>
+</body>
+</html>

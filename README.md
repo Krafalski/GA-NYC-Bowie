@@ -74,7 +74,7 @@ This repo has a wiki which you are encouraged to explore and expand as you learn
 High level outline of topics we are going to cover.
 
 1. Unit 1: Intro to Programming, Front end technologies
-2. Unit 2: Server side scripting
-3. Unit 3: APIs, Ruby
-4. Unit 4: Front end frameworks
+2. Unit 2: Server side scripting with Node/Express/EJS
+3. Unit 3: React
+4. Unit 4: Ruby, Ruby on Rails as an API, BaaS
 

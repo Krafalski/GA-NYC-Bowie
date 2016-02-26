@@ -20,8 +20,11 @@ document.body.addEventListener('click', function(event) {
     var ring = document.querySelector('.ring');
     ring.setAttribute('style', "background-color: ");
 });
-
+var ring1 = document.querySelector('.ring-1');
+var ring2 = document.querySelector('.ring-2');
+var ring3 = document.querySelector('.ring-3');
 // Your code goes here:
+
 
 var ring1 = document.getElementsByClassName('ring-1');
 ring1[0].addEventListener('click', function(event) {
