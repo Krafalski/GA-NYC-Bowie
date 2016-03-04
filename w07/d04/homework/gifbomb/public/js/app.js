@@ -1,5 +1,6 @@
 //alert ('you did it! JS connected! So rad!');
 
+
 $(document).ready(function(){
 
 $('#random').on('click', function (event){
