@@ -95,4 +95,4 @@ carmen=# select * from city where population = 91084;
 --  4060 | Santa Monica | USA         | California |      91084
 
 
--- She's in ____________________________!
+-- She's in ___Santa Monica | USA         | California_________________________!
