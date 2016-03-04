@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <h3><%= hello %></h3>
-    <p> add search field here </p>
+    <div class="container">
+
+      <% for(var i=0; i< Object.keys(interestingData).length; i++) { %>
+        <div class="card">  <ul>
+      <li>Location Type: <%= JSON.stringify(interestingData[i].location_type) %></li>
+      <li>Borough: <%= JSON.stringify(interestingData[i].borough) %></li>
+      <li>Zip code: <%= JSON.stringify(interestingData[i].incident_zip) %></li>  
+      <li>Latitude: <%= JSON.stringify(interestingData[i].latitude) %></li>
+      <li>Longitude: <%= JSON.stringify(interestingData[i].longitude) %></li>
+      <li>Descriptor: <%= JSON.stringify(interestingData[i].descriptor) %></li></ul>
+    </div>
+      <% } %>
+    </div>
+
   </body>
 </html>

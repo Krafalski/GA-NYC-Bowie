@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <meta charset="utf-8">
     <title>Violations</title>
   </head>
   <body>
-    <h2><%= hello %> </h2>
-    <h1><%= extraCrap %>
-    <h4><%= violationsRemoteData %></h4>
-    <p> add search field here </p>
+    <div class="container">
+
+        <% for(var i=0; i< Object.keys(interestingData).length; i++) { %>
+          <div class ="card"><ul>
+        <li>Restuarant: <%= JSON.stringify(interestingData[i].dba) %></li>
+        <li>Street: <%= JSON.stringify(interestingData[i].street) %></li>
+        <li>Borough: <%= JSON.stringify(interestingData[i].boro) %></li>
+        <li>Zip code: <%= JSON.stringify(interestingData[i].zipcode) %></li>
+        <li>Grade: <%= JSON.stringify(interestingData[i].grade) %></li>
+        <li>Action: <%= JSON.stringify(interestingData[i].action) %></li>
+        <li>Violation: <%= JSON.stringify(interestingData[i].violation_description) %></li>
+      </ul></div>
+        <% } %>
+
+    </div>
   </body>
 </html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3><%= hello %></h3>
+    <p></p>
+    <form action="/rats/results" method="get">
+      <label for="incident_zip">Zip Code</label>
+      <input type="text" name="incident_zip"/>
+      <button type="submit">Search</button>
+    </form>
+  </body>
+</html>
