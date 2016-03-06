@@ -8,7 +8,8 @@ $(document).ready(()=>{
 
 
 
-
+//everything to do with showing a list of movies and then showing an individual movie and showing edit and delete
+//I now realize I should have made a series of functions and called them, rather than making this one crazy long thing
 $('#show').on('click', (e) => {
    $.get('/movies')
      .done( (data) => {
@@ -65,14 +66,14 @@ $('#show').on('click', (e) => {
                       $.post('/movies/' +id+'/edit',{showtimes:updateShowtimes})
                       .done((data)=>{
 
-                      })
+                      });
                     });
                     $('.delete').click(function(event){
                       event.preventDefault();
-                      console.log ('press delete!')
-                      $.post('/movies/' +id,{})
+                      console.log ('press delete!');
+                      $.post('/movies/' +id,{});
                     })
-                                      });
+                 });
              });
                //$movies.append($movieDiv);
            });
@@ -108,29 +109,27 @@ $('h1').click(function() {
        var $movieDiv =  $divWithClass.text(el.title).append(a);
         $movies.append($movieDiv);
      });
-});
+   });
 });
 
-$('h2').click(function(){
-  //change this to dynamic like you did before!
-  console.log('h2 where are you?');
-  $.get('/movies/:id/edit')
+$('#search').on('click', function(){
+  console.log ("I'm searching for you!");
+  $.get('/movies/search/:search')
   .done((data)=>{
-    var $movies = $('#movies');
-    $movies.empty();
-    var $input = $('<input>').attr('type','text').attr('name','showtimes').attr('placeholder', 'enter new showtimes');
-    var $buttonSubmit = $('<button>').attr('type','submit').attr('text','submit').text('Submit').addClass('submit');
-    $movies.append($input);
-    $movies.append($buttonSubmit);
-    $('.submit').on('click', function(){
-      console.log ('woot woot')
-    })
-
-      //.done(data)=>{
-        //take it stuff it in the db and then redirect to movie list
+    var $search = $('.search');
+    var $searchValue = $search.val();
+    console.log($searchValue);
   });
-})
+});
+
+
 
 
   //closes $(document).ready
 });
+
+function renderMovies (){
+
+
+
+};

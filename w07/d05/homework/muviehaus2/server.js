@@ -3,13 +3,13 @@
 }());
 
 var bodyParser    = require ('body-parser');
+var db            = require ('./db/pg.js');
+var dotenv        = require ('dotenv');
 var express       = require ('express');
 var morgan        = require ('morgan');
 var path          = require ('path');
 var pgp           = require ('pg-promise');
-var dotenv        = require ('dotenv');
-var db            = require ('./db/pg.js');
-
+var request       = require ('request');
 
 
 var app           = express();
@@ -31,14 +31,19 @@ app.get ('/', (req, res)=>{
   res.render('index');
 });
 
-app.get ('/movies', db.showMovies, (req, res)=>
-{
+app.get ('/movies/search/:search', (req, res)=>{
+  request ({url: 'http://www.omdbapi.com', qs:{s: req.params.search}, json:true}, function(error, response, body){
+      //console.log(body);
+      res.send (body);
+  });
+});
+
+app.get ('/movies', db.showMovies, (req, res)=>{
   res.send (res.rows);
 });
 
 app.get ('/movies/:id/edit', (req, res)=>{
-  console.log ('u did it!');
-  res.send ('u did it!');
+//need this route for single page rendering? I think so
 });
 
 app.post('/movies/:id/edit', db.editMovie, (req, res)=>{
