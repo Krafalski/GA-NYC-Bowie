@@ -36,6 +36,9 @@ app.get ('/movies', db.showMovies, (req, res)=>
   res.send (res.rows);
 });
 
+app.get ('/movies/:id', db.showMovie, (req,res)=>{
+  res.send( res.rows);
+})
 // app.post('/presidents', db.addPresident, (req, res)=>{
 //   res.send (res.rows);
 // });

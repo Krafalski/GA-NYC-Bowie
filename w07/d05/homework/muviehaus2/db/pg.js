@@ -19,7 +19,7 @@ var cn = {
 var db           = pgp(cn);
 
 function showMovies (req, res, next)  {
-  db.any("select * from movies")
+  db.any('select * from movies')
   .then(function(data){
     res.rows= data;
     next();
@@ -29,9 +29,19 @@ function showMovies (req, res, next)  {
   });
 }
 
-function addPresident (req, res, next){
-  //db.any ('INSERT INTO presidents ');
+function showMovie (req, res, next){
+  console.log(req.params);
+  db.any('select * from movies where id = $1',[req.params.id])
+  .then(function(data){
+    res.rows= data;
+    next();
+  })
+  .catch(function(error){
+    console.log(error);
+  });
+
 }
 
 
 module.exports.showMovies = showMovies;
+module.exports.showMovie  = showMovie;
