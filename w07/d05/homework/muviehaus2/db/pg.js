@@ -53,7 +53,20 @@ function editMovie (req, res, next){
   });
 }
 
+function deleteMovie(req, res, next){
+  console.log('delete time!'+ req.params.id);
+  db.any('DELETE FROM movies WHERE id = $1', [req.params.id])
+  .then(function(data){
+    res.rows= data;
+    next();
+  })
+  .catch(function(error){
+    console.log(error);
+  });
+}
+
 
 module.exports.showMovies = showMovies;
 module.exports.showMovie  = showMovie;
 module.exports.editMovie = editMovie;
+module.exports.deleteMovie = deleteMovie;

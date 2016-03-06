@@ -39,16 +39,23 @@ app.get ('/movies', db.showMovies, (req, res)=>
 app.get ('/movies/:id/edit', (req, res)=>{
   console.log ('u did it!');
   res.send ('u did it!');
-})
-
-app.get ('/movies/:id', db.showMovie, (req,res)=>{
-  res.send( res.rows);
-})
-//change back to :id
+});
 
 app.post('/movies/:id/edit', db.editMovie, (req, res)=>{
   res.send( res.rows);
-})
+  res.redirect('/');
+});
+
+app.get ('/movies/:id', db.showMovie, (req,res)=>{
+  res.send( res.rows);
+});
+
+app.post ('/movies/:id', db.deleteMovie, (req, res)=>{
+  console.log ('hitting the delete route!');
+  res.redirect('/');
+});
+
+
 
 var port = process.env.Port || 3000;
 var server = app.listen (port, ()=>

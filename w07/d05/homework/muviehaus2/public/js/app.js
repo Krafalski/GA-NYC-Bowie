@@ -52,23 +52,27 @@ $('#show').on('click', (e) => {
                     var $movieDiv =  $divWithClass.text(el.title).append(img);
                     var $input = $('<input>').attr('type','text').attr('name','showtimes').attr('placeholder', 'enter new showtimes').attr('id','showtimes');
                     var $buttonSubmit = $('<button>').attr('type','submit').attr('text','submit').text('Submit').addClass('submit');
+                    var $buttonDelete = $('<button>').addClass('delete').attr('text', 'submit').text('Delete');
                     $movies.append($input);
                     $movies.append($buttonSubmit);
+                    $movies.append($buttonDelete);
                     $movies.append($movieDiv);
                     $('.submit').click (function(event){
                       event.preventDefault();
                       var $showtimes = $('#showtimes');
                       var updateShowtimes = $showtimes.val();
-                      console.log ($showtimes.val()+ ' this is showtimes');
-                      console.log('woerehwoivnewoeirw  '+ id);
-                      console.log('/movies/' +id+'/edit');
-                      console.log(el.showtimes)
+                      //Thanks Dan Lawrence!!!!
                       $.post('/movies/' +id+'/edit',{showtimes:updateShowtimes})
                       .done((data)=>{
-                        console.log ('this progress is real!');
+
                       })
                     });
-                  });
+                    $('.delete').click(function(event){
+                      event.preventDefault();
+                      console.log ('press delete!')
+                      $.post('/movies/' +id,{})
+                    })
+                                      });
              });
                //$movies.append($movieDiv);
            });
