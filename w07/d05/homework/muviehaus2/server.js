@@ -36,12 +36,19 @@ app.get ('/movies', db.showMovies, (req, res)=>
   res.send (res.rows);
 });
 
+app.get ('/movies/:id/edit', (req, res)=>{
+  console.log ('u did it!');
+  res.send ('u did it!');
+})
+
 app.get ('/movies/:id', db.showMovie, (req,res)=>{
   res.send( res.rows);
 })
-// app.post('/presidents', db.addPresident, (req, res)=>{
-//   res.send (res.rows);
-// });
+//change back to :id
+
+app.post('/movies/:id/edit', db.editMovie, (req, res)=>{
+  res.send( res.rows);
+})
 
 var port = process.env.Port || 3000;
 var server = app.listen (port, ()=>

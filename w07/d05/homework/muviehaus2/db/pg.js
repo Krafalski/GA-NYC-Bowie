@@ -41,7 +41,19 @@ function showMovie (req, res, next){
   });
 
 }
+function editMovie (req, res, next){
+  console.log (' in edit movie pg.js ' +req.params);
+  db.any('UPDATE movies SET showtimes=$1 where id=$2',[req.body.showtimes, req.params.id])
+  .then(function(data){
+    res.rows= data;
+    next();
+  })
+  .catch(function(error){
+    console.log(error);
+  });
+}
 
 
 module.exports.showMovies = showMovies;
 module.exports.showMovie  = showMovie;
+module.exports.editMovie = editMovie;
