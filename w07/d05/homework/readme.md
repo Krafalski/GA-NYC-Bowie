@@ -1,4 +1,4 @@
-# Movie Haus 3.0
+# Movie Haus 2.0
 
 Gerard Von Schtieffel discovered Asynchronous Javascript and XML (AJAX) last night and is demanding that this Movie Hous Application be upgraded to be a single-page app so that it never has to load the site more than once.
 
