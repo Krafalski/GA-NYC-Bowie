@@ -1,5 +1,15 @@
 //alert ('time to do stuff!');
 
+var todos =
+[{task: 'walk the dog', done:'false'},
+{task: 'do laundry', done:'false'},
+{task: 'buy milk', done:'false'},
+{task: 'give cat medication', done:'false'},
+{task: 'sort mail', done:'false'}];
+
+
+
+
 const ListBuilder = React.createClass({
   render:function(){
     return(
