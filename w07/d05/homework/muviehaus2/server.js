@@ -31,6 +31,10 @@ app.get ('/', (req, res)=>{
   res.render('index');
 });
 
+app.get ('/movies', db.showMovies, (req, res)=>{
+  res.send (res.rows);
+});
+
 app.get ('/movies/search/:search', (req, res)=>{
   request ({url: 'http://www.omdbapi.com', qs:{s: req.params.search}, json:true}, function(error, response, body){
       //console.log(body);
@@ -38,9 +42,6 @@ app.get ('/movies/search/:search', (req, res)=>{
   });
 });
 
-app.get ('/movies', db.showMovies, (req, res)=>{
-  res.send (res.rows);
-});
 
 app.get ('/movies/:id/edit', (req, res)=>{
 //need this route for single page rendering? I think so

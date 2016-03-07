@@ -75,7 +75,7 @@ $('#show').on('click', (e) => {
                     })
                  });
              });
-               //$movies.append($movieDiv);
+               $movies.append($movieDiv);
            });
          });
         $movies.append($movieDiv);
@@ -84,14 +84,7 @@ $('#show').on('click', (e) => {
 });
 
 
-
-// $('h1').on('click', (e)=>{
-//   var clickElement = e.target;
-//   var captureClass = $(this).attr('class');
-//   console.log(e.target.className);
-//   alert(e.target.attr('class'));
-// })
-
+//experiments with a non-dynamic piece to eventually move into a dynamic portion when this works
 $('h1').click(function() {
     $.get('/movies/1')
    .done((data)=>{
@@ -103,7 +96,6 @@ $('h1').click(function() {
        var id = el.id;
        var $divWithClass = $div.addClass('showMovies').attr('id',id);
        var href = '/movies/'+el.id;
-       var id = el.id;
        var a = $('<a>').attr('href',href);
        a.append( $('<img>').attr('src', el.img_url) );
        var $movieDiv =  $divWithClass.text(el.title).append(a);
@@ -119,6 +111,16 @@ $('#search').on('click', function(){
     var $search = $('.search');
     var $searchValue = $search.val();
     console.log($searchValue);
+  $.post('/movies/search'+ $searchValue, {})
+  .done(data);
+  var $movies = $('#movies');
+  console.log(data.Search[0]);
+  var $ul = $('<ul>')
+  $movies.append($ul)
+  data.Search.forEach(function(el){
+    var $li = $('<li>').text(el.Title)
+     $ul.append($li);
+  });
   });
 });
 
@@ -127,7 +129,7 @@ $('#search').on('click', function(){
 
   //closes $(document).ready
 });
-
+//when refactoring, I would put jQuery stuff in here to render the list of movies and be able to call it again and again as needed
 function renderMovies (){
 
 
