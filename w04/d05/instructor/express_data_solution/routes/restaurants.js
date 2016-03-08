@@ -12,7 +12,7 @@ restaurants.get('/', function(req, res) {
 
 restaurants.get('/:zip', (req,res)=>{
   req.query.zipcode = req.params.zip;
-  request.get({url:restaurantRemoteData, qs:req.query}, parseData.bind(res) )
+  request.get({url:restaurantRemoteData, qs:req.query.zipcode}, parseData.bind(res) )
 })
 
 module.exports = restaurants;
@@ -36,8 +36,8 @@ function parseData( err,res,body){
  		// (a==b) => 0
 
     // lets always present in reverse order
-    var d2 = new Date(a.inspection_date);
- 		var d1 = new Date(b.inspection_date);
+    var d2 = new Date(b.inspection_date);
+ 		var d1 = new Date(a.inspection_date);
 
  		// they're in order, no swapping
  		if(d1<d2) return -1

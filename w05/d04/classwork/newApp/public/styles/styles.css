@@ -1,0 +1,21 @@
+.container {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  max-width: 900px;
+}
+
+ul {
+  list-style-type: none;
+  border: 1px solid dodgerblue;
+  padding:0;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+li{
+  font-size: 10px;
+  /*letter-spacing: ;*/
+}

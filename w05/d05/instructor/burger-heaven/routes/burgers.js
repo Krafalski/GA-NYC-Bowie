@@ -19,25 +19,25 @@ burgers.route('/')
 
   	// redirect to the new item (in a db, you'd return the new id)
   	var newID = burgerData.length-1;
-  	res.redirect('./'+ newID)	
+  	res.redirect('./'+ newID)
   })
 
 /* show create burger form*/
 burgers.get('/new', (req,res)=>
-	res.render('pages/burger_edit', { 
-    burgerForm:{ 
+	res.render('pages/burger_edit', {
+    burgerForm:{
       title:'Create your Dream Burger',
-      burgerURL:'/burgers/', 
+      burgerURL:'/burgers/',
       submitMethod:'post'
     }
   })
 )
 /*show edit form for one burger*/
 burgers.get('/:burgerID/edit', (req,res)=>
-	res.render('pages/burger_edit', { 
-    burgerForm:{ 
+	res.render('pages/burger_edit', {
+    burgerForm:{
       title:'Edit your Dream Burger',
-      burgerURL:'/burgers/'+ req.params.burgerID+'?_method=PUT', 
+      burgerURL:'/burgers/'+ req.params.burgerID+'?_method=PUT',
       submitMethod:'post'
     }
   })
@@ -61,7 +61,7 @@ burgers.route('/:burgerID')
   .put((req,res)=>{
     var bID = req.params.burgerID;
     console.log("PUUUUUUUT", req.body)
-    // if we don't have a burger there, let's 
+    // if we don't have a burger there, let's
     if(!(bID in burgerData)){
       res.sendStatus(404);
       return;
