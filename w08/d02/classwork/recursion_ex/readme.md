@@ -71,3 +71,16 @@ are also provided with a helper function `drawTriangle(x1, y1, x2, y2,
 x3, y3, color)` which you can use to draw a triangle with vertices
 `(x1, y1)`, `(x2, y2)`, `(x3, y3)`. Write a recursive function
 `sierpinski` which recursively builds the triangles. 
+
+#### Real Life
+
+Recursion is most often used when traversing trees. One tree structure
+we've used extensively is actually the DOM. All the DOM selector
+methods are implemented recursively. Construct a `walkTheDOM(node, func)` function
+which takes two arguments: `node` is the node to start from, and
+`func` is a callback which is to be be called on each node. Traverse
+the DOM tree and call `func` on each node. Use the `walkTheDOM`
+function to write a function `getElementByAttribute` which returns an
+array of DOM elements which have a particular attribute.
+
+
