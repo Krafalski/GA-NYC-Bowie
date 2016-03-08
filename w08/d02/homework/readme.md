@@ -29,10 +29,25 @@ HINT: Use
 to measure time. It is not precise in terms of time keeping but is
 good enough for our purposes. 
 
-## Persistent TODO app
-
+## Finish TODO app
 Finish / polish yours (or Jason's) todo app. Make sure you understand
-how it works. Make sure you can create, update, read and delete tasks.
+how it works. Make sure you can create, update, read and delete
+tasks. Allow for users to mark a task as done, or return a done task
+to the pending tasks list, or delete entirely from the completed list.
+
+## Tasks time logger
+
+Now use the power of the *component* paradime to integrate your the
+stopwatch functionality you already built into your todo app. Allow for users
+to start and stop different timers for each task in order to keep a
+log of how much time is spent on a task. 
+
+Congratulations! Now you can keep track of exactly how much time you
+spend on homework!!! 
+
+## Bonus
+
+Let's persist you data!
 
 Go back to express and build a database, and create the 4 main REST
 routes for cruding tasks
@@ -47,14 +62,12 @@ to make sure the routes a working properly.
 
 Use AJAX in your react app to persist your tasks to the database. 
 
-## Tasks time logger
+HINT: You will need to use more
+[lifecycle methods](https://facebook.github.io/react/docs/component-specs.html). You
+might find this useful: [diagram](http://codepen.io/eduardoboucas/pen/jqWbdb).
 
-Now use the power of the *component* paradime to integrate your the
-stopwatch functionality you already built into your todo app. Allow for users
-to start and stop different timers for each task in order to keep a
-log of how much time is spent on a task. First implement it only on
-the front end after which modify your backend schema to allow for
-persistence of the time spent on tasks. 
+### Ultra bonus
 
-Congratulations! Now you can keep track of exactly how much time you
-spend on homework!!! 
+Build a react component nav bar, which allows you to switch to
+different todo lists, based on context (just like the GTD
+philosophy), such as `Work`, `Home`, `Errand`, `Call`. 
