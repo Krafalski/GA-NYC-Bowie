@@ -1,0 +1,17 @@
+body{
+  background-color: #374247;
+}
+
+#movies {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+button {
+  display: block;
+}
+
+img {
+  max-width:300px;
+  max-height:500px;
+}
