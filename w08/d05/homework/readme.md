@@ -1,6 +1,6 @@
 # Movie Haus 3.0
 
-![movie](http://gph.is/1b0y7Nd)
+![movie](http://i.giphy.com/UDjF1zMreMld6.gif)
 
 Gerard von Schtieffel just came back from a month long trip to San
 Fran, where he was looking for investors for his new Netflix-like
