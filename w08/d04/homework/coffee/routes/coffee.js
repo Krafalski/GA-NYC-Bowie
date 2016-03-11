@@ -8,9 +8,24 @@ coffee.route('/')
  .get(db.showCoffee, (req, res)=>{
    res.send(res.rows)
  })
- .post( (req,res)=>{
-   //add a coffee to the list
+ .post(db.addCoffee, (req,res)=>{
+   res.json(res.rows);
  })
+
+
+coffee.route('/')
+// .get(db.addCoffee, (req, res)=>{
+//   res.send(res.rows)
+// })
+
+
+
+
+coffee.route('/')
+ .get(db.showCoffee, (req, res)=>{
+   res.send(res.rows)
+ })
+
 
 
 module.exports = coffee;

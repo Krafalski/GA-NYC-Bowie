@@ -25,5 +25,21 @@ function showCoffee( req, res, next){
   });
 }
 
+function addCoffee( req, res, next){
+  console.log('showCoffee!');
+  db.one('INSERT INTO coffee (coffee_name, coffee_price) VALUES ($1, $2)',[req.body.coffee_name, req.body.coffee_price])
+  .then(function(data){
+    res.rows = data;
+    console.log('success');
+    next();
+  })
+  .catch(function(error){
+    console.log(error);
+  });
+}
+
+
+
 
 module.exports.showCoffee = showCoffee;
+module.exports.addCoffee = addCoffee;
