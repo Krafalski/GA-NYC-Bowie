@@ -9,13 +9,10 @@ const Button = React.createClass ({
     );
 }
 });
-
-
 const MovieSearch = React.createClass ({
   handleSubmit : function (event){
     event.preventDefault();
     console.log ('i clicked it!')
-
     var searchText = {
       searchText : this.refs.searchText.value
     }
@@ -23,7 +20,6 @@ const MovieSearch = React.createClass ({
     this.refs.movieSearch.reset()
   },
   render: function () {
-
     return (
       <form ref="movieSearch" onSubmit={this.handleSubmit} >
         <input type="text" id="search" ref="searchText" placehoder="Search movies" />
@@ -32,57 +28,66 @@ const MovieSearch = React.createClass ({
     )
   }
 })
+const MovieRow = React.createClass({
+  render : function () {
+    console.log(this.props.movie.img_url, 'in movie row')
+    return(
+      <div>
+      <a href={this.props.movie.id}><li> {this.props.movie.title}</li>
+      <img src={this.props.movie.img_url} />
+      </a></div>
+    )
+  }
+})
+const MovieList = React.createClass({
+  render: function (){
+   var movies = this.props.details.movies; //I changed this from this.props.movies;
+  //  if (movies===undefined){
+  //    return (<h1> arg! </h1>)}
+  //  console.log(movies, "in movie list")
+    return(
 
-// const Movie = React.createClass({
-//   render: function(){
-//     var movie;
-//     return (
-//       <li> {this.props.details.title}</li>
-//     )
-//   }
-// })
-//
-// const MovieList = React.createClass({
-//   render: function(){
-//     return( <div> movies<div/>)
-//   }
-//
-// })
-
+      <ul>
+        <MovieRow movie={this.props.details} />
+      </ul>
+    )
+}
+})
 const App = React.createClass({
   getInitialState: function() {
-    return {movies:{}};
+    return {
+      movies: {}
+    };
   },
-  componentDidMount : function(){
+  componentWillMount : function(){
     $.get('/movies').done( data =>{
       data.forEach( el=> {
         this.state.movies[el.id]= el;
       });
-
       this.setState({movies:this.state.movies});
-    });
+    })
   },
-
-  renderMovie : function (key){
-    return (
-      <Movie key={key} index={key} details={this.state.movies[key]} />
+  /* This is added */
+  renderMovie: function(key){
+    return(
+      <MovieList details={this.state.movies[key]} />
     )
   },
-
-      render : function (){
-console.log(this.state.movies)
+  render : function (){
+        console.log(this.state.movies , ' in App')
         return(
           <div>
-
             <h1> Hello World! </h1>
             <MovieSearch />
-
-
-
+            {/*<MovieList movies={this.state.movies} />*/}
+            {/* I added this... */}
+            <ul>
+              {Object.keys(this.state.movies)
+                .map(this.renderMovie)}
+            </ul>
+            {/* - - - */}
           </div>
         )
     }
-
 })
-
 ReactDOM.render(<App />, document.querySelector('#container'));
