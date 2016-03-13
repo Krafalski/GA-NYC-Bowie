@@ -28,12 +28,16 @@ const MovieSearch = React.createClass ({
     )
   }
 })
+//http://stackoverflow.com/questions/31567729/how-to-create-dynamic-href-in-react-render-function
 const MovieRow = React.createClass({
+  handleSubmit : function(event){
+    console.log("i clickedit!")
+  },
   render : function () {
     console.log(this.props.movie.img_url, 'in movie row')
     return(
       <div>
-      <a href={this.props.movie.id}><li> {this.props.movie.title}</li>
+      <a href={'movies/'+this.props.movie.id} onClick={this.handleSubmit}><li> {this.props.movie.title}</li>
       <img src={this.props.movie.img_url} />
       </a></div>
     )
