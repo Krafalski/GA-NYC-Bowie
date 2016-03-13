@@ -1,15 +1,63 @@
-//alert ('coooooffffeeeeeee');
+const Coffee = React.createClass({
+  //render one coffee with price to be passed to CoffeeList
 
-const Button = React.createClass({
-  render: function(){
+  render: function (){
+    console.log(this.props, ' in Coffee')
     return(
-      <button onClick={this.props.action}>
-      {this.props.name}
-      </button>
-    );
+      <li key={this.props.coffee_id}> {this.props.coffeeData}</li>
+    )
   }
 });
 
+
+const CoffeeList = React.createClass({
+
+
+
+    render : function (){
+        console.log(el.coffeeData.coffee_name + " in coffee list")
+    return (
+      <Coffee key={el.coffee_id} coffeeData={el}/>
+    )
+  }},
+
+  // pull from Coffee Row and make a list of all the coffees
+  render: function(){
+    var result = this.props.coffee;
+    console.log(result);
+    return(
+      <ol>
+        Coffee List
+        {
+          Object.keys(result).map(this.renderLi)
+        }
+      </ol>
+    )
+  }
+})
+
+const CoffeeForm = React.createClass({
+  handleSubmit : function (event){
+    event.preventDefault();
+
+    var newCoffee ={
+      coffee_name: this.refs.coffee_name.value,
+      coffee_price: this.refs.coffee_price.value
+    }
+
+    this.props.addCoffee(newCoffee)
+    this.refs.coffeeForm.reset()
+  },
+  render: function (){
+    return(
+      <form ref="coffeeForm" onSubmit={this.handleSubmit}>
+        <input type="text" id="coffee" ref="coffee_name" placeholder="coffee" />
+        <input type="text" id="price" ref="coffee_price" placeholder="price" />
+        <button name='Enter New Coffee'>submit</button>
+      </form>
+    )
+  }
+})
 
 
 const App = React.createClass({
@@ -18,6 +66,7 @@ const App = React.createClass({
       coffee: {}
     };
   },
+
   componentDidMount:function(){
     $.get('/coffee').done( data =>{
       data.forEach( el=> {
@@ -28,40 +77,41 @@ const App = React.createClass({
     })
   },
 
-editButtonAction    : function(){
-  console.log('this will be the put route')
-},
-deleteButtonAction  : function(){
-  console.log('this will be the delete route')
-},
-submitButtonAction  : function(){
-  var newCoffee ={
-    coffee_name: this.refs.coffee_name.value,
-    coffee_price: this.refs.coffee_price.value
-  }
+  editButtonAction    : function(){
+    console.log('this will be the put route')
+  },
 
+  deleteButtonAction  : function(){
+    console.log('this will be the delete route')
+  },
 
-  console.log('this will be the submit route', newCoffee)
+  addCoffee  : function(newCoffee){
+      $.post('/coffee', newCoffee)
+        .done( () => {
+          this.state.coffee['sd'] = newCoffee
+        })
+        this.setState({coffee: this.state.coffee});
+  },
 
-//reset does not work
-  // this.refs.coffee_name.reset();
-  // this.refs.coffee_price.reset();
-},
-
-
-  render : function (){
+  render : function() {
     return(
       <div>
-      <h1> heyeyeeyeyeyyyyy U want cOfFeE? </h1>
-      <input type="text" id="coffee" ref="coffee_name" placeholder="coffee" />
-      <input type="text" id="price" ref="coffee_price" placeholder="price" />
-      <Button name='Enter New Coffee' action={this.submitButtonAction}/>
+        <h6>coffee </h6>
+        {/* Our components are kind of like the following:
+            1. fancy html elements with props (an object) written
+            as html attributes
+            2. constructor functions
+              new CoffeeForm(this.addCoffee)
+                this.props = {}
+                this.props[arg1] = arg1
+
+        */}
+        <CoffeeForm addCoffee={this.addCoffee}/>
+        <CoffeeList coffee={this.state.coffee}/>
+        {/*<CoffeeList coffee={this.state.coffee} />*/}
       </div>
     )
   }
-
-
-
 })
 
 
