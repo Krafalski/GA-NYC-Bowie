@@ -1,5 +1,4 @@
 
-
 const Button = React.createClass ({
   render: function(){
     return (
@@ -31,24 +30,23 @@ const MovieSearch = React.createClass ({
 //http://stackoverflow.com/questions/31567729/how-to-create-dynamic-href-in-react-render-function
 const MovieRow = React.createClass({
   handleSubmit : function(event){
-    console.log("i clickedit!")
-  },
+    console.log("i clickedit!", this.props.movie);
+    var movieId = this.props.movie.id;
+    this.state.movies = this.props.movie;
+    this.setState({movies:this.state.movie});},
   render : function () {
     console.log(this.props.movie.img_url, 'in movie row')
     return(
-      <div>
-      <a href={'movies/'+this.props.movie.id} onClick={this.handleSubmit}><li> {this.props.movie.title}</li>
+      <div onClick={this.handleSubmit}>
+      <li> {this.props.movie.title}</li>
       <img src={this.props.movie.img_url} />
-      </a></div>
+      </div>
     )
   }
 })
 const MovieList = React.createClass({
   render: function (){
-   var movies = this.props.details.movies; //I changed this from this.props.movies;
-  //  if (movies===undefined){
-  //    return (<h1> arg! </h1>)}
-  //  console.log(movies, "in movie list")
+   var movies = this.props.details.movies;
     return(
 
       <ul>
@@ -57,6 +55,23 @@ const MovieList = React.createClass({
     )
 }
 })
+
+const MuvieHausBanner = React.createClass({
+    handleClick : function (event){
+      event.preventDefault();
+      console.log ('yay click!')
+    $.get('/movies').done( data =>{
+      data.forEach( el=> {
+        this.state.movies[el.id]= el;
+      });
+      this.setState({movies:this.state.movies});
+    })},
+      render : function (){
+      return(  <h1 onClick={this.handleClick}> MüvieHaus</h1>)
+  }
+  }
+)
+
 const App = React.createClass({
   getInitialState: function() {
     return {
@@ -71,7 +86,7 @@ const App = React.createClass({
       this.setState({movies:this.state.movies});
     })
   },
-  /* This is added */
+  /* This is added by Arthur*/
   renderMovie: function(key){
     return(
       <MovieList details={this.state.movies[key]} />
@@ -81,10 +96,9 @@ const App = React.createClass({
         console.log(this.state.movies , ' in App')
         return(
           <div>
-            <h1> Hello World! </h1>
-            <MovieSearch />
-            {/*<MovieList movies={this.state.movies} />*/}
-            {/* I added this... */}
+            <MuvieHausBanner />
+            <MovieSearch movies={this.state.movies}/>
+            {/* Arthor added this... */}
             <ul>
               {Object.keys(this.state.movies)
                 .map(this.renderMovie)}
