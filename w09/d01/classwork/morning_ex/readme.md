@@ -4,7 +4,7 @@ This morning you will explore a few of Google's APIs.
 
 1. First register for the Google Developer Console.
 2. Register a new application.
-3. Generate an API key and enable Google's Geolocation API.
+3. Generate an API key and enable Google's Goecoding API.
 4. Test that your API key works, by requesting the Geolocation for your home address through Postman or the Browser.
 5. Write a simple express application which takes an address from an input field and uses AJAX, to get the Geolocation from your server and display in in the browser. Use good coding practices:
    - load any sensitive information using `dotenv`
