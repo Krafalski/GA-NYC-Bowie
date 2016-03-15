@@ -9,14 +9,14 @@ function binding, chaining, front - end templates etc.
 Split up into your assigned project groups. Each group will focus on
 researching the following underscore methods:
 
-1. `each`
-2. `map`, `pluck`
-3. `find`, `findWhere`: 
-4. `filter`, `reject`
-5. `every`, `some`, `contains`
-6. `uniq`
-7. `shuffle`
-8. `range`
+1. `each`: Diamond Dogs
+2. `map`, `pluck`: PEBbles
+3. `find`, `findWhere`: NoCommit
+4. `filter`, `reject`: Sprinkle
+5. `every`, `some`, `contains`: Seif&Sound
+6. `uniq`: DropThatDatabase
+7. `shuffle`: MergeConflict
+8. `range`: Gitgardeners
 
 Produce a write up of your findings. Include at minimum the following sections:
 
