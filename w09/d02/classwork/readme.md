@@ -15,7 +15,7 @@ researching the following underscore methods:
 4. `filter`, `reject`: Sprinkle
 5. `every`, `some`, `contains`: Seif&Sound
 6. `uniq`: DropThatDatabase
-7. `shuffle`: MergeConflict
+7. `shuffle`: EDD
 8. `range`: Gitgardeners
 
 BONUS: `once`, `negate`, `times`, `memoize` 
