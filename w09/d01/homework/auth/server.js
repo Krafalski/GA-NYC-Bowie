@@ -1,5 +1,6 @@
 pry               = require ('pryjs');
 const bodyParser  = require ('body-parser');
+const dotenv      = require ('dotenv')
 const express     = require ('express');
 const morgan      = require ('morgan');
 const path        = require ('path');

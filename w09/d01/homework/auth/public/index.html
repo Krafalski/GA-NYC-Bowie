@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Auth</title>
+  <title>User Sessions</title>
+  <link rel="stylesheet" href="css/styles.css">
+    <!-- compiler lets us use es6 -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
+    <!-- requires react -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.min.js"></script>
+    <!-- react is in components and we need this piece -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.min.js"></script>
+    <!-- reuires jquery will need it if want to use ajax-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-  <h1>authentication</h1>
+<h3>user sessions!</h3>
+<form action="/users" method="post">
+  <label for="email">email</label>
+  <input type="text" name="email">
+  <label for="password">password</label>
+  <input type="text" name="password">
+
+  <input type="submit" value="Submit">
+</form>
+
+
+<form action="/users/login" method="post">
+  <label for="email">email</label>
+  <input type="text" name="email">
+  <label for="password">password</label>
+  <input type="text" name="password">
+
+  <input type="submit" value="Submit">
+</form>
+
+
+  <script type="text/babel" src="/js/script.js"></script>
+    <script type="text/babel" src="/js/app.js"></script>
+      <script type="text/babel" src="/js/auth.js"></script>
 </body>
 </html>

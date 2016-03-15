@@ -4,7 +4,7 @@ var cn            = {
   port            : 5432,
   database        : 'session',
   user            : 'karolinrafalski',
-  password        : 'Czm2125hon'
+  password        : process.env.DB_PASSWORD
 };
 
 const bcrypt      = require ('bcrypt');

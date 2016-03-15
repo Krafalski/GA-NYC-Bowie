@@ -6,6 +6,14 @@ const jwt           = require ('jsonwebtoken');
 const secret        = 'secret';
 const users         = express.Router();
 
+users.use(function (error, request, response, next) {
+  if (error.name === 'UnauthorizedError') {
+    response.status(401).json({message: 'You need an authorization token to view confidential information.'});
+  }
+});
+
+users.use('/me', expressJWT({secret: secret}));
+
 users.get('/', (req, res) => {
   res.json({data : 'success'})
 })
