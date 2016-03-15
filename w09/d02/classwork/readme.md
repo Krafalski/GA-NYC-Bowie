@@ -18,6 +18,8 @@ researching the following underscore methods:
 7. `shuffle`: MergeConflict
 8. `range`: Gitgardeners
 
+BONUS: `momoize`, `once`
+
 Produce a write up of your findings. Include at minimum the following sections:
 
 1. What does the function do? Explain it in your own way and don't
