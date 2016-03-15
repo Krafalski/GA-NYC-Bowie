@@ -18,7 +18,7 @@ researching the following underscore methods:
 7. `shuffle`: MergeConflict
 8. `range`: Gitgardeners
 
-BONUS: `momoize`, `once`
+BONUS: `once`, `negate`, `times`, `memoize` 
 
 Produce a write up of your findings. Include at minimum the following sections:
 
