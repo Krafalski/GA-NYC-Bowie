@@ -1,0 +1,21 @@
+<%= form_for @song do |f| %>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %><br><br>
+
+  <%= f.label :artist %><br>
+  <%= collection_select(:song, :artist_id, @artists, :id, :name) %><br><br>
+
+  <%= f.label :artwork %><br>
+  <%= f.text_field :artwork %><br><br>
+
+  <%= f.label :preview_url %><br>
+  <%= f.text_field :preview_url %><br><br>
+
+  <%= f.label :album %><br>
+  <%= f.text_field :album %><br><br>
+
+  <%= f.label :price %><br>
+  <%= f.number_field :price %><br><br>
+
+  <%= f.submit %>
+<% end %>
