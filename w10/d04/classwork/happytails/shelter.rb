@@ -1,3 +1,4 @@
+
 class Shelter
   attr_reader:clients
   attr_reader:animals

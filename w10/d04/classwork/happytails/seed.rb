@@ -1,3 +1,4 @@
+
 happytails = Shelter.new ("Happy Tails")
 
 wolfy = Animal.new "Wolfy", "Wolf"

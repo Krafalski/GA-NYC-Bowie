@@ -1,3 +1,4 @@
+
 class Animal
   attr_reader:name
   def initialize (name, species)
