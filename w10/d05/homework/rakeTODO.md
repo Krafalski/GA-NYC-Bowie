@@ -1,3 +1,4 @@
+...
 app/controllers/application_controller.rb:
   * [ 6] [TODO] what is happening here? authenticate method
   Checks if there is a session that has a value (not nil, when a user logs out the value is set to nil, or starts out as nil.  If there is no value for session then redirect to new user path).
