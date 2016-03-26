@@ -1,0 +1,20 @@
+<h2><%= @playlist.name %> </h2>
+<% @playlist.songs.each do |song| %>
+    <%= render partial: 'songs/song', locals: {song: song , player: true, edit: false, playlist: @playlist} %>
+<% end %>
+
+<div >
+  <form action="/playlists/<%= @playlist.id %>/add_song" method="post">
+    <input type="hidden" name="_method" value="put">
+    <select name="song_id">
+      <% @songs.each do |song| %>
+        <option value="<%= song.id %>"><%= song.title %></option>
+      <% end %>
+    </select><br><br>
+    <input type="submit" value="Add Track">
+  </form>
+</div>
+<%= link_to 'Edit', edit_playlist_path(@playlist) %> |
+<%= link_to 'All playlists', playlists_path %>
+<br>
+<%= link_to "Delete", playlist_path(@playlist), method: :delete %>

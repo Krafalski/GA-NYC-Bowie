@@ -1,0 +1,8 @@
+<%= link_to "Add a new playlist?", new_playlist_path %>
+<% @playlists.each do |playlist| %>
+  <h3>
+    <%= playlist.name %>
+    <% #TODO link_to? %>
+    <%= link_to "View", playlist_path(playlist)  %>
+  </h3>
+<% end %>
