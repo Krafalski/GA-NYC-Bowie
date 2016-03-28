@@ -23,7 +23,7 @@ app/controllers/playlists_controller.rb:
 
 app/controllers/sessions_controller.rb:
   * [ 3] [TODO] Explain sessions in Rails
-  user is the username in the params  and hten if the user and password match then the user session is set to the current user id and they are redirected to the artists path.
+  user is the username in the params  and then if the user and password match then the user session is set to the current user id and they are redirected to the artists path.
   Otherwise they ar redirected to the splash path - which is a path I am having a hard time finding- I am guessing it is the login page?
 
   another thing is that the session can be destroyed which will end the session by setting the session value to nil and redirects to the root path which is localhost:3000 in config/routes.rb it is "users#new"  and displays the users.new.htm.erb partial inside application.html.erb
@@ -40,7 +40,7 @@ app/models/playlist.rb:
    remove this/self song if the song is in the playlist
 
 app/views/artists/_artist.html.erb:
-  * [ 2] [TODO] Whats going on with this partial?? why isn't it an instance variable- depening if it is on the route /artists or artists/:id. WILD GUESS : from artists/index.html.erb  <%= render @artists%> tells this partial to render each artist via magic?? When the user is at /artists/:id then the specific artist will render- based on the if/else statement.
+  * [ 2] [TODO] Whats going on with this partial?? why isn't it an instance variable- depening if it is on the route /artists or artists/:id. WILD GUESS : from artists/index.html.erb  <%= render @artists%> tells this partial to render each artist via magic?? When the user is at /artists/:id then the specific artist will render- based on the if/else statement. In trying to code this for my own app- it seems that in index.html where <%= @artist %> is- it LOOKS SPECIFICALLY for a partial named _artist.html.erb where it then does a kind of foreach loop generating all the items from the artist table. 
 
 app/views/artists/new.html.erb:
   * [ 2] [TODO] what's this render partial syntax?   <%= render partial: 'form'%> this will render _form.html.erb. The _ seems to mean partial?
