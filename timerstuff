@@ -1,0 +1,49 @@
+//stopwatch in console
+
+'use strict';
+
+function Timer (){
+ this.time =0;
+ this.name = name
+
+ let timerId;
+
+ let tick =()=>{
+  this.time +=0.1;
+  this.display.upate(this.time);
+ }
+}
+
+  this.start =()=>{
+   if (!timerId){
+   timerId = setInterval(function(){
+    tick();
+   }, 100);
+   }
+  };
+
+  this.stop =()=>{
+    clearInterval(timerId);
+    timerId = undefined;
+  };
+
+  this.reset=() ={
+  this.time =0;
+  this.stop();
+  this.display.update(this.time);
+  }
+
+  var timertest = new Timer
+
+function PlainTimer =(name){
+  this.time =0;
+  this.name =name;
+
+  var timerId;
+
+  var tick = function (){
+  this.time +=0.1;
+  
+  }
+
+}

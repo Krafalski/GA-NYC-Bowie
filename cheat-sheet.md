@@ -8,6 +8,10 @@ rake db:drop
 rake db:migrate
 rake db:create
 
+edit: may need to run:
+bundle exec rake db:drop
+if there are errors
+
 to see the notes run 
 rake notes
 

@@ -1,5 +1,5 @@
 
-<% #TODO Whats going on with this partial?? why isn't it an instance variable %>
+<% #TODO Whats going on with this partial?? why isn't it an instance variable : this is rendering the instance variables- depening if it is on the route /artists or artists/:id%>
 
 <div class="artist-all">
   <h1><%= artist.name %></h1>
@@ -9,9 +9,9 @@
   <p><%= artist.nationality %></p>
   <p>
     <% if params[:id] %>
-      <%= link_to "Edit", edit_artist_path(artist) %>
+      <%= link_to "Edit ?!?!?!", edit_artist_path(artist) %>
     <% else %>
-      <%= link_to "View", artist_path(artist) %>
+      <%= link_to "View!!!!!!!", artist_path(artist) %>
     <% end %>
   </p>
 </div>

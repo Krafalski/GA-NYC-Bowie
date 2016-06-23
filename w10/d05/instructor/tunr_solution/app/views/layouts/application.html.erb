@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>TunrApp</title>
-    <% #TODO Stylesheet link tags? %>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -16,7 +16,7 @@
       <%= link_to "Logout", sessions_path, method: :delete %>
       <% else %>
       <p>Already A Memeber</p>
-      <% #TODO what's a form_tag for %>
+      <% #TODO what's a form_tag for-this create a form %>
       <%= form_tag(sessions_path) do%>
       <%= label_tag :username %>:
       <%= text_field_tag :username %>

@@ -15,10 +15,10 @@ https://github.com/rspec/rspec-rails
 NyanCat Formatter:
 https://github.com/mattsears/nyan-cat-formatter
 
-Factory Girl: 
+Factory Girl:
 
 https://github.com/thoughtbot/factory_girl
 
-Faker Library: 
+Faker Library:
 
-https://github.com/stympy/fakerw11/d02/instructor
+https://github.com/stympy/faker

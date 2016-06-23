@@ -15,26 +15,27 @@ const CoffeeList = React.createClass({
 
 
     render : function (){
-        console.log(el.coffeeData.coffee_name + " in coffee list")
+      var coffeeData = this.props.coffee;
+        console.log(coffeeData.id + " in coffee list")
     return (
-      <Coffee key={el.coffee_id} coffeeData={el}/>
+     <p>sigh</p>
     )
-  }},
-
+  }})
+  // <Coffee key={el.coffee_id} coffeeData={el}/>
   // pull from Coffee Row and make a list of all the coffees
-  render: function(){
-    var result = this.props.coffee;
-    console.log(result);
-    return(
-      <ol>
-        Coffee List
-        {
-          Object.keys(result).map(this.renderLi)
-        }
-      </ol>
-    )
-  }
-})
+  // render: function(){
+  //   var result = this.props.coffee;
+  //   console.log(result);
+  //   return(
+  //     <ol>
+  //       Coffee List
+  //       {
+  //         Object.keys(result).map(this.renderLi)
+  //       }
+  //     </ol>
+  //   )
+  // }
+// })
 
 const CoffeeForm = React.createClass({
   handleSubmit : function (event){
