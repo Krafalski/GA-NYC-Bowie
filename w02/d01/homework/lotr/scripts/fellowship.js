@@ -17,78 +17,31 @@ var buddies = [
 ];
 
 // Our Setting
-var lands = ['The Shire', 'Rivendell', 'Mordor'];
-console.log(lands[0]);
+var lands = ['The-Shire', 'Rivendell', 'Mordor'];
 
 // Starter code for the body
 var body = document.querySelector('body');
+var overlay = document.querySelector('overlay');
 
 function makeMiddleEarth() {
     // create a section tag with an id of middle-earth
-    middleEarth = document.createElement('section');
-    console.log(middleEarth);
+    var section = document.createElement('section');
+    section.setAttribute('id','middle-earth');
     // add each land as an article tag (add them one by one in a loop)
-
+    for (var i = 0; i < lands.length; i++){
+      var article = document.createElement('article');
+      article.classList.add(lands[i]);
+      var h1 = document.createElement('h1');
+      h1.innerHTML = lands[i];
+      article.appendChild(h1);
+      body.appendChild(article);
     }
-
-    makeMiddleEarth();
-
-    // append middle-earth to your document body
-    body.appendChild(middleEarth);
-
-////////////////
-  for (i=0; i<lands.length; i++) {
-    articleTag = document.createElement('article');
     // inside each article tag include an h1 with the name of the land
-    headline1 = document.createElement('h1');
-    varHeadlineFilled= headline1.innerText = lands[i];
-    articleTag.appendChild(headline1);
     // each article should also have a class equal to it's name ('The Shire' element should have a class of 'The Shire')
-    articleTag.className = lands[i];
-    middleEarth.appendChild(articleTag);
+    // append middle-earth to your document body
 };
 
-/////////////
-
-
-
-
-//
-// //////////////
-//
-//     articleTag = document.createElement('article');
-//     // inside each article tag include an h1 with the name of the land
-//     console.log(articleTag);
-//     headline1 = document.createElement('h1');
-//     console.log(headline1);
-//     varHeadlineFilled= headline1.innerText = lands[1];
-//     console.log(varHeadlineFilled);
-//     articleTag.appendChild(headline1);
-//     // each article should also have a class equal to it's name ('The Shire' element should have a class of 'The Shire')
-//     articleTag.className = lands[1];
-//     console.log(articleTag);
-//
-//     middleEarth.appendChild(articleTag);
-//
-//     /////////////
-//
-//     //////////////
-//
-//         articleTag = document.createElement('article');
-//         // inside each article tag include an h1 with the name of the land
-//         console.log(articleTag);
-//         headline1 = document.createElement('h1');
-//         console.log(headline1);
-//         varHeadlineFilled= headline1.innerText = lands[2];
-//         console.log(varHeadlineFilled);
-//         articleTag.appendChild(headline1);
-//         // each article should also have a class equal to it's name ('The Shire' element should have a class of 'The Shire')
-//         articleTag.className = lands[2];
-//         console.log(articleTag);
-//
-//         middleEarth.appendChild(articleTag);
-
-        /////////////
+makeMiddleEarth();
 
 function makeHobbits() {
     // display an unordered list of hobbits in the shire (which is the first article tag on the page)
