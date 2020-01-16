@@ -1,0 +1,209 @@
+//Hangman - The Game
+var rls = require('readline-sync');
+
+
+//var testLetter ="e" //to eventually be replaced by input function
+
+//input creates new??????
+
+var words = ['aabaa','space', 'oddity', 'sold','world', 'changes',
+'life', 'mars', 'daydream', 'suffragette', 'city', 'young', 'dudes','americans',
+'rebel', 'diamond','dogs','fame', 'golden', 'years','sound','vision','heroes',
+'ashes','fashion', 'scary', 'monsters', 'under', 'pressure', 'dance', 'girl',
+'modern', 'love','jean','dancing','streets', 'absolute', 'beginners','time', 'jump',
+'swinging','station','sense','doubt'];
+
+
+ function chooseWord(){
+     //randomly chooses a word from words array
+     var pickIndex = Math.round(Math.random() * words.length);
+     var word = words[pickIndex];//change back to pickIndex! enter 0 for testcase
+     return word;
+ }
+
+function Letter(value) {
+ /*what is going to happen is a function:getLetters() will be called for each letter in the word and create an object for each letter and then put it in an array!*/
+this.value=value;
+this.hidden=false;
+this.hide= function(){
+    return " _ "
+};//call this if no guess
+this.show= function(){
+    return value;
+};//call this if letter is correct
+this.render= function(){}//still working on it
+}
+
+
+
+
+
+//call it in console Word.getLetters
+function Word() {
+    this.getLetters =function () {
+        var letters=[];
+        //get word
+        var getWord = chooseWord();
+        //turn into array
+        var wordArray = getWord.split('');
+        //loop through array create letter objects
+        for (i=0;i<wordArray.length; i++){
+          //console.log(wordArray[i]);
+          var letterToObject = new Letter(wordArray[i]);
+          letters.push(letterToObject);
+        }
+    return letters;
+    }
+    this.guessedState = function (){
+
+    },
+
+    this.render = function (){
+        //go through each letter object in letters array
+        //compare testLetter(user input) to letters
+        //console.log("Yo, I work!");
+        var letterCheck = letters;
+        var render=[];//new every round
+        var roundResults="";
+       //access in letters array, object,
+
+         for (i=0; i< letterCheck.length; i++){
+             if (testLetter === letterCheck[i].value){
+                 letters[i].hidden = true;
+                 render.push(letterCheck[i].show());
+             }
+             else if (letters[i].hidden ===true) {
+                render.push(letters[i].value);
+            }
+            else{
+                render.push(letterCheck[i].hide());
+            }
+         }
+            roundResults = render.join('');
+            console.log(this.attempt());
+            console.log(roundResults);
+            return roundResults;
+    }
+
+
+
+    this.attempt = function (){
+        //if match yay!
+        //if no match push wrong letter to array
+         var attemptLetter = letters;
+         for (i=0; i< attemptLetter.length; i++){
+             //console.log ("You are in!" + attemptLetter[i].value + " "+ testLetter);
+             if (testLetter === attemptLetter[i].value){
+                 console.log("yay you found a letter!");
+                 return console.log (
+                   "letters that don't match " +
+                   game.guessedLetters +
+                   " number of wrong guesses " +
+                   game.guesses
+                   )
+             }  else{
+              // return render();
+             }}
+              game.guessedLetters.push(testLetter);
+                game.guesses =game.guesses +1;
+              return console.log (
+                  "letters that don't match " +
+                  game.guessedLetters +
+                  " number of wrong guesses " +
+                  game.guesses
+                  )
+    }
+
+
+    // this.isFound = function(){
+    //     var checkLetter=false;
+    //     //access in letters array, object,
+    //     var letterCheck=getLetters();//must be! can't get a new word for every isFound!
+    //     console.log(letterCheck.length)//temp
+    //     for (i=0; i< letterCheck.length; i++){
+    //         if (testLetter === letterCheck[i].value){
+    //       checkLetter=true;
+    //         }
+    //         else {
+    //         console.log ("letter not found")
+    //         return false;
+    //         }
+    //         console.log(typeof letterCheck[i] + " " + letterCheck[i].value);
+    //     }
+    // return checkLetter;
+    // }
+
+    //function attempt(letter) {}
+}
+
+//function that will return an object filled with an array filled //with objects
+//var letters =[];/* this will be the ARRAY of letter objects start empty, will fill up after function calls*/
+//this.getLetters = getLetters(newWord){}
+//  //this is the beast to work on first
+
+
+
+
+
+
+
+//  var isFound= isFound(){}//loops through array of letters if all are true then player wins, if false continue and counter guesses+1
+// var attempt= attempt(letter){}//input here then go through letters
+ //changes this.hidden to true if found else leaves alone- if any are found then yay, if none are found then wrongguess+1 var render= render(){}//returns word in guessed state
+
+
+
+
+ var game ={
+      guesses: 0 ,//up to 10
+      guessedLetters: []//starts empty, fills up during game play
+//      words: "fill in later ",//an array of strings DONE! paste when ready
+//      currentWord: "",//empty string
+//      startGame: startGame(wordsArray){},//no clue what this does
+//      guess: guess(letter){},//input from user check
+//      isOver: isOver(){},//checks if the game should end
+//      overMessage: overMessage(),//end ...and begin?
+//      render : gamePlayDisplay() //includes render()
+  }
+
+   //instead of input:
+ //starts game
+
+
+var testLetter = rls.question("Guess a letter!");
+//function playGame()  {
+ c = new Word();
+ var letters = c.getLetters();
+
+
+
+  c.render();
+//  c.attempt();
+// //}
+//
+// //plays game
+//
+// //c.attempt();
+//
+// testLetter="a";
+//
+//
+//  c.render();
+//
+//
+// testLetter="i";
+// c.render();
+// testLetter="o";
+// c.render();
+// testLetter="u";
+// c.render();
+// testLetter="d";
+// c.render();
+// testLetter="n";
+// c.render();
+// testLetter="s";
+// c.render();
+// testLetter="t";
+// c.render();
+// //console.log(game.guessedLetters);
+// //console.log(game.guesses);

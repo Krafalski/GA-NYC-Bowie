@@ -1,0 +1,646 @@
+
+1
+
+
+----- March 14th -----
+Peter Petrov [07:26]
+@group: I am sorry to announce that there will be no babel breakfast this morning. It has been moved to Wednesday!
+
+Caleb Rechten [07:41]
+#crushed
+
+Caleb Rechten [10:04]
+Okay, be honest, was I the only one who didn't know about Geocoding rather than Geolocation?
+
+Peter Petrov [10:25]
+@umbrellagun: sorry! I should have screamed that part when I saw the mistake :simple_smile:
+
+Caleb Rechten [10:26]
+Haha, no worries. It just didn't seem to make logical sense either. I'm past it though.
+
+Colin Hart [11:08]
+uploaded a file
+tokens_starter.zip
+Zip
+Click to download
+Add Comment
+Sara Horowitz [11:17]
+http://www.theverge.com/2016/3/14/11218914/pi-facts-pi-day-i-did-it-pi-way
+The Verge
+It's Pi Day! Here are 3.14 facts about pi
+You know the old saying: it's Pi Day, Pi Day, gotta get down on Pi Day. And what better way to celebrate the date that embodies everyone's favorite mathematical constant than with precisely 3.14... (141KB)
+March 14th at 08:35
+
+1 2 2 2
+
+jason Seminara [11:44]
+@group: please send me your ATM pin numbers! Good Luck will come to you!
+
+[11:44]
+Full disclosure: mine is 12345
+
+Jonathan Feudi [11:44]
+Do you need some money so you can claim your inheritance? ARE U A PRINCE
+
+Patrick McWilliams [11:44]
+I am celtic prince of rich irish family, need your checking accounts to access my vast fortune
+
+jason Seminara [11:44]
+In Nigeria, yes.
+
+Caleb Rechten [11:44]
+Only if you're a prince from Zimbabwe
+
+Jonathan Feudi [11:44]
+I KNEW IT
+
+[11:45]
+http://vignette2.wikia.nocookie.net/walkingdead/images/3/3f/Shut-up-and-take-my-money.jpg/revision/latest?cb=20140829235648 (9KB)
+
+
+jason Seminara [12:12]
+@group https://jwt.io/introduction/#how-do-json-web-tokens-work-
+JWT.IO - JSON Web Tokens Introduction
+Learn about JSON Web Tokens, what are they, how they work, when and why you should use them. (16KB)
+
+
+Seif Dorani [14:06]
+if i were to ask to make it just a tad warmer in here would people be ok with that?
+2 1
+
+Sara Horowitz [14:13]
+yes pleeeease!
+
+Seif Dorani [14:16]
+no go sorry guys, they cant..
+
+Patrick McWilliams [14:16]
+so
+
+[14:16]
+we start a bonfire then
+
+Jasmine Vollherbst [14:36]
+http://codepen.io/eduardoboucas/pen/jqWbdb
+CodePen
+React components lifecycle diagram
+A diagram showing the sequence of methods invoked in the lifecycle of a React component... (53KB)
+
+
+Patrick McWilliams [15:18]
+http://callbackhell.com/
+
+Harry Ganz [15:19]
+https://facebook.github.io/react/docs/context
+Context | React
+A JavaScript library for building user interfaces (24KB)
+
+
+Adam Kriger [15:19]
+@group Here is a good link on this.props.children: http://jaketrent.com/post/send-props-to-children-react/
+
+Send Props to Children in React
+Sometimes you'll want to pass properties from a parent component to children components. Here's how to do it.
+3
+
+Harry Ganz [15:30]
+This is the place in the API with all the context objects given by react-router: https://github.com/reactjs/react-router/blob/master/docs/API.md#routercontext
+
+GitHub
+reactjs/react-router
+react-router - A complete routing solution for React.js
+
+Colin Hart [16:13]
+```    $.ajax({
+      url: 'users/me',
+      beforeSend: function( xhr ) {
+        xhr.setRequestHeader("Authorization", auth.getToken() );
+      }
+    }).done((data) => {
+      this.setState({me: data.agent.email})
+    })
+```
+(edited)
+
+Peter Petrov [16:47]
+@group: Exit Tickets!
+http://goo.gl/forms/hSksRhq5tK
+Google Docs
+Lesson Exit Ticket 02/11 (144KB)
+
+
+Colin Hart [16:56]
+Authorization
+
+
+Inside of users route file or whichever route file you want to authorize.
+```users.use(function (error, request, response, next) {
+  if (error.name === 'UnauthorizedError') {
+    response.status(401).json({message: 'You need an authorization token to view confidential information.'});
+  }
+});
+users.use('/me', expressJWT({secret: secret}));
+```
+
+https://github.com/auth0/express-jwt
+
+GitHub
+auth0/express-jwt
+express-jwt - connect/express middleware that validates a JsonWebToken (JWT) and set the req.user with the attributes
+
+Jonathan Feudi [18:58]
+uploaded and commented on an image: Slack for iOS Upload
+1 Comment
+4
+Eat a nutritious meal tonight, my dearest Bowies. You must survive project 3.
+
+Peter Petrov [19:31]
+You weren't joking about cooking tonight :simple_smile:
+
+Jonathan Feudi [19:45]
+@pppetrov I never joke.:neutral_face:
+
+
+----- March 15th -----
+Rachel Smyth [08:08]
+Hey @group if you are submitting hw in other repos, write an issue & tag me in it, or send me a note on slack.
+
+Colin Hart [11:00]
+http://callbackhell.com/
+1
+
+Patrick McWilliams [11:05]
+I wish someone had found that site, say, yesterday. ::whistles:: https://ga-students.slack.com/archives/wdi-bowie-students/p1457983132000033
+Patrick McWilliams patrickm
+http://callbackhell.com/
+March 14th at 15:18
+
+jason Seminara [11:13]
+@group GO TO THIS http://nyc.uncubed.com/tim
+NYC Uncubed Spring 2016 - Splash
+Attend  talks and panels sharing the cutting-edge skills used to build top companies Discover great jobs and meet the teams behind the hiring startups Chat with Founders & VPs about opportunities at the Executive Breakfast* *All registered attendees are reviewed for exec-level credentials
+1
+
+Jonathan Feudi [11:17]
+uploaded and commented on an image: Slack for iOS Upload
+1 Comment
+1 1 1
+For those of you who wanted to see the finished product.
+
+Lauren Golik [11:20]
+for any GoT fans - this is happening in union square today: https://www.facebook.com/events/148408228883677/
+
+eric hegdahl [12:27]
+Your “Job Search” EXIT TICKET! : https://goo.gl/4meXjC
+
+Daniel Lawrence [14:04]
+```var random = function(min, max) {
+    if (max == null) {
+      max = min;
+      min = 0;
+    }
+    return min + Math.floor(Math.random() * (max - min + 1));
+  };
+
+var shuffle = function(obj) {
+    // var set = isArrayLike(obj) ? obj : _.values(obj);
+    var set = obj;
+    var length = set.length;
+    var shuffled = Array(length);
+    for (var index = 0, rand; index < length; index++) {
+      rand = random(0, index);
+      console.log('set: ', set, 'shuffled', shuffled);
+      console.log('index: ', index, 'rand: ', rand);
+      if (rand !== index) shuffled[index] = shuffled[rand];
+      shuffled[rand] = set[index];
+      console.log('set: ', set, 'shuffled', shuffled);
+      console.log('========================================================================');
+    }
+    return shuffled;
+  };
+
+var a = [1,2,3,4,5,6,7,8]
+
+shuffle(a)
+```
+3
+
+Maxwell Rayman [15:00]
+@group For ANYONE in this channel who wants something to fill the minutes in between working project 3, i started a March Madness pool on CBS for the class. So far its just me and Bryce but anyone is welcome to compete! Were just doing a $5 buy-in to keep it fun but interesting. The tournament technically starts tonight but the first round starts this   Thursday (3/17). This means if you want to play just sign up on the website, click on your name to create your bracket, and give me $5 by 10:00 AM on Thursday.
+
+http://bowie-wdi.mayhem.cbssports.com/e?ttag=BPM16_cpy_invite_new
+
+password is `bowie123`
+
+even if you guys arent sports fans its fun to compete with each other!
+
+CBSSports.com
+Join my CBS Sports Bracket Group
+Click on the link to join my group. The password is: bowie123.
+
+Seif Dorani [15:01]
+typo its a 5k buy in (edited)
+
+Peter Petrov [15:32]
+@group: If you want to make your apps look awesome here is a nice react way http://www.material-ui.com/#/
+Material-UI
+Google's material design UI components built with React.
+
+Peter Petrov [16:16]
+@group: We are going to have the bagel breakfast tomorrow with our friendly neighbors: the ADI class. Come on time and hungry :simple_smile:. Here are few things you can talk about
+You are both building apps.
+What are the differences between building apps for mobile and for the web?
+How do you style the ‘front-end’ in Android apps vs the browser?
+How do you interact with data and the backend?
+How do ‘lifecycle' methods work in React vs Android? How do you deal with async behavior?
+2
+
+Colin Hart [18:00]
+@group
+
+https://guides.github.com/features/issues/
+
+https://whatwebcando.today/
+
+https://hackdesign.org/
+
+https://lodash.com/ ( remember you can use lo_dash on your front end and backend )
+
+[18:02]
+Also, utilize other devs, ask questions on stack overflow, tweet, email call, post issues for the maintainers of projects or api’s (The Vitalyt Effect) (edited)
+
+[18:06]
+@group, also don’t know if any of you know about IRC. Internet Relay Chat.
+
+It’s essentially a giant network of chatrooms you can access via terminal applications. There are chat rooms for any and all web development coding tools and all kinds of stuff
+
+The third thing on the react support list https://facebook.github.io/react/support.html is the React IRC channel. They’re super helpful and great sources for information
+Need help? | React
+A JavaScript library for building user interfaces (24KB)
+
+1
+
+Jasmine Vollherbst [18:13]
+ Pinned a message. See all pinned items in this channel.
+Colin Hart colinhart
+@group
+
+https://guides.github.com/features/issues/
+
+https://whatwebcando.today/ Show more...
+March 15th at 18:00
+
+
+----- March 16th -----
+KP Perez [02:03]
+This was a problem tonight, in case someone runs into it: Iterating over arrays with map() and rendering lists
+http://www.sitepoint.com/video-using-map-to-create-lists-in-react/
+
+SitePoint
+Video: Using map() to Create Lists in React
+In this video, we'll build our first list component using props, a plain old JavaScript Array, and the map() function.
+Aug 12th, 2015 at 06:30
+1
+
+[02:04]
+And just for fun, in case anyone was wondering what I read when I can't sleep at 2 AM: http://www.sitepoint.com/bind-javascripts-this-keyword-react/
+
+SitePoint
+6 Ways to Bind JavaScript's this Keyword in React, ES6 & ES7
+Dan Prince compares 6 different methods for binding the value of the this keyword in react components, including new methods from ES2015 and ES2016.
+March 15th at 09:00
+1
+
+jason Seminara [10:16]
+What. a. dork.
+Also YES! this is what I was looking for!
+1
+
+jason Seminara [10:54]
+@group: Please come up with a “mission statement” for your project. This should be ONE SENTENCE that creates interest and encapsulates the goal of your project
+
+[10:54]
+http://www.mymanagementguide.com/project-vision-statement/
+Project Vision Statement
+A well-written project vision statement is the guarantee that the project owner (initiator) will make a decision to initiate the project.
+
+[10:55]
+or just google `project vision` (which is the one sentence, as described), or a `mission statement` (the longer description of a whole business (not required)
+
+[10:56]
+@please have your project vision statements completed by lunch!!!
+
+jason Seminara [15:43]
+@group: if you’re going to collaborate with another group on some topic, PLEASE do not just merge your groups! Nominate a delegate from each group to solve the issue while the other members of your team can continue working on their list of tasks.
+
+Jonathan Feudi [15:44]
+#mergeConflictOfInterest
+
+Emma Hou [16:36]
+https://facebook.github.io/react/html-jsx.html
+HTML to JSX | React
+A JavaScript library for building user interfaces (24KB)
+
+1
+
+[16:36]
+saved my life
+
+
+----- March 17th -----
+Colin Hart [10:49]
+@group https://github.com/ga-students/wdi-nyc-bowie_students/tree/master/w09/d04/instructor/tokens-starter
+
+[10:50]
+also a mental health break
+
+[10:50]
+https://www.facebook.com/notes/robin-sloan/julie-rubicon/985697811525170
+
+Patrick McWilliams [11:09]
+that is not conducive to mental health, colin. facebook has a prophecy machine, and knows the future.
+
+Colin Hart [11:10]
+loll
+
+[11:10]
+touche
+
+[11:11]
+got you away from your code for a second though didnt it
+
+Patrick McWilliams [11:12]
+truth
+
+[11:13]
+now im going to have to try and work for facebook to abuse the prophecy machine
+
+[11:13]
+but they know that already
+
+Colin Hart [12:35]
+@group be in the classroom at 2 pm for a quick 15-30m lesson on setting up your router/ server so that you can refresh your page and not worry about the routing getting messed up
+
+Caleb Rechten [12:41]
+FINE
+
+Patrick McWilliams [13:16]
+@pppetrov: next bagel day peter: http://i.imgur.com/DJqKStd.jpg (115KB)
+
+1 1
+
+Peter Petrov [13:18]
+DONE!
+1
+
+Caleb Rechten [13:23]
+I vote for coffee bagels.
+
+Seif Dorani [13:40]
+what are thooooooseeeeeeeee!?!?!!?
+
+Emma Hou [18:00]
+http://hackertyper.net/
+
+[18:01]
+check this website, go to a Starbucks near google and open this website in full screen
+
+Colin Hart [18:24]
+http://stackoverflow.com/questions/29503213/use-state-or-refs-in-react-js-form-components/29504636#29504636
+
+Use state or refs in React.js form components?
+Im starting with React.js and i want to do a simple form but in the documentacion I have found two ways of doing it. The first one is using Refs: var CommentForm = React.createClass({
+
+[18:26]
+http://code.tutsplus.com/tutorials/irc-is-back-heres-your-starter-guide--net-31369
+
+Peter Nguyen [18:34]
+react router cheatsheet:  http://ricostacruz.com/cheatsheets/react-router.html
+
+Colin Hart [18:54]
+More mental health breaks. An asteroid just flew past us 30 min ago
+1
+
+[18:54]
+http://www.minorplanetcenter.net/db_search/show_object?object_id=2009+CR4&commit=Show&utm_content=buffer9c533
+IAU Minor Planet Center
+We are the official body that deals with astrometric observations and orbits of minor planets (asteroids) and comets.
+
+jason Seminara [19:55]
+http://stackoverflow.com/research/developer-survey-2016
+
+Stack Overflow
+Stack Overflow Developer Survey 2016 Results
+Where do developers live? How much do developers earn? Vim or Emacs? Tabs or spaces? This is the most comprehensive software developer survey on earth.
+
+jason Seminara [19:55]
+uploaded and commented on an image: Salary by education
+1 Comment
+Look at #3!
+
+Patrick McWilliams [19:57]
+so if i get a mentorship program after this, i’ll be making 15,087.5%, right?:heavy_multiplication_x: (edited)
+
+jason Seminara [19:59]
+No offense, but after I spend $100k+ on my masters, I only get 0.5% advantage?? :thinking_face:
+3
+
+[19:59]
+That's not gonna pay my rent!
+
+Patrick McWilliams [20:00]
+just gotta make a couple of mil a year, .5% is big money then
+
+[20:00]
+just.
+
+jason Seminara [20:08]
+True. Also, you should add about 5-10% to the income dollar amounts for New York City.
+
+
+----- March 18th -----
+jason Seminara [08:26]
+@group ​_from GA offices_​ A quick heads up, there will be a film crew from Google on campus tomorrow to film students from our Android Immersive course.  We're so excited they are showcasing General Assembly!  The crew will be filming on floors 2, 3 and 4 in the lounges throughout the day but will not interfere with the normal operation of classes.
+
+Caleb Rechten [08:31]
+So what you're saying is that I should arrive with a clown suit on, yes?
+
+Patrick McWilliams [09:02]
+GA goes to the pool, speedo edition.
+1
+
+jason Seminara [09:12]
+^^^FYI: “tomorrow” == “today"
+
+Peter Petrov [09:25]
+@group Digital Ocean Deployment Lesson at 10:30 in the room…be there or use heroku!
+
+[09:27]
+Also if anyone needs a break from their projects I would be happy to show you how to solve a rubick’s cube..I finally memorized it!
+
+Maxwell Rayman [09:29]
+@pppetrov: c’mon peter at least give the bonus HW a shot http://www.funpic.hu/_files/pictures/original/31/89/38931.jpg (51KB)
+
+2 1 1
+
+Caleb Rechten [09:43]
+@group Who's totally got React Router down? Trying to figure something particular out.
+
+Peter Petrov [11:10]
+@group due to technical difficulties Digital Ocean Lesson will be at 1:30 right after lunch
+
+Karolin Rafalski [11:40]
+https://www.youtube.com/watch?v=eakKfY5aHmY
+YouTube
+raisingmaggie
+amazing starlings murmuration (full HD) -www.keepturningleft.co.uk
+
+
+Peter Petrov [12:42]
+@group THERE IS A LUNCH AND LEARN TODAY
+
+[12:43]
+@group IN THE COUCOURSE
+
+[12:43]
+@group YOU SHOULD ALL GO
+
+Peter Petrov [13:37]
+@group: quick heroku deployment demo now and then DO time…come if interested
+
+Peter Petrov [13:44]
+```    "postinstall": "./node_modules/browserify/bin/cmd.js -t [ babelify --presets [ react es2015 ] ] -t uglifyify -d -p [ minifyify --no-map ] ./public/js/app.js -o ./public/bundle.js"
+```
+
+Lauren Golik [13:45]
+ Pinned a message. See all pinned items in this channel.
+Peter Petrov pppetrov
+```    "postinstall": "./node_modules/browserify/bin/cmd.js -t [ babelify --presets [ react es2015 ] ] -t uglifyify -d -p [ minifyify --no-map ] ./public/js/app.js -o ./public/bundle.js"
+```
+March 18th at 13:44
+
+Maxwell Rayman [14:27]
+@group http://removelinebreaks.net/
+
+[14:27]
+options: none
+
+Patrick McWilliams [14:43]
+@colin: it’s friday. what did you just tell us not to do!!
+
+Colin Hart [14:45]
+well you’re working weekends right now
+2
+
+[14:45]
+sooo
+2
+
+Peter Petrov [15:18]
+sudo apt-get purge nginx nginx-common nginx-full
+
+Colin Hart [16:10]
+@group https://devcenter.heroku.com/articles/getting-started-with-nodejs#provision-a-database
+Getting Started with Node.js on Heroku | Heroku Dev Center
+A step-by-step guide for deploying your first Node app and mastering the basics of Heroku
+
+Jasmine Vollherbst [16:10]
+ Pinned a message. See all pinned items in this channel.
+Colin Hart colinhart
+Getting Started with Node.js on Heroku | Heroku Dev Center
+@group https://devcenter.heroku.com/articles/getting-started-with-nodejs#provision-a-database
+March 18th at 16:10
+
+Peter Petrov [16:17]
+@group for all you DO people! restart your machine!! `sudo shutdown -r now`
+
+Maxwell Rayman [19:08]
+@group more importantly make sure to follow https://twitter.com/PlanteeThePlant/ … more to come
+Plantee (@PlanteeThePlant) | Twitter
+The latest Tweets from Plantee (@PlanteeThePlant): "I did photosynthesis today"
+1 1
+
+Jimmy Lin [20:21]
+Meet 2016's developers, according to Stack Overflow's annual survey - ZDNet
+https://apple.news/A97qE7Kw0Ox-ze_AcBZ9vcQ
+ZDNet
+Meet 2016's developers, according to Stack Overflow's annual survey | ZDNet
+In the largest developer survey to date, Stack Overflow's programmer community reveal what tools and platforms they use in their daily work. (67KB)
+
+
+Elton Cheng [21:13]
+uploaded an image: Project? What project?
+Add Comment
+Elton Cheng [21:14]
+uploaded an image: More picturesss
+Add Comment
+4
+
+Peter Nguyen [21:42]
+So.... When're we getting our hoodies?
+
+KP Perez [22:20]
+Hoodies are a privilege, not a right
+
+Peter Nguyen [22:26]
+But I want a hoodie
+
+Caleb Rechten [23:04]
+Maybe when we stop having class I'll be able to join you guys. XD
+
+
+----- March 19th -----
+jason Seminara [10:45]
+A: Where was that taken? B: Who’s that guy?
+
+Elton Cheng [11:12]
+@jasonseminara: A: We went to live bait! B:  Greg I believe from the ADI course!
+
+jason Seminara [11:13]
+:musical_score: Makin’ friends...:musical_note:
+
+Caleb Rechten [12:03]
+Anyone have Params working in React Router?
+
+Caleb Rechten [13:22]
+Figured it out!
+2
+
+Patrick McWilliams [18:29]
+so let’s say you’re doing a dry run to test deployment
+
+[18:29]
+and you’re up to the part in the wiki that goes
+
+[18:29]
+ssh-keygen -t rsa -b 4096 -C "patrick.m.professional@gmail.com"
+
+[18:30]
+and you’ve screwed up the next steps and are repeating it to get there again
+
+[18:30]
+what do you do next
+
+Karolin Rafalski [19:59]
+https://www.youtube.com/watch?v=Ts7FQaVULRs
+YouTube
+Lorenzio77
+Where Is My Mind- Maxence Cyrin
+
+
+
+----- March 20th -----
+Caleb Rechten [14:28]
+BTW, HAPPY SPRING
+
+Karolin Rafalski [20:50]
+oh hey, slack makes hexadecimal swatches in chat! #ff4ab0
+
+Patrick McWilliams [20:52]
+#fedcba
+
+[20:52]
+if it did it before you sent it that would be a super convenient color reference
+
+Karolin Rafalski [20:53]
+lol, true, still trying to make up my mind about the jumbomoji feature they added

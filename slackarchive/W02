@@ -1,0 +1,3174 @@
+
+Patrick McWilliams [09:47]
+you are a wonderful human being
+
+Jonathan Feudi [09:48]
+haha my hair!
+3
+
+Dan Dilorio [09:48]
+that could be my hair, you don't know
+1
+
+Elton Cheng [10:27]
+If anyone would like to compare homework solutions hit me up! I’d like to see how everyone else approaches things.
+8
+
+Seif Dorani [12:08]
+hangman had me like this: https://www.instagram.com/p/-XR_M2TS5KV7PcqD3hWNvO7o7QhnrQhLZio3o0/?tagged=bambamthepom
+
+Colin Hart [12:11]
+```* Search
+  * document.getElementById
+  * document.getElementsByClassName
+  * document.getElementsByName
+  * document.querySelector
+* Creation
+  * document.createElement
+  * document.createTextNode
+  * document.style
+* Traversal
+  * node.childNodes
+  * node.children
+* DOM editing
+  * node.appendChild
+  * node.remove
+* Node editing
+  * node.innerHTML
+  * node.id
+  * node.classList
+  * node.setAttribute```
+
+Caleb Rechten [12:53]
+Hey guys! So, I have a webapp that I've been working on which is one of the reasons I signed up for this class. I think it would be perfect for the app contest that Emine posted earlier and I would love to hear what you guys think about it. If everyone's cool with it, I figure Wednesday after class would be the perfect time to share it.
+6
+
+Harry Ganz [13:24]
+@channel:  Hi Guys. I was wondering if anyone would be interested in going to the [Uncommons](https://www.uncommonsnyc.com/) on Wednesday (a boardgame Cafe in Greenwich Village) to play a game and get to know each other better. I know there are 30 of us, and if everyone is interested, we would need to reserve a room ($10/person). Otherwise, we can just get a table and pay the $5 cover fee.
+
+The Uncommons
+Manhattan's Only Board Game Cafe • The Uncommons NYC
+Magic: The Gathering, Cards Against Humanity, and hundreds of games for sale & play. Beer, wine, & coffee make it one of New York City's most unique spots.
+(edited)
+
+[13:25]
+I was thinking this Wednesday after class
+
+Caleb Rechten [13:30]
+Here's the link to the contest: http://www.appideaawards.com/#home
+
+App Idea Awards
+The App Idea Awards
+Take Your App From Idea to Reality
+
+Dan Dilorio [13:49]
+@harryg: I'd be down for next week, got an appointment on wednesday this week
+
+[13:50]
+@harryg: not sure why I typed that when you're sitting right next to me
+
+Maxwell Rayman [14:02]
+uploaded an image: Screen Shot 2016-01-25 at 1.56.11 PM.png
+Add Comment
+3
+
+Maxwell Rayman [14:03]
+uploaded an image: Screen Shot 2016-01-25 at 2.02.13 PM.png
+Add Comment
+2
+
+Jasmine Vollherbst [14:12]
+Thanks Max!
+
+Harry Ganz [14:18]
+uploaded and commented on an image: sc.JPG
+1 Comment
+@patrickm:
+
+Patrick McWilliams [14:23]
+what file/url are we working on there?
+
+Maxwell Rayman [14:25]
+were using option-command-I on google chrome
+
+Patrick McWilliams [14:26]
+new (blank) tab, or a particular page?
+
+
+
+
+
+Colin Hart [14:28]
+https://dl.dropboxusercontent.com/s/e2iqc2r53r6omzn/General_Assembly_logo.png (15KB)
+
+
+[14:28]
+https://dl.dropboxusercontent.com/s/whkficbkox6t66a/Screen%20Shot%202016-01-24%20at%205.43.31%20PM.png (24KB)
+
+
+jason Seminara [14:45]
+@group: I invited all of you to the Persephone Science Fair. Persephone is the name of the WDI class that is graduating this week. The Science Fair is where the graduating students get to show off their applications to the rest of the school, and possibly recruiters.
+
+The event will be held in the 3rd floor concourse and is open to anyone. Get there early, as it tends to get loud and crowded.
+
+Please show them some support! You guys will be doing the same in about 10 weeks!
+
+Tyler Gates [14:48]
+left #wdi-bowie-students
+
+Douglas Walker [15:33]
+added a JavaScript/JSON snippet: Here is another way to change the mic icon
+var mic = document.querySelector('#gsri_ok0');
+    mic.setAttribute('style', 'background-image: url("https://dl.dropboxusercontent.com/s/whkficbkox6t66a/Screen%20Shot%202016-01-24%20at%205.43.31%20PM.png");');
+Add Comment
+Jonathan Feudi [15:33]
+Drop the mic, @douglas
+
+Seif Dorani [15:33]
+oh snap
+
+[15:34]
+teach me how to dougy
+4
+
+[15:38]
+does someone have the code that colin just wrote out?
+
+Peter Nguyen [15:47]
+I think he's gonna post it
+
+Colin Hart [15:47]
+Yep if you pull its there
+
+Peter Petrov [15:51]
+http://goo.gl/forms/p3kgYrXBBJ
+Google Docs
+Lesson Exit Ticket 01/25 (141KB)
+
+
+Peter Petrov [16:08]
+http://flukeout.github.io/
+
+Patrick McWilliams [17:13]
+added and commented on a Plain Text snippet
+var copColor = document.querySelector('cop');
+/*feedback from console*/ undefined
+copColor.setAttribute('color', 'lightskyblue');
+/*feedback from console*/ VM5165:2 Uncaught TypeError: Cannot read property 'setAttribute' of null
+1 Comment
+having trouble with set attribute. any fresh eyes can see what i’m doing wrong?
+
+Dan Dilorio [17:15]
+@patrickm: I believe you need to search for a class specifically in `quereySelector`
+
+Patrick McWilliams [17:16]
+cop is a class
+
+Caleb Rechten [17:16]
+what is it a class of though?
+
+Patrick McWilliams [17:17]
+list
+
+Dan Dilorio [17:17]
+you need to precede it with a dot `document.querySelector('.cop');`
+
+Patrick McWilliams [17:17]
+aaaah
+
+[17:17]
+derp
+
+[17:17]
+ty
+
+Dan Dilorio [17:17]
+np
+
+Emine Koc [17:33]
+anyone working on the classwork ? I could not figureour how to remove poorSouls   one by one
+
+Jonathan Feudi [17:44]
+Why the crap do these have to be functions?
+
+[17:44]
+Seems like adding an extra step for no reason
+
+Peter Petrov [17:54]
+What if you want to call them one after the other every couple of seconds for example so that you can essentially automatically progress through the story.... :thinking:
+
+Maxwell Rayman [17:56]
+@eminekoc: i did that part the exact same way as changing the colors of cops to ‘lightskyblue’.  (with a for loop iterating through an array ‘poorSouls[i]’ and instead of changing the .style.color i just did remove();
+
+Emine Koc [17:57]
+@mxray333:  Thank you.
+
+
+Patrick McWilliams [18:49]
+rofl. i had the console open the whole time so i never saw the list of names on the terminator page
+
+[18:50]
+could thing i decided to do part of it over again!
+
+[18:53]
+did anyone have to run their remove script multiple times to finally empty poorSouls
+
+Patrick McWilliams [18:57]
+added and commented on a Plain Text snippet
+for(i=0;i<poorSouls.length;i++){
+ console.log('this is the ' + (i+1) + 'th iteration.');
+ poorSouls[i].remove();
+};
+1 Comment
+this.
+
+Patrick McWilliams [18:58]
+added and commented on a Plain Text snippet
+this is the 1th iteration.
+this is the 2th iteration.
+this is the 3th iteration.
+this is the 4th iteration.
+1 Comment
+gives me this, with 4 items left in poorSouls
+
+Adam Kriger [20:39]
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+
+Mozilla Developer Network
+Introduction to the DOM
+This section provides a brief conceptual introduction to the DOM : what it is, how it provides structure for HTML and XML documents, how you can access it, and how this API presents the reference information and examples.
+
+Patrick McWilliams [21:01]
+am i the only one who has wildly different code behavior for apparently no good reason?
+
+[21:01]
+my latest wtf:
+
+Patrick McWilliams [21:04]
+added and commented on a JavaScript/JSON snippet
+for(i=0;i<lands.length;i++){
+      var a = document.createElement('article');
+      a.setAttribute('class', lands[i]);
+      a.setAttribute('h1', lands[i]);
+      document.getElementById('middle-earth').appendChild(a);
+1 Comment Click to expand inline 7 lines
+returns
+<article class="Mordor" h1="Mordor"></article>
+
+Patrick McWilliams [21:06]
+added and commented on a JavaScript/JSON snippet
+for(i=0;i<lands.length;i++){
+      var a = document.createElement('article');
+      a.setAttribute('class', lands[i]);
+      a.setAttribute('h1', lands[i]);
+      document.getElementById('middle-earth').appendChild(a);
+2 Comments Click to expand inline 9 lines
+returns
+this is iteration 0th.
+this is iteration 1th.
+this is iteration 2th.
+undefined
+
+and all the lands are where they should be
+
+Harry Ganz [21:08]
+Good coding music if you want to slowly turn insane: https://www.youtube.com/watch?v=uE-1RPDqJAY
+YouTube
+Aaron Hardbarger
+taking the hobbits to isengard
+
+1 3
+
+Karolin Rafalski [21:12]
+commented on Patrick McWilliams's snippet Untitled
+console.log(lands.length);
+
+Patrick McWilliams [21:13]
+it should be the same in both, i ran them one after the other (edited)
+
+Jasmine Vollherbst [21:52]
+Hi Patrick, not sure if this helps, but for the h1’s, try using createElement, rather than setAttribute. Here’s how I set my loop:
+
+Jasmine Vollherbst [21:52]
+added a Plain Text snippet
+for(var i = 0; i < lands.length;i++){
+    var newArticle = document.createElement('article');
+    newArticle.setAttribute("class",lands[i]);
+    var h1 = document.createElement('h1');
+    h1.innerText = lands[i];
+Add Comment Click to expand inline 8 lines
+Jasmine Vollherbst [21:53]
+not sure if that helps :grin:
+
+Emma Hou [21:55]
+does anyone know what does function #8 mean? add each hobbit and buddy one at a time to 'the-fellowship’, thanks!
+
+Maxwell Rayman [22:14]
+@auvemma: just did that one - I think you have to create a <div> element with id = ‘the-fellowship’  and append that to ‘rivendale’. Then find a way to add all 4 hobbits and all 5 buddies as children to the <div></div> that you made
+
+Emma Hou [22:15]
+@mxray333: Thanks! I will try a double for loop, would that work?
+
+Patrick McWilliams [22:16]
+im finding appendChild to be very uncooperative
+
+Rachel Smyth [22:17]
+​_fades in_​ …for #8, be very careful with for loops… ​_fades back into the dark_​
+2
+
+Emma Hou [22:19]
+@rs: Thanks for the dark tip:)
+
+Maxwell Rayman [22:29]
+@auvemma: i think you need to use a while loop but i wasnt exactly sure how to implement it. it seems that when you appendChild an already-existing element it changes the array size of both ends
+1
+
+[22:30]
+@auvemma: i just made each run of the while loop return (for example) hobbits[0] so every time it ran it added the first element and then deleted it from the looping array
+
+Patrick McWilliams [22:37]
+one of these days im going to realize that i need to type EXACTLY what the thing im trying to needs me to type and not “close enough"
+
+[22:38]
+append(x) !== appendChild(x)
+
+Jasmine Vollherbst [22:39]
+@patrickm: Aww! It’s all part of the learning experience lol :grin:
+
+Patrick McWilliams [22:40]
+@jasminev: yeah, it’s exciting to finally get something, but frustrating when it’s cause you’re being a bit derpy
+
+KP Perez [23:31]
+@patrickm: with more reps, you won't even think twice about that. hang in there! take breaks and look at your code line by line. sometimes it helps to go backwards, check from bottom to top to make sure you don't have annoying errors
+1 1
+
+
+----- January 26th -----
+Peter Nguyen [08:27]
+Found a helpful doc on the differences and best time to use Node.nodeList, document.querySelectorAll and Node.childNodes!
+1
+
+Patrick McWilliams [08:33]
+::dramatic pause stretches::
+
+Patrick McWilliams [10:03]
+@penguyen: so where’s that doc/article?
+
+Jonathan Feudi [10:06]
+HODOR
+
+Peter Nguyen [10:07]
+oh wait sorry i thought i posted it: https://developer.mozilla.org/en-US/docs/Web/API/NodeList
+
+Mozilla Developer Network
+NodeList
+NodeList objects are collections of nodes such as those returned by Node.childNodes and the document.querySelectorAll method.
+1
+
+Jasmine Vollherbst [10:13]
+https://www.youtube.com/watch?v=scWj1BMRHUA
+YouTube
+Vsauce
+The Web Is Not The Net
+
+1
+
+Jonathan Feudi [10:16]
+Sorry about the noise, guys, I didn’t eat breakfast
+
+Dan Dilorio [10:19]
+if you upload those notes, you must also upload the unintentional selfie
+1
+
+Caleb Rechten [10:25]
+Anyone else start playing around Tamagochi 2.0?
+
+[10:25]
+And
+
+Seif Dorani [10:26]
+uploaded an image: Pasted image at 2016-01-26, 10:26 AM
+Add Comment
+3
+
+Caleb Rechten [10:26]
+what does it mean for the createTamagochi() function?
+
+Maxwell Rayman [10:27]
+create a variable assigned to a new Tamagochi and push it into the animals array
+
+Caleb Rechten [10:28]
+Yeah, that's basically what it said to do, but why am I creating it inside the zoo?
+
+Maxwell Rayman [10:29]
+so you can do do var myZoo = new Zoo(); and then if you want to make a new tamagochi inside the zoo you just do myZoo.createTamagochi();
+
+Caleb Rechten [10:30]
+I suppose I'm still iffy on how to call the original constructor function on the variable inside the zoo constructor unless I moved the entire thing inside the zoo constructor. But I feel like I shouldn't need to do that?
+
+Colin Hart [10:30]
+#scope!
+
+Caleb Rechten [10:31]
+I know, but I don't know what to do about it. :stuck_out_tongue:
+
+Maxwell Rayman [10:31]
+added a Plain Text snippet
+var x = new Tamagotchi();
+Add Comment
+Maxwell Rayman [10:31]
+you can put that inside your function in your new constructor
+
+Caleb Rechten [10:31]
+That's what I tried and it threw an error
+
+Colin Hart [10:32]
+whats the error?
+
+Caleb Rechten [10:33]
+Says it's not defined.
+
+
+Colin Hart [10:33]
+mmm
+
+Caleb Rechten [10:33]
+NM
+
+Patrick McWilliams [10:33]
+probably should have a this.variable somewhere?
+
+Caleb Rechten [10:33]
+spelling
+2 1
+
+Colin Hart [10:33]
+lol
+
+Caleb Rechten [10:33]
+is wrong
+
+[10:33]
+wow
+
+Elton Cheng [10:59]
+Any lunch suggestions?
+
+Jasmine Vollherbst [10:59]
+I’m going to Bravo for pizza.
+1
+
+Dan Dilorio [10:59]
+new york burger co was really good when I went yesterday, a little pricey though
+1
+
+Jonathan Feudi [11:00]
+Num Pang is still one of my faves, also pricey though
+
+[11:01]
+I wonder if they’ll do chicken and waffles for lunch at Hill Country Chicken
+1
+
+[11:01]
+That shit is dope
+
+Peter Nguyen [11:01]
+ew pizza :-1: :-1:
+1
+
+Dan Dilorio [11:01]
+@penguyen: get out
+
+Peter Nguyen [11:01]
+Fun fact about me: i hate pizza
+
+Jonathan Feudi [11:02]
+More like “Dark secret about me:"
+2
+
+Dan Dilorio [11:02]
+@penguyen: it's okay to have opinions but your opinion is wrong
+
+Jasmine Vollherbst [11:03]
+@penguyen: Whoa! That’s amazing!
+
+Caleb Rechten [11:03]
+Going back to the Tamagochi 2.0 again, is the numberOfResidence completely arbitrary? It's not mentioned again after we're told to set it to 0 and we can just do .length on the array, no?
+
+Patrick McWilliams [11:10]
+it will change depending on how you fill up your zoo, and .length is probably a fair way to figure that out, but im not looking at the assignment for particulars
+
+Maxwell Rayman [11:14]
+@umbrellagun: pretty sure its just there to practice writing a method that can return the length, its not used anywhere else on the assignment though
+
+Elton Cheng [11:37]
+Add me on Linkedin if you have it! https://www.linkedin.com/in/elton-cheng-eit-73613ba6
+1
+
+Caleb Rechten [11:40]
+So, not that it's a super aaaaamaaaazing video, but, I did a vlog about the first week at GA going into detail about what we went over! I mean, you guys were here, so it won't give you anything new. But if anyone that you know who's curious maybe? https://www.youtube.com/watch?v=4uGBSJh0XJo
+YouTube
+CalebSundance
+General Assembly: Web Development Immersive: Week 1
+
+
+Dan Dilorio [11:45]
+will def look at that later today!
+
+[11:47]
+what @elton912 said! https://www.linkedin.com/in/dan-diiorio-55619069
+
+Douglas Walker [11:50]
+https://de.linkedin.com/in/douglaswissettwalker
+
+Carrie Streed [11:50]
+add me on LinkedIn :simple_smile: https://www.linkedin.com/in/carriestreed
+
+Caleb Rechten [11:51]
+And add me too! https://www.linkedin.com/in/calebsundance
+
+Seif Dorani [12:07]
+https://www.linkedin.com/in/seifdorani
+
+Emine Koc [12:18]
+https://www.linkedin.com/in/eminekoc
+
+eric hegdahl [12:20]
+Your ‘Personal Branding’ EXIT TICKET! : https://goo.gl/4meXjC
+
+[12:21]
+Your Outcomes Roadmap : http://bit.ly/1MGNlHo [Pin it!]
+Google Docs
+Coach Eric | NYC Outcomes Roadmap - WDI
+NYC OUTCOMES PROGRAMMING ROADMAP WEB DEVELOPMENT IMMERSIVE Welcome to Outcomes! Here at GA we pride ourselves on innovation and approaching things in a unique and exciting way. This is no different when approaching career development and the process towards achieving outcomes success. We ask t... (218KB)
+
+
+Caleb Rechten [13:16]
+Added names to the Tamagochi project : D
+
+Colin Hart [13:24]
+@group https://github.com/vasanthk/css-refresher-notes
+
+GitHub
+vasanthk/css-refresher-notes
+css-refresher-notes - CSS Refresher!
+(edited)
+
+Lauren Golik [13:33]
+joining the linkedin party: https://www.linkedin.com/in/lauren-golik-6387142
+
+Jonathan Feudi [13:35]
+@colinhart Who is that picture of?
+
+Colin Hart [13:36]
+vasanthk
+
+[13:36]
+it’s his github profile pic
+
+Jonathan Feudi [13:36]
+lol
+
+Viorel Belfiore [13:50]
+https://www.linkedin.com/in/viorel-belfiore-3174b291
+
+Caleb Rechten [14:29]
+Hey guys, helpful tip if you don't know already, for the pixels or whatever value you're using, you can just press the up or down arrow to change the numbers instead of typing it in every time. It changes in real time.
+2 3 1
+
+Jasmine Vollherbst [14:31]
+@umbrellagun: Thanks :simple_smile:
+
+Caleb Rechten [14:31]
+Err, when you're testing it in the browser
+
+Karolin Rafalski [14:31]
+linkedin:  https://www.linkedin.com/in/karolin-rafalski-64963bb
+
+Jasmine Vollherbst [14:31]
+linkedin.com/in/jasminevollherbst
+
+Peter Nguyen [14:35]
+thats awesome, thanks @umbrellagun
+
+Jonathan Feudi [14:40]
+uploaded and commented on an image: 200_s.gif
+1 Comment
+1
+Umbrella gun was MY idea!
+
+Seif Dorani [14:40]
+hahahahahah #classic
+
+Peter Petrov [14:45]
+**Static (default):**
+* The only reason you would ever set an element to position: static is to forcefully-remove some positioning that got applied to an element outside of your control. This is fairly rare, as positioning doesn't cascade.
+
+**Relative:**
+* Allows nudging elements in different directions with top, right, bottom and left values. Its starting point is where it normally lies in the flow of the document, not the top left of the page.
+* When set to position relative, elements take up the same amount of space at the same exact position it was supposed to take as if its position was static.
+* It introduces the ability to use z-index on that element, which doesn't really work with statically positioned elements. Even if you don't set a z-index value, this element will now appear on top of any other statically positioned element.
+* It limits the scope of absolutely positioned child elements. Any element that is a child of the relatively positioned element can be absolutely positioned within that block.
+
+**Absolute:**
+* Position absolute takes the element out of the document flow. This means that it no longer takes up any space like what static and relative does. Think of it as an element with a giant strip of velcro on its back. Just tell it where to stick and it sticks.
+* You use the positioning attributes top, left, bottom and right to set the location. Remember that these values will be relative to the next parent element with relative (or absolute) positioning. If there is no such parent, it will default all the way back up to the <html> element itself meaning it will be placed relatively to the page itself.
+* The trade-off, and most important thing to remember, about absolute positioning is that these elements are removed from the flow of elements on the page. An element with this type of positioning is not affected by other elements and it doesn't affect other elements.
+
+**Fixed:**
+* Similar to position absolute, an element that has fixed position is taken out of the document flow.
+* The element is positioned relative to the viewport, or the browser window itself.
+* Major difference with position absolute is it always takes its positioning relative to the browser window.
+* Since the fixed value behaves similar to the absolute value, we can stretch the width of the element to fit the viewport by setting offset values for left and right to zero.
+2
+
+Caleb Rechten [14:55]
+I AM THE DOM TREADER
+
+[14:56]
+:boat:
+1 1 1
+
+Colin Hart [15:00]
+@group This our next little section, https://developer.mozilla.org/en-US/docs/Web/Events
+
+Mozilla Developer Network
+Event reference
+DOM Events are sent to notify code of interesting things that have taken place. Each event is represented by an object which is based on the Event interface, and may have additional custom fields and/or functions used to get additional information about what happened. Events can represent everything from basic user interactions to automated notifications of things happening in the rendering model.
+
+Seif Dorani [15:05]
+is there a thermostat in the room??
+
+Ari Ingber [15:05]
+think its position is set to relative
+1
+
+Karolin Rafalski [15:06]
+feels like absolute zero
+1
+
+Patrick McWilliams [15:06]
+the warmth of life is not welcome here
+
+
+Dan Dilorio [15:07]
+<insert temperature pun here>
+
+Seif Dorani [15:07]
+lol
+
+Jonathan Feudi [15:11]
+The DOM tree needs cold to grow
+1 1 1 1 1
+
+Jasmine Vollherbst [16:03]
+uploaded an image: Slack for iOS Upload
+Add Comment
+1
+
+Dan Dilorio [16:31]
+Propagation, P R O P A G A T I O N, Propagation
+1 1
+
+[16:31]
+that's a weird word
+
+Peter Petrov [16:38]
+```var ring1 = document.querySelector('.ring-1');
+ring1.addEventListener('click', function(event) {
+  event.stopPropagation();
+  alert('1 was clicked');
+});
+
+var ring2 = document.querySelector('.ring-2');
+ring2.addEventListener('click', function(event) {
+  event.stopPropagation();
+  alert('2 was clicked');
+});
+
+var ring3 = document.querySelector('.ring-3');
+ring3.addEventListener('click', function(event) {
+  event.stopPropagation();
+  alert('3 was clicked');
+});
+```
+
+Dan Dilorio [16:46]
+here be codes https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code
+
+Mozilla Developer Network
+KeyboardEvent.code
+The KeyboardEvent.code property represents a physical key, that is value not changed neither by the modifier state, nor by keyboard layout.
+1
+
+Jonathan Feudi [16:56]
+HODOR
+
+Patrick McWilliams [17:37]
+did anyone catch peter’s code at the end there to capture the key press event?
+
+Karolin Rafalski [17:37]
+added a JavaScript/JSON snippet: key capture
+document.body.addEventListener('keydown', function (event){
+  console.log(event)});
+Add Comment
+Patrick McWilliams [17:38]
+ty!
+
+Harry Ganz [17:39]
+@channel  The CSS for loanbot has #log.prompt and #log.loanbot printing as white on white. Also, there are two styles listed for #log.
+
+[17:40]
+Can one of the instructors push a version with the styles normalized?
+
+Colin Hart [17:58]
+@harryg: @group in style.css on line 33 add the property : value `color: black`
+
+[17:58]
+the second set of #log styles is necessary. (edited)
+
+[17:58]
+I’m pushing the change now too
+
+Patrick McWilliams [18:42]
+on collect interest, is the bot getting paid or just calculating interest
+
+Harry Ganz [18:44]
+@group: can we use accrue interest instead of collect interest? It would make my input parser simpler if the first word is always a unique function name
+
+Elton Cheng [21:37]
+If anyone studying tonight left their charger, I took it to the front desk on the third floor.
+
+Patrick McWilliams [21:49]
+maybe i shouldn’t have made LoanBot a constructor.
+
+[21:49]
+I may run out of ‘this.’s before the night’s over
+
+Karolin Rafalski [21:49]
+I am still trying to get input
+
+Patrick McWilliams [21:50]
+i’ve got a way to log input, i don’t yet have a way to get that info to the bot
+
+
+
+
+----- January 27th -----
+Peter Petrov [09:02]
+http://ga-quiz.herokuapp.com/
+
+Peter Nguyen [10:31]
+I suffer this everyday. Thought you guys might find this helpful too: http://youtu.be/LT_dFRnmdGs
+YouTube
+rekrain
+Exercise to improve hunchback posture   forward head carriage correction
+
+
+Caleb Rechten [10:32]
+So what exactly is going on with the Persephone Science Fair?
+
+Dan Dilorio [10:33]
+to add on to what @penguyen said, these stretches are also great for preventing carpal tunnel
+
+
+
+
+https://www.youtube.com/watch?v=SSbf4mBKq-o
+YouTube
+GalaxyStarcraft
+5 Stretches Day9 recommends before playing Starcraft 2
+
+
+[10:33]
+also for playing starcraft 2 :stuck_out_tongue:
+
+Lauren Golik [10:36]
+@umbrellagun: I believe the Persephone WDI class will be showing their final projects
+
+Jonathan Feudi [10:36]
+:bmo: THERE’S A BMO
+1
+
+[10:37]
+:catbug: AND A CATBUG
+
+Caleb Rechten [10:39]
+So it's just upstairs?
+
+Dan Dilorio [10:39]
+:flag-kp: WHY IS THERE A NORTH KOREAN FLAG :flag-kp:
+1
+
+Jonathan Feudi [10:39]
+:flag-us:FREEEEEEEEEEEEDOM
+1
+
+Lauren Golik [10:40]
+yeah - in the concourse area
+
+Jonathan Feudi [10:44]
+:flag-kp::bomb::bomb::bomb::flag-kr::psy:
+
+[10:44]
+DMZ… also Psy
+
+Caleb Rechten [10:44]
+Okay, I'm thinking we either go to that and come back here so I can share the app idea after, or I just wait till next week when there isn't a conflict. I'm totally cool with either. Vote Catbugs for later today, BMO for next week.
+2 3 1
+
+[10:45]
+Vote North Korea for saddness
+
+Caleb Rechten [11:34]
+Yeah, I think I'm feelin next week too.  :+1:
+
+Jasmine Vollherbst [13:11]
+If anyone wants to work on hw, we're all meeting back in the classroom
+2 1
+
+Jonathan Feudi [17:42]
+Anyone there? Weird little thing happening
+1
+
+[17:42]
+I mean
+
+[17:42]
+HODOR
+
+Rachel Smyth [19:03]
+@group anyone need hw help?
+
+Viorel Belfiore [19:04]
+yes
+
+Adam Kriger [19:04]
+yes please
+
+Rachel Smyth [19:04]
+Come on up to the 4th floor
+
+Jonathan Feudi [19:04]
+I literally just solved the snag I’ve been stuck on for like an hour :weary:
+1 2
+
+Elton Cheng [19:05]
+Just watched 3 people storm out for Rachel
+
+[19:05]
+so popular
+2
+
+Rachel Smyth [19:05]
+Hahahahaha
+
+Rachel Smyth [19:22]
+@group study sesh in the “Marcus” room on 4th floor. come on up with qs!
+
+KP Perez [19:24]
+@group Go up to the 4th floor, if you head towards the back, taking the right side hallway. It'll be a door on your left, past the kitchen, it says Marcus on the outside. Rachel is working on LoanBot, I'm working on MTA
+
+Colin Hart [19:30]
+@group github is currently down, don't stress about pushing etc if it's down later tonight. We can resolve in the am
+
+Colin Hart [19:31]
+uploaded an image: Slack for Android Upload
+Add Comment
+Patrick McWilliams [20:52]
+fyi, you cannot declare variables above cases in a switch statement
+
+Karolin Rafalski [20:53]
+but you can above the switch?
+
+Dan Dilorio [20:54]
+yes
+1
+
+jason Seminara [21:17]
+@group for those using Sublime 2. before you can install plugins efficiently, you must first install the “Sublime Package Manager” (edited)
+
+[21:18]
+Read this http://stackoverflow.com/a/15652795/498702
+
+How to install plugins to Sublime Text 2 editor?
+How to install plugins to the Sublime Text editor? I would like to install Emmet plugin to Sublime Text 2 editor.
+(edited)
+
+Rachel Smyth [21:50]
+@patrickm, @karolin, @trampolinetales you can declare stuff before your switch statement, and within cases, but not between switch and case.
+
+```//good idea
+var thing = 'stuff'
+switch (thing)
+   //bad idea
+   var x = 'new thing';
+  case 'stuff':
+      //good idea
+     var x = 'new thing';
+    break;
+…etc.
+```
+(edited)
+4
+
+[21:53]
+re: github: http://www.downforeveryoneorjustme.com/ it’s back up! (edited)
+1
+
+
+----- January 28th -----
+Seif Dorani [09:46]
+@ziggy: happyhour
+
+Peter Petrov [10:28]
+@group: @feudi If you want to check if the event was fired you have to do it in the function that gets called (the handler). You know that that function will execute every time the event fired, so that is a great place to do it.
+5
+
+Dan Dilorio [12:01]
+for anyone curious as to why javascript eventually went from `2.6` to `1.6` to `0.600000000000001` in the above example, this is a good explanation: https://www.youtube.com/watch?v=PZRI1IfStY0
+YouTube
+Computerphile
+
+
+Floating Point Numbers - Computerphile
+
+
+Jonathan Feudi [12:01]
+Hey, I just typed you
+
+[12:02]
+And this is crazy
+
+[12:02]
+But here’s a function
+1
+
+Dan Dilorio [12:02]
+no
+1
+
+Jonathan Feudi [12:02]
+So call it later
+
+Elton Cheng [12:22]
+B 5eva
+
+Dan Dilorio [12:30]
+:flag-kp:  JOIN GLORIOUS B :flag-kp:
+1
+
+Rachel Smyth [12:31]
+http://www.autostraddle.com/wp-content/uploads/2013/12/beyonce_flawless.gif (1MB)
+
+
+Dan Dilorio [12:33]
+https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fi.huffpost.com%2Fgen%2F977715%2Fthumbs%2Fo-BEYONCE-570.jpg%3F1&f=1 (142KB)
+
+
+Karolin Rafalski [12:34]
+¯\_(ツ)_/¯
+1 1
+
+Rachel Smyth [12:34]
+listen, we all have bad days when we look like the hulk trying to understand how javascript deals with floats.
+5
+
+Dan Dilorio [12:35]
+щ(ﾟДﾟщ)
+1
+
+Patrick McWilliams [13:16]
+so, for loanbot i have the following code which works in node:
+
+Patrick McWilliams [13:16]
+added and commented on a JavaScript/JSON snippet
+if(this.marks[person]===undefined){
+      this.marks[person]=amount;
+      console.log('This is ' + person + '\'s first loan. The loan amount is ' + this.marks[person] + ' dollars.');
+    }
+1 Comment
+but spits an error at line1 (here) that this.marks[person] is undefined.
+
+Patrick McWilliams [13:17]
+(when in browser console). is there a way i can get that line to finish evaluating?
+
+[13:20]
+note: there’s an else following that for what do to when that is already defined
+
+Patrick McWilliams [13:37]
+that’ing it helped, but now i’ve got other issues. PROGRESS
+
+Jonathan Feudi [13:56]
+uploaded and commented on an image: MissionDancomplished.jpg
+1 Comment
+2 1 1
+Congratulations on your earlier victory, Dan
+
+Dan Dilorio [14:10]
+this is my campaign photo: https://scontent-lga3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/383747_3060463877707_411499768_n.jpg?oh=4da47dde550ac55b5ba9b0768c87b962&oe=57284DC4 (25KB)
+
+
+Peter Petrov [16:18]
+@group: Exit Ticket!!!
+http://goo.gl/forms/SX6koVdReh
+Google Docs
+Lesson Exit Ticket 01/28 (141KB)
+
+
+Peter Petrov [16:46]
+@group Homework!!!
+http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+
+Bloomberg.com
+What Is Code? If You Don't Know, You Need to Read This
+The world belongs to people who code. Those who don’t understand will be left behind.
+
+Peter Petrov [16:55]
+One Star Bar 147 W 24th St, New York, NY 10011 Be there!
+
+Rachel Smyth [17:09]
+@group when you go out for a night on the town, remember the “BUDDY" system:
+​*B*​ owies, ​*U*​ ​*D*​ eserve ​*D*​ rinks. ​*Y*​ olo! (edited)
+2 2
+
+Peter Petrov [17:17]
+@KP @rs come to happy hour if you can!
+
+[17:17]
+@kp_was_already_taken
+
+Elton Cheng [18:31]
+So karaoke next week right?
+
+KP Perez [18:38]
+Doubtful that you'll need any help since your homework is drinking and reading, but if you do -- 4th floor back left. I know, one person is here, so more than welcome. You may slack me as well, especially if you're drunk but just be aware I am a screen-shotter
+
+Caleb Rechten [19:02]
+How do you create an event for people to join? Is that only for the teachers?
+
+Jimmy Lin [19:25]
+hi @kp_was_already_taken are you free for some Q&A?
+
+KP Perez [19:36]
+@jimmylin: 4th floor, back left. Working with Adam right now but you can hang here or I'll tell you when I'm done
+
+Jimmy Lin [19:37]
+i will come up in 5mins and hang around until he is finished
+
+Patrick McWilliams [19:43]
+sooo
+
+[19:43]
+i seemed to have git checkout to my branch
+
+[19:43]
+from a directory that doesn’t exist there
+
+[19:44]
+and now im in some phantom director where i dont seem to be able to do any git anything
+
+[19:44]
+help?
+
+[19:46]
+ok, cd ~/ got me back to home
+
+[19:46]
+lets see if i can fix it from here
+
+Harry Ganz [20:23]
+@umbrellagun I'd totally be in for some karaoke
+
+[20:23]
+Sorry above comment was for @elton912
+
+
+----- January 29th -----
+Rachel Smyth [08:25]
+Whole class this am be like: http://33.media.tumblr.com/562af75356bb33c3c02b2babbf496b14/tumblr_inline_mztt875fdv1qa7k0a.gif (1MB)
+
+1 1 1 2
+
+Jasmine Vollherbst [09:08]
+@group: http://lorem-ipsum.perbang.dk/ for dummy text
+1
+
+Elton Cheng [09:08]
+Thank you!
+
+Jasmine Vollherbst [09:09]
+:smile:
+
+Jimmy Lin [09:11]
+thanks :simple_smile:
+
+Jimmy Lin [09:22]
+uploaded an image: ecardly-html-only 3.png
+Add Comment
+Jimmy Lin [09:22]
+uploaded an image: ecardly-html-only 2.png
+Add Comment
+Jimmy Lin [09:22]
+uploaded an image: ecardly-html-only 1.png
+Add Comment
+Jasmine Vollherbst [09:23]
+Thanks!
+
+Jonathan Feudi [10:26]
+I am the Fernet
+
+Dan Dilorio [10:26]
+I'm Dan
+
+Jonathan Feudi [10:26]
+Hi!
+
+Dan Dilorio [10:26]
+hello
+
+Jonathan Feudi [10:26]
+Nice to meet you!
+
+[10:26]
+Care for a drink?
+
+Seif Dorani [10:27]
+dont drink fernet dan
+
+Caleb Rechten [10:30]
+hi
+
+Jonathan Feudi [10:31]
+Hello!
+
+Caleb Rechten [10:32]
+https://38.media.tumblr.com/33f57ea59b3e5013d3635d56adf7216b/tumblr_nlh1uvkpNj1rumhrro1_400.gif (634KB)
+
+2 2
+
+Elton Cheng [10:32]
+https://www.youtube.com/watch?v=YQHsXMglC9A
+YouTube
+AdeleVEVO
+Adele - Hello
+
+
+Jonathan Feudi [10:32]
+Caaaaaleb you’re tearing me apart!
+2
+
+[10:32]
+“YOU’RE MY FAVORITE CUSTOMER"
+1
+
+Dan Dilorio [10:34]
+ohaimark
+2
+
+Jonathan Feudi [10:37]
+Gonna make a sweet text adventure
+
+[10:37]
+It’ll be boss
+
+Dan Dilorio [10:37]
+get lamp
+
+Jonathan Feudi [10:37]
+You got the lamp!
+
+
+Caleb Rechten [10:37]
+Get ye flask
+
+Dan Dilorio [10:37]
+you can not get ye flask
+
+[10:37]
+and you just gotta sit there wondering, why you can't get ye flask...
+
+Jonathan Feudi [10:37]
+You got ye flask! It’s empty, though, you’ll have to find something to fill it up with.
+
+Dan Dilorio [10:38]
+http://www.homestarrunner.com/dungeonman.html
+2 2
+
+Caleb Rechten [10:38]
+YESSSSS
+
+[10:38]
+You got it
+
+Dan Dilorio [10:38]
+they dungeonman 3 was the best one
+
+[10:38]
+*thy
+
+jason Seminara [10:44]
+pbpaste > filename.js
+
+Jonathan Feudi [10:45]
+Behold my majesty guys
+1 1 1
+
+Dan Dilorio [10:46]
+I approve of this
+
+Patrick McWilliams [10:48]
+i fear for the countryside
+
+Dan Dilorio [10:48]
+consummate Vs! consummate!
+1 1
+
+Jonathan Feudi [10:51]
+uploaded and commented on an image: thesisforsucks.png
+1 Comment
+Hey guys, can I come along?
+
+Dan Dilorio [10:52]
+http://www.homestarrunner.com/trogday08.html
+
+jason Seminara [11:14]
+http://api.jquery.com/css/#css-properties
+jQuery: The Write Less, Do More, JavaScript Library
+
+Harry Ganz [11:14]
+Today's XKCD : https://xkcd.com/1636/ (edited)
+
+Colin Hart [11:27]
+```To do this, once Reddit.com has loaded, go to your view menu in Chrome. Select View > Developer > JavaScript Console
+
+Once that's loaded, try entering the following command into the Chrome REPL:
+
+$('img').hide()
+Hit enter. All the images should have dissappeared from the Reddit.com home page. Make sure you understand why before moving on.
+
+Now try this:
+
+$('img').show()
+That should have brought all the images back. Make sense so far?
+
+Now with the chrome inspector, try to match the title of the first reddit post and replace the text using .text() or .html().
+
+Try to replace the blue background in the header by another color using the function .css().
+
+Now try some of the other examples we've gone over in the Chrome REPL and see what happens to the Reddit.com website. Remember, this is your laboratory — your chance to experiment and learn. Make use of it.```
+
+Colin Hart [11:42]
+```<body class="container">
+
+    <h1 class="jumbotron">Lake Arrowhead Homes For Sale</h1>
+
+    <table id="homes" class="table">
+        <thead>
+            <tr>
+                <th>Address</th>
+                <th>Sq. Ft.</th>
+                <th>Bedrooms</th>
+                <th>Baths</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>27374 Matterhorn Drive</td>
+                <td>1,664</td>
+                <td>3</td>
+                <td>2</td>
+                <td>$279,500</td>
+                <td><button class="btn btn-xs btn-danger">Remove</button></td>
+            </tr>
+            <tr>
+                <td>243 El Dorado</td>
+                <td>4,900</td>
+                <td>6</td>
+                <td>6.5</td>
+                <td>$990,000</td>
+                <td><button class="btn btn-xs btn-danger">Remove</button></td>
+            </tr>
+            <tr>
+                <td>1228 Klondike Drive</td>
+                <td>2,158</td>
+                <td>4</td>
+                <td>2.5</td>
+                <td>$400,000</td>
+                <td><button class="btn btn-xs btn-danger">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button id="addHome" class="btn btn-danger">Add Home</button>
+
+</body>```
+
+Colin Hart [11:53]
+```<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">```
+(edited)
+
+Peter Petrov [12:16]
+https://oscarotero.com/jquery/
+jQuery Cheat Sheet
+jQuery cheat sheet in HTML with links to the original API documentation. Created by Oscar Otero (174KB)
+
+2 2
+
+Peter Nguyen [14:59]
+Elton is soooo cool
+
+
+@group: Exit tickets!
+http://goo.gl/forms/NisB1uW44q
+Google Docs
+Exit Ticket 01/29
+End of week comments (157KB)
+
+
+Elton Cheng [16:37]
+X|   |
+————
+  |   |
+————
+  |   |
+
+Dan Dilorio [16:40]
+X|   |
+————
+|   |
+————
+O |   |
+
+Patrick McWilliams [16:43]
+X|  |
+————
+|:octopus:|
+————
+O|  |
+
+Dan Dilorio [16:45]
+X|  |
+————
+|:octopus:|
+————
+O|:flag-de:|
+
+Jasmine Vollherbst [17:07]
+if anyone wants to work on hw, there’s a group of us on the 3rd floor in the back
+
+Adam Kriger [18:50]
+Is anyone going to be at GA tomorrow to work on the homework? If like to get a group together....
+
+Maxwell Rayman [21:15]
+does anyone know if we have to use jQuery for this assignment? or can we use vanilla js?
+
+Jasmine Vollherbst [21:41]
+@mxray333: I think using just vanilla js is fine, but it wouldn’t hurt to try out our new jQuery skills :smile:
+
+Colin Hart [22:37]
+@max @jasminev jquery for sure. no vanilla!
+1
+
+
+----- January 30th -----
+Patrick McWilliams [12:39]
+So is anyone else thinking about win condition check and seeing a future filled with nested if statements?
+
+Karolin Rafalski [12:41]
+I was thinking one if statement with a long chain of || and && s
+
+Dan Dilorio [12:46]
+mine is just a ton of for loops, if statements, and a stupidly big switch-case statement
+
+Karolin Rafalski [12:46]
+aren’t switch statements exactly for being er… as you put it…stupidly big?
+
+Dan Dilorio [12:47]
+true, it'd be even bigger if it was just if-else
+1
+
+Patrick McWilliams [12:49]
+There should be a shortcut for nesting ifs. Something like if(bla){provided (addtnl thing 1;2;3;4){ //stuff}}
+
+Dan Dilorio [12:50]
+I'm not sure what you mean by that
+
+[12:50]
+but there are tons of shortcuts in atom/sublime
+
+Colin Hart [12:52]
+[PROTIP] try to figure out ways around nested if’s :stuck_out_tongue:
+
+
+Dan Dilorio [12:53]
+@colinhart: can we use normalize.css?
+
+[12:54]
+for the weekend homework, I mean
+
+Colin Hart [12:54]
+[PROTIP2] If your if statement is longer than three conditions, `if, else if, and else`, use a switch statement or try to rework your code so you don’t need to check for so many conditions (edited)
+3
+
+[12:55]
+For sure dan
+
+Dan Dilorio [12:55]
+awesome
+
+[12:55]
+I've always liked the rule of threes for code
+
+[12:55]
+even if I don't always listen to it...
+
+Karolin Rafalski [12:55]
+the protips are greatly appreciated!
+
+Dan Dilorio [12:56]
+oh hey, the wiki page for it links to DRY :smile: https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)
+
+Jasmine Vollherbst [13:13]
+Some Saturday inspiration: http://creativesomething.net/post/138217172835/how-to-build-a-life-of-inspiration-in-four-easy
+
+Dan Dilorio [13:27]
+this is my everyday inspiration: https://www.youtube.com/watch?v=KxGRhd_iWuE
+YouTube
+Ryuujin131
+Matsuoka Shuzo [松岡修造 ] - あきらめかけているあなた (NEVER GIVE UP!!) [English]
+
+Caleb Rechten [14:10]
+Omw to union square for the Bernie Sanders march. How late is GA open on the weekends? If they're still open, I'll probably head over to get some work done there.
+
+Jonathan Feudi [14:15]
+Anyone else calling the laundry function? Clean clothes has been set to false for a little too long...
+3
+
+Elton Cheng [14:29]
+@umbrellagun: 6 I believe
+
+Caleb Rechten [14:31]
+Both Saturday and Sunday?
+
+Jasmine Vollherbst [14:32]
+Yep! 10:00-6:00 both Sat and Sun
+
+Patrick McWilliams [15:35]
+PSA: dont forget to link to your stylesheet. #genius
+
+Karolin Rafalski [21:25]
+Anyone heading in to GA tomorrow?
+
+Jasmine Vollherbst [21:50]
+I'll be there around 1:00.
+
+Karolin Rafalski [22:01]
+Cool! I'll see you around 1ish!
+
+Viorel Belfiore [23:20]
+I think I'll join you guys
+1
+
+
+----- January 31st -----
+Adam Kriger [10:40]
+Weird Bug: XOX pattern declares player 1 wins. Anyone else experience this?
+
+Adam Kriger [10:51]
+never mind, got it!
+
+Sara Horowitz [11:35]
+in the back common room on 3rd floor if anyone wants to work together today!
+
+Karolin Rafalski [11:50]
+Should be there a bit before 1
+
+Caleb Rechten [12:28]
+@channel Hey guys, I know this is could be a bit of an imposition, but I figured it can't hurt to ask. The commute in and out of the city had really been cutting into my study time. I lose at least three hours a day total, if not more. If there's anyone willing to let me crash on their couch occasionally, it would help me out ton. No worries of not!
+
+Viorel Belfiore [12:34]
+I feel that
+1
+
+Caleb Rechten [13:04]
+@channel Also, for whoever is interested, I'm planning on presenting the webapp/app that I'm working on at 1:30 after class on Wednesday. I'm going to be submitting the project to the contest Emine posted about in a couple months, so I would love any and all feedback on it!
+6
+
+[13:07]
+Invite yo frands.
+
+Adam Kriger [14:30]
+http://www.learningjquery.com/2007/08/what-is-this
+One of the most confusing aspects of jQuery is how it assigns scope during callbacks. It must be confusing because the topic generates a lot of questions on the
+
+Jasmine Vollherbst [15:38]
+If anyone needs a break from JS and wants to play around with CSS, here’s a link to free Google web fonts: https://www.google.com/fonts
+1 2
+
+Rachel Smyth [16:49]
+@group if you want to host your finished games to share them with your peers (& get another pair of eyes for troubleshooting that laaaast bug) try using codepen.io
+
+KP Perez [17:13]
+@umbrellagun: I'll try to hit your presentation but if I can't, let's chat. I've worked for a digital services company for almost 3 years, where I saw tons of apps go through our dev cycle. I did a bunch of the proposals and scope of work docs if you need any help. Can't wait to hear about it. That's awesome
+2
+
+Caleb Rechten [17:15]
+@kp_was_already_taken:  Awesome! I would really appreciate it and I'd eat up anything you can share!
+
+Patrick McWilliams [17:17]
+would it be possible to turn that into a group thing? or maybe do a mock proposal/scope of work doc… thing? in case @umbrellagun (reasonably) doesn’t want the whole class in on a critique of his app/site
+
+Jonathan Feudi [17:26]
+uploaded and commented on an image: hansolosmile-165194.jpg
+1 Comment
+3
+That feeling when you chain together a bunch of weird variables that you don’t think will work… and then it totally does.
+
+Caleb Rechten [18:19]
+@patrickm:  I'm not 100% on what you mean exactly. But I'm cool with openly critiquing my idea. It won't get to the place it needs to be otherwise!
+
+Jonathan Feudi [20:05]
+Anyone having trouble with 3 part equal statements? i.e. object.property === object2.property === object3.property
+
+[20:05]
+Even when all three are the same, the statement returns false for me
+
+[20:06]
+Wait, think the problem was triple equals
+
+Patrick McWilliams [21:53]
+i dont know that you can chain comparisons like that?
+
+[21:53]
+i use ifs or cases
+
+[21:55]
+if(object1.property===object2.property{if(object2.property===object3.property){ //stuff you’re trying to do}}
+
+Maxwell Rayman [22:00]
+@feudi: im pretty sure* when you have a conditional 'x === y === z’ and they are all the same, it will return false because it does ‘x === y’ = true -> true === z = false (edited)
+
+[22:00]
+@feudi: you have to write it as x === y && y === z
+5
+
+
+----- February 1st -----
+
+
+
+Jonathan Feudi [10:00]
+The Adventures of jQuery in JavaScript Land!
+
+Dan Dilorio [10:30]
+we schoolhouse rock now
+
+Caleb Rechten [10:32]
+I really love pronoun analogy for 'this.'
+2
+
+Lauren Golik [10:32]
+was just thinking about that!
+
+Karolin Rafalski [10:33]
+`I thought we were thinking about this...
+
+Lauren Golik [10:33]
+ha ha ha...
+
+Jonathan Feudi [10:34]
+:icecream:
+
+Caleb Rechten [10:35]
+I want ice cream now.
+
+Karolin Rafalski [10:36]
+I feel like the ghosts of Abott and Costello are in the room
+
+Patrick McWilliams [10:36]
+who’s on what now?
+
+Karolin Rafalski [10:36]
+naturally
+
+Dan Dilorio [10:36]
+this.baseman
+2
+
+[10:37]
+problem solved
+
+Caleb Rechten [10:40]
+Tangent, I've never really seen the need to clarify if someone is male or female with pronouns anyway.
+
+Dan Dilorio [10:40]
+aaaaaaaaaaand here comes the derail
+
+Viorel Belfiore [10:40]
+TRIGGERED:  HOW DARE YOU
+
+Caleb Rechten [10:40]
+XD
+
+Karolin Rafalski [10:40]
+I have always agreed with the following: https://xkcd.com/145/
+xkcd
+Parody Week: Dinosaur Comics
+[Title text] "Guys: while I was writing this, I accidentally swallowed a table-sized slab of drywall.  I know!  Wacky." (115KB)
+
+1
+
+Harry Ganz [10:40]
+At least english doesn't have gendered nouns. I always screw that one up
+
+
+Jonathan Feudi [10:41]
+I identify as an attack helicopter
+
+Dan Dilorio [10:41]
+pls no copy pasterino
+
+Jonathan Feudi [10:41]
+Don’t tell me I don’t have the right to shoot rockets everywhere, it’s insensitive
+
+Caleb Rechten [10:41]
+If we had gendered nouns AND pronouns? I think if might actually make more sense, otherwise I feel like it's arbitrarily inconsistent.
+
+[10:42]
+it*
+
+jason Seminara [12:15]
+treeData = {
+    heights:[1, 60, 39, 2,7,8, 234, 156, 324, 74, 236, 93, 435, 1000, .2345],
+    species:['maple', 'elm', 'gingko', 'ash', 'spruce', 'London Plane', 'sequoia', 'oak', 'avocado', 'paw paw', 'pear', 'cherry' ],
+}
+
+Colin Hart [12:16]
+trees!!
+
+http://www.jillhubley.com/project/nyctrees/
+
+All of the tree spreadsheets: https://data.cityofnewyork.us/browse?q=Street%20Tree%20Census
+
+(From the above e.g.) Manhattan trees: https://data.cityofnewyork.us/Environment/Street-Tree-Census-Manhattan-/e6n3-m3vc
+NYC Open Data (5KB)
+
+
+NYC Open Data
+Street Tree Census (Manhattan) | NYC Open Data
+Manhattan street tree census inventory Update Frequency: As Needed
+(edited)
+
+jason Seminara [12:40]
+// Create a Tree constructor Function
+
+// Loop 1e6 times and generate that many trees into an array
+// during the loop, randomly assign some attrib from the above data
+// create a grow function on the prototype that sets the tree's height
+// BONUS: Create a plant function that sets the tree's location (x,y pair)
+// // Bonus #2: PLANT YOUR TREES
+
+Caleb Rechten [13:01]
+Who else finished reading the "What is Code?" article?
+
+KP Perez [13:02]
+@group bowies, unfortunately I won't be available in real life tonight but please slack me during my regular hours 6 to 9 and I'll help you like some sort of programming ghost.
+
+I may potentially be available to you on Wednesday earlier or Friday on a case by case basis.
+
+Sorry for the inconvenience, I'm the worst. See you tomorrow.
+
+Dan Dilorio [13:08]
+A programmer is heading out of the house, his wife says "While you're out, pick up some milk." He never returned home.
+7 2 2 1
+
+Patrick McWilliams [13:28]
+i couldnt find a groan face, so you get pouty cat
+
+Jonathan Feudi [13:57]
+I hope he doesn’t pull my name out… I hate speaking
+1 3 1
+
+Dan Dilorio [14:30]
+:poop:
+2 2
+
+Seif Dorani [14:31]
+its a hankey....
+
+Patrick McWilliams [14:32]
+that is TOO far @feudi
+
+Jonathan Feudi [14:32]
+Jar Jar Binks is the new shit
+
+Jonathan Feudi [14:52]
+:confounded:
+
+Jonathan Feudi [15:02]
+@rs Is always lurking in the shadows of our channel...
+
+[15:02]
+Always watching… waiting...
+
+Seif Dorani [15:04]
+look at the baby.. look at the baby..
+
+Rachel Smyth [15:05]
+Lol yup.
+
+[15:05]
+So BEHAVE!
+1
+
+Seif Dorani [15:05]
+https://www.youtube.com/watch?v=I4C-t18-Vvs
+YouTube
+devon98
+Old School - Wedding Scene
+
+
+Dan Dilorio [15:09]
+#gitastrophe2016
+
+Caleb Rechten [15:15]
+added a Plain Text snippet
+# Hangman in the Browser!
+You will now build the hangman game in the browser. Here are the objects we built previously for the hangman game
+```javascript
+Add Comment Click to expand inline 121 lines
+Patrick McWilliams [17:06]
+Successful murgery!:champagne:
+2
+
+Patrick McWilliams [17:14]
+who wants to work on the rest of hangman?
+
+Rachel Smyth [17:15]
+hey @group I'll be on campus tonight for hw help
+
+KP Perez [17:19]
+Ugh best coworker ever :point_up_2:
+1 1
+
+Rachel Smyth [17:22]
+@group also, I've seen a lot of comments on your hw along the lines of "i don't know what I'm doing and I'm so behind" so I'm just gonna say this:
+
+http://pleasefeedthebookworm.com/wp-content/uploads/sites/91/2016/01/kind-smart-important.gif (1MB)
+
+
+you're fine. struggling is ok. you are compressing three years of knowledge and experience into three months! As long as you are putting the hours in to practice what you're doing in class, you are in good shape.
+
+And if you're really behind, we'll tell you.
+
+Keep up the great work everybody. and see me tonight if you want to go over some things. I'll try kp's idea and get a room for a group sesh again.
+1
+
+[17:23]
+@kp_was_already_taken lmao I have to be in the building anyway! you give me too much credit :stuck_out_tongue_winking_eye: :nerd_face:
+
+Patrick McWilliams [17:25]
+there are like no available rooms. we may need to start getting rough. for science.
+1
+
+Jasmine Vollherbst [17:26]
+Is anyone still in class? I left my charger
+
+Jimmy Lin [17:26]
+@vbelfiore:  found your charger
+
+Jasmine Vollherbst [17:27]
+If anyone sees an extra charger should have my name....walking back now
+
+Elton Cheng [17:28]
+@jasminev: there’s no escaping this place.
+
+Viorel Belfiore [17:29]
+I gave it to the front desk
+
+[17:29]
+2nd floor
+
+KP Perez [17:29]
+@elton912: it can definitely feel that way lol
+
+Jasmine Vollherbst [17:31]
+Thank you!!!
+
+Viorel Belfiore [17:32]
+@jimmylin what charger?
+
+Jimmy Lin [17:33]
+i though you have @jasminev charger or the front desk has it?
+
+
+Patrick McWilliams [17:39]
+concourse is free, ATTAAAAAACK!
+
+Viorel Belfiore [17:48]
+I gave it to the front desk since I wasn’t sure where Jasmine was
+
+[17:51]
+@rs or @kp_was_already_taken are either of you guys open to go over objects?
+
+Jasmine Vollherbst [17:52]
+Got my charger!! Thanks so much!
+
+jason Seminara [17:57]
+@group: PLEASE be mindful of the state of the room at the end of the day. We've received our second complaint about leftover coffee cups and food. ​*please clean off your desks before you leave the room!*​ There is a 6pm class directly after ours and the room should be clean for them.
+
+jason Seminara [18:05]
+@group ​*reminder*​ your pull requests should ALWAYS be to/from your own repo and ​*never*​ upstream ​_students_​
+
+Rachel Smyth [18:06]
+The room is Sagan
+
+jason Seminara [18:07]
+@group ​*reminder*​ your pull requests should ALWAYS be to/from your own repo and ​*never*​ upstream ​_students_​
+
+Rachel Smyth [18:07]
+@group were in Sagan talking about objects & constructors
+
+Jimmy Lin [18:08]
+@rs: where is Sagan?
+
+Rachel Smyth [18:08]
+4th floor
+
+KP Perez [18:22]
+@group here's a resource from eloquent javascript regarding: Objects, Prototypes, Constructors
+
+[18:22]
+http://eloquentjavascript.net/06_object.html
+
+Jonathan Feudi [18:32]
+@group Did anyone see a big pair of headphones in the room? Just got home and they're not in my bag
+
+Viorel Belfiore [18:32]
+yeah, caleb spotted them.  We gave them to the front desk
+
+[18:32]
+floor 2
+
+Jonathan Feudi [18:34]
+@umbrellagun: @vbelfiore THANK YOU SO MUCH
+
+[18:34]
+:kissing_heart::kissing_heart::kissing_heart:
+
+Caleb Rechten [18:37]
+:+1:
+
+Patrick McWilliams [19:00]
+should isDead() return true if the pokemon is dead
+
+[19:00]
+or true if alive
+
+[19:01]
+“Returns a boolean indicating if the pokemon's health is less than or equal to zero” i think true if less than or equal?
+
+Lauren Golik [19:17]
+i’m reading that it should be true if pokemon is dead
+
+Rachel Smyth [19:22]
+@group any other big topics of contention?
+
+Lauren Golik [19:29]
+i could use some help on event handlers with jquery
+
+Rachel Smyth [19:31]
+Come on up to 4 I am in SAGAN
+
+Patrick McWilliams [19:34]
+Jquery/html interaction hurts my head. Less today than the weekend, but I may bug whoever's available tomorrow about it.
+
+KP Perez [19:35]
+I'll be there tomorrow ready to battle with you @patrickm
+
+Emine Koc [19:43]
+@rs I appreciate if you can spare 15 min. to me.
+
+Rachel Smyth [19:58]
+Hey @eminekoc come on up
+
+Caleb Rechten [20:01]
+So, I just want to clarify something. The whole Prototype thing, should we pretty much always want to declare functions for a constructor this way? Or are there some exceptions besides it maybe not being a big deal if we're working on something smaller? OR did I completely miss something?
+
+jason Seminara [20:42]
+@umbrellagun: it's common practice to set simple attributes in the constructor, and methods on the prototype. Essentially, any shared property should be part of the proto.
+
+[20:43]
+There isn't any rule, but re duplicating your functions, keep in mind that you're wasting space/memory each time the same function gets recreated/stored. (edited)
+
+Caleb Rechten [20:54]
+@jasonseminara Okay, awesome. Thank you!
+
+Patrick McWilliams [21:59]
+i mean, REALLY who’s idea was it to get rid of scroll arrows, and how much is the price on their head?
+
+Jonathan Feudi [22:19]
+Has anyone tried to name a variable WITH a variable?
+
+Patrick McWilliams [22:21]
+yes, it didn’t work
+1
+
+[22:21]
+or, if it does, i couldn’t figure it out
+
+Jonathan Feudi [22:22]
+I think it’s possible, your brains just need to turn to jelly and rearrange themselves
+
+Patrick McWilliams [22:22]
+im almost there then!
+1
+
+[22:23]
+var var inception= ‘whoa'
+
+Jonathan Feudi [22:23]
+WE NEED TO GO DERPER
+2
+
+[22:23]
+I MEAN DEEPER
+
+[22:24]
+Yeah, trying to get a loop to grab all the Pokemans, run them through the object constructor, and return them to an array. I think I can manage that, but I wanted them to each be appropriately named. I guess it won’t matter since their name will be stored inside the object anyway
+
+[22:26]
+Oooooh when my loops work it makes me all fuzzy inside
+
+Patrick McWilliams [22:26]
+added a JavaScript/JSON snippet: SNEAK PEAK
+var randoEn= enemies[Math.round((Math.random())*enemies.length)];
+//some stuff
+game.enemy=new Pokemon(randoEn.name, randoEn.img, randoEn.health);
+Add Comment
+Harry Ganz [23:59]
+@feudi:  @patrickm You totally can!. For the global scope
+```var varName = 'x'; global[varName] = null // Or whatever you want
+
+```
+
+
+----- February 2nd -----
+[00:00]
+In the browser use
+``` window[varName] ```
+and for a function/object
+```object[varName]```
+(edited)
+
+Caleb Rechten [08:30]
+added and commented on a Plain Text snippet
+function render(){
+
+  var $enemyImage = $('#enemy_image');
+  $enemyImage.attr('src', game.currentEnemy.img);
+1 Comment Click to expand inline 6 lines
+Anyone else have trouble getting the enemy image to display?  I believe it might be a hoisting problem. Also, I think that can be one line, but I had it split to test things out.
+
+Peter Petrov [08:51]
+@group: Please to an exit ticket for yesterday!
+http://goo.gl/forms/NCpL4FD8px
+Google Docs
+Lesson Exit Ticket 02/02 (141KB)
+
+
+Caleb Rechten [09:55]
+​*cough*​ I completely missed the point of the columns. I thought they were more specific, like the skeleton css for buttons.
+2
+
+Lauren Golik [09:55]
+you’re not alone
+
+Dan Dilorio [09:56]
+they're basically a way of letting the CSS figure out how big the box around your divs should be based on the size of the browser window
+
+Caleb Rechten [09:57]
+Yeah, it's pretty obvious, but I didn't really look at them because I thought they were something specific (like buttons) that I didn't need. My own fault I guess, but just sayin.
+
+Dan Dilorio [09:58]
+https://images.duckduckgo.com/iu/?u=http%3A%2F%2F24.media.tumblr.com%2Ftumblr_lkhd27rqlm1qju073o1_500.jpg&f=1 (43KB)
+
+4
+
+Dan Dilorio [10:06]
+If anyone liked the homework last night and wants to mess around with a pokemon API... http://pokeapi.co/
+Pokeapi The Pokemon RESTful API
+2
+
+Peter Petrov [10:32]
+https://en.wikipedia.org/wiki/Bus_factor
+
+Jonathan Feudi [10:33]
+WDI Bowie - “Laughs in the face of death."
+
+Peter Nguyen [11:17]
+http://www.starpulse.com/news/index.php/2016/01/31/2016-groundhog-day-results-early-sprin
+Starpulse
+2016 Groundhog Day Results: Early Spring, Six More Weeks Of Winter? Punxsutawney Phil Makes His Big Reveal Live Online
+Groundhog Day 2016: Shadow Or No Shadow For Punxsutawney Phil? (85KB)
+
+
+[11:17]
+early spring !!
+1
+
+Dan Dilorio [11:18]
+oh hey, it's groundhog day
+
+Dan Dilorio [12:18]
+ Pinned a message. See all pinned items in this channel.
+eric hegdahl coacheric
+Coach Eric | NYC Outcomes Roadmap - WDI
+Your Outcomes Roadmap : http://bit.ly/1MGNlHo [Pin it!]
+Jan 26th at 12:21
+3
+
+Lauren Golik [12:18]
+thank you!!
+
+Dan Dilorio [12:18]
+no problem, didn't realize that was for everyone lol
+
+[12:19]
+pinning, I mean
+
+eric hegdahl [12:22]
+Your "Developing Your Network" EXIT TICKET! : https://goo.gl/4meXjC
+20 Influencers : http://goo.gl/QLy2kM
+AlleyWatch
+20 Awesome People in the New York Tech Scene You Need to Know About - AlleyWatch
+They’re mentors. They’re facilitators. They’re connectors. And they’re always ready, willing and able to help entrepreneurs wherever and however they can. You may have seen some of them on panels, but these are the people who spend most of their time working behind the scenes and front and center to keep the New York tech community thriving and growing. We, at AlleyWatch, felt it was high time that someone shined a spotlight on these shakers and movers.  They’re the people who help to make sure the Show more... (1MB)
+Aug 13th, 2014 at 17:27
+
+
+Jasmine Vollherbst [12:22]
+ Pinned a message. See all pinned items in this channel.
+eric hegdahl coacheric
+20 Awesome People in the New York Tech Scene You Need to Know About - AlleyWatch
+Your "Developing Your Network" EXIT TICKET! : https://goo.gl/4meXjC
+20 Influencers : http://goo.gl/QLy2kM
+Feb 2nd at 12:22
+1
+
+Dan Dilorio [12:23]
+use this power for good
+
+Harry Ganz [13:54]
+Measure once, cut twice - Jason Seminara
+1 1
+
+Maxwell Rayman [13:55]
+https://ak-hdl.buzzfed.com/static/2014-08/6/9/enhanced/webdr07/anigif_enhanced-16559-1407332791-2.gif (2MB)
+
+4 1 1 2 2 1
+
+Dan Dilorio [13:58]
+http://pomodorotechnique.com/
+
+[13:59]
+your mileage may vary
+
+Harry Ganz [13:59]
+I make 50 minute playlists and take a break after each is done for like 15 minutes
+
+Colin Hart [14:00]
+https://guides.github.com/features/issues/
+
+jason Seminara [14:23]
+@group: read more about the JS prototype chain: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+
+Mozilla Developer Network
+Inheritance and the prototype chain
+JavaScript is a bit confusing for developers experienced in class-based languages (like Java or C++), as it is dynamic and does not provide a class implementation per se (the class keyword is introduced in ES6, but is syntactical sugar, JavaScript remaining prototype-based).
+(edited)
+
+Jonathan Feudi [14:28]
+ネバーギブウプ！NEVER GIVE UP
+
+Seif Dorani [14:31]
+neba gibapu
+
+Dan Dilorio [14:31]
+NEFFA GIF UP
+
+[14:31]
+https://www.youtube.com/watch?v=KxGRhd_iWuE
+YouTube
+Ryuujin131
+Matsuoka Shuzo [松岡修造 ] - あきらめかけているあなた (NEVER GIVE UP!!) [English]
+
+
+Caleb Rechten [14:32]
+Where was the example user story?
+
+Dan Dilorio [14:32]
+As a **type of user**, I want **some goal** so that **some reason**.
+
+Caleb Rechten [14:32]
+That's it? Oh...
+
+Maxwell Rayman [14:41]
+how to make a new repo > https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+Putting your existing work on GitHub can let you share and collaborate in lots of great ways. Tip: If you're most comfortable with a point-and-click user interface, try adding your project with GitH…
+2
+
+Viorel Belfiore [15:38]
+https://ga-students.slack.com/archives/D0KTPPU2V/p1454442414000002
+
+[15:38]
+colin slacked me that, It deals with collisions
+
+[15:38]
+if anyone’s interested
+
+Caleb Rechten [15:39]
+It's told me it's a 'glitch'.
+
+Maxwell Rayman [16:52]
+code freeze @ 6:30PM for football fans :football:
+1
+
+Caleb Rechten [17:31]
+Just clarifying, we're doing separate 'issues' for separate user stories?
+
+Peter Petrov [17:32]
+@group: for anyone who wants to move things around (looking at all the shooter, scroller gamers)
+http://julian.com/research/velocity/
+Velocity.js: An incredibly fast animation engine for motion designers.
+
+Patrick McWilliams [20:30]
+Here I am, on the train home, trying to get my head out of coding, when suddenly, I find myself trying to put together a 'maximally polite seating' algorithm for facing seat sets.
+3
+
+Jasmine Vollherbst [20:48]
+@patrickm: This is our life now
+1 1
+
+KP Perez [20:54]
+Oh, wait until the coding dreams start. Or nightmares, rather.
+6
+
+
+----- February 3rd -----
+Caleb Rechten [07:16]
+@kp_was_already_taken:  Does changing the CSS of your height count? Because that was kind of awesome.
+
+Caleb Rechten [07:49]
+How many pixels do you think 5'9" is?
+
+Patrick McWilliams [08:33]
+i bet 3-4000
+
+[08:33]
+but i think pixels are not uniform in size
+1
+
+Dan Dilorio [08:40]
+depends on the resolution, display, upscaling, etc.
+
+[08:40]
+#runiningthejoke
+1
+
+[08:41]
+If anyone needs art assets for their game, these are two great resources:
+
+[08:42]
+http://itch.io/game-assets (Paid, Free)
+itch.io
+Top game assets
+Explore the game assets on itch.io (27KB)
+
+
+[08:42]
+http://opengameart.org/ (Free)
+2
+
+[08:43]
+make sure you read what kind of CC-license they have though, some are only okay with non-commercial use, some require that you credit them, etc.
+
+Colin Hart [08:45]
+@group I’m only a collaborator on 15 of your repos!! Make your repo asap.
+
+Follow up to that: Your GitHub issues are pretty sparse! I’m gonna start creating my own reminding you to get on it!
+
+Colin Hart [09:36]
+@group do your stand ups!
+
+
+Harry Ganz [11:09]
+@pppetrov:  Sorry, the $(handler) is perfectly ok. It is $().ready(handler) that is not recommended by Jquery.
+```All three of the following syntaxes are equivalent:
+  $( document ).ready( handler )
+  $().ready( handler ) (this is not recommended)
+  $( handler )
+There is also $(document).on( "ready", handler ), deprecated as of jQuery 1.8. This behaves similarly to the ready method but if the ready event has already fired and you try to .on( "ready" ) the bound handler will not be executed. Ready handlers bound this way are executed after any bound by the other three methods above.
+```
+
+[11:09]
+From: http://api.jquery.com/ready/
+jQuery: The Write Less, Do More, JavaScript Library
+
+Colin Hart [11:16]
+http://youmightnotneedjquery.com/
+Examples of how to do common event, element, ajax and utility operations with plain javascript.
+
+Caleb Rechten [12:03]
+@group I'll be presenting the webapp/app idea at 1:30 back in the classroom!
+
+Viorel Belfiore [12:04]
+which classroom
+
+Caleb Rechten [12:09]
+Our classroom
+
+Emine Koc [12:09]
+I ll be here to listen to your project.
+1
+
+Dan Dilorio [12:10]
+I'll be there in spirit
+1
+
+[12:10]
+got an appointment at 1:30 :disappointed:
+
+[12:15]
+:new_moon_with_face:
+
+[12:15]
+that's the creepiest one
+
+Jonathan Feudi [15:32]
+AHHHHHHHHH MAXIMUM CALL STACK WHAT THE FUCK
+
+Dan Dilorio [15:33]
+WHAT DID YOU DO
+
+Jonathan Feudi [15:33]
+I TRIED TO ADD 3 NUMBERS TOGETHER I SWEAR
+
+Jonathan Feudi [15:45]
+I think I had some kind of weird infinite loop, where functions kept calling each other at the end
+
+[15:46]
+http://imgfave-chat-herokuapp-com.global.ssl.fastly.net/image_cache/1324320331101467.jpg (21KB)
+
+
+Harry Ganz [15:56]
+If you need a break. All of TFA as a gif: http://i.imgur.com/Ttg8P67.webm
+
+Dan Dilorio [17:23]
+and here are the other 6 star wars movies: https://www.youtube.com/watch?v=Se85VE2SrWQ
+YouTube
+Carlo John Somma
+All 6 Star Wars HD
+
+
+KP Perez [17:58]
+@group any space on the 3rd floor? I'm holding down a spot on the 4th but it feels like the 6 train at 5 pm, so if there's another option I'd prefer that lol
+
+Sara Horowitz [17:59]
+so crowded down here too! @kp_was_already_taken
+
+Jimmy Lin [17:59]
+there are some chairs avail in the back
+
+KP Perez [17:59]
+Ugh lol thank you!
+
+Lauren Golik [21:11]
+Commuting thought of the day: while waiting for the train I stood looking at the running list of trains and wait times, thinking of the ways that might have been coded
+5
+
+Rachel Smyth [21:12]
+You know it involves some kind of API.
+
+Patrick McWilliams [21:13]
+@lgolik: this is our life now
+1 1 1
+
+Karolin Rafalski [21:14]
+https://www.youtube.com/watch?v=g3TNJoZARy0
+YouTube
+Documentary 100
+THE HISTORY OF NEW YORK CITY NYC SUBWAYS Full Documentary
+
+(edited)
+
+Lauren Golik [21:16]
+Sweet. :grinning:
+
+Patrick McWilliams [21:17]
+so far, with one player choosing heads and the other choosing tails, there has been a max of a 4 point score difference after 58 rolls. close enough to random for me
+
+[21:17]
+and i just want to keep pressing the roll button
+
+[21:17]
+#buildingmyownskinnerbox
+
+[21:18]
+gonna turn this into a mobile app just to have something to tap on. charge like, 10 cents for it
+
+[21:18]
+get rich
+1
+
+Peter Nguyen [21:23]
+Minesweeper requires So much thinking!! Who the hell even plays minesweeper anymore :unamused::unamused:
+
+Patrick McWilliams [21:25]
+or build it into a casino app, and host it on a server in one of those non-countries with no laws.. yessss… then i’ll hold the world hostage for a ridiculous amount of money
+
+[21:25]
+thats how this works, right?
+
+[21:25]
+i… may need a break
+
+Karolin Rafalski [21:26]
+I’d play your Minesweeper! Hang in there!
+1
+
+Patrick McWilliams [21:29]
+has anyone built tetris for their first project? i feel like that should be simple, but i feel like there would be a lot of objects.
+
+Jasmine Vollherbst [21:37]
+@penguyen: Don’t worry, you’ll get it! I can’t wait to play the finished game :simple_smile: @patrickm That sounds like a fun project! I might try making Tetris after the program, when I have a bit more time lol!
+2
+
+Patrick McWilliams [21:51]
+$( \'.currentScore:contains(\"3\")\’ ) the quote and apostrophes should be escaped out there, right?
+
+[21:51]
+or are my eyes not working properly
+
+KP Perez [22:59]
+Of the many things I learned from WDI: I hate games (including but not limited to: hangman and tic tac toe), semi-colons and pokemon
+
+Viorel Belfiore [23:06]
+gasp… you leave Pokemon out of your horrific hate speeches.  my charmander would be so disappointed in you right now
+
+KP Perez [23:07]
+lol understandable but we'll see if your opinion changes...
+
+Viorel Belfiore [23:08]
+lol… I’m here suffering trying to make a block on my page move
+
+KP Perez [23:12]
+We believe in you: http://gph.is/1G18KKz
+Giphy (2MB)
+
+
+Viorel Belfiore [23:15]
+….. sigh…. and now i have to watch the Waterboy again.  Well I guess the project can wait
+
+
+----- February 4th -----
+jason Seminara [10:02]
+@group: If you need to get some solo quiet working time, you’re free to work anywhere on campus. Just make sure you’ve
+a) checked in the for the day
+b) stay on campus (you’re required to be here until 5)
+1
+
+[10:02]
+c) stay on slack so we can communicate
+
+jason Seminara [10:07]
+tip: it probably will NOT be quiet here on the 2nd floor
+
+Peter Nguyen [10:11]
+does anyone know what the attendance password for today is? (edited)
+
+Jasmine Vollherbst [10:13]
+@penguyen:  jquery
+
+Peter Nguyen [10:16]
+@jasminev: thanks!
+1
+
+Peter Nguyen [11:01]
+4th floor is nice and quiet(er) if anyone else wants to escape the construction noise
+
+Patrick McWilliams [11:02]
+so: i want a property of an object to be set by a function when the object is Constructed. something like...
+
+Patrick McWilliams [11:04]
+added a JavaScript/JSON snippet
+function Thing(int){
+	//check int is a correct entry type, set this.value without
+	// calling something like this.verify
+	this.value = __;
+}
+Add Comment Click to expand inline 6 lines
+Dan Dilorio [11:09]
+@patrickm: what would your function look like?
+
+[11:10]
+that's possible, it just depends on what exactly you want to do
+
+Patrick McWilliams [11:10]
+i’m going to rework the way int gets chosen so it can ONLY be a legit type before it gets passed to new Thing
+
+[11:11]
+rather than check on creation
+
+jason Seminara [11:35]
+@group: this morning, a few of you raised your hands when I asked if you were stuck— yet, only ​*one*​ of you have reached out to me. PLEASE, if you’re stuck, open an issue and assign it to any one of your instructors.
+
+[11:36]
+@group: also, GO TAKE A WALK! Madison Square Park is beautiful!
+2 1
+
+Dan Dilorio [11:36]
+what is outside, I don't understand
+
+Patrick McWilliams [11:36]
+the scareball is hiding, it’s safe
+
+jason Seminara [11:36]
+it’s like TV, but colder
+
+Caleb Rechten [11:36]
+Question
+
+Dan Dilorio [11:36]
+seems like a decent alternative
+
+Caleb Rechten [11:36]
+Does anyone have a cheeseburger on them?
+
+Colin Hart [11:36]
+@group knowing when to take a break is a vital part of being a developer
+1
+
+jason Seminara [11:37]
+@umbrellagun: , I left my greasy burger in my other pants
+
+Caleb Rechten [11:37]
+Or am I going to be forced into the wild for one?
+
+[11:37]
+I left my cheeseburger hunting equipment in my other pants
+
+Dan Dilorio [11:37]
+that sounds like a really bad song
+
+Caleb Rechten [11:37]
+#lifeproblems
+
+[11:40]
+I think I hear a cheeseburger at the Shake Shack. Anyone like to join me?
+
+Dan Dilorio [11:41]
+IT COULD BE A TRAP
+
+Caleb Rechten [11:41]
+It's a risk I'm willing to take
+
+Patrick McWilliams [11:42]
+all this <redacted> talk. now i’m really #$#$ing hungry.
+
+Harry Ganz [11:52]
+uploaded an image: Flatiron
+Add Comment
+Harry Ganz [11:52]
+Good suggestion @jasonseminara
+1
+
+jason Seminara [11:52]
+:wink:
+
+jason Seminara [12:23]
+@group: ​*It’s LUNCH time! Go EAT LUNCH!*​
+1 1 1 1 1 1 1 1 1
+
+Patrick McWilliams [12:40]
+who’s comfortable with appending/attr setting in jquery and wants to step away from their code?
+
+Caleb Rechten [12:41]
+Has anyone tried Soylent?
+
+Patrick McWilliams [12:41]
+nope
+
+Dan Dilorio [12:54]
+I like chewing too much
+
+KP Perez [13:05]
+uploaded and commented on an image: Screen Shot 2016-02-04 at 1.01.10 PM
+1 Comment
+3
+Proof about taking breaks from buffer
+
+
+Caleb Rechten [13:24]
+Hey, I'm going to put earbuds in and listen to some music. But totally feel free to grab my attention.
+1 1
+
+Colin Hart [14:01]
+@umbrellagun: i’ve tried soylent haha
+
+[14:01]
+it’s great, but im allergic
+
+[14:01]
+mildly (edited)
+
+Caleb Rechten [14:01]
+:anguished:
+
+[14:02]
+ohnoooo
+
+Colin Hart [14:02]
+peter and i have strong feelings about soylent
+
+Caleb Rechten [14:02]
+I... uhh... sort of ordered some to try out.
+
+Colin Hart [14:05]
+try it out
+
+Patrick McWilliams [14:05]
+if you could like… specify the nutrition content, i might be interested
+
+Colin Hart [14:05]
+you can ish
+
+[14:05]
+their ingredients is open source i believe
+
+Patrick McWilliams [14:05]
+like, “20% carb, 50% protein, 30% fat"
+
+Caleb Rechten [14:10]
+I ordered the powder. Slightly more cost effective than the newer ones in the bottles. But less convenient of course. https://www.soylent.com/product/powder/
+Soylent — Free your body
+Simple, healthy, affordable food — everything your body needs for less than $2 a meal. (103KB)
+
+
+Jonathan Feudi [14:32]
+Anyone know how to make an event listener pass a jQuery collection INSTEAD of the node inside?
+
+Jonathan Feudi [14:59]
+uploaded and commented on an image: standthefuckback.jpg
+1 Comment
+Mixing jQuery and vanilla
+
+Patrick McWilliams [15:01]
+anyone need/want fresh eyes on their code?
+
+Colin Hart [15:04]
+@feudi: wrap it in money
+
+Patrick McWilliams [15:04]
+$money$
+
+Jonathan Feudi [15:05]
+Money doesn’t solve all problems, @colinhart
+
+Patrick McWilliams [15:05]
+LIES
+
+Colin Hart [15:05]
+that’s a myth
+
+Jonathan Feudi [15:46]
+lol I have no clue how to CSS
+
+Karolin Rafalski [15:47]
+me neither!
+
+Patrick McWilliams [15:47]
+im using skeleton to help my CSS
+
+Jonathan Feudi [15:49]
+Skeleton?
+
+Dan Dilorio [15:50]
+skeletons
+
+[15:50]
+spooky&scary ones
+
+Karolin Rafalski [15:50]
+isn’t that what soylent is made of?
+
+Dan Dilorio [15:50]
+I do not wish to find out
+
+Jonathan Feudi [15:50]
+Spooky scary skeletons send shivers down my spine
+
+Dan Dilorio [15:51]
+I forget the next verse
+
+Jonathan Feudi [15:51]
+We’re so sorry skeletons, you’re so misunderstood
+
+[15:51]
+I know you want to socialize
+
+[15:51]
+But I don’t think we should
+
+Dan Dilorio [15:51]
+https://www.youtube.com/watch?v=q6-ZGAGcJrk
+YouTube
+The Living Tombstone
+Spooky Scary Skeletons (Remix) - Extended Mix
+
+
+Jonathan Feudi [15:51]
+Mmmm dat extendo mix
+
+Dan Dilorio [15:51]
+for those who have no idea
+
+Jonathan Feudi [15:55]
+LF Front End Designer
+
+[15:59]
+Anyone want a pair of eyes? Looking to take a break for a few minutes
+
+Karolin Rafalski [16:00]
+pretty sure if you look at my css you will turn to stone :confused:
+
+Jonathan Feudi [16:00]
+Clarification: offering JS help
+
+Patrick McWilliams [16:21]
+oh. skeleton was that CSS thing they showed the other day. had the grid/column thing
+
+Patrick McWilliams [16:28]
+also, when should we start worrying about hosting?
+
+Rachel Smyth [18:39]
+Hey bowies, if you’re @here at GA and want to take a code break. There is interview-prep (gameshow style) in the concourse on the 3rd floor. Should be fun! http://www.meetup.com/NYC-Bootcampers-Anonymous/events/228265390/
+
+Otherwise. KP and I are here :stuck_out_tongue_winking_eye:
+
+Meetup
+NYC Bootcampers Anonymous
+** READ THE BOTTOM OR ELSE ** Come on down! Join General Assembly & Bootcampers Anonymous for a Game-Show style event where you can earn sweet prizes by answering technical interview questions. Pr
+
+Harry Ganz [18:43]
+I have a Beta! http://harryganz.github.io/slice_invaders/
+1
+
+KP Perez [20:37]
+You  guys are very quiet this evening. Something to help hopefully debug random errors: https://davidwalsh.name/fix-javascript-errors
+David Walsh Blog
+Strange JavaScript Errors and How to Fix Them
+JavaScript throws a lot of errors; learn how to fix them in this post! (20KB)
+Jan 22nd, 2015 at 04:13
+
+2
+
+Elton Cheng [22:16]
+If a lot of people are planning to stay late tomorrow, we should all go grab dinner/drink together as a break!
+1
+
+
+----- February 5th -----
+Lauren Golik [09:10]
+@elton912: i’m interested
+
+Colin Hart [09:13]
+@group Deployment lesson at 10am. Make sure your master branch is purely code that works, no extraneous console.logs, and that it is pushed to GitHub
+1
+
+Jonathan Feudi [09:14]
+#getschwifty
+
+Patrick McWilliams [09:47]
+@colinhart: define ‘extraneous'
+
+Colin Hart [09:47]
+all
+
+[09:48]
+your production code, should not have console.logs
+
+Adam Kriger [09:48]
+Does anyone want to tell me why my event handler is being called even without the button being pressed?
+
+Colin Hart [09:48]
+@adamscottkriger: possibly event bubbling?
+
+Adam Kriger [09:49]
+hmmm…thank you  @colinhart
+
+Caleb Rechten [09:54]
+We doing standups?
+
+Jonathan Feudi [10:17]
+username.github.io/reponame
+
+Patrick McWilliams [10:47]
+reponame is case sensitive
+
+Lauren Golik [10:57]
+uploaded an image: Slack for iOS Upload
+Add Comment
+Jimmy Lin [10:58]
+uploaded an image: Git Deployment
+Add Comment
+Peter Petrov [12:25]
+@group: short notice for a Lunch and Learn. I just found out about this that's why its coming so last minute
+Lunch + Learn
+Cloud Spin: creating 180-degree Matrix-like videos with mobile phones and the cloud
+
+What is it about?
+Cloud Spin is a demo that a team of Googlers developed to showcase the Google Cloud Platform. The demo consists of 19 mobile phones placed in a half-circle to create a frozen-in-time 180 degree animated GIF. See examples at @googlecloudspin on Twitter!
+
+Googler Bret McGowen walks through how the team built the demo using a wide range of technologies: cloud, Android, Firebase, JavaScript, and more!
+
+When:
+Friday, February 5th from 12:30pm-1:30pm
+
+Where:
+3rd Floor Concourse
+
+[12:25]
+@group its a bring your own lunch event
+
+
+Jonathan Feudi [15:04]
+@ziggy https://www.youtube.com/watch?v=sQgd6MccwZc
+YouTube
+DestinysChildVEVO
+Destiny's Child - Say My Name (Official Video)
+
+1
+
+Adam Kriger [15:14]
+Here is the W3C spec of CSS transitions
+https://www.w3.org/TR/css3-transitions/
+
+Patrick McWilliams [17:25]
+the good news is my playerNumbers function is working. the bad news is that it’s somehow being called 10x the appropriate number of times.
+
+
+----- February 6th -----
+Lauren Golik [08:41]
+Thanks Adam! Patrick - hope you figured it out
+
+Lauren Golik [09:38]
+for anyone who needs to make a deck of cards using just html and css… I found this useful http://designshack.net/articles/css/css-card-tricks/
+Know any good card tricks? Hopefully, after today, you will! We’re going to build some simple and attractive playing cards with pure CSS, then we’ll learn how to target and animate each card for some added fun. Along the way, we’ll see how to use before and after to build the cards with minimal markup. […]
+
+Adam Kriger [10:01]
+@lgolik: yw
+
+Patrick McWilliams [12:04]
+Lauren- i did. the thing i was calling to run the loop was being treated as a string… i<(thing+1) so it would turn in to “21” or “41” etc. parseInt saved the day
+
+Lauren Golik [12:04]
+nice!!!
+1
+
+Colin Hart [13:42]
+@group one thing all of you might consider adding tomorrow is a button that displays the instructions for how to play your game :stuck_out_tongue: (edited)
+2
+
+Patrick McWilliams [14:02]
+what does it take for a religion to get tax-free status, and can i start one for the devotion to console.log()ing
+1
+
+Dan Dilorio [14:07]
+I come from the church of ActionScript, are you ready to devote yourself to `trace();`?
+2
+
+Patrick McWilliams [14:11]
+In the name of the log, the trace, and the alert: bugdead.
+
+Adam Kriger [15:25]
+Does anyone know how we commit new changes after we have gone back to an earlier version of our file using git?
+
+Razaik Boparai [19:27]
+uploaded and commented on an image: Git Deployment.jpg
+1 Comment
+Does anyone know what is step two in the above pic?  I am trying to put the code in my dev branch into master.
+
+Shoshana (Shani) Greenman [19:33]
+left #wdi-bowie-students
+
+Lauren Golik [20:45]
+@razaik: step 2 is going on git hub and doing a pull request from your branch to your master
+
+Razaik Boparai [20:46]
+@lgolik: Oh okay. Thanks :simple_smile:
+
+
+----- February 7th -----
+Colin Hart [11:57]
+@group Code Freeze at 8pm!
+
+End of project week tips:
+
+1. Be extra diligent to keep your developing code separate from your production code that you know works.
+
+2. Double check your goals for the day and narrow it down to goals that you think you can meet by 6pm. That way you have buffer time in case you have merge issues or deployment issues.
+
+3. Polish your production code (your working code that exists on master): i.e. spend some time with css, delete extraneous comments like old code, delete all console.logs unless they are necessary for your game. (edited)
+4 1
+
+Patrick McWilliams [12:51]
+wow, switching from a branch that is WIP to one that works feels really nice.
+1
+
+
+Patrick McWilliams [14:15]
+my brain’s capacity for code is diminishing and desire for alcohol is increasing. i suspect these are not unrelated trends.
+
+Karolin Rafalski [14:17]
+I am determined to watch a movie tonight before falling asleep after the 8pm coding freeze. Can’t decide: Eraserhead or City of Lost Children - or does someone have a good horror/surrealist movie suggestion (nothing campy, I like campy, but not feeling campy today)
+
+Jonathan Feudi [14:25]
+uploaded and commented on an image: city_2.jpg
+1 Comment
+2
+@karolin City of Lost Children :heart:
+
+Jasmine Vollherbst [14:43]
+Found this great article on finding a job in tech: http://www.juliahgrace.com/blog/2015/4/9/an-unconventional-guide-for-getting-a-software-engineering-job
+
+Lauren Golik [14:43]
+oh nice!!!
+
+Karolin Rafalski [14:43]
+eep! Coach Eric’s homework!
+
+Patrick McWilliams [14:46]
+ahahahahaha
+
+[14:46]
+yeah
+
+[14:46]
+im hoping we have no class homework on monday? cause that’s when im planning to look at that
+
+Jasmine Vollherbst [14:47]
+ Pinned a message. See all pinned items in this channel.
+Jasmine Vollherbst jasminev
+Found this great article on finding a job in tech: http://www.juliahgrace.com/blog/2015/4/9/an-unconventional-guide-for-getting-a-software-engineering-job
+Feb 7th at 14:43
+
+Peter Nguyen [14:50]
+What was coach Eric's homework again?
+
+Karolin Rafalski [14:51]
+find two meetup events that you would attend (in theory, if we had the time)
+
+[14:51]
+follow some tech influencers on linked in
+
+Jasmine Vollherbst [14:51]
+We also have to be prepared to discuss who we chose to follow and why
+1
+
+[14:52]
+He also linked to some articles to read
+
+Lauren Golik [14:52]
+i think he also asked us to start listing out companies we’d want to work for
+
+Jasmine Vollherbst [14:52]
+Yep! That too….wow, that’s quite a bit of work….
+
+[14:53]
+:grimacing:
+
+Peter Nguyen [14:53]
+Oh wow ok thanks
+
+Lauren Golik [14:54]
+this is still easier than last week’s assignment. :simple_smile:
+2
+
+Patrick McWilliams [15:02]
+what, no, he never said ‘list where you want to work’ did he?!
+
+[15:03]
+because my answers would basically be “fattest check, then by least hassle commute"
+
+Adam Kriger [15:08]
+How do we see if our page is deployed into github pages?
+
+Jasmine Vollherbst [15:09]
+@adamscottkriger: you want to visit http://username.github.io/yourprojectreponame
+
+Adam Kriger [15:09]
+@jasminev: thanks Jasmine!
+2
+
+Patrick McWilliams [15:29]
+hit a wall trying to style the color of dropdown menus, so im going to take a break
+
+[15:30]
+if anyone happens to know if that’s even possible, let me know
+
+Jasmine Vollherbst [15:32]
+@patrickm: it is possible, but don’t stress! It can definitely be tricky when you’re first learning CSS. A break sounds like a good move!
+1
+
+Patrick McWilliams [15:32]
+i nominate @jasminev for Sunday MVP
+3
+
+Jonathan Feudi [15:41]
+When you realize you have a bit more work than you thought and the code freeze is in 4 hours: https://www.youtube.com/watch?v=9D-QD_HIfjA
+YouTube
+Juan Ardila
+Push It To The Limit (scarface)
+
+
+Jonathan Feudi [16:50]
+Hey, when you’re making a pull request on github, which one is the one having changes merged INTO it? The left one or the right one? This always scares the hell out of me.
+
+[16:51]
+One is the base branch, one is the head branch
+
+Jasmine Vollherbst [16:53]
+@feudi: I belive you want to pull into master. I found it easier to merge everything locally if you want to try that, though i know best practice is to do a pull request...
+
+Peter Petrov [16:53]
+you merge the head into the base
+
+[16:53]
+right goes into left
+1
+
+Jonathan Feudi [16:53]
+Thanks @pppetrov !!
+
+[16:54]
+I was about to do it backwards and merge my two day old gh-pages branch into my master!
+1
+
+[16:57]
+@pppetrov I can’t automatically merge - can I just delete my gh-pages branch and re-create it from master? Seems easier than having to handle the merge manually.
+
+
+----- February 7th -----
+Colin Hart [11:57]
+@group Code Freeze at 8pm!
+
+End of project week tips:
+
+1. Be extra diligent to keep your developing code separate from your production code that you know works.
+
+2. Double check your goals for the day and narrow it down to goals that you think you can meet by 6pm. That way you have buffer time in case you have merge issues or deployment issues.
+
+3. Polish your production code (your working code that exists on master): i.e. spend some time with css, delete extraneous comments like old code, delete all console.logs unless they are necessary for your game. (edited)
+4 1
+
+Patrick McWilliams [12:51]
+wow, switching from a branch that is WIP to one that works feels really nice.
+1
+
+Viorel Belfiore [13:24]
+I’m still in my branch… breaking things
+1
+
+Patrick McWilliams [14:15]
+my brain’s capacity for code is diminishing and desire for alcohol is increasing. i suspect these are not unrelated trends.
+
+Karolin Rafalski [14:17]
+I am determined to watch a movie tonight before falling asleep after the 8pm coding freeze. Can’t decide: Eraserhead or City of Lost Children - or does someone have a good horror/surrealist movie suggestion (nothing campy, I like campy, but not feeling campy today)
+
+Jonathan Feudi [14:25]
+uploaded and commented on an image: city_2.jpg
+1 Comment
+2
+@karolin City of Lost Children :heart:
+
+Jasmine Vollherbst [14:43]
+Found this great article on finding a job in tech: http://www.juliahgrace.com/blog/2015/4/9/an-unconventional-guide-for-getting-a-software-engineering-job
+
+Lauren Golik [14:43]
+oh nice!!!
+
+Karolin Rafalski [14:43]
+eep! Coach Eric’s homework!
+
+Patrick McWilliams [14:46]
+ahahahahaha
+
+[14:46]
+yeah
+
+[14:46]
+im hoping we have no class homework on monday? cause that’s when im planning to look at that
+
+Jasmine Vollherbst [14:47]
+ Pinned a message. See all pinned items in this channel.
+Jasmine Vollherbst jasminev
+Found this great article on finding a job in tech: http://www.juliahgrace.com/blog/2015/4/9/an-unconventional-guide-for-getting-a-software-engineering-job
+Feb 7th at 14:43
+
+Peter Nguyen [14:50]
+What was coach Eric's homework again?
+
+Karolin Rafalski [14:51]
+find two meetup events that you would attend (in theory, if we had the time)
+
+[14:51]
+follow some tech influencers on linked in
+
+Jasmine Vollherbst [14:51]
+We also have to be prepared to discuss who we chose to follow and why
+1
+
+[14:52]
+He also linked to some articles to read
+
+Lauren Golik [14:52]
+i think he also asked us to start listing out companies we’d want to work for
+
+Jasmine Vollherbst [14:52]
+Yep! That too….wow, that’s quite a bit of work….
+
+[14:53]
+:grimacing:
+
+Peter Nguyen [14:53]
+Oh wow ok thanks
+
+Lauren Golik [14:54]
+this is still easier than last week’s assignment. :simple_smile:
+2
+
+Patrick McWilliams [15:02]
+what, no, he never said ‘list where you want to work’ did he?!
+
+[15:03]
+because my answers would basically be “fattest check, then by least hassle commute"
+
+Adam Kriger [15:08]
+How do we see if our page is deployed into github pages?
+
+Jasmine Vollherbst [15:09]
+@adamscottkriger: you want to visit http://username.github.io/yourprojectreponame
+
+Adam Kriger [15:09]
+@jasminev: thanks Jasmine!
+2
+
+Patrick McWilliams [15:29]
+hit a wall trying to style the color of dropdown menus, so im going to take a break
+
+[15:30]
+if anyone happens to know if that’s even possible, let me know
+
+Jasmine Vollherbst [15:32]
+@patrickm: it is possible, but don’t stress! It can definitely be tricky when you’re first learning CSS. A break sounds like a good move!
+1
+
+Patrick McWilliams [15:32]
+i nominate @jasminev for Sunday MVP
+3
+
+Jonathan Feudi [15:41]
+When you realize you have a bit more work than you thought and the code freeze is in 4 hours: https://www.youtube.com/watch?v=9D-QD_HIfjA
+YouTube
+Juan Ardila
+Push It To The Limit (scarface)
+
+
+Jonathan Feudi [16:50]
+Hey, when you’re making a pull request on github, which one is the one having changes merged INTO it? The left one or the right one? This always scares the hell out of me.
+
+[16:51]
+One is the base branch, one is the head branch
+
+Jasmine Vollherbst [16:53]
+@feudi: I belive you want to pull into master. I found it easier to merge everything locally if you want to try that, though i know best practice is to do a pull request...
+
+Peter Petrov [16:53]
+you merge the head into the base
+
+[16:53]
+right goes into left
+1
+
+Jonathan Feudi [16:53]
+Thanks @pppetrov !!
+
+[16:54]
+I was about to do it backwards and merge my two day old gh-pages branch into my master!
+1
+
+[16:57]
+@pppetrov I can’t automatically merge - can I just delete my gh-pages branch and re-create it from master? Seems easier than having to handle the merge manually.
+
+Peter Petrov [16:57]
+remember it does a merge...so it doesn't just copy it over, it tries to combine, so you wouldn't lose work
+
+[16:58]
+yeah the easiest thing is to just delete it
+1
+
+[16:58]
+ ```git branch -D gh-pages
+```
+
+Harry Ganz [17:25]
+@pppetrov @feudi : Yah, I understand why gh-pages is an orphan, but it makes it so annoying to push to because it keeps saying there are merge conflicts. I opted to make it a regular branch to help save my sanity. Is this a really bad practice?
+
+[17:26]
+@channel:  Have a great superb owl
+
+jason Seminara [17:39]
+@group you should ALWAYS `--force` the push to gh pages
+
+[17:41]
+You don't care about the state of gh pages. You just want it to be the thing you're pushing. This is the first step to understanding deployment: the live server should ALWAYS be force pushed.
+
+Patrick McWilliams [17:49]
+so would the command be (from the branch you want to deploy)...
+
+Patrick McWilliams [17:50]
+added a JavaScript/JSON snippet
+git push --force origin gh-pages
+Add Comment
+Patrick McWilliams [18:17]
+if you have code taken from/inspired by a stack overflow answer, is proving a link in a comment near the relative code sufficient?
+
+Colin Hart [18:18]
+yes
+
+Dan Dilorio [18:22]
+so our final code just needs to be on gh-pages for it to be "sumbitted?"
+
+Caleb Rechten [18:29]
+I was wondering that too
+
+Colin Hart [18:49]
+yes
+2
+
+[18:49]
+:stuck_out_tongue:
+
+Patrick McWilliams [19:06]
+oh look, an hour before deadline i could cha… stop. you’re going to break something. go to war with the deploy you have.
+1
+
+[19:07]
+time to start drinking
+
+Viorel Belfiore [19:14]
+pshhhhh… hard to break something that doesn’t work properly
+2

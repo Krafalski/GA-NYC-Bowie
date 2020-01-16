@@ -1,3 +1,4 @@
+
 # Rat-to-Restaurant
 
 
@@ -25,7 +26,7 @@ You can view the end points for each dataset and the query parameters (field nam
 
 ---
 
-*At this point you should have a Node app initialized and all the necesary dependencies installed, directories created, and server set up... set up.*
+*At this point you should have a Node app initialized and all the necessary dependencies installed, directories created, and server set up... set up.*
 
 ---
 
@@ -55,8 +56,8 @@ At this point we are just rendering json!
 #### 1b:
 Make these views:
 
-`rat_sighting_results.html.ejs`
-`violation_results.html.ejs`
+`rat_sighting_results.ejs`
+`violation_results.ejs`
 
 Now that we have the right data for each request let's style it and make it more user friendly.
 

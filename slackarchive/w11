@@ -1,0 +1,1213 @@
+yes, squiggly brackets is not something i just made up!
+
+
+----- March 28th -----
+Harry Ganz [07:19]
+My favorite: == is an unassembled hashtag
+
+Jasmine Vollherbst [08:43]
+@group http://www.meetup.com/NYC-D3-JS/events/229814586/
+
+Meetup
+NYC D3.js
+One fabulous talk for our March meetup! Ilia Blinderman Title:&nbsp;Making People Care: Pairing Narrative with Visualization Description: It's notoriously difficult to keep a reader's attention onlin
+3
+
+Colin Hart [08:59]
+Hey all running a bit behind. F trains were supes delayed. Should be there in >15
+
+jason Seminara [09:10]
+Dear @mta: DIE :ghost:
+
+Maxwell Rayman [09:15]
+really awesome web app i found this weekend for TV show fans - thought id share as it might spark ideas for a final project http://graphtv.kevinformatics.com/
+
+http://www.highcharts.com/ is the api he uses for the data visualization
+Graph TV
+TV Episode Ratings Graphed
+(edited)
+2
+
+Caleb Rechten [10:19]
+Has anyone used Javascript with Rails yet?
+1
+
+Peter Petrov [10:33]
+@umbrellagun: without any context if you are having troubles with javascript in rails disabling `turbo-links` might be a quick fix
+
+Jonathan Feudi [11:23]
+\q
+
+jason Seminara [11:46]
+@group if you feel like showing off your RESTAURANT work to the rest of the GA community, I’ve copied the project prompt to its own repo https://github.com/ga-wdi-exercises/RESTaurant
+
+GitHub
+ga-wdi-exercises/RESTaurant
+RESTaurant - A RESTful Restaurant API
+
+Caleb Rechten [11:47]
+That's okay
+
+jason Seminara [11:47]
+If you’d like to contrib, fork it, and add then new url as an upstream to your own repo
+
+Colin Hart [12:03]
+@caleb http://blog.steveklabnik.com/posts/2013-06-25-removing-turbolinks-from-rails-4
+1
+
+[12:03]
+@umbrellagun:
+
+[12:03]
+@umbrellagun: http://guides.rubyonrails.org/working_with_javascript_in_rails.html
+
+Caleb Rechten [12:04]
+Thank you!
+
+Colin Hart [12:04]
+the other thing
+
+[12:04]
+actually
+
+[12:05]
+turning off turbo links
+
+[12:05]
+is no good
+
+[12:05]
+cause itll break your form fors etc
+
+[12:05]
+youll need to learn to write some sweet coffee script
+
+[12:05]
+http://coffeescript.org/
+
+[12:05]
+so it was breaking because there is no var in coffee script
+
+Caleb Rechten [12:06]
+Oh, so Rails has to deal with CoffeeScript?
+
+Colin Hart [12:06]
+yep
+
+Caleb Rechten [12:06]
+oh
+
+[12:07]
+Odd, I'll look into it. I wanted to explore server side stuff because of the idea of doing React + Rails.
+
+[12:07]
+client*
+
+Colin Hart [12:12]
+yeah, in doing react + rails
+
+[12:12]
+we will literally have two separate servers
+
+[12:12]
+a back end server
+
+[12:12]
+and a front end server
+
+[12:13]
+so your react will not live inside the rails app
+
+[12:13]
+BaaS backend as a service (edited)
+
+Caleb Rechten [12:14]
+Ohright, that was said, wasn't it.
+
+Colin Hart [12:14]
+yup lol
+
+[12:15]
+for react inside of the rails project you need to use the react-rails gem
+
+Caleb Rechten [12:16]
+So it looks like I might be able to run regular Javascript, but Rails just doesn't like anything to do with $(document).ready
+
+[12:16]
+Or Vanilla equivalent
+
+Colin Hart [12:17]
+​_coffescript_​
+
+Caleb Rechten [12:17]
+Because the document only loads once
+
+Caleb Rechten [13:33]
+Anyone send params to the next page without generating a new database item?
+
+Colin Hart [16:49]
+@group Everyone meet in the classroom noww!!
+
+[16:50]
+@group, grab the person next to you if they dont seem like theyre moving
+
+jason Seminara [17:12]
+@group: Classroom must be cleared by 5:30 #IMPORTANT
+
+[17:12]
+we have a new class coming in at 6
+
+jason Seminara [17:23]
+@group 10-4?
+
+[17:23]
+You don't want Lisa to come and break heads!
+
+Jonathan Feudi [22:11]
+Anyone have to hit the route in a different controller from a form?
+
+[22:12]
+I have a route for ‘tables’ in the restaurant, and I have a route for ‘tickets’ which are the joins between ‘items’ and ‘tables'
+
+[22:12]
+Trying to hit edit a ticket using a form on my tables route
+
+[22:12]
+Not having too much success
+
+Colin Hart [22:17]
+Are you passing  a specific path for the form_for to use?
+
+[22:18]
+or assuming rail magic? (edited)
+
+[22:18]
+@feudi:
+
+Jonathan Feudi [22:18]
+Hang on
+
+[22:18]
+ ```<%= form_for @ticket[i], url: {:controller => "tickets", action: "update"} do |f| %>```
+
+[22:18]
+Here is the beginning of my form
+
+[22:18]
+I have a feeling the @ticket[i] is tripping things up
+
+[22:19]
+Now, I’m not getting an error, but not updating the DB
+
+Colin Hart [22:19]
+see if you can give the url a string with the actual path
+
+[22:19]
+and specificy a third arg like method or action with :put
+
+Jonathan Feudi [22:19]
+I think I’m also not succeeding in handing in the proper id in the params
+
+Colin Hart [22:19]
+…. or maybe ‘put'
+
+Jonathan Feudi [22:19]
+Okay
+
+Colin Hart [22:20]
+sorry that’s not more specific
+
+[22:20]
+haha
+
+Jonathan Feudi [22:20]
+Yeah, it’s super weirdsies
+
+Colin Hart [22:20]
+just off the top of my head
+
+[22:20]
+not really, it’s that the dsl for form helpers is bogus (edited)
+
+[22:20]
+or not too weird
+
+[22:20]
+weird because of poor design
+
+Jonathan Feudi [22:20]
+Yeah, trying to change a column in your manual join table from outside the proper route doesn’t seem like it’s supposed to be easy
+
+Colin Hart [22:21]
+or maybe poor documentation
+
+[22:21]
+well the route just renders the view
+
+Jonathan Feudi [22:21]
+I mean
+
+Colin Hart [22:21]
+you should obviously have buttons and forms that hit any other route
+
+Jonathan Feudi [22:21]
+Outside the proper controller
+
+[22:22]
+Err… same controller. Proper isn’t the right word
+
+Colin Hart [22:22]
+hmmm wait, are you trying to
+
+1. have a form hit a route that isn’t the controller that rendered it?
+or
+2: try to access controller a stuff in controller b after the form submits
+
+Jonathan Feudi [22:22]
+1
+
+[22:23]
+The form is being rendered on the ‘tables’ controller
+
+Colin Hart [22:23]
+okay, that’s totally fine
+
+Jonathan Feudi [22:23]
+I’m trying to use it to hit something on the ‘tickets’ controller
+
+Colin Hart [22:23]
+you just need to figure out the right arguments to pass to form_for
+
+[22:23]
+for that to work
+
+Jonathan Feudi [22:24]
+I’m not getting an error, but I’m not really sure if I’m passing the right :id and… ugh… all kinds of crap
+
+Colin Hart [22:24]
+binding.pry son
+
+Jonathan Feudi [22:25]
+Yeah, a lot of the numbers are the same… this is where Jason tells me to take a walk
+
+Colin Hart [22:25]
+or just write down specifically what you want to happen and what methods should be hit in what order
+
+[22:25]
+and what the data should be
+
+[22:26]
+and then throw binding.pry everywhere relavant
+
+[22:26]
+and seeing where it deviates
+
+Jonathan Feudi [22:26]
+Okay
+
+[22:26]
+Gonna give it a few more tries before I call it a night
+
+[22:27]
+OMG
+
+[22:27]
+...
+
+[22:27]
+There’s an authentication in my way
+
+[22:28]
+That’s re-routing me as soon as I touch the tickets controller
+
+[22:28]
+Cause I’m not logged in as a chef
+
+[22:28]
+:neutral_face:
+
+[22:29]
+Okay, getting somewhere now
+
+Colin Hart [22:36]
+loll
+
+Jonathan Feudi [22:36]
+My totally sweet authentications working against me!
+
+jason Seminara [22:39]
+sweeeeet
+
+[22:39]
+now take a walk…. to your bed
+
+Colin Hart [22:40]
+bwahaha (edited)
+
+Jonathan Feudi [22:48]
+I JUST WANT IT TO WORK:innocent:
+
+[22:49]
+:bomb::grimacing::bomb:
+
+
+----- March 29th -----
+Jonathan Feudi [09:17]
+http://i.imgur.com/ny8hi8c.jpg (39KB)
+2 1
+
+Caleb Rechten [09:25]
+When you're all OOM
+
+Patrick McWilliams [09:30]
+http://www.watercoolinguk.co.uk/images/product_images/large/mana-blue1.jpg (43KB)
+
+
+Seif Dorani [10:32]
+where is everybody? lol..
+6 1
+
+Peter Petrov [10:49]
+http://jasmine.github.io/2.4/introduction.html
+
+Peter Petrov [11:06]
+https://github.com/jasmine/jasmine/releases/download/v2.4.1/jasmine-standalone-2.4.1.zip
+
+Jonathan Feudi [12:17]
+https://i.ytimg.com/vi/WOFBe54nGec/hqdefault.jpg (21KB)
+
+
+[12:18]
+“The choices are yours, and yours alone."
+3
+
+Seif Dorani [12:21]
+wifi thief is back..
+
+eric hegdahl [12:24]
+@group: Your "GA Profiles" EXIT TICKET! : https://goo.gl/4meXjC
+
+https://outcomes.generalassemb.ly/courses/17777/surveys/job_search/new
+
+Karolin Rafalski [13:31]
+http://www.nytimes.com/interactive/2013/12/20/sunday-review/dialect-quiz-map.html?_r=0
+
+The New York Times
+How Y’all, Youse and You Guys Talk
+What does the way you speak say about where you’re from? Answer the questions to see your personal dialect map.
+
+Peter Nguyen [13:48]
+we’ve all learned new skills since the last time we endorsed each other, so if you can, please re-endorse me please!
+
+[13:48]
+https://www.linkedin.com/in/penguyen1?
+
+Jonathan Feudi [13:48]
+Shameless self-plug ^^^ (edited)
+1
+
+jason Seminara [13:48]
+I pronounce this “sha meliss"
+
+Peter Nguyen [13:49]
+“whatever” bruh
+
+Peter Petrov [13:50]
+```function Letter(value) {
+  this.value = value;
+  this.hidden = true;
+
+  this.hide = function() {
+    this.hidden = true;
+  };
+
+  this.show = function() {
+      this.hidden = false;
+  };
+
+  this.render = function() {
+    if (this.hidden){
+      return '_';
+    } else {
+      return this.value;
+    };
+  };
+};
+```
+
+jason Seminara [13:52]
+http://stackoverflow.com/questions/3670729/what-is-the-difference-between-integration-testing-and-functional-testing
+
+What is the difference between integration testing and functional testing?
+Are functional testing and integration testing the same? You begin your testing through unit testing, then after completing unit testing you go for integration testing where you test the system as a
+
+Patrick McWilliams [13:53]
+http://jasmine.github.io/2.4/introduction.html
+
+Jonathan Feudi [13:57]
+https://github.com/jasmine/jasmine/tree/master/src/core/matchers
+
+GitHub
+jasmine/jasmine
+jasmine - DOM-less simple JavaScript testing framework
+1
+
+[13:57]
+@group List of Jasmine default matchers
+
+Peter Petrov [13:59]
+Given that Seif wasn’t in the photos and also they came out a little blurry I say we do it again at the end of class today https://www.dropbox.com/sh/ahvsh3h8zape6yb/AAA-hCjfRAhy5r8YZHaw3M-0a?dl=0
+
+Dropbox
+Bowie Photos
+Shared with Dropbox
+3
+
+jason Seminara [14:01]
+https://www.codeschool.com/courses/you-me-svg
+
+Code School
+SVG Tutorial - Code School
+Learn how to create and use scalable vector graphics online. Whether your icons, shapes, and assets are on small or large screens, SVGs have you covered!
+3
+
+Jonathan Feudi [14:31]
+When hooded called should hidden be
+
+[14:35]
+Guys, with the acquisition of these photos, you are all now prime targets for Photoshopping
+1 2 1
+
+Patrick McWilliams [14:40]
+I expect to be worldwide by the end of the day. Get to meme'ing
+
+Harry Ganz [15:22]
+Faker for JS https://github.com/marak/Faker.js/
+
+GitHub
+Marak/faker.js
+faker.js - generate massive amounts of fake data in Node.js and the browser
+1
+
+Harry Ganz [15:30]
+Company BS from  faker: "sticky exploit eyeballs"
+
+Patrick McWilliams [20:39]
+CNN.com seems to have their stuff together. They've got a timer on their live stream that I couldn't figure out how to bypass.
+
+jason Seminara [21:15]
+@group. I'm 90% done tallying project 2 and group projects. There isn't enough time to individually sit with each of you, so I'll email the results to each of you. I'll be available for questions if it's urgent.
+4
+
+Patrick McWilliams [21:47]
+meta.heuristic.
+
+[21:47]
+time for booze
+
+
+----- March 30th -----
+Karolin Rafalski [08:58]
+@elton912:  http://boxcar2d.com/
+1
+
+Patrick McWilliams [09:22]
+@elton912: if you’re working on an evolutionary algorithm thing too, i’ve found these as well: https://en.wikipedia.org/wiki/Artificial_life#Notable_simulators
+
+Elton Cheng [09:23]
+@karolin: @patrickm thank you thank you!
+
+Jasmine Vollherbst [09:27]
+cool CSS trippiness: http://codepen.io/PavelLaptev/pen/oxwXEB?utm_source=CSS-Weekly&utm_campaign=Issue-208&utm_medium=email
+CodePen
+2001: A Space Odyssey "Star Gate" scene - CSS
+About Slit Scan effect — https://www.youtube.com/watch?v=KhRo2WbWnKU Picture ref — http://seriss.com/people/erco/2001/ Original scene from the movie ... (418KB)
+
+1
+
+Jasmine Vollherbst [09:46]
+http://www.informationisbeautiful.net/
+Information is Beautiful
+Dedicated to distilling the world’s data, information and knowledge into beautiful, interesting and, above all, useful visualizations, infographics and diagrams. (168KB)
+3
+
+Seif Dorani [10:09]
+uploaded and commented on an image: Pasted image at 2016-03-30, 10:09 AM
+1 Comment
+every morning
+
+jason Seminara [10:12]
+@group. L'oreal is here on 3rd floor. They've catered their own food. Please stay out of their way and try not to take their food/space. Looking at you @feudi @seif
+
+Jonathan Feudi [10:12]
+#guilty
+2
+
+Viorel Belfiore [10:12]
+i’m in the clear
+
+Colin Hart [11:18]
+https://robots.thoughtbot.com/but-i-dont-want-to-bundle-exec
+
+Seif Dorani [11:23]
+anybody who got beards and trying to groom before an interview: http://thebeardbro.clickforward.com/pages/how-to-use?adid-2E343B92-B097-442c-BFA5-BE371E0325A2=2860866&kw-2E343B92-B097-442c-BFA5-BE371E0325A2=beard+tool
+Beard Bro LLC
+How It Works
+Beard shaping tool for all types of styles, including goatees. Order today and get your perfect beard, and don't forget our great beard oils. The Beard Bro.
+
+Colin Hart [11:24]
+@group for rails people if you want to make requests to a third party api like omdb or whatevaa
+
+https://github.com/jnunemaker/httparty
+
+GitHub
+jnunemaker/httparty
+httparty - Makes http fun again!
+
+Colin Hart [11:42]
+@group come back to the classroom at 11:50 yall for last announcements before we break for the day
+
+Seif Dorani [11:42]
+pic? @colinhart
+
+[11:43]
+class pic to be precise
+
+Colin Hart [11:43]
+oh yeah that too
+
+[11:43]
+@group also for our class picture
+
+[11:43]
+assuming Peter remembered is camera
+
+[11:46]
+http://stackoverflow.com/questions/1996648/concurrency-and-multithreading
+
+Concurrency and Multithreading
+I'm not very experienced with subjects such as Concurrency and Multithreading. In fact, in most of my web-development career I had never needed to touch these subjects. I feel like it's an important
+
+[11:47]
+http://blog.vinceliu.com/2010/05/concurrency-vs-multi-threading.html
+
+Peter Petrov [13:50]
+@group rails api pushed to instructor forlder
+6
+
+Jasmine Vollherbst [18:56]
+https://speckyboy.com/2016/03/28/tips-creating-beautiful-engaging-ui/?utm_source=mobilewebweekly&utm_medium=email
+
+Speckyboy Design Magazine
+Tips for Creating Beautiful and Engaging UI
+Here are some tips covering how to make UI design effective and attractive, while ensuring that users have an excellent experience.
+March 28th at 15:52
+2
+
+
+----- March 31st -----
+jason Seminara [07:29]
+@group https://blog.scrapinghub.com/2016/03/30/web-scraping-to-create-open-data/
+
+The Scrapinghub Blog
+Lluís Esquerda
+Web Scraping to Create Open Data
+Open data is the idea that some data should be freely available to everyone to use and republish as they wish, without restrictions from copyright, patents or other mechanisms of control.
+https://en.wikipedia.org/wiki/Open_data
+My first experience with open data was in the year 2010. I wanted to create a better app for Bicing, the local bike sharing system in Barcelona. Their website was a nightmare to use and I was tired of needing to walk to each station, trying to guess which ones had bicycles. There was no app for Android, other than Show more...
+1
+
+Colin Hart [08:48]
+@group stand ups at 9
+
+Colin Hart [11:05]
+@group reactive native people
+
+Another instructor just shared this with me. a tool to deploy your react-native code to ios
+
+[11:05]
+https://getsiphon.com/
+
+[11:06]
+Also, there is a react-native lecture in another class tomorrow, for those of you doing react-native you’re welcome to drop in, will let you know the exact time (edited)
+
+[11:06]
+most likely it’s at 12:30 (edited)
+3
+
+Jimmy Lin [11:07]
+thanks @colinhart
+
+Patrick McWilliams [11:08]
+are they prepared for like
+
+[11:08]
+8 people?
+
+Colin Hart [11:08]
+lol I would say let’s try to keep it restricted to people who are actively using react-native
+
+[11:08]
+for this final project
+
+Peter Nguyen [11:08]
+thank you @colinhart !
+
+Patrick McWilliams [11:09]
+(someone record it, which i’m sure it totally fine)
+
+Colin Hart [11:09]
+There are tons of meetups and talks you can check out in the evenings if you are just generally interested
+
+[11:09]
+yeah definitely
+
+[11:09]
+http://www.meetup.com/React-Native-NYC/
+
+Meetup
+React Native NYC
+Hi! This is a group for enthusiasts and those curious about React Native, the Facebook-backed software for creating native iOS and Android apps with JavaScript. We will try to meet up once a month for
+
+[11:10]
+there was one like four days ago
+
+[11:10]
+http://www.meetup.com/NYC-Javascript-React-Group/events/221185557/
+
+Meetup
+NYC Javascript React Group
+A speaker coming all the way from FBHQ in CA will be talking about React Native. If you haven't heard, the implications of React Native are huge&nbsp;and the results are impressive. To see what it's a
+
+[11:10]
+they have links to resources and stuff in the comments
+
+Peter Nguyen [11:12]
+lol.. four days ago
+
+Colin Hart [11:27]
+loll ^_^
+
+[11:27]
+sorry
+
+[11:28]
+@group remember if you open up a github issue that you want myself, jason, or peter to look at. Assign it to us but also post the link in the wdi-bowie-scheduler channel
+
+Colin Hart [13:34]
+uploaded an image: Pasted image at 2016-03-31, 1:34 PM
+Add Comment
+Colin Hart [13:35]
+Vitaly strikes again
+1 1
+
+[13:35]
+http://jakeyesbeck.com/2016/03/27/five-more-active-record-features-you-should-be-using/ also rails peoples
+
+[13:37]
+also this guy more great stuff from tenderlove
+
+[13:37]
+https://www.youtube.com/watch?v=b77V0rkr5rk
+YouTube
+Confreaks
+BathRuby 2016 - How are Method Calls Formed? by Aaron Patterson
+
+
+Caleb Rechten [13:37]
+Does anyone remember if Peter touched any other folders/files for setting up backend rails other than the models, controller, db, and gemfile and routes file?
+
+[13:38]
+Or is that pretty much everything.\?
+
+[13:38]
+We need a Vitaly emoji.
+
+[13:41]
+@jasonseminara: I think I have indoor allergies.
+1
+
+Colin Hart [13:43]
+I think that’s everything
+
+[13:43]
+need to set up the cors configuration stuff
+
+[13:43]
+but not sure what the fie is in
+
+[13:43]
+peter will respond here in a second
+
+Peter Petrov [13:44]
+in config/application.rb you need to enable cors
+
+[13:45]
+@caleb instructions are in https://github.com/cyu/rack-cors in the rails section
+
+GitHub
+cyu/rack-cors
+rack-cors - Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible.
+
+Caleb Rechten [13:46]
+I knew there was something I was missing! Thank you.
+
+Emma Hou [14:51]
+uploaded and commented on an image: Pasted image at 2016-03-31, 2:50 PM
+1 Comment
+He replies my current project!!
+
+Colin Hart [14:57]
+So when we retake our group photo, we need to take one with a sign saying thank you VITALY!
+2
+
+[14:57]
+and send it to him
+3
+
+Jonathan Feudi [15:29]
+I hope at the end of the course it is revealed that @pppetrov ’s real name is Vitaly Tomilov
+3
+
+jason Seminara [15:31]
+/giphy petrov
+petrov (900KB)
+
+Jonathan Feudi [15:32]
+/giphy imposter
+imposter (1MB)
+1
+
+Patrick McWilliams [15:34]
+i like that squirrel’s gumption
+
+jason Seminara [16:07]
+@group: this is you doing your finals
+http://brainmysteries.com/assets/2015/03/8.gif (491KB)
+
+
+Patrick McWilliams [16:08]
+yes, my nails ARE fabulous
+
+Peter Petrov [16:09]
+I just want to say my last name is NOT Griffin
+2
+
+Colin Hart [16:13]
+http://www.vox.com/2016/3/31/11333814/cage-free-eggs-free-range-organic
+
+>As the words "cage-free" creep onto egg cartons and menus, you might imagine that these birds roam around on green pastures, nibbling grass and laying eggs at their leisure.
+
+>But that's not necessarily the case. The government doesn't regulate the label — in fact, the only government-regulated claim made on eggs is "organic." (To call their eggs organic, producers need to follow a standardized set of feeding and growing practices.) The free-range and vegetarian labels on your egg cartons aren't regulated either, and are essentially meaningless.
+Vox
+What it really means for an egg to be "cage-free"
+The humble egg is a symbol of America's changing relationship with food. (489KB)
+March 31st at 07:00
+
+1
+
+Colin Hart [16:52]
+@group react-native people.
+
+Bad news:
+
+The talk in the other class is off. It’s not actually about ReactNative, just react as that’s what they’re learning now.
+
+Good news: I’m hoping the speaker can come to our classroom for 30m  at 12 and talk about React Native.
+
+no promises, it would be out of the goodness of the speakers heart.
+
+Will let you know tomorrow
+
+Maxwell Rayman [19:13]
+Ive been hit with a vitaly hint
+1 1
+
+
+----- April 1st -----
+
+1 1
+
+
+----- April 1st -----
+Caleb Rechten [08:52]
+Who else is using rails for a users api with React?
+1
+
+Jasmine Vollherbst [09:15]
+Headshot schedule: https://docs.google.com/spreadsheets/d/1tn5UHSmBoPQELDAeHYQKGt3pD8ZjiHEHAaS6OslHDD4/edit#gid=0 (edited)
+1
+
+Harry Ganz [09:21]
+https://youtu.be/VkOuShXpoKc
+YouTube
+Google
+Google Cardboard Plastic
+
+1
+
+Colin Hart [10:21]
+@group, react-native talk in 2A from 12:00 - 12:30 (edited)
+2 2
+
+jason Seminara [11:04]
+@group DESIGN Competition!
+We have some budget to build a smallish (3-4’) banner, in color, to thank @vitaly in our class photo!
+
+Peter Petrov [11:04]
+@group Don’t forget to take your headshots today
+
+jason Seminara [11:05]
+I need a PDF in the proper proportions and our print-shop partner will print it out in a few days
+
+[11:05]
+@jasminev: @feudi @ariingber ideas?
+
+[11:05]
+@raz?
+
+Peter Petrov [11:06]
+Paper and a sharpie available in the room for your mugshot!
+
+Colin Hart [13:17]
+https://github.com/thejameskyle/the-super-tiny-compiler
+
+GitHub
+thejameskyle/the-super-tiny-compiler
+the-super-tiny-compiler - :snowman: Possibly the smallest compiler ever
+
+[13:17]
+Welcome to The Super Tiny Compiler!
+
+This is an ultra-simplified example of all the major pieces of a modern compiler written in easy to read JavaScript.
+
+Reading through the guided code will help you learn about how most compilers work from end to end.
+
+Jonathan Feudi [13:40]
+Should we all get sunglasses like Vitaly’s for the photo?
+
+[13:40]
+https://avatars1.githubusercontent.com/u/5108906?v=3&s=460 (319KB)
+
+2
+
+[13:41]
+Or I could always Photoshop them on to everyone in the class
+2
+
+Harry Ganz [14:14]
+All of the default cases in my switch statements:
+https://github.com/search?l=&q=should+never+happen&ref=advsearch&type=Code&utf8=%E2%9C%93
+GitHub
+Build software better, together
+GitHub is where people build software. More than 14 million people use GitHub to discover, fork, and contribute to over 35 million projects.
+1
+
+jason Seminara [14:19]
+Vitaly should be on a stick, as a floating head
+1
+
+Caleb Rechten [14:21]
+Maybe I'll just start naming as many variables as I can "Vitaly".
+
+Karolin Rafalski [14:22]
+do you think that’ll get him to forgive us for using firebase on our last project?
+
+Jonathan Feudi [15:21]
+@karolin: Vitaly is like a database - he does not forget.
+
+[15:21]
+Only time will tell if he has the capacity for forgiveness.
+1
+
+Elton Cheng [16:09]
+uploaded and commented on an image: 4-1 WDI headshots-1382.jpg
+1 Comment
+14
+Dis one
+
+Emma Hou [18:36]
+can we have a collection folder of everybody's best photo? sort of like a year book?
+
+Colin Hart [19:05]
+Make an app :p
+
+Jonathan Feudi [22:15]
+My pictures are all terrible =[
+
+Emine Koc [22:18]
+@group Do not miss Google Code Jam, ( for those who r amazing on algorithms: ) https://code.google.com/codejam (edited)
+
+jason Seminara [22:27]
+@elton912: "honestly, I don't give a shit about your code; my glasses make me smarter than you"
+
+[22:28]
+"Also, I'm over you"
+
+[22:29]
+Thanks guys for the great night out @group
+6 8
+
+
+----- April 2nd -----
+Caleb Rechten [10:13]
+uploaded and commented on an image: Slack for Android Upload
+1 Comment
+1 1
+My sisters stike again
+
+Jonathan Feudi [12:01]
+Yo, have any of you guys made the mistake of initializing your Rails application and forgetting to set the DB to PSQL? Wondering if it’s worth going through the config stuff of changing it, or if I should just delete and re-initialize. I don’t have a ton done on the back end, so re-initializing isn’t the end of the world
+
+[12:02]
+@group
+
+Colin Hart [12:05]
+You couldvmake a new app and just copy the db yml file
+
+[12:05]
+From the new app to the okd
+
+[12:05]
+Old
+
+[12:05]
+That really should be all you need to do
+
+Jonathan Feudi [12:06]
+I just yanked all the files I had made changes to into another folder, and I’m reinitializing now, then putting my modified files back into the new application
+
+[12:06]
+But, thanks, I’ll remember that for future fuck-ups
+
+Jonathan Feudi [12:25]
+I think Rails is mad at me for putting the trying to use the Gemfile from another application...
+
+[12:25]
+Can’t start my server :sob:
+
+Jimmy Lin [18:52]
+@colinhart: hey Colin .. do you have Jess (the guy who came to talked about Reactive Native contact info such as his github?
+
+Colin Hart [19:56]
+Yupp
+
+[19:56]
+Give me one second
+
+[19:57]
+@jimmylin jesse.sessler@gmail.com
+
+[19:57]
+https://github.com/jemise111/ga_react_demo
+
+GitHub
+jemise111/ga_react_demo
+Contribute to ga_react_demo development by creating an account on GitHub.
+1
+
+Patrick McWilliams [21:52]
+i have mastered gravity in my digital world. you will now address me as Gravneto, the master of gravnetism.
+
+Jonathan Feudi [22:01]
+ALL HAIL GRAVNETO
+
+[22:01]
+O GRAVITRON OVERLORD WE ARE NOT WORTHY (edited)
+1
+
+
+----- April 3rd -----
+Colin Hart [09:59]
+https://www.npmjs.com/package/Faker
+
+npm
+Faker
+Generate massive amounts of fake contextual data
+
+[09:59]
+https://www.youtube.com/watch?v=DNPVqK_woRQ
+
+Lee Benson
+Build a GraphQL server for Node.js, using PostgreSQL/MySQL
+
+
+[09:59]
+GraphQL is a REST replacement ^^
+
+[10:00]
+https://medium.com/the-graphqlhub/your-first-graphql-server-3c766ab4f0a2#.qsh1wsb91
+Medium
+Your First GraphQL Server — The GraphQLHub
+So, today we’re going to write a small GraphQL server. I’m not going to try to persuade you to drop everything and adopt…
+July 12th, 2015 at 21:17
+Reading time
+----------------
+5 mins
+
+
+Jimmy Lin [10:10]
+@group FYI GA is closed today
+
+[10:11]
+@group Adam & I will be at Le Pan
+
+Colin Hart [10:11]
+… It shouldn’t be, try the 2nd floor
+
+[10:12]
+They were replacing tables this weekend on the third and fourth floor
+
+Ari Ingber [10:12]
+@group im on the third floor now, i think its open
+
+Colin Hart [10:13]
+Just keep in mind you might get forced to move around a little due to table replacements.
+
+Jonathan Feudi [10:14]
+The 2nd and 4th floors will be CLOSED Saturday 4/2 and Sunday 4/3 during the transition
+
+[10:14]
+From the email
+
+Colin Hart [10:15]
+word @group 3rd floor should be open, Thanks Feudi
+
+Jonathan Feudi [10:15]
+No prob
+
+[10:15]
+DOES ANYONE READ THEIR EMAIL?!
+
+Jimmy Lin [10:15]
+@ariingber: come down to open the door for us :)
+
+Colin Hart [10:15]
+who reads email? #snapchat4lyfe
+2
+
+Ari Ingber [10:15]
+ok
+
+Colin Hart [10:16]
+I’m in a vegan cafe and it smells like bacon and i dont understand how….
+2
+
+Caleb Rechten [10:19]
+Obviously some crazy science shit going on in the back. For the good of everyone.
+
+Colin Hart [10:22]
+Okay, seriously @group, if you have a spare moment check out this video on using graphql with node/express/postgres, pretty cool https://www.youtube.com/watch?v=DNPVqK_woRQ (edited)
+
+jason Seminara [10:22]
+Also do this http://nyc.uncubed.com/
+NYC Uncubed Spring 2016 - Splash
+Attend  talks and panels sharing the cutting-edge skills used to build top companies Discover great jobs and meet the teams behind the hiring startups Chat with Founders & VPs about opportunities at the Executive Breakfast* *All registered attendees are reviewed for exec-level credentials
+
+Colin Hart [10:24]
+ALSO, @group, if you’re learning new things, React Native, Sockets, Redux, weird api’s, Rails etc.
+
+Write up posts in the Wiki! They don’t have to be super long or really intense, but will help you internalize what you’ve learned and will be a resource for yourself and others during the next week and in the future, and are drafts for the blog you should also start after class ends. Slash, some of you are using technologies I’m not familiar with, and I want to ​_learn!!!_​ (edited)
+
+Adam Kriger [10:26]
+@group what do you think of this article?  https://www.linkedin.com/pulse/learning-code-yields-diminishing-returns-douglas-rushkoff (edited)
+
+Colin Hart [10:30]
+sigh, a hyperbolic oversimplification of what Brynjolfsson actually argues and discusses
+
+Get his book, https://en.wikipedia.org/wiki/Race_Against_the_Machine
+
+it’s super interesting (edited)
+
+[10:31]
+@adamscottkriger:
+
+Adam Kriger [10:31]
+@colinhart: looks very interesting!
+
+Colin Hart [10:33]
+This article makes it sound like we’re coding ourselves out of jobs, when the argument is more that the result of software development, is that lower wage jobs, service jobs—the obvious example being cashiers—get replaced by machines. Which means that policy makers need to provide better support for retraining, better k12 education, and that possibly America might consider not emphasizing that we all continue to work as many hours per week as we can fit in (edited)
+1
+
+[10:34]
+#gaspp
+
+Adam Kriger [10:36]
+@colinhart: I agree. It’s definitely alarmist and I don’t think it tracks with the reality on the ground. Coding jobs are in demand and I think they will be for the foreseeable future.
+
+Caleb Rechten [10:37]
+If a machine can do the job better than a human, it should.
+1
+
+Patrick McWilliams [11:50]
+Universal basic income 4lyfe.
+
+jason Seminara [14:54]
+@group I'm putting together a lesson on algorithmic analysis ( how much work does the computer do with my function?)
+
+[14:54]
+I'd like to do it this Wednesday 10-12
+
+[14:55]
+It's an optional lesson, stay in the class of you want the lesson. Who's interested?
+1 9
+
+[14:57]
+Big O is a pretty heady topic, but you should be familiar with it when you go on interviews.
+
+Elton Cheng [15:12]
+uploaded and commented on an image: Big_o.jpg
+1 Comment
+2
+I’m so ready for interviews
+
+Elton Cheng [15:13]
+What other animes should I brush up on for interviews? :smirk:
+
+jason Seminara [15:15]
+Definitely akira
+
+[15:15]
+http://youtu.be/KQnw35kR6Pw
+YouTube
+Mevimei
+Akira trailer - English
+
+1
+
+Elton Cheng [15:16]
+And people said interviews would be hard :grin:
+
+jason Seminara [15:18]
+You should also study Paprika.
+
+jason Seminara [15:18]
+uploaded an image: Slack for iOS Upload
+Add Comment
+Patrick McWilliams [15:21]
+Probably ghost in the shell
+3
+
+jason Seminara [15:25]
+@group where are we on that vitaly banner?
+
+Jasmine Vollherbst [15:35]
+@jasonseminara: I can put something together for tomorrow. 3x4’?
+
+jason Seminara [15:35]
+Sure!
+
+Jasmine Vollherbst [15:36]
+cool :simple_smile:
+
+jason Seminara [15:36]
+Collaborate w @feudi if he's still interested
+
+Jasmine Vollherbst [15:37]
+will do! I feel like there’s some photoshop magic waiting to happen
+
+Patrick McWilliams [17:52]
+creating a universe is a detail oriented task. i should program some angels to take care of things for me while i sit back and like, breathe on things.
+
+Patrick McWilliams [19:15]
+infinite inertia seems to prevent tunneling out of the universe. good to know!

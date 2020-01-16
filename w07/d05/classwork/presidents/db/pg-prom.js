@@ -1,9 +1,5 @@
-(function() {
-  'use strict';
 
-}());
 var pgp           = require ('pg-promise')({
-
 });
 
 var cn = {
@@ -19,9 +15,9 @@ var cn = {
 var db           = pgp(cn);
 
 function showPresidents (req, res, next)  {
-  db.any("select * from presidents")
+  db.any("SELECT * FROM presidents")
   .then(function(data){
-    res.rows= data;
+    res.rows = data;
     next();
   })
   .catch(function(error){

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Müvie Haus</title>
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>Müvie Haus </header>
+
+//this worked for the dummy data need to change it to something different
+//this currently works for the moviessss route  
+  <!-- <div class='container'>
+    <% for (var i= 0; i< title.length; i++){ %>
+    <div class='movie'>
+    <h3><%= title[i].title %></h3>
+    <img src='<%= img[i].img %>'>
+    <h4> Show Times:</h4>
+    <h4><%= showTimes[i].showTimes %></h4>
+    <button> delete </button>
+    <button> update </button>
+  </div>
+    <% }  %>
+</div> -->
+
+  <div class='search-container'>
+    <div class="search">
+    <label class="search" for="movie"></label>
+    <div>
+        <span class="help-block">Enter the movie you'd like to search</span>
+    <input id="title" name="title" type="text" placeholder="All or part of movie name" class="input" required="">
+
+    </div>
+  </div>
+    <label class="search" for="submit"></label>
+    <button id="submit" type="submit" class="">Search</button>
+  </div>
+</body>
+</html>

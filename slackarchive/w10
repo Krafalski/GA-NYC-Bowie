@@ -1,0 +1,2026 @@
+
+
+----- March 21st -----
+Colin Hart [08:49]
+@group if you're getting an `unexpected token >` error on initial load. It's likely that you're requiring bundle.js as well as your app.js (or whatever you've named it)  that holds your top most parent component. Delete that script tag from your html and you should be good.
+
+Remember bundle contains all of your Javascripts... Bundled. So loading both in your html is requiring the same thing twice
+
+jason Seminara [10:47]
+https://www.npmjs.com/whoshiring
+npm
+npm is the package manager for javascript (2KB)
+
+2 1
+
+Jonathan Feudi [13:13]
+GITHUB IS DOWN I REPEAT GITHUB IS DOWN
+
+[13:13]
+EVERYBODY PANIC
+
+[13:13]
+@group
+
+Caleb Rechten [13:15]
+panicing
+
+Colin Hart [13:18]
+still down
+
+[13:18]
+just keep on eye on this https://status.github.com/
+
+[13:18]
+hasn’t updated yet to reflect that it’s down
+
+Patrick McWilliams [13:20]
+i got it to load
+
+[13:20]
+so it’s back? … ?
+
+Colin Hart [13:20]
+uploaded an image: Pasted image at 2016-03-21, 1:20 PM
+Add Comment
+Colin Hart [13:20]
+it will likely be intermittent
+
+jason Seminara [15:12]
+take a break and learn about murica
+
+[15:12]
+https://www.youtube.com/watch?v=ASSOQDQvVLU
+YouTube
+CGP Grey
+American Empire
+
+2
+
+Douglas Walker [16:58]
+45.55.179.240 <— Come checkout our Privacle's
+
+Emine Koc [19:58]
+http://www.cnbc.com/2016/03/16/could-you-fall-in-love-with-this-robot.html
+CNBC
+Could you fall in love with robot Sophia?
+Meet Sophia and Geminoid, two humanlike robots that may embody the androids of our future. (115KB)
+March 16th at 13:58
+
+1
+
+Peter Nguyen [21:35]
+uploaded an image: The night is not over !!
+Add Comment
+
+----- March 22nd -----
+jason Seminara [07:12]
+http://m.xkcd.com/1658/
+xkcd
+Estimating Time
+[Title text] "Corollary to Hofstadter's Law: Every minute you spend thinking about Hofstadter's Law is a minute you're NOT WORKING AND WILL NEVER FINISH! PAAAAAANIIIIIIC!" (59KB)
+
+1
+
+Jonathan Feudi [09:22]
+https://github.com/WDI-Bowie-Group-Project/GitGarden/
+
+GitHub
+WDI-Bowie-Group-Project/GitGarden
+Contribute to GitGarden development by creating an account on GitHub.
+
+[09:22]
+You know you want it
+
+Bryce Krah [09:22]
+https://github.com/PEBbles-GroupProject/Global-Warming-Map
+
+GitHub
+PEBbles-GroupProject/Global-Warming-Map
+Global-Warming-Map - To show the effects of Climate Change and provide users with opportunities to make a difference.
+
+[09:23]
+45.55.179.155:3000
+
+Lauren Golik [09:56]
+https://github.com/WebDevJ/reactJs_app
+
+GitHub
+WebDevJ/reactJs_app
+reactJs_app - SPA created using React.js, Express & PostgreSQL
+
+Caleb Rechten [10:25]
+http://mad-mad-libs.herokuapp.com/
+
+[10:25]
+https://github.com/GA-WDI-Group-Project-Bowie-NoCommit/mad-mad-libs/blob/master/README.md
+
+GitHub
+GA-WDI-Group-Project-Bowie-NoCommit/mad-mad-libs
+Contribute to mad-mad-libs development by creating an account on GitHub.
+
+Maxwell Rayman [10:40]
+https://github.com/namyarxam/plantee
+
+GitHub
+namyarxam/plantee
+plantee - 3rd Project for WDI-GA-NYC
+
+[10:40]
+45.55.179.238:3000
+
+eric hegdahl [11:52]
+@group:
+
+INTERVIEWING STRATEGY
+
+What you will do
+
+Implement compelling, usable UIs, contribute to their design and engineer them with React and Redux.
+Join a tightly knit team solving hard problems the right way
+Improve performance and address scalability limits
+Own meaningful parts of our service, have an impact, grow with the company
+
+Who you must be
+
+You know Javascript, HTML, and CSS and you’re aware of the latest trends with frontend technologies
+You know how to use design patterns to create simple and reusable components for UIs
+You are familiar with data structures and algorithms, profiling and optimization
+Your work or portfolio is visible online
+You tend to obsess over code simplicity, performance and details
+You want to work in a fast, high growth startup environment
+
+Bonus points
+
+You fell in love with D3 (we did)
+You’ve worked on an application using React, Angular, Backbone, Ember, Flux, or Redux
+You write your Javascript in ES6 and Babel
+You enjoy writing Python, Ruby, C++, Rust or Go
+
+eric hegdahl [12:35]
+@group: Your “Interviewing Strategy” EXIT TICKET! : https://goo.gl/4meXjC
+
+Patrick McWilliams [13:05]
+we should probably compile a list of the harder/est interview questions we’ve encountered as we go along post-class
+1
+
+Jimmy Lin [13:11]
+https://github.com/WDI-Project-Sprinkle/Sprinkle
+
+GitHub
+WDI-Project-Sprinkle/Sprinkle
+Contribute to Sprinkle development by creating an account on GitHub.
+
+Harry Ganz [13:18]
+https://github.com/dropTHATdatabase/project3
+
+GitHub
+dropTHATdatabase/project3
+project3 - GA-Bowie Group Project
+
+Elton Cheng [13:34]
+https://sprinkle-jobs.herokuapp.com/
+This is the heroku for our application. The signup/login doesn’t work for some reason on heroku.
+
+Colin Hart [14:16]
+http://www.labnol.org/internet/geo-location/27878/
+Digital Inspiration
+How to Fake your Location in Google Chrome
+With the HTML5 Geolocation API, websites can determine your location coordinates but Chrome does allow you to easily fake your current geographic location. (87KB)
+
+
+Emine Koc [14:18]
+@group I have talked to some of you about going to a Turkish restaurant for lunch on one of the Wednesdays.  Please let me know if you want to do it tomorrow, after school before the field trip.  If you want, I can make reservation for us.    :+1:   or  :-1: (edited)
+3
+
+Peter Nguyen [14:19]
+```javascript
+import React from 'react';
+import {Router, Route, Link, browserHistory} from 'react-router';
+import ReactDOM from 'react-dom';
+
+const App = React.createClass({
+  getInitialState: function(){
+    return {
+      user: 'harry'
+    }
+  },
+  childContextTypes: { // Set the type
+    user: React.PropTypes.string
+  },
+  getChildContext: function(){ // Return context object
+    return {
+      user: this.state.user
+    }
+  },
+  render: function() {
+    return (
+      <div>
+        <h1> Hello World </h1>
+        {this.props.children}
+      </div>
+    );
+  }
+});
+
+const Child = React.createClass({
+  contextTypes: { // set context type and name
+    user: React.PropTypes.string
+  },
+  render: function(){
+    return (
+      <p> User: {this.context.user} </p> // get context from parent
+    );
+  }
+});
+
+ReactDOM.render(
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <Route path="/child" component={Child} />
+    </Route>
+  </Router>,
+  document.getElementById('container')
+);
+```
+
+[14:19]
+heres the sample react context code if anyone’s interested
+3
+
+Emine Koc [14:34]
+ Pinned a message. See all pinned items in this channel.
+Emine Koc eminekoc
+@group I have talked to some of you about going to a Turkish restaurant for lunch on one of the Wednesdays.  Please let me know if you want to do it tomorrow, after school before the field trip.  If you want, I can make reservation for us.    :+1:   or  :-1:
+March 22nd at 14:18
+10 1
+
+Emine Koc [15:02]
+Great; here is the link of the restaurant which close by us, just in case you want to check it out. I think their lunch special is good.    https://www.turkishkitchen.com
+Turkish Kitchen - New York City
+New York City is, of course, not the first cultural melting pot in history, and proof is available nightly at Turkish Kitchen, a hearty and welcoming restaurant in the Murray Hill section of Manhattan that reproduces with resolute authenticity the polyglot cuisines of Istanbul and the Anatolian provinces.
+(edited)
+1
+
+Daniel Goldman [15:15]
+joined #wdi-bowie-students by invitation from @pppetrov
+
+Jonathan Feudi [15:19]
+Did we get a new Dan?
+
+Daniel Goldman [15:21]
+@group Hi all, I'm Daniel, the new guy sitting in the back of the room. I'm replacing Rachel as your daytime-TA, so I'll be grading your stuff, and also (mostly) helping out while you're panicking over your final projects.
+8
+
+Jonathan Feudi [15:22]
+Nothin like a #newDan
+
+Elton Cheng [15:22]
+@dzack: you’re just in time for our class manipedis and karaoke night!
+
+Jasmine Vollherbst [15:22]
+@dzack: Hi Dan!
+
+Jonathan Feudi [15:22]
+Elton, karaoke isn’t happening, just accept it
+
+Elton Cheng [15:22]
+I still have 3 weeks. This will happen
+2
+
+KP Perez [15:23]
+@dzack: #nonewfriends
+
+Jonathan Feudi [15:23]
+3 weeks to hear me sing “I Want You Back” by N'Sync
+
+jason Seminara [15:23]
+@dzack: this class is weird; they’ll do your nails. just let it happen
+
+Jonathan Feudi [15:23]
+gooble gobble one of us one of us
+
+Elton Cheng [15:24]
+resistance is futile
+
+Ari Ingber [15:25]
+q me
+4
+
+jason Seminara [15:25]
+water me
+8
+
+Jonathan Feudi [15:25]
+Water me
+3
+
+Elton Cheng [15:25]
+@jasminev: killed plantee
+4 2 1
+
+Daniel Goldman [15:26]
+I understand like 1/8 of what was just said
+
+Jonathan Feudi [15:27]
+You came late to this party
+
+Daniel Goldman [15:27]
+@kp_was_already_taken: one silver, other gold?
+
+Maxwell Rayman [15:27]
+http://45.55.179.238:3000 in case you miss him
+
+Elton Cheng [15:28]
+Start a new round max
+
+Maxwell Rayman [15:29]
+i deleted everyone from the database anyone can start a round though
+
+Jonathan Feudi [15:30]
+You can delete us from the DB Max, but you can’t delete us… from your heart
+
+jason Seminara [15:31]
+/giphy #caption You guys are crushing it
+#caption You guys are crushing it (196KB)
+
+
+Daniel Goldman [15:31]
+jason will spend the next 3 weeks regretting this
+
+Peter Petrov [15:31]
+/giphy #caption ‘Wellcome to giphy’ great power great responsibility
+#caption ‘Wellcome to giphy’ great power great responsibility (2MB)
+
+
+[15:32]
+/giphy ruby!
+ruby! (2MB)
+
+
+Jonathan Feudi [15:33]
+https://49.media.tumblr.com/9e0ff2f516e058a73e7031c13b021560/tumblr_nnz53hQI3J1qiaxzfo1_250.gif (2MB)
+
+
+
+Gif Keyboard BOT [15:34]
+@jasonseminara: /gifs what the (903KB)
+
+
+Peter Petrov [15:35]
+/giphy #caption “wtf jason” jason
+#caption “wtf jason” jason (832KB)
+
+
+
+Gif Keyboard BOT [15:37]
+@dzack: /gifs distraction (41KB)
+
+
+KP Perez [16:47]
+Whoa. I was gone for a little bit and now life as I knew it has changed. I'm surprised it took this long for giphy to start
+
+Rachel Smyth [17:00]
+...I can see @colinhart rolling his eyes at every gif from all the way over on 1st Ave.
+1
+
+eric hegdahl [17:04]
+@group: I’ve been asked more than a few times about LinkedIn summaries . . . This article is worth passing along
+
+Patrick McWilliams [17:34]
+psst, @coacheric , either you got distracted or someone should have called an ambulance about 30 mins ago
+
+Harry Ganz [19:03]
+@group RubyMonk is a pretty good free resource to learn some ruby magic. You can skip around a bit and find topics that confuse you, or try to do them in sequence. I would recommend taking a look at how ruby does classes and Procs and Lambdas as those are really very different from Javascript: https://rubymonk.com/
+
+RubyMonk
+RubyMonk - Interactive ruby tutorials to learn Ruby
+An online interactive ruby learning platform
+1
+
+[19:04]
+You can probably just skip to intermediate, and go back to beginner for a particular thing if you get lost
+
+Patrick McWilliams [19:59]
+dem tutorial sirens doh
+
+Patrick McWilliams [20:10]
+elsif disinclines me towards the maker of ruby
+
+KP Perez [20:12]
+LOL but give it a chance @patrickm
+1
+
+Harry Ganz [20:15]
+@patrickm: Try this in pry (or irb)
+```x = if (1 > 2)
+   5
+else
+  3
+end
+
+puts x
+```
+
+Patrick McWilliams [20:23]
+that should evaluate to 3, no?
+
+KP Perez [20:24]
+http://www.pragtob.info/rails-beginner-cheatsheet/#ruby
+
+Patrick McWilliams [21:26]
+Did we ever get a date on headshot availability?
+
+
+----- March 23rd -----
+Colin Hart [08:09]
+@patrickm: not yet, but it’s the kind of thing that happens end of program.
+
+[08:09]
+WIll let you know
+
+Harry Ganz [09:19]
+``` (1..10).to_a```
+Changes a range into an array
+
+Seif Dorani [10:02]
+uploaded and commented on an image: Pasted image at 2016-03-23, 10:02 AM
+1 Comment
+elton?
+
+Jonathan Feudi [10:04]
+#stapler
+1
+
+Patrick McWilliams [10:07]
+/giphy office space
+office space (660KB)
+
+
+Seif Dorani [10:07]
+@patrickm: hahahaha i forgot that! the cake!
+
+Seif Dorani [10:09]
+uploaded an image: somedays are just like....
+Add Comment
+Jonathan Feudi [10:09]
+#pcloadletter
+1
+
+[10:10]
+Last time, I did not receive a piece
+3
+
+Harry Ganz [10:30]
+https://en.wikipedia.org/wiki/PC_LOAD_LETTER
+
+Colin Hart [10:36]
+https://www.youtube.com/watch?v=9lv2lBq6x4A
+
+This woman, Sandi Metz, is frickin’ amazing. I’ve hugged her twice and is a big reason why I decided to be a programmer.  Above video is her talk on null object pattern
+
+If you really want to understand Ruby and OOP check out her book POODR (practical object oriented design in ruby) it’s the Ruby Bible… basically.  I’ve read through it maybe 5 times now.
+
+https://github.com/ga-students/wdi-nyc-bowie_students/wiki/Books%2C-Technical (listed in the wiki -_- )
+YouTube
+Confreaks
+BathRuby 2015 - Nothing is Something
+
+(edited)
+
+Lauren Golik [10:38]
+ Pinned a message. See all pinned items in this channel.
+Colin Hart colinhart
+BathRuby 2015 - Nothing is Something
+https://www.youtube.com/watch?v=9lv2lBq6x4A
+
+This woman, Sandi Metz, is frickin’ amazing. I’ve hugged her twice and is a big reason why I decided to be a programmer.  Above video is her talk on null object pattern
+
+If you really want to understand Ruby and OOP check out her book POODR (practical object oriented design in ruby) it’s the Ruby Bible… basically.  I’ve read through it maybe 5 times now. Show more...
+March 23rd at 10:36
+
+Colin Hart [10:39]
+She did a ruby class in DUMBO a year ago… it was one day… cost 20k  or something T_T saddest day of my life (edited)
+
+Patrick McWilliams [10:40]
+jesus. what do i have to do to charge 20k/person per day (edited)
+
+Colin Hart [10:41]
+be sandi metz and/or one of the top 5 ruby luminaries in the world
+
+Patrick McWilliams [10:42]
+… well, that’s a lot of people to take out hits on.
+
+Colin Hart [10:42]
+blasphemy
+1
+
+Viorel Belfiore [10:42]
+you’ll make it all back when you take her place
+1
+
+Patrick McWilliams [10:46]
+i suppose i could leave her alone and take out everyone else? solutions-oriented compromise!
+
+Viorel Belfiore [10:49]
+come on man, you can’t back down now.  There can only be One
+
+Caleb Rechten [10:49]
+object_id.object_id
+3
+
+Patrick McWilliams [10:50]
+nil.
+
+[10:50]
+then press tab
+
+[10:50]
+2155 methods
+
+[10:51]
+and/or properties
+
+Colin Hart [10:53]
+methods, no “properties” in ruby
+1
+
+Peter Petrov [10:57]
+https://www.new-bamboo.co.uk/blog/2010/12/17/learning-japanese-the-rubyist-way/
+New Bamboo
+Learning Japanese the Rubyist way
+Introduction Step 1: How to read Japanese characters Step 2: Japanese and OO Step 3: Japanese and functional Step 4: Writing Japanese programming language in Ruby Summary Ruby Advent Calend...
+Dec 16th, 2010 at 20:00
+
+Patrick McWilliams [11:02]
+peter, what are you doing to me.
+
+Jonathan Feudi [11:06]
+@pppetrov: すごいな！
+
+[11:07]
+‘Jason was here'
+
+Patrick McWilliams [11:07]
+nil looked like it lacked the comparable class, but nil == nil and nil === nil return true
+
+Jonathan Feudi [11:08]
+Oh God
+
+Patrick McWilliams [11:08]
+which i think is because… “The Comparable mixin is used by classes whose objects may be ordered. … If the other object is not comparable then the <=> operator should return nil."
+
+Colin Hart [11:13]
+uploaded an image: Pasted image at 2016-03-23, 11:13 AM
+Add Comment
+Jonathan Feudi [11:15]
+Dude Mitleon is a sweet freakin name
+
+[11:15]
+Might append it to my long list of names
+
+[11:16]
+Jonathan Francis Gabriel Mitleon Feudi
+1
+
+Seif Dorani [11:21]
+@feudi:  now you smell like the vault! $$$
+
+Jonathan Feudi [11:22]
+#sopaid
+
+Seif Dorani [11:22]
+Mitleon is a paid name
+
+Patrick McWilliams [11:25]
+10e307 returns a number, 10e308 is infinity
+
+Jonathan Feudi [11:27]
+Thanks, @patrickm , the lack of this knowledge was killing me
+
+Patrick McWilliams [11:28]
+i just need to know where the border to infinity is
+
+Jonathan Feudi [11:28]
+“The Border to Infinity” is the name of my new album
+
+Patrick McWilliams [11:28]
+i better get royalties
+
+Jonathan Feudi [11:33]
+Ponies for everyone! Vermin Supreme 2016!
+1
+
+Douglas Walker [11:43]
+uploaded an image: Pasted image at 2016-03-23, 11:43 AM
+Add Comment
+2
+
+Ari Ingber [11:46]
+nooooo computa says no
+1 1
+
+Jonathan Feudi [11:46]
+@pppetrov: Such class
+
+Viorel Belfiore [11:52]
+what do these sigils do?  http://qph.cf.quoracdn.net/main-qimg-641b2c6f5c07123c86ba81c0b6f14a41 (59KB)
+
+
+Jonathan Feudi [11:52]
+They kill all your favorite characters
+
+Caleb Rechten [11:53]
+So beautiful
+
+Seif Dorani [12:00]
+added a Plain Text snippet
+[3] pry(main)> class Auto
+[3] pry(main)*   def initialize(w_count, color)
+[3] pry(main)*     @position = 0
+[3] pry(main)*     @wheel_count = w_count
+[3] pry(main)*     @color = color
+Add Comment Click to expand inline 31 lines
+Lauren Golik [12:12]
+found this tutorial on making a game of blackjack in ruby:
+
+[12:12]
+http://rubyoffrails.com/videos/14-blackjack
+2
+
+Peter Petrov [12:35]
+@group: Please fill out this form ASAP. It’s about your hoodies :simple_smile: http://goo.gl/forms/QbfBFBRH75
+
+Sara Horowitz [12:39]
+@pppetrov: no access?
+
+Peter Petrov [12:40]
+hmm… let me check
+
+[12:41]
+@group fixed! http://goo.gl/forms/Y8dZvSWHH4
+
+Elton Cheng [13:03]
+@pppetrov do these say bowie on them?!
+
+Peter Nguyen [13:03]
+Do they shrink after washing?
+
+Peter Petrov [13:11]
+Haha, no Bowie, mine hasn't shrunk but I wash it on cold
+
+Emma Hou [13:26]
+@pppetrov which size are you wearing?
+
+Peter Petrov [13:32]
+not sure, I can check tonight
+
+Colin Hart [13:45]
+http://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/?mt=1458754771348
+
+Be aware you might encounter badness. Will keep you informed about whether or not this is something we need to work around or not.
+How one developer just broke Node, Babel and thousands of projects in 11 lines of JavaScript
+left-pad pulled from NPM – which everyone was using (81KB)
+
+
+Emine Koc [14:12]
+uploaded an image: Slack for iOS Upload
+Add Comment
+1 1
+
+Peter Petrov [14:23]
+@group /giphy jealous
+
+[14:23]
+/giphy jealous
+jealous (1MB)
+
+
+Jonathan Feudi [14:24]
+Ruby docs say for loops are rarely used in Ruby, should we be discouraged from using them? @pppetrov
+
+Peter Petrov [14:24]
+you are real developers now…form your own opinions haha
+1
+
+Jonathan Feudi [14:25]
+I DON’T WANNA GROW UP
+
+Peter Petrov [14:25]
+you have to quickly become opinionated if you are going to fit in :simple_smile:
+
+[14:25]
+just pick anything randomly and swear by it
+
+Jonathan Feudi [14:25]
+Got it
+
+Emine Koc [14:59]
+We r walking to canal street
+
+[15:00]
+If anyone else wanna join we r down on the street
+
+jason Seminara [15:18]
+Down with for loops!
+
+Peter Petrov [16:00]
+@group if anyone is late tell the front desk you are going to Artsy and head to 25th floor
+
+Jonathan Feudi [16:20]
+uploaded and commented on an image: Screen Shot 2016-03-23 at 4.20.03 PM.png
+1 Comment
+Ruby: So you only want me to run this loop while i < 26, right? No problem.
+
+Colin Hart [16:33]
+27th actually per peters comment
+
+Viorel Belfiore [17:29]
+playplay.io
+
+Sara Horowitz [17:54]
+@pppetrov   That was awesome! Thanks!!
+
+Peter Nguyen [17:56]
+Thanks Peter!!
+1
+
+KP Perez [18:25]
+@pppetrov next for you to learn: http://mashable.com/2016/03/23/rubiks-cube-solver-juggler/?utm_cid=mash-com-Tw-main-link#sM9qQWt9WOqV
+
+Mashable
+Master solves and juggles Rubik's cubes at the same damn time
+The solvability of Rubik's cubes is a real toss-up.
+
+Lauren Golik [18:28]
+http://rubyoffrails.com/videos/14-blackjack
+
+jason Seminara [18:51]
+@group how did artsy go?
+
+Lauren Golik [18:51]
+@jasonseminara: it was awesome!!! thank you so much for setting that up
+1
+
+Elton Cheng [18:52]
+@jasonseminara: Went great! The tour was very informative!
+
+jason Seminara [18:52]
+It was ALL @pppetrov
+7
+
+Viorel Belfiore [18:52]
+Amazing
+
+jason Seminara [18:53]
+Did anyone get hired on the spot?
+
+Arthur Chen [18:56]
+Unfortunately, artsy has a very selective hiring pool
+
+Patrick McWilliams [19:01]
+I did like hearing how they get only 50 resumes per engineering position vs 600 for... something else?
+
+Colin Hart [19:17]
+Art historians @patrickm
+1
+
+jason Seminara [19:20]
+Sorry I missed it :(
+
+Colin Hart [20:05]
+Me tooo
+
+[20:06]
+Lol
+
+Colin Hart [20:53]
+@group
+
+will send more links tomorrow maybe but…
+
+https://twitter.com/dblockdotorg
+
+https://github.com/dblock
+
+https://github.com/playplayio/playplay.io
+Daniel Doubrovkine (@dblockdotorg) | Twitter
+The latest Tweets from Daniel Doubrovkine (@dblockdotorg). CTO @artsy https://t.co/DfARekfbrx | maintainer of @grapeframework & hashie | slack-ruby-client & @playplayio | @cornell_tech. New York/Seattle/Genève/Москва
+
+GitHub
+dblock (Daniel Doubrovkine (dB.) @dblockdotorg)
+dblock has 276 repositories written in Ruby, JavaScript, and HTML. Follow their code on GitHub.
+
+GitHub
+playplayio/playplay.io
+The playplay.io website.
+
+Jasmine Vollherbst [20:56]
+ Pinned a message. See all pinned items in this channel.
+Colin Hart colinhart
+Daniel Doubrovkine (@dblockdotorg) | Twitter
+@group
+
+will send more links tomorrow maybe but…
+
+https://twitter.com/dblockdotorg Show more...
+March 23rd at 20:53
+
+Colin Hart [20:58]
+@group remember we have an ama tomorrow as well during lunch so think about questions you might want to ask developers/wdi grads currently in the field
+3
+
+
+----- March 24th -----
+Jonathan Feudi [09:11]
+Whoa, Colin has a Slack picture! Only took ten weeks!
+
+Colin Hart [09:16]
+6 months
+1 2
+
+Caleb Rechten [09:24]
+Grats on the profile pic @colinhart it's a big step.
+
+Patrick McWilliams [09:24]
+you’re a real developer now!
+
+Colin Hart [09:33]
+https://github.com/bbatsov/ruby-style-guide
+
+GitHub
+bbatsov/ruby-style-guide
+ruby-style-guide - A community-driven Ruby coding style guide
+
+jason Seminara [11:03]
+https://github.com/ga-wdi-exercises/ruby-clock
+
+GitHub
+ga-wdi-exercises/ruby-clock
+ruby-clock - Build a clock simulator in Ruby
+
+Harry Ganz [11:08]
+This might help: http://ruby-doc.org/core-2.3.0/Time.html
+Class: Time (Ruby 2.3.0)
+Class : Time - Ruby 2.3.0
+1
+
+eric hegdahl [12:34]
+@group: Your “Negotiations” EXIT TICKET! : https://goo.gl/4meXjC
+
+Colin Hart [14:23]
+`"00:12:12".split(":").map(&:to_i)`
+
+Harry Ganz [14:43]
+No matter what do not do the following to someone else's computer
+```echo "alias cd='say access denied'" >> .bashrc
+```
+
+Jonathan Feudi [14:47]
+Harry - don’t ever leave your computer unattended again
+
+Jonathan Feudi [15:32]
+@group Learning Ruby: https://www.youtube.com/watch?v=BRjTMsDyEU0
+YouTube
+dctarget51
+You have touched the forbidden treasure!
+
+2 1
+
+Seif Dorani [15:33]
+classic
+
+Daniel Goldman [15:48]
+also "until" loops are nice
+
+Maxwell Rayman [15:48]
+http://www.tutorialspoint.com/ruby/ruby_loops.htm
+www.tutorialspoint.com
+Ruby Loops - while, for, until, break, redo and retry
+Ruby Loops - while, for, until, break, redo and retry - Learning Ruby in simple and easy steps - A beginner's tutorial containing complete knowledge of Ruby Syntax Syntax, Classes, , Variables, Comments, Loops, File, I/O, Functions, Objects, TK, Ranges, iterators, arrays, strings, methods, blocks, Exception, Multi-Threading, Hashes, Modules, LDAP, Web Services, Web Programming.
+
+Daniel Goldman [16:52]
+/giphy it's tricky
+it's tricky (2MB)
+
+1 1
+
+Daniel Goldman [17:32]
+Top of code:
+
+```require 'pry'
+```
+
+Then,
+
+```binding.pry
+```
+will knock you into pry in your console, ala debugger. no more copying and pasting like a ruffian (edited)
+4
+
+Jonathan Feudi [17:45]
+/giphy pissed
+pissed (263KB)
+
+
+[17:45]
+/giphy anger
+anger (1MB)
+
+
+[17:46]
+/giphy frustrated
+frustrated (1MB)
+
+
+[17:46]
+YES PERFECT
+
+[17:46]
+YEEESSSS
+
+[17:46]
+Not sure about the MLP one, though
+
+Daniel Goldman [18:24]
+@group For those of you who've been submitting your homeworks by having Rachel check your repos directly, please go back to the pull-request method. New sheriff in town
+4 1 1
+
+KP Perez [19:27]
+@group Friends, Romans and Country(wo)men: If you're up to the seed part of happy tails, I suggest making a separate file and hard coding the data into a module so it can be passed around.
+
+Colin Hart [19:29]
+@group per kp's comment. If you think back to our auth flow in react example. Or actually look back. The auth file that just contained nice helper methods that we required and used in our react components. Ruby modules are the same concept. Just a way of encapsulating some helpful code or helper methods or data in something that can be passed around http://ruby-doc.org/core-2.2.0/Module.html
+Class: Module (Ruby 2.2.0)
+Class : Module - Ruby 2.2.0
+
+KP Perez [19:40]
+@colinhart: that was a good alley-oop
+
+Patrick McWilliams [19:47]
+@colinhart not there yet, but what do you think is a better use of our time: bonus parts on animal shelter or starting gladiator?
+
+Colin Hart [19:52]
+Hmmmm. Up to you honestly. Going to depend on what you think is more valuable
+
+[19:53]
+Also do what you think is going to be more fun lol. If the bonuses look fun. Do those!
+1
+
+KP Perez [20:01]
+@patrickm: https://www.youtube.com/watch?v=6ul-cZyuYq4
+YouTube
+TheGreatestRockSongs
+Fleetwood Mac - Go Your Own Way (HQ)
+
+1
+
+Patrick McWilliams [20:48]
+ruffian question: when i do load “./main.rb” i get a return of true when i input an animal via the ‘questionaire’ method
+
+[20:49]
+but when i copy and paste the code, pry returns the animal info (edited)
+
+[20:49]
+why are my ruffian ways working better than the aristocratic ones
+
+Patrick McWilliams [21:15]
+i’m trying to get a variable name by user input (the variable already exists, we are not creating a new variable) and it looks like i need to use eval(gets) and i am not thrilled with that implementation
+
+Colin Hart [21:23]
+might not have saved @patrickm
+
+[21:24]
+also def dont need to use eval. never need to haha
+
+[21:25]
+just gets is fine you dont need to evale
+
+Patrick McWilliams [21:25]
+gets returns a string
+
+Colin Hart [21:25]
+yep
+
+Patrick McWilliams [21:25]
+i want a return of a variable name
+
+Colin Hart [21:25]
+oh gettin’ fancy
+
+Patrick McWilliams [21:25]
+or rather, the variable
+
+Colin Hart [21:26]
+why do you want that?
+
+Patrick McWilliams [21:26]
+kitty exists outside the shelter ecosystem before it’s put up for adoption
+
+[21:26]
+so shelter has no index on it
+
+[21:27]
+unless we’re in the future and even strays have rf ids
+
+Colin Hart [21:28]
+gotchaa
+
+[21:28]
+cool
+
+Patrick McWilliams [21:29]
+“you’re gonna have to use eval, lol"
+
+Colin Hart [21:30]
+lol well yeah, maybe, that’s tricky, mostly because you’re butting up against the functionality of the example. There isn’t actually like a specific way to do it cause you don’t actually have stray cats living in your ruby files haha. but it’s a fun way to explore various things you can do with ruby.
+
+[21:30]
+eval sounds legit to me
+1
+
+[21:31]
+not sure how else you could
+
+[21:31]
+there might some internal method to see what variables are defined in what scope
+
+[21:31]
+pry knows where they are when you type ls in the repl
+
+[21:31]
+so there’s probably something in ruby that let’s you see that as well that it’s using
+
+Patrick McWilliams [21:32]
+eeeeenteresting
+
+[21:33]
+but that would be more “pry programming” and less “ruby programming”, no?
+
+[21:33]
+unless pry is using a ruby thing to get that return
+
+Colin Hart [21:33]
+pry is 100% ruby (edited)
+
+[21:34]
+https://github.com/pry/pry
+
+GitHub
+pry/pry
+pry - An IRB alternative and runtime developer console
+
+[21:34]
+check their source code out
+
+[21:34]
+https://github.com/pry/pry/blob/master/lib/pry/code/code_range.rb
+
+GitHub
+pry/pry
+pry - An IRB alternative and runtime developer console
+
+Patrick McWilliams [21:36]
+https://github.com/pry/pry/wiki/State-navigation#Ls
+
+GitHub
+pry/pry
+pry - An IRB alternative and runtime developer console
+
+Colin Hart [21:36]
+theres a file called easter eggs!! https://github.com/pry/pry/blob/master/lib/pry/commands/easter_eggs.rb
+
+GitHub
+pry/pry
+pry - An IRB alternative and runtime developer console
+1
+
+Patrick McWilliams [21:40]
+https://github.com/pry/pry/tree/master/lib/pry/commands/ls
+
+GitHub
+pry/pry
+pry - An IRB alternative and runtime developer console
+
+Colin Hart [21:41]
+it’s hilarious im pretty sure the ruby code itself for some of these commands are better explanations than the various docs and man pages pry provides
+
+Patrick McWilliams [21:43]
+im going to stick with eval for now, because im going to go cross-eyed trying to pull the values i want from the ls function
+
+[21:43]
+but yay opensource
+
+Colin Hart [21:43]
+loll
+
+[21:43]
+mhmm
+
+[21:45]
+found it @patrickm eval('local_variables')
+
+[21:45]
+https://github.com/pry/pry/blob/master/lib/pry/commands/ls/local_vars.rb
+
+GitHub
+pry/pry
+pry - An IRB alternative and runtime developer console
+
+Patrick McWilliams [21:49]
+yeah, but i would need to figure out how to get a return of that specific variable, which would be at a different index in each runtime. and possibly have a different name, if i can even locate it by name?
+
+[21:49]
+(and still using eval!)
+
+[21:50]
+i’m about || far away from just making a Strays array
+
+[21:51]
+i believe in the cyberpunk future where all living things are inescapably ID'd
+
+Patrick McWilliams [22:15]
+so, still having issues with load, here’s a screenshot:
+
+Patrick McWilliams [22:15]
+uploaded an image: Pasted image at 2016-03-24, 10:15 PM
+Add Comment
+Karolin Rafalski [22:21]
+I think binding.pry goes all the way at the bottom of your file?
+
+KP Perez [22:38]
+Yup
+```require 'pry'
+...
+binding.pry
+```
+
+
+----- March 25th -----
+Patrick McWilliams [07:59]
+I would get the same thing when it was at bottom of file, so I'm just confused.
+
+Colin Hart [08:55]
+```Thanks for coming to Artsy.
+
+Attached is a copy of the slides. Please share my contact info with the class, too. And I also promised you some interesting Artsy links.
+
+2015 in the art world, plus 2014.artsy.net and 2013.artsy.net, two years of company reports
+https://www.artsy.net/venice-biennale-2015, Venice Biennale 2015, an example of what we do, if anything watch this video
+
+Tech
+
+http://artsy.github.io, our tech blog, and a list of our open-source projects in http://artsy.github.io/open-source
+http://artsy.github.io/blog/2015/03/23/artsy-technology-stack-2015, artsy tech stack circa 2015
+https://github.com/artsy/force-public open-source www.artsy.net
+https://github.com/artsy/eigen open-source artsy iOS app
+http://artsy.github.io/blog/2015/11/05/Emergence-Code-Review a video of Orta code-reviewing our open-source Apple TV app
+
+Books
+
+12MM$ Stuffed Shark: http://www.amazon.com/The-Million-Stuffed-Shark-Contemporary/dp/0230620590
+The Supermodel and the Brillo Box: http://www.amazon.com/The-Supermodel-Brillo-Box-Contemporary/dp/1137279087
+Tribal Leadership: http://www.amazon.com/Tribal-Leadership-Leveraging-Thriving-Organization/dp/0061251321
+
+Personal
+
+http://code.dblock.org is my personal tech blog and twitter
+cheers
+dB.
+
+```
+1
+
+Jimmy Lin [08:56]
+ Pinned a message. See all pinned items in this channel.
+Colin Hart colinhart
+```Thanks for coming to Artsy.
+
+Attached is a copy of the slides. Please share my contact info with the class, too. And I also promised you some interesting Artsy links.
+```
+Show more...
+March 25th at 08:55
+
+Patrick McWilliams [10:45]
+added and commented on a JavaScript/JSON snippet
+[3] pry(main)> 10e307.days.ago
+=> Tue, 15 Nov -273790700698850766539782098041836702301874260737213895800216795425388845506510035215407103440850089732331942941254570636252873868027789997955624028414398778979093792488368760989472719356560529082290216681150197960059132292142741268138541368506423699659223584801287952812971663739044260383101325052342546068 14:45:00 UTC +00:00
+1 Comment
+It was November, apparently.
+
+Ari Ingber [11:07]
+uploaded and commented on an image: IMG_2676.JPG
+1 Comment
+15 8 9 7 7 4 1
+bowie birthday party!
+
+Viorel Belfiore [11:09]
+https://xkcd.com/927/
+xkcd
+Standards
+[Title text] "Fortunately, the charging one has been solved now that we've all standardized on mini-USB. Or is it micro-USB? Shit." (24KB)
+
+1
+
+Harry Ganz [11:20]
+@vbelfiore: Cool XKCD but I was referring to the trend in development to make tools to make tools to make things.
+
+Harry Ganz [11:22]
+added and commented on a Markdown (raw) snippet: Rails Command Line Cheatsheet
+# Rails Command-Line Cheatsheet
+​
+## Generating a new app
+​
+```
+1 Comment Click to expand inline 119 lines
+@group this contains the generators that Colin doesn't want you to use, but it might prove useful
+
+Patrick McWilliams [11:23]
+http://www.xkcd.com/1629/
+xkcd
+Tools
+[Title text] "I make tools for managing job-hunting sites for people who make tools for managing job-hunting sites for people who make tools for ..." (42KB)
+
+1
+
+KP Perez [11:28]
+That cheat sheet doesn't look too bad, just avoid scaffolding so you don't have more than you need / you can learn and do more reps
+
+KP Perez [11:35]
+Happy Birthday, Birthday Bowies! @douglas @waffle_iron @razaik extra weekend homework for you!
+5 1
+
+Harry Ganz [11:54]
+The docs for activerecord queries are really good http://guides.rubyonrails.org/active_record_querying.html
+
+Peter Petrov [13:40]
+https://github.com/RubyMoney/money-rails
+
+GitHub
+RubyMoney/money-rails
+money-rails - Integration of RubyMoney - Money with Rails
+
+Jonathan Feudi [13:48]
+I look like a dingdong in your picture, @ariingber
+1
+
+Ari Ingber [13:49]
+@feudi: if you photoshop yourself to your liking I’ll repost
+
+Peter Petrov [13:54]
+@group: also something to keep in mind ( I wasted a whole day once) `rake db:reset` is NOT the same as `rake db:drop`, `rake db:create`, `rake db:migrate`. It will not actually rerun your migrations!
+
+Maxwell Rayman [13:55]
+what does reset do?
+
+Peter Petrov [13:56]
+it drops, and then loads your `schema` file in your database…but the schema is just based on what your db was before that, and not necessarily what wo9uld be produced by running your (modified) migrations
+
+[13:56]
+http://stackoverflow.com/questions/10301794/difference-between-rake-dbmigrate-dbreset-and-dbschemaload
+
+Difference between rake db:migrate db:reset and db:schema:load
+The difference between rake db:migrate and rake db:reset is pretty clear in my head. The thing which I don't understand is how rake db:schema:load different from the former two. Just to be sure th...
+
+[13:58]
+this is the shortcut for rerunning everything `db:migrate:reset`
+
+Jonathan Feudi [13:58]
+uploaded and commented on an image: ARDI.jpg
+1 Comment
+2 1
+@ariingber: FTFY
+
+Peter Petrov [13:59]
+OMG
+
+[13:59]
+this is actually pretty good
+
+Jonathan Feudi [13:59]
+“Ardi"
+
+Ari Ingber [14:01]
+“nightmare fuel"
+
+KP Perez [14:02]
+That's hilarious
+
+Jonathan Feudi [14:02]
+@kp_was_already_taken: No one is safe
+
+Peter Nguyen [14:03]
+#regularMagic
+
+Jonathan Feudi [14:35]
+uploaded and commented on an image: darthpetrov.jpg
+1 Comment
+4 3 2
+@pppetrov: Darth Peter? Emperor Palpetrov? Take your pic, you dark lord, you.
+
+Peter Petrov [14:35]
+https://en.wikipedia.org/wiki/Object-relational_mapping
+
+Colin Hart [15:41]
+```<div class="form">
+  <h1>Not a member yet</h1>
+  <%= form_for @user do |f| %>
+    <%= f.label :username %><br>
+    <%= f.text_field :username %><br>
+    <%= f.label :password %><br>
+    <%= f.password_field :password %><br>
+    <%= f.label :password_confirmation %><br>
+    <%= f.password_field :password_confirmation %><br>
+    <br>
+    <%= f.submit "Sign up" %> <br>
+   <% end %>
+</div>
+```
+(edited)
+
+Jonathan Feudi [16:01]
+I didn’t like Ruby before today
+
+Colin Hart [16:03]
+```<div id="user-page">
+<h1>Hope your having a great day <%= @user.username%></h1><br>
+
+<h1>I would rather you stick around but if you want to delete your account click below</h1><br><br>
+
+<%=button_to 'DELETE', @user, :method => :delete %>
+
+</div>```
+
+Maxwell Rayman [16:24]
+if anyone wants this page i type fast
+
+```<!DOCTYPE html>
+<html>
+<head>
+  <title>TunrApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <img src="http://icons.iconarchive.com/icons/bad-blood/yolks/128/enjoying-mah-playlist-icon.png" class="logo">
+    <div class="login">
+        <% if session[:current_user_id] %>
+            <h1>Welcome Back</h1>
+            <%= link_to "#{User.find(session[:current_user_id]).username}",
+                user_path(session[:current_user_id]) %> ||
+            <%= link_to "Logout", sessions_path, method: :delete %>
+        <% else %>
+            <p>Already a Member</p>
+            <%= form_tag(sessions_path) do %>
+                <%= label_tag :username %>:
+                <%= text_field_tag :username %>
+                <br>
+                <%= label_tag :password %>:
+                <%= password_field_tag :password %>
+                <br><br>
+                <%= submit_tag "Login" %>
+            <% end %>
+        <% end %>
+    </div>
+<%= yield %>
+
+</body>
+</html>
+```
+7
+
+Colin Hart [17:04]
+@group
+
+[17:04]
+Pushed
+
+[17:04]
+you should be good
+
+Razaik Boparai [17:15]
+https://generalassemb.ly/education/offcampus-culture/new-york-city/22585
+#OFFCAMPUS: CULTURE
+GA is excited to take you #OFFCAMPUS! Join us for this quarterly festival series that celebrates learning in a way that's fun and interactive. Day 5: CULTURE. (5KB)
+
+
+KP Perez [17:18]
+@group I took some of my old notes and created a gist for you on setting up rails apps: https://gist.github.com/kersteinperez/06442a6de1e9d77a0267
+
+No, it is not source code for a fully working app lol I'm not that nice, and you are adults.
+I do remember learning rails and loving how it did everything, but there still being lots to keep track of.
+
+Slack me if you have questions. Use your judgment don't just copy/paste. Have a good weekend!
+2
+
+Elton Cheng [19:59]
+uploaded an image: Long Live Bowie!!
+Add Comment
+3
+
+
+----- March 26th -----
+Jonathan Feudi [09:41]
+Hey, yesterday, we put the functionality for creating/deleting users in the users controller - didn’t @colinhart say fat models, skinny controllers? Would it be better to have these functions in the model? Or am I remembering it backwards?
+
+Colin Hart [09:53]
+Nope good thought though. Controllers are for your http actions, so create and delete def go into the controller
+
+[09:55]
+Logic that might go into the model are, for example,
+
+Imagine our user has a first and last name field, and frequently in various views or controller action methods (index, show, etc), we like to do this logic `" #{@user.first_name} #{@user.last_name}"` (or something like that) (edited)
+
+[09:56]
+We could define a method that gives us that string in the controller to help dry up our code by putting a method under private (since it’s only used internally) that looks like this:
+
+```def name(user)
+   "#{user.first_name} #{user.last_name}"
+end
+```
+(edited)
+
+[09:57]
+Now we can just call the method `name` in our various controller methods eg: (edited)
+
+[09:58]
+ ```class UsersController < ApplicationController
+  def show
+    @user = User.find(params[:id])
+    @full_name = name(@user)
+  end
+
+  private
+
+  def name(user)
+     "#{user.last_name}, #{user.first_name}"
+  end
+end
+```
+(edited)
+
+[10:00]
+ ```# show.html.erb
+<h1> Hey! <%= @full_name %> </h1>
+<h4> account info </h4>
+<ul>
+    <% @user.each do |attribute| %>
+        <li> <%= attribute %></li>
+    <% end %>
+</ul>
+
+```
+
+[10:01]
+BUT! The problem with the above is it’s still not that dry because we might want the users full name in multiple views and so in several controller actions we have to call that method. And then also in our songs controller we want to be able to say `These are your songs Colin Hart!` and so we have to define that name method in our songs controller. and on and on and on. (edited)
+
+[10:04]
+Per our fat models skinny controllers we can clean this up quite a bit and define the method on the model and move that code out of our controller(s)
+
+```class User < ActiveRecord::Base
+
+  def name
+    "#{last_name}, #{first_name}"
+  end
+
+end
+```
+
+```class UsersController < ApplicationController
+  def show
+    @user = User.find(params[:id])
+    # we can delete the method call
+  end
+
+  private
+
+  # we can delete the name method
+end
+```
+(edited)
+
+[10:04]
+now `@user` which is an instance of the `User` class has a method called `name` that returns it’s first and last name (edited)
+
+[10:05]
+so our view can be
+
+```# show.html.erb
+<h1> Hey! <%= @user.name %> </h1>
+<h4> account info </h4>
+<ul>
+    <% @user.each do |attribute| %>
+        <li> <%= attribute %></li>
+    <% end %>
+</ul>
+
+```
+
+[10:06]
+@feudi: yes?
+
+Colin Hart [10:13]
+Going to move this response to the wiki as well
+2
+
+Colin Hart [10:20]
+https://github.com/ga-students/wdi-nyc-bowie_students/wiki/Fat-Models-Skinny-Controllers:-how-and-why
+
+Jonathan Feudi [10:28]
+@colinhart: Cool! Thanks much!
+
+Lauren Golik [10:42]
+question on the tunr solution: could anyone figure out how the _artists partial view is actually rendering on the page?
+
+Patrick McWilliams [15:07]
+“explain sessions” … 6 years later … “. done!"
+1
+
+Patrick McWilliams [15:15]
+added and commented on a JavaScript/JSON snippet
+#TODO this to class methods
+  def remove_song(song)
+1 Comment
+english, mother@%@^er, do you speak it?
+
+Patrick McWilliams [15:15]
+aka what the hell does “this to class methods” want me to talk about
+
+Patrick McWilliams [15:22]
+oh, is it asking “what is ‘this’ to class methods?"
+
+Colin Hart [15:23]
+ugh sorry it’s badly worded
+
+Jonathan Feudi [15:24]
+Anyone having a problem with their migrations in the instructor example? Getting errors that the tables are already created, which cancels all the other migrations from running
+
+Colin Hart [15:25]
+So @patrickm : it’s really just asking how that method works differently than a method in the controller. and probably some exploration of what self means
+1
+
+[15:25]
+@feudi: it’s because your db already exists. and if you named your app the same as mine then itll get confused
+
+[15:25]
+youll need to drop the db and re create and re migrate
+
+[15:25]
+or change the database name
+
+Jonathan Feudi [15:25]
+Copy that, dropping the bass
+
+Colin Hart [15:26]
+remember that migrations are just declarative
+
+[15:26]
+they aren’t smart
+
+[15:26]
+they do exactly what you tell them no more no less
+
+[15:27]
+can you guys tell i’ve got not much going on today haha
+1
+
+Patrick McWilliams [15:28]
+well, i can dust off my philosophy degree and we can discuss what the self really is
+
+Colin Hart [15:29]
+#this
+
+Patrick McWilliams [15:29]
+re: the perceived world vs the rails world
+
+[15:30]
+so, solipsism then? interesting perspective for a figment of my imagination
+
+[15:30]
+my imagination seems to know alot, i wish it would cp * to my conscious mind (edited)
+
+Karolin Rafalski [15:32]
+I have no idea what solipsism is, but it sounds like something that requires taking lots of strong antibiotics for
+
+Patrick McWilliams [15:34]
+it takes decartes’ idea that “i think therefore i am” to an extreme by basically saying that “i am the only thing i can know thinks, therefore i am the only thing that is” and that everything you perceive/interact with is just @#%$ you’ve imagined into “reality"
+
+[15:35]
+yes, i did just use “reality” with non-ironic scare quotes
+
+Karolin Rafalski [15:37]
+that’s waaaaay over my head ¯\_(ツ)_/¯
+
+Jonathan Feudi [15:37]
+uploaded and commented on an image: colinruby.jpg
+1 Comment
+1 1 1
+@colinhart: Please accept this poorly made Photoshop as thanks from all of us for keeping slack open. PROTIP: Look closely.
+
+Patrick McWilliams [15:41]
+this feels like you’ve just extended the terminator thing to rails
+
+Jonathan Feudi [15:42]
+Half robo face Ruby Colin - on my Photoshop incoming stack.
+1
+
+Jonathan Feudi [15:57]
+Hey, what created the database itself? It’s not via our migrations, yeah?
+
+[15:57]
+Was it a Ruby command or a Rake command?
+
+Patrick McWilliams [15:58]
+so we’re doing synopsis/presentations of the rails app on tuesday, are we working on it in class on monday, or covering something?
+
+[15:59]
+rake db:create
+
+[15:59]
+i THINK
+
+Karolin Rafalski [15:59]
+@feudi: Colin included a cheat-sheet.md which ended up in a separate directory than the other files
+1
+
+Patrick McWilliams [16:00]
+which may need like
+
+[16:00]
+bundle exec rake db:create
+
+[16:00]
+now?
+
+Jonathan Feudi [16:02]
+Yeah
+
+[16:02]
+It worked
+
+[16:02]
+A lot of my rake db commands need bundle exec first
+
+[16:02]
+If not all of them
+
+[16:03]
+@karolin: And to think… I checked the wiki for it.
+1
+
+Colin Hart [17:36]
+@patrickm: we’re doing a lesson on testing tuesday
+1
+
+[17:36]
+you’re working on this on monday as well
+1
+
+[17:36]
+@group http://games.usvsth3m.com/javascript-under-pressure/
+You Can't JavaScript Under Pressure - by UsVsTh3m
+How quick can you code?
+1
+
+Patrick McWilliams [17:55]
+yeah, i’d have to look up docs on how to do the file extension thing, so that tabs getting closed
+
+Jonathan Feudi [18:11]
+Anyone know how to unbind return as the default confirmation key for autocomplete in Atom? Looking through keybindings and there are several bindings for ‘core:confirm’, not sure if it’s in there/which one to remove. Don’t want to break my editor.
+
+[18:11]
+My autocompletes are getting really wonky and it’s screwing me up and slowing me down
+
+Karolin Rafalski [18:20]
+The autocorrect is terrible! Atom > preferences > packages > autocomplete-plus > disable
+
+Jonathan Feudi [18:24]
+Is there anyway to rebind the key? I like having autocomplete as an option, but not on the return key
+
+[18:25]
+Oh, wait
+
+[18:25]
+Found it
+
+[18:25]
+Thanks, Karolin
+
+Karolin Rafalski [18:25]
+I just turned mine off after I was trying to type user.all and it changed it to user.potatoes or something totally nonsensical like that
+
+Jonathan Feudi [18:25]
+Yeah, I changed it to just the Tab key
+1
+Colin Hart [19:53]
+uploaded and commented on an image: Pasted image at 2016-03-26, 7:53 PM
+1 Comment
+This guy, Aaron Patterson aka tenderlove,  is on the Rails core team:
+
+Colin Hart [19:54]
+https://tenderlovemaking.com/
+
+[19:54]
+His blog ^^
+
+[19:56]
+and actually his current post is excellent (edited)
+
+Colin Hart [20:14]
+http://blog.codeship.com/a-deep-dive-into-ruby-scopes
+via @codeship
+A Deep Dive into Ruby Scopes - via @codeship
+Understanding Ruby scopes will go a long way in helping you fully leverage the language. I've compiled an in-depth overview to get you started. (150KB)
+March 16th at 07:15
+
+
+
+----- March 27th -----
+Adam Kriger [13:26]
+Do join tables automatically populate and draw the user ids from the tables from which they are composed?
+
+Colin Hart [13:30]
+yep, as long as you have the right associations in the corresponding models
+
+Adam Kriger [14:03]
+@colinhart: thank you Colin!
+
+Adam Kriger [16:06]
+@colinhart: are we missing something obvious regarding setting up automatic join tables? Been stuck here for a few hours…. (edited)
+
+Maxwell Rayman [16:07]
+i also had a problem setting up my 2nd join table with an error `Another migration is already named create_join_table`
+
+Colin Hart [16:09]
+hmmm i mean hard to say without seeing your code
+
+[16:10]
+the naming on that example is not super great
+
+[16:10]
+http://stackoverflow.com/questions/11590469/rails-naming-convention-for-join-table
+
+Rails naming convention for join table
+This questions stems from: How to link form after creating rails join table I am creating the join table between my Product and Category Models. What should the join table be named? categories_pr...
+
+Maxwell Rayman [16:11]
+the example from class had the bash command `rails g migration CreateJoinTable table1 table2`
+
+Colin Hart [16:11]
+http://guides.rubyonrails.org/active_record_migrations.html#creating-a-join-table
+
+[16:11]
+i know
+
+[16:11]
+that’s the example given in the docs too
+
+[16:11]
+but it doesn’t allow you create a second join
+
+[16:11]
+with that same pattern
+
+Maxwell Rayman [16:11]
+oh i just found this in that link `rails g migration CreateJoinTableCustomerProduct customer product`
+
+Adam Kriger [16:13]
+what would that command do that’s different than the command we’ve been using?
+
+Colin Hart [16:14]
+nothing
+
+[16:14]
+same thing
+
+[16:14]
+but you can’t make migration files
+
+[16:14]
+that have the exact same name
+
+[16:14]
+per max’s pated error
+
+[16:15]
+when running that command make sure the pluralization is right
+
+Adam Kriger [16:41]
+@colinhart:  thank you
+
+Emine Koc [17:30]
+@group Is there any easy way to get rid of  all the texts after typing  TableName.connection  on rails console :thinking_face: I could not figure it out. (edited)
+
+Harry Ganz [17:32]
+Don't use pry, use irb instead. You lose syntax highlighting. Also, Model.connection isn't necessary. You can just call the methods and it will automatically connect
+
+Karolin Rafalski [17:33]
+I don’t know about getting rid of the text, but pressing q should scroll you through to the bottom?
+
+Emine Koc [17:42]
+Thank you
+
+Douglas Walker [18:56]
+Anyone managed to insert into a join table the ID of a newly created database row?
+
+[18:57]
+I have a join table with menu_id which refers to a menu table which holds all my food items and order_id which refers to the order
+
+[18:58]
+ ``` <div class="form">
+<h1>Create a new order</h1>
+  <%= form_for @order do |f| %>
+  <%= f.label :name%><br>
+  <%= f.text_field :name%><br>
+  <h3>Select meals</h3>
+  <%= fields_for :menus_orders do |i| %>
+    <div class="field">
+      <%= i.select :menu_id, options_for_select(Menu.all.pluck(:id)) %>
+    </div>
+  <% end %>
+  <br>
+  <%= f.submit "Create"%><br>
+  <% end %>
+</div>
+
+ ```
+
+[18:58]
+order_controller.rb
+```   def order_params
+    params.require(:order).permit(:name, menus_orders_attributes: [:menu_id, :order_id])
+  end
+ ```
+
+[18:59]
+my params in pry
+```  "order"=>{"name"=>"Bloombergs"},
+ "menus_orders"=>{"menu_id"=>"1"},
+ "commit"=>"Create",
+ "controller"=>"orders",
+ "action"=>"create"} ```
+
+[18:59]
+missing order_id somewhere
+
+Emine Koc [19:00]
+rails generate migration add_category_id_to_menu_items   category_id:integer
+
+[19:00]
+this worked for me.
+
+[19:00]
+It created new migration, and added new column into my table.
+
+[19:02]
+But I had to correct previously created menu items’ category ids, by going back and changing them from nil to something.
+
+[19:03]
+ ```rails generate migration add_order_id_to_menus_orders  order_id:integer ```
+
+Douglas Walker [19:03]
+thanks for responding @eminekoc , I have three tables, rails g CreateOrders “orders”, CreateMenus “menus” and CreateJoinTable “menus_orders"
+
+[19:04]
+I’m a little confused why I need another migration
+
+Emine Koc [19:05]
+I guess, rails is too smart to figure out anything :simple_smile: So We dont need to drop and create db again, just make another migration, and It handles for us. I m sure there are other ways around. :simple_smile: (edited)
+
+Douglas Walker [19:07]
+so you’re saying run
+``` rails generate migration add_order_id_to_menus_orders  order_id:integer ```
+and rails will do it’s magic
+
+[19:07]
+ill give that a go :simple_smile:
+
+Emine Koc [19:08]
+:smile: that should add order_id to your menus_orders table, I believe :simple_smile: let me know if it works
+
+[19:08]
+LD
+
+[19:08]
+:smile:
+
+Douglas Walker [19:10]
+``` : ALTER TABLE "menus_orders" ADD "order_id" integer
+/Users/douglaswalker/dev/wdi-nyc-bowie_students/w10/d05/homework/restaurantRails/gadoe_app_revised/db/migrate/20160327230806_add_order_id_to_menus_orders.rb:3:in `change'
+ActiveRecord::StatementInvalid: PG::DuplicateColumn: ERROR:  column "order_id" of relation "menus_orders" already exists ```
+
+[19:10]
+got this funky error
+
+[19:11]
+my newly created add_order_id_to_menus_orders looks like this
+``` class AddOrderIdToMenusOrders < ActiveRecord::Migration
+  def change
+    add_column :menus_orders, :order_id, :integer
+  end
+end
+ ```
+
+[19:11]
+it aborts rake db:migrate
+
+Emine Koc [19:11]
+can you check your schema?
+
+Douglas Walker [19:12]
+would I need to remove the nested attributes I added in order_params in order_controller.rb?
+
+[19:12]
+scheeeeeemaa
+``` ActiveRecord::Schema.define(version: 20160327180912) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "menus", force: :cascade do |t|
+    t.string  "food"
+    t.integer "price"
+    t.text    "description"
+  end
+
+  create_table "menus_orders", id: false, force: :cascade do |t|
+    t.integer "menu_id",  null: false
+    t.integer "order_id", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.string "name"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string  "username"
+    t.string  "password_digest"
+    t.boolean "admin",           default: false
+  end
+
+end ```
+
+Emine Koc [19:13]
+hmm, it is not here :confused:   can you type
+``` rails c ```
+then
+
+[19:13]
+menus_orders.all
+
+Douglas Walker [19:13]
+the db:migration won’t happen because of the error...
+
+Emine Koc [19:14]
+weird.
+
+Douglas Walker [19:14]
+does the schema only update after migration?
+
+Emine Koc [19:14]
+I worked for me.
+
+[19:14]
+I migrate anytime I change anything in db :smile:
+
+[19:14]
+We can ask which is a good practice to Colin :simple_smile:
+
+Douglas Walker [19:14]
+me too :smile:
+
+[19:15]
+ahh I’ll try debug this, thanks though Emine :simple_smile:
+
+Emine Koc [19:15]
+good luck :wink:
+1
+
+Colin Hart [21:11]
+https://github.com/JuanitoFatas/what-do-you-call-this-in-ruby
+
+GitHub
+JuanitoFatas/what-do-you-call-this-in-ruby
+what-do-you-call-this-in-ruby - Solving the second hard problem in Computer Science.
+
+Patrick McWilliams [21:13]
+i’m betting adherence to the equal/equals distinction is about .5%
+
+[21:14]
+because it’s obviously doubleequals
+
+[21:15]
+yes, squiggly brackets is not something i just made up!
+
+
+----- March 28th -----
+Harry Ganz [07:19]
+My favorite: == is an unassembled hashtag
+
+Jasmine Vollherbst [08:43]
+@group http://www.meetup.com/NYC-D3-JS/events/229814586/
+
+Meetup
+NYC D3.js
+One fabulous talk for our March meetup! Ilia Blinderman Title:&nbsp;Making People Care: Pairing Narrative with Visualization Description: It's notoriously difficult to keep a reader's attention onlin

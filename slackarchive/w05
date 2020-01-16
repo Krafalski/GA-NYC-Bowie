@@ -1,0 +1,1791 @@
+```
+
+
+----- February 15th -----
+Adam Kriger [09:00]
+@jasonseminara: Thanks, Jason.
+
+jason Seminara [09:54]
+@group: we disabled the filter in my simple example, but depending on how you build your homework, you may need it.
+1
+
+[09:57]
+@group also: some interesting rules about high-order iterators: they will only fire your helper function on non-null items:
+1
+
+Harry Ganz [09:59]
+@jasonseminara: I noticed that the reduce function you used failed when there were less than two records, because the initializer is not an object. I was able to fix it with a forEach loop that used a reference to an object to hold the output
+
+[10:00]
+ ```var byRestaurant = {};
+    data.forEach(function(el, index){
+      if(!(el.camis in byRestaurant)){
+        byRestaurant[el.camis] = [];
+      }
+      byRestaurant[el.camis].push(el);
+    });
+```
+
+jason Seminara [10:01]
+Consider the following example:
+```var arr = []; arr.push('Jason');
+arr[28]='vincent'
+arr[55]='Seminara'
+```
+
+jason Seminara [10:06]
+arr.forEach((el,i)=>console.log(el,i))
+
+[10:07]
+@harryg: what do you mean, “initilizer is not an object?"
+
+[10:09]
+didn’t we do this?
+``` .reduce( (p,c)=>{
+
+         // camis is the establishment ID
+        if( !(c.camis in p) ) p[c.camis] = []
+        p[c.camis].push(c)
+        return p
+
+     },{})```
+
+[10:09]
+of course, if the array being given to the reduce is full of nulls or empty, this won’t actually run
+
+[10:11]
+to make sure you get SOMETHING back, you can create the obj before you do any work, and pass that in to reduce:
+
+[10:12]
+ ```var myReturnedObject ={};
+myData.filter(..)
+//map
+//doSomethingElse
+//.reduce( (p,c)=>{
+
+         // camis is the establishment ID
+        if( !(c.camis in p) ) p[c.camis] = []
+        p[c.camis].push(c)
+        return p
+
+     }, myReturnedObject)```
+(edited)
+
+Harry Ganz [10:17]
+That makes sense. I kept on getting an error every time I passed an object literal initializer, though. It was something like "cannot reduce on empty array without initializer". I guess that I messed up the syntax.
+
+Adam Kriger [10:20]
+@group anyone meeting up near the school today?
+
+jason Seminara [10:20]
+@harryg: always check your syntax! computers are dumb!
+
+Adam Kriger [10:23]
+@jasonseminara: is there a place where we can find more documentation on  .reduce?
+
+Colin Hart [10:24]
+mdn :stuck_out_tongue: @adamscottkriger
+
+[10:25]
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+
+Mozilla Developer Network
+Array.prototype.reduce()
+The reduce() method applies a function against an accumulator and each value of the array (from left-to-right) to reduce it to a single value.
+
+jason Seminara [10:25]
+@group: please read this http://eloquentjavascript.net/05_higher_order.html
+1
+
+[10:26]
+pay attention to the "The cost” section about how it’s actually inefficient to use these functions
+1 1 1
+
+Adam Kriger [10:28]
+@colinhart: Thank you. It seems in the MDN documentation that they use .reduce differently than we do. We are using it to “filter". MDN docs use it to flatten arrays and sum numbers within an array. So it seems like we’re using it in a unique way?
+
+Colin Hart [10:29]
+naw not really, "reduce executes the callback function once for each element present in the array, excluding holes in the array, receiving four arguments:"
+
+Adam Kriger [10:33]
+@colinhart: ok, thank you, I will review in that context.
+
+jason Seminara [10:43]
+@adamscottkriger: The semantics of each is slightly different.
+`filter` takes the original array and gives back another of LTE size.
+`reduce` (aka `fold` or `collect`, in other languages),  is transformative: it takes an array and gives back a different datatype.
+In our case, we’re collecting and recomposing pieces of our original array into a {}
+
+[10:44]
+likewise, `forEach` loops over the array and gives us nothing
+
+Adam Kriger [10:48]
+@jasonseminara: Thank you, that helps to clarify things. I know you discussed that in class but I hadn’t known that we were actually changing an array into an object.
+
+jason Seminara [10:52]
+@group you may want to take a look at `every` and `some`
+These two lesser-known cousins of the Array.prototype family behave a bit differently than their counterparts:
+`every` checks to see if EVERY element meets some condition; `some` check to see if AT LEAST ONE element meets some condition.
+WARNING: it will return a Boolean, not another array, so chaining will be impossible.
+
+Adam Kriger [10:55]
+@jasonseminara: thank you.
+
+jason Seminara [11:54]
+@group take a 5 minute break and read this http://www.bbc.com/news/technology-35559439
+BBC News
+Women write better code, study suggests - BBC News
+Computer code written by women has a higher approval rating than that written by men - but only if it is not obvious that the coders are female, new research suggests. (17KB)
+
+
+
+
+
+[11:56]
+and this http://www.amnh.org/explore/amnh.tv/(watch)/on-exhibit/how-to-build-a-titanosaur/(category)/1282/(p)/1
+
+AMNH
+How to Build a Titanosaur
+Erecting the Museum's newest extinct resident.&nbsp;
+
+Caleb Rechten [12:09]
+To me,  the interesting part about the first article is not so much this gender vs. that gender. I think it's saying something more that the the gender was vague for the more successful pull requests. I would personally attribute the decision to hide the gender (or not project it as much) as those people viewing gender more objectively, giving them more of an edge, rather than standing up for a particular 'gender team' (specifically or passively).  ( in other words, the code is important, not the gender, which is more or less just a distraction and completely unrelated to if the code is good or not). So it may be some discrimination, but it may also be the cleverness of the coders who are vague about their gender. Just some thoughts.
+
+Adam Kriger [12:46]
+added and commented on a Plain Text snippet: Untitled
+@group I am running the this code and it creates a very interesting data structure. It creates an array and within that array is a key and within each key is an array of objects that all correspond to the key. Can anyone walk me through exactly what we are doing in this function and what the data types that we create?
+
+Adam Kriger [12:47]
+added and commented on a Plain Text snippet: Untitled
+This is the data structure that it creates
+
+Adam Kriger [12:59]
+uploaded and commented on an image: .reduce
+1 Comment
+To the best of my ability this is a diagram of the structure that it creates.
+
+Caleb Rechten [14:04]
+Anyone mind explaining the point of
+
+"app.use( express.static('views') );"
+
+and
+
+"app.set('views', './views');
+app.set('view engine', 'ejs');"?
+
+ejs still seems to work without having the "view engine" set when I figured it wouldn't work anymore if I commented that out.
+
+Also, the "app.use(express.static('views));" just from looking at it seems like it would do the same sort of thing that app.set('views', './views'); does. But neither of them seem to have an effect on linking css.
+
+Harry Ganz [14:14]
+added and commented on a JavaScript/JSON snippet: Callback Hell
+Is there a better way to do this. This callback hell is hard to debug and test. Things aren't working and I have a hard time figuring out why.
+
+Harry Ganz [14:14]
+@group ^
+
+Colin Hart [14:17]
+@harryg: @group remember what we said in class? How many things does this function do?
+
+[14:18]
+debugging will be much much easier, if you start refactoring a little
+
+Harry Ganz [14:20]
+I'll move the parsing stuff out of the callbacks. It should make it easier to test by passing in mock data and seeing what they return
+
+Colin Hart [14:21]
+I mean no need to mock, but definitely piecing some of this out should give you better place to work from
+
+Harry Ganz [14:31]
+Yah, I've refactored. The code looks a lot nicer, but it is still broken. I can finally debug, so that's what I am doing
+
+Harry Ganz [14:32]
+added and commented on a JavaScript/JSON snippet: Progress
+Here' s my refactor for those playing along at home
+
+Harry Ganz [14:36]
+uploaded an image: HAHAA it LIVES:
+
+Harry Ganz [14:37]
+Thanks @colinhart. After the refactor Node started giving me errors that made sense.
+
+[14:38]
+Note: I have not posted my final code. Got to leave some mystery.
+
+Caleb Rechten [18:42]
+Okay, I'm at the 'restaurant' bit, but am totally unsure about something. Are we supposed to grab restaurant data from a 3rd/seperate api? Or is it just the combined restaurants between the violations and rat sightings data?
+
+Jasmine Vollherbst [18:48]
+@umbrellagun: restaurants will pull from a combination of violations and rat sightings. No 3rd/separate api :simple_smile:
+
+Caleb Rechten [18:58]
+@jasminev:  That's what I figured, but I don't understand how we are supposed to grab the data from the original two. I can do them separately, but the only way JSON.parse() seems to work is if I do it inside request() by taking in the 'body' argument. I don't know exactly what request() is doing or what it's parameters mean specifically and I can't seem to find docs on it anywhere.
+
+Harry Ganz [19:07]
+@umbrellagun callbacks calling callbacks. That's what got me as well. You need to use request to get the violations data, and in that callback you need to have request get the rats data, and somehow pass the response down two layers of callbacks
+
+Jasmine Vollherbst [19:11]
+@umbrellagun: The way I understand it is request is asking for on object containing  the data url and query parameters, and an anonymous function that parses and allows us to then manipulate the data. You can create a parse data function specifically for the restaurant section and call the two data sets in there….I hope that helps a little :grimacing: (edited)
+
+(edited)
+
+Caleb Rechten [19:16]
+So like:
+
+app.get(stuff=>{
+
+ request(url, function);
+
+})
+
+function(){
+
+2nd request(url, function);
+
+}
+?
+
+[19:19]
+p.s. but also, what's with the (err, res, body) parameters? Are they being placed there by request()? Another aspect I'm unsure of.
+
+Jasmine Vollherbst [19:20]
+more like: app.get(‘/your_route’, (req, res) => {  request({url: dataVariable, qs:req.query}, parsedDataFunction.bind(res));   }); The (req, res) are for requesting and responding to the server. I am super sorry if I’m confusing you more! I’m super lame at explaining stuff :stuck_out_tongue_closed_eyes:
+
+Caleb Rechten [19:21]
+I know req and res. I mean the ones the outside functions.
+
+Peter Nguyen [19:22]
+just to add onto jasmine’s response, request expects you to pass a JSON url (the 1st parameter) which will be parsed and manipulated to however you want in the anonymous function (the 2nd parameter)
+```request(ratsData, parseData(err, res, body){
+//whatever you want the function to do
+});
+```
+
+you can also attach a query to the request but from my understanding, it only accepts 2 parameters, hence why we wrap them into an object first
+```request( {url: ratsData, qs: req.query}, parseData(err, res, body){
+//whatever you want the function to do
+});
+```
+1
+
+[19:24]
+i think its mandatory to use the `(err, res, body)` parameters for the outside function in order for us to be able to parse the JSON url
+
+[19:24]
+i tried to change the parameters, and my code didn’t work
+
+Caleb Rechten [19:24]
+But I guess I want to know where they coming from exactly?
+
+[19:25]
+It seems weird if I'm writing the function outside of the app.get flow but then the parameters are predefined.
+
+Peter Nguyen [19:25]
+so i guess its one of those “i dont know why/how, but the code wont work unless you do it in that way” situations
+
+Caleb Rechten [19:25]
+Know what I mean?
+
+Patrick McWilliams [19:25]
+oh man
+
+[19:26]
+i was about to throw a tantrum, but then this little exchange made what i was trying to do work
+
+[19:26]
+TY guys
+1
+
+Jasmine Vollherbst [19:26]
+@penguyen: Thanks you are so good with the words :grin:
+
+Caleb Rechten [19:26]
+And I can totally get it working for a single json api call, just not more than one.
+
+Lauren Golik [19:27]
+@penguyen: are you trying for a GA teaching job??? haha. that was a really good explanation
+1
+
+Peter Nguyen [19:27]
+nah i only know because i literally spent my entire sunday breaking my code with a million variations
+
+Caleb Rechten [19:28]
+That strategy hasn't worked for me yet :c
+
+Colin Hart [19:28]
+@caleb comes from the request npm module (edited)
+
+[19:28]
+https://github.com/request/request
+
+GitHub
+cozy/request-json
+request-json - Http Client to deal easily with JSON API
+(edited)
+
+Peter Petrov [19:29]
+@umbrellagun: think about who is calling the callback function? Whoever calls that function gets to decide what arguments to pass to the parameters. Do you call that function, or does the request library call it? Do you get to have a choice in what gets passed?
+1
+
+
+Colin Hart [19:30]
+linked the wrong module docs, this one
+
+[19:30]
+https://github.com/request/request
+
+GitHub
+request/request
+Simplified HTTP request client.
+1
+
+[19:30]
+same answer though lol
+
+Peter Petrov [19:31]
+similarly to the callback in `app.get(route, callback)`. The `res` and `req` objects get ​*thrown*​ by the `app.get` method. You just read the docs and find out what the parameters of the callback are.
+1
+
+Jonathan Feudi [19:33]
+That moment when you realize all the troubleshooting you did for the last half hour was worthless because the real problem was a slash missing...
+2
+
+Caleb Rechten [19:34]
+Thank you for the links! Helps a ton. I definitely understand that I don't have control over what the parameters are because of the above stated reason, but what I was vague on was what those parameters actually were... which is obviously important. :stuck_out_tongue:
+
+Peter Nguyen [19:37]
+error, response, body
+
+Colin Hart [19:37]
+yep, so if the request recieved an error, what the response is, i.e. headers etc, and the body of that response
+
+[19:37]
+ ```var request = require('request');
+request('http://www.google.com', function (error, response, body) {
+  if (!error && response.statusCode == 200) { // if there's no error and Status code is 200
+    console.log(body) // Show the HTML for the Google homepage.
+  }
+})```
+(edited)
+
+Caleb Rechten [19:42]
+Right, I get that. I'll play around with it more to see if I can get some more answers and if not I think I'll just ask in class tomorrow.
+
+Caleb Rechten [19:52]
+It's also very possible that I've been confused from a test that I ran that returned something I wasn't expecting.
+
+Patrick McWilliams [20:03]
+anyone having issues with ejs?
+
+[20:03]
+i keep getting SyntaxError: Unexpected token < in /Users/Cthulu/dev/bowie/w04/d05/homework/rat-to-restaurant/views/violation_results.html.ejs while compiling ejs
+
+[20:03]
+if i try to put anything between wizard hats
+
+Karolin Rafalski [20:04]
+can you share a code snippet?
+
+Jasmine Vollherbst [20:09]
+@patrickm: Cthulu? That’s awesome!
+
+Patrick McWilliams [20:10]
+@jasminev: ty!
+
+[20:10]
+@karolin: im not exactly sure where the problem is?
+
+Patrick McWilliams [20:11]
+added a JavaScript/JSON snippet
+<body>
+​
+    <% filtered  %>
+    <% filtered.forEach(function(el){ %>
+​
+Add Comment Click to expand inline 11 lines
+Patrick McWilliams [20:11]
+that generates an error. am i using the p tags wrong?
+
+Jasmine Vollherbst [20:12]
+@patrickm: yep. the clown/wizard thingies should only go around the el
+
+Karolin Rafalski [20:12]
+try `<p> <%= el %> </p>` (edited)
+
+Patrick McWilliams [20:12]
+yay, progress
+1
+
+Patrick McWilliams [20:29]
+added a JavaScript/JSON snippet
+<p>
+      <%= JSON.stringify(el) %>
+    </p>
+Add Comment
+Patrick McWilliams [20:30]
+got me something remotely usable, rather than a series of [object Object] s
+
+Karolin Rafalski [20:31]
+every little bit is awesome!
+
+Jonathan Feudi [20:55]
+Anyone care to shed some light on making your EJS HTML files require a stylesheet? Can’t seem to make it work
+
+Karolin Rafalski [21:00]
+Jasmine shared this yesterday : add the following code to your JS file and then link your CSS as you normally would in your HTML.eja file. app.use( express.static('views') );
+2
+
+Harry Ganz [21:30]
+@karolin:  of course that also exposes your .html.ejs files themeselves. e.g. if you have a file called rats_results.html.ejs in the views directory that can be accessed in the browser through the path /rats_results.html.ejs. I opted to create a separate directory called public with my JS and CSS for static routing
+```app.use(express.static('./public'))```
+1
+
+
+----- February 16th -----
+Peter Petrov [10:31]
+for linux postgres
+https://wiki.debian.org/PostgreSql
+
+jason Seminara [10:57]
+@group I’ve closed any and all pull requests made against the upstream master
+
+Dan Dilorio [10:58]
+but I had so many good ideas
+
+jason Seminara [10:58]
+`pg_ctl start  -D '/usr/local/var/postgres'`
+
+[10:58]
+`pg_ctl stop  -D '/usr/local/var/postgres'`
+
+[10:59]
+if that doesn’t work, you’ll have to find the parent process in your activity monitor and kill it manually. ​*warning*​ you may corrupt a large database
+
+Maxwell Rayman [13:24]
+cool articles from jason:
+
+[13:24]
+http://articles.latimes.com/2012/jun/22/business/la-fi-ellison-buying-lanai-20120622
+latimes
+Oracle founder Larry Ellison buying Hawaiian island of Lanai
+Tech billionaire Larry Ellison, already well-known for his extravagance, will soon own another exotic trophy - a Hawaiian island. Ellison, the founder of Oracle Corp., has agreed to buy 98%... (81KB)
+
+
+[13:24]
+http://www.businessinsider.com/9-crazy-facts-about-lanai-2014-9
+Business Insider
+9 Crazy Facts About Larry Ellison's Hawaiian Island
+This Hawaiian island has a fascinating history. (36KB)
+
+
+Elton Cheng [13:26]
+Guys, lets all go here http://www.sushinakazawa.com/
+
+[13:26]
+and gals* cause Sara yelled at me
+
+Peter Nguyen [13:27]
+var guys = [guys].push(gals)
+1
+
+Jonathan Feudi [13:27]
+Nakanna happen, big guy
+1
+
+Maxwell Rayman [13:28]
+@elton912: youre buying? count me in
+
+Jonathan Feudi [13:28]
+#sickpunz
+
+Elton Cheng [13:28]
+@mxray333: We’ll tell them it’s on GA :smirk:
+1
+
+Caleb Rechten [13:30]
+I want sushi :open_mouth:
+2
+
+Colin Hart [13:54]
+>The Social Security Administration maintains a database containing a record of every U.S. citizen who has died since 1936. What could possibly go wrong? In “The Final File,” contributing editor Paul Ford discusses a few problems with what the government lovingly refers to as the Social Security Death Master File.Explore it for yourself.
+
+Another Paul Ford Article on databases https://newrepublic.com/article/122456/final-file
+New Republic
+The Final File
+Exploring the Social Security administration’s list of America’s dead. (84KB)
+Aug 13th, 2015 at 03:00
+
+
+[13:54]
+https://newrepublic.com/article/122529/database-dead
+New Republic
+Search for Your Name in the Government&apos;s Database of the Dead
+The Social Security Administration maintains a database of everyone who has died since 1936. Are you in it? (39KB)
+Aug 13th, 2015 at 03:00
+
+1
+
+[13:55]
+second url is the visualization
+
+
+Dan Dilorio [13:55]
+https://answers.yahoo.com/question/index?qid=20090713161327AAU7tnB
+When you die what happens to your MySpace?
+Like if you die does your MySpace delete itself, or does a friend do it? Or does it just sit there unattended? I heard something about a microchip that is placed in your brain when you are 3 weeks old. This goes off when you die and it de-activates any MySpace accounts you have. Is this true? I think it might be because I can sometimes hear like a little buzzing/ticking noise in my back of my brain. (18KB)
+
+
+Colin Hart [13:56]
+@trampolinetales: That's serious serious policy discussion happening in consumer policy circles
+
+Rachel Smyth [14:22]
+…what do you guys talk about in class? jeez. #morbid
+1
+
+Jonathan Feudi [14:22]
+Databases & Death: A Lecture Series by WDI-Bowie
+3
+
+Patrick McWilliams [14:25]
+Vee vill remove you from zee EENDEX!
+1
+
+Jonathan Feudi [14:25]
+Vee have vays of obtaining zee data
+
+Caleb Rechten [14:25]
+We have to be prepared for when the deathmatches  start.
+
+Jonathan Feudi [14:26]
+http://www.statemaster.com/wikimir/images/upload.wikimedia.org/wikipedia/en/7/7a/Celebritydeathmatch.JPG (7KB)
+
+
+Patrick McWilliams [14:32]
+database administrators === in waste management === “connected"
+
+Peter Petrov [15:15]
+PostgreSQL provides several index types: B-tree, Hash, GiST, SP-GiST and GIN
+
+Patrick McWilliams [15:15]
+Please tell me there is a TONIC index type
+
+Peter Petrov [15:52]
+@group https://xkcd.com/327/
+xkcd
+Exploits of a Mom
+[Title text] "Her daughter is named Help I'm trapped in a driver's license factory." (31KB)
+
+3
+
+Colin Hart [15:54]
+http://www.wired.com/2015/11/null/
+
+Also a Wired article written by Christopher Null about interacting with the digital world
+WIRED
+Hello, I’m Mr. Null. My Name Makes Me Invisible to Computers
+My last name is "Null," and it comes preloaded with entertainment value. (29KB)
+
+
+Harry Ganz [16:08]
+^ Stupid adblock blocker. In the console document.querySelector('#veil').remove()
+
+Viorel Belfiore [16:16]
+(╯°□°)╯︵ ┻━┻
+
+Elton Cheng [16:18]
+┬──┬◡ﾉ(° -°ﾉ)
+
+Viorel Belfiore [16:18]
+(╯°Д°）╯︵ /(.□ . \)
+
+Dan Dilorio [16:18]
+щ(ﾟДﾟщ)
+
+Harry Ganz [16:19]
+Also, you need to set overflow to auto
+
+[16:19]
+I deleted all the script tags, and set all the overflows for the document to auto
+
+[16:21]
+ ```document.querySelector('#veil').remove();
+var a = document.children;
+for(var i = 0; i < a.length; i++){a[i].style.overflow = "auto"}
+```
+
+Peter Petrov [16:27]
+@group: Let me know what you want to talk about tomorrow
+http://goo.gl/forms/rFhNP3amSB
+Google Docs
+Second Pass Topic Request (12KB)
+
+
+Dan Dilorio [16:37]
+here's an SQL cheat sheet :wink: https://duckduckgo.com/?q=sql+cheat+sheet&ia=answer&iax=1
+3 1
+
+Peter Nguyen [16:43]
+and this: http://www.tutorialspoint.com/postgresql/postgresql_distinct_keyword.htm
+www.tutorialspoint.com
+PostgreSQL - DISTINCT Keyword - Learn PostgreSQL from basic to advanced covering database programming, select, insert, update, like, with, having, group by, limit, like, distinct clauses, operators, expressions, functions administration queries and usage along with php, perl, c, c++ and java in simple steps.
+1
+
+Patrick McWilliams [17:53]
+is a code comment going to break a table construction
+
+KP Perez [17:58]
+Ah unsure if this is what you're referring to, but in Postgres there's 2 ways to comment:
+
+inline style (followed by 2 dashes and a space):
+-- here's my comment
+
+block style (with a slash and star to begin and end):
+/* here's my comment it goes more than
+* two lines so I need a block */
+
+[17:59]
+http://www.postgresql.org/docs/current/static/sql-syntax-lexical.html#SQL-SYNTAX-COMMENTS
+
+Patrick McWilliams [18:00]
+@kp_was_already_taken:  great, thanks. also just noticing your username. condolences
+
+KP Perez [18:01]
+hahaha @patrickm thank you. It was a hard loss, but life is a journey
+2
+
+Patrick McWilliams [18:01]
+the bounceback is what counts!
+
+Viorel Belfiore [18:06]
+uploaded an image: Slack for Android Upload
+1 Comment
+1
+
+Viorel Belfiore [18:08]
+To join tables if you want to query fields from multiple tables.  All credit to Harry
+
+Harry Ganz [20:29]
+To show a values of a field (field1) in one table (table1) based on a query to a parameter (field2) in another (table2).  Assuming table1.table2_id if a foreign key on table 1 and table2.id is a primary key on table 2
+``` SELECT table1.field1 FROM table1, table2 WHERE table2.field2 = "some_value" AND table1.table2_id = table2.id```
+In english: "show me field 1 from table 1 where field 2 in table 2 is equal to some value, and the foreign key for table 2 in table 1 is equal to the primary key of table 2"
+
+jason Seminara [22:00]
+@group: we forgot to inspect the generated serial tables after we created them: https://www.scriptscribe.org/databases/the-postgres-equivalent-of-mysqls-auto_increment/
+
+[22:02]
+tl;dr the `serial` keyword creates another ​*sequence*​ table that keeps track of the auto_increment value, next, last, max, min, etc.
+
+[22:03]
+check out what we did today, by `\x` then `\d`(see the new table) then select from the new table: `select * from students_id_seq `
+
+[22:03]
+take a peek at what’s there, then tuck it under your pillow and go to bed. ​_night night_​
+
+Harry Ganz [22:07]
+For the NFL data, if you make a nfl_queries.sql file with all the queries, you can output it directly to a markdown file like this in bash:
+```psql -d nfl -f nfl_queries.sql --echo-all >> nfl.md```
+
+It's a lot easier than copying an d pasting all the output. You can also make comments by using
+```-- comment --```
+in the .sql file
+
+
+----- February 17th -----
+Patrick McWilliams [09:24]
+...
+
+[09:24]
+/catfact
+
+
+CatFacts BOT [09:24]
+Cat Fact 62: Black cats are bad luck in the United States, but they are good luck in the United Kingdom and Australia.
+
+:cat: :cat: :cat:
+
+Viorel Belfiore [09:29]
+I wish to unsubscribe from catfacts
+2
+
+Patrick McWilliams [09:32]
+catfacts cares not for your wishes. now feed it.
+
+Caleb Rechten [09:34]
+hmm
+
+[09:35]
+WoW, no dogfacts? Laaaaame.
+
+Jonathan Feudi [09:36]
+I don’t like cats or robots so I find this bot outrageously offensive.
+
+Viorel Belfiore [09:36]
+TRIGGERED
+1
+
+Patrick McWilliams [09:38]
+the future must be a scary place for you, @feudi
+
+Jonathan Feudi [09:39]
+I’m going to be very upset if the world is ruled by cats when I wake from cryosleep in a few hundred years.
+
+Patrick McWilliams [09:40]
+cats piloting mechs
+
+Jonathan Feudi [09:40]
+Okay, okay, I’ll open up Photoshop...
+1
+
+Caleb Rechten [09:44]
+Cat robots.
+
+Karolin Rafalski [10:20]
+http://www.theatlantic.com/politics/archive/2016/02/super-campaign-dodger/462531/
+
+The Atlantic
+Super Campaign Dodger: Can You Avoid the Political Ads?
+An 8-bit arcade-style exercise in steering clear of political advertising—no quarters required.
+1
+
+Patrick McWilliams [13:13]
+I only lasted 4 hours
+
+Peter Petrov [15:26]
+@group You should all join #nyc as I hear that you haven't been invited to it
+
+Caleb Rechten [15:26]
+I swear to god I passed someone dressed as Carmen in the subway.
+
+Emine Koc [15:26]
+@pppetrov: Thank you :simple_smile: (edited)
+
+Patrick McWilliams [15:30]
+added a JavaScript/JSON snippet
+fyi: if you have
+​
+BEGIN;
+​
+in your seed file, make sure you have
+Add Comment Click to expand inline 9 lines
+Peter Petrov [19:28]
+@group: I just pushed the code from today. I had a really busy afternoon and I totally blanked out!
+1
+
+Karolin Rafalski [19:29]
+Thanks for posting! It is much appreciated!
+
+KP Perez [19:30]
+Ugh what a slacker
+
+Peter Petrov [19:33]
+You know it :simple_smile:
+
+KP Perez [19:43]
+Speaking of slackers, I am here
+
+[19:44]
+Ready for some NFL fun
+
+
+
+----- February 18th -----
+Jimmy Lin [09:11]
+ Pinned a message. See all pinned items in this channel.
+jason Seminara jasonseminara
+`pg_ctl start  -D '/usr/local/var/postgres'`
+Feb 16th at 10:58
+
+Sara Horowitz [09:13]
+http://www.nationaldaycalendar.com/2016/02/17/february-18-2016-national-drink-wine-day-national-crab-stuffed-flounder-day-national-battery-day/
+
+National Day Calendar
+February 18, 2016 – NATIONAL DRINK WINE DAY – NATIONAL CRAB STUFFED FLOUNDER DAY – NATIONAL BATTERY DAY
+NATIONAL DRINK WINE DAY While February 18 is observed annually as National Drink Wine Day, it would be a shame to only celebrate one day a year. Perhaps this day is just a reminder to drink wine. W…
+Feb 17th at 21:00
+7
+
+Caleb Rechten [10:26]
+I would like to report a problem. I'm not receiving free bagels anymore.
+2
+
+jason Seminara [10:47]
+https://github.com/expressjs/morgan#predefined-formats
+
+GitHub
+expressjs/morgan
+morgan - HTTP request logger middleware for node.js
+
+[10:49]
+I personally prefer ‘dev’ because it’s colored, and I’m visually oriented.
+
+Maxwell Rayman [10:56]
+var conString = "postgres://username:password@localhost/database";
+
+Jonathan Feudi [11:01]
+https://github.com/brianc/node-postgres
+
+GitHub
+brianc/node-postgres
+node-postgres - PostgreSQL client for node.js.
+
+Douglas Walker [11:01]
+added a JavaScript/JSON snippet
+var pg = require('pg');
+​
+var conString = "postgres://username:password@localhost/database";
+​
+var client = new pg.Client(conString);
+Add Comment Click to expand inline 18 lines
+Colin Hart [11:41]
+```  pg.connect(connectionString, function(err, client, done) {
+    if(err) {
+      done()
+      console.log(err)
+      return res.status(500).json({success: false, data: err})
+    }
+    var query = client.query('SELECT * FROM city WHERE id = 1', function(err, result) {
+      done()
+      if (err) {
+        return console.error('error running query', err);
+      }
+      console.log(result.rows[0]);
+    });```
+
+Patrick McWilliams [12:48]
+if anyone can slack me their notes from this morning, that would be awesome
+
+Harry Ganz [13:20]
+@group: If you are  using Atom, you might want to create a cool snippet for making queries to the database. Here is the docs on snippets: https://atom.io/docs/latest/using-atom-snippets , and here is my snippet. You can add it to ~/.atom/snippets.cson on your machine, or write your own:
+```'pg connect':
+    'prefix':'connect'
+    'body':"""
+      connect(${1:connectionString}, function(err, client, done){
+          if(err){
+            done();
+            console.log('error fetching data ', err);
+            return res.status(500).json({success: false, data: err});
+          }
+
+          client.query($2, function(err, result){
+              done();
+              if(err){
+                console.log('error making query ', err);
+                return res.status(500).json({success: false, data: err});
+              }
+              ${3:res.}
+              next();
+            });
+        });
+        """
+```
+Atom
+A hackable text editor for the 21st Century
+At GitHub, we’re building the text editor we’ve always wanted: hackable to the core, but approachable on the first day without ever touching a config file. We can’t wait to see what you build with it. (32KB)
+
+
+Rachel Smyth [13:26]
+@harryg: I predict someone's going to get hooked on vim. @colinhart
+
+Harry Ganz [13:29]
+@rachel  I use it already, but I can never remember the shortcuts.
+
+Dan Dilorio [13:32]
+I do all my programming in microsoft word
+1
+
+Jonathan Feudi [13:44]
+I use Adobe InDesign
+1
+
+Harry Ganz [14:14]
+Slightly related Amazon AWS nightmare story: http://www.behind-the-enemy-lines.com/2012/04/google-attack-how-i-self-attacked.html
+
+Caleb Rechten [14:22]
+I recommend Mario Teaches Typing
+1
+
+Jonathan Feudi [14:22]
+http://4.bp.blogspot.com/-wOyV8Ri8GvM/Td-5lVb1pMI/AAAAAAAAChA/01WkrwuHR-E/s1600/tod01.png (407KB)
+
+1
+
+Dan Dilorio [14:23]
+https://www.youtube.com/watch?v=m9EXEpjSDEw
+YouTube
+UltimateTypingChamp
+Fastest Typist: Ultimate Typing Championship Final 2010 By Das Keyboard
+
+
+Jonathan Feudi [14:23]
+http://static.giantbomb.com/uploads/scale_small/6/65153/2348262-1118200871102pm.jpg (7KB)
+
+
+[14:23]
+"Someone say typing games?"
+
+Caleb Rechten [14:27]
+I'm going to make a game called "Popcorn Kerning".
+
+[14:28]
+https://archive.org/download/msdos_Mario_Teaches_Typing_1992/msdos_Mario_Teaches_Typing_1992.gif (98KB)
+
+
+Dan Dilorio [14:28]
+I had this: https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fecx.images-amazon.com%2Fimages%2FI%2F51TCTCSKSKL._SY300_.jpg&f=1 (24KB)
+
+
+Jonathan Feudi [14:29]
+#learntokern
+
+Patrick McWilliams [14:58]
+feel the kern?
+
+Adam Kriger [15:43]
+http://expressjs.com/en/starter/basic-routing.html
+
+jason Seminara [16:03]
+@group: please install postman tonight through cask `brew cask install postman`
+
+[16:03]
+update/upgrade your brew BEFOREHAND
+
+Emma Hou [16:16]
+npm install express request morgan ejs pg body-parser --save
+1 1
+
+Elton Cheng [16:19]
+Team Bowie, Dim Sum next Wednesday after class for lunch!
+3 1
+
+Caleb Rechten [16:23]
+Is there any reason trying to install multiple modules at the same time might not work for you? It's worked for me in the past, but today I've had to go back and install some of the individually even though it didn't seem to through any errors.
+
+Seif Dorani [16:36]
+interview process:
+
+[16:36]
+https://www.youtube.com/watch?v=TKQyPfN6s88
+YouTube
+Landon Bassett
+Silicon Valley - Crushed It
+
+
+Peter Petrov [16:38]
+@group: Exit Tickets!!
+http://goo.gl/forms/1YuNiswm5n
+Google Docs
+Lesson Exit Ticket 02/18 (151KB)
+
+
+
+Dan Dilorio [16:48]
+https://images.duckduckgo.com/iu/?u=http%3A%2F%2F24.media.tumblr.com%2Ftumblr_lkhd27rqlm1qju073o1_500.jpg&f=1 (43KB)
+
+1
+
+Patrick McWilliams [16:50]
+im guessing i skip the exit ticket?
+
+Colin Hart [17:32]
+Lol yes
+
+
+----- February 19th -----
+Peter Petrov [09:13]
+@group weather API key: 155eff8b43e878bdc2414b44aba17c84
+
+Colin Hart [10:16]
+uploaded and commented on an image: Pasted image at 2016-02-19, 10:15 AM
+1 Comment
+Oh, what? Look at all these great coding newsletters in my inbox wonder.
+
+jason Seminara [10:33]
+https://en.wikipedia.org/wiki/Representational_state_transfer
+
+Jonathan Feudi [10:57]
+uploaded and commented on an image: mahatma-gandhi-31.jpg
+1 Comment
+1 1
+“You must be the change you wish to see in the data."
+
+Caleb Rechten [10:59]
+https://en.wikipedia.org/wiki/Pie
+
+Peter Petrov [11:23]
+@group: Lunch and Learn today! Check your emails! It is with UXDI and PMI graduates talking about their post GA experience.
+1
+
+Maxwell Rayman [11:31]
+no spoilers im on season 3
+1
+
+Maxwell Rayman [11:32]
+uploaded an image: DoakesSuspicion.png
+Add Comment
+Jonathan Feudi [11:33]
+SURPRISE MOTHAFUCKA
+
+jason Seminara [11:33]
+uploaded an image: favicon.ico
+  Add Comment
+2
+
+Jonathan Feudi [11:52]
+http://i3.kym-cdn.com/photos/images/original/000/304/577/f82.png (179KB)
+
+1
+
+Emine Koc [12:09]
+uploaded an image: Slack for iOS Upload
+Add Comment
+3
+
+Sara Horowitz [12:09]
+thanks! @eminekoc
+
+Harry Ganz [12:20]
+```app.use(function(req, res, next){
+  if(res.statusCode === 404){
+    res.status(200).render('custom_404.html.ejs');
+  }
+  next();
+} );
+```
+(edited)
+
+[12:20]
+@umbrellagun:
+
+[12:21]
+I am not sure if the above will work
+
+Peter Petrov [12:22]
+```app.use(function(err, req, res, next) {
+  res.status(err.status || 500);
+  res.render('error.html.ejs', {
+    message: err.message,
+    error: {}
+  });
+});
+```
+you need to put this at the end of the `app.js` file, and build your custom error view
+
+[12:23]
+why is it important to do it at the end?
+
+Viorel Belfiore [12:34]
+uploaded and commented on an image: Pic
+1 Comment
+2
+Pic of the model view controller
+
+Emma Hou [12:38]
+added a JavaScript/JSON snippet: Interesting Interview Question
+//Javascript Interview Question
+​
+//Question
+​
+function Foo() {
+Add Comment Click to expand inline 21 lines
+2
+
+Harry Ganz [13:46]
+How to refresh your favicon:
+```ok, after 10 minutes of wtf'ing, the easy way to fix it is close to that of lineofbirds
+
+type in www.yoursite.com/favicon.ico
+push enter
+ctrl+f5
+Restart Browser (IE, Firefox)
+```
+From http://stackoverflow.com/questions/2208933/how-do-i-force-a-favicon-refresh
+
+How do I force a favicon refresh
+I have a Grails application running locally using its own tomcat and I have just changed the favicon for a new one. Problem is that I can't see it in any browser. The old favicon shows up or I ge...
+
+[13:47]
+On mac, just press refresh
+
+Jonathan Feudi [14:03]
+Jason’s feelings on CSS:https://www.youtube.com/watch?v=zGxwbhkDjZM
+YouTube
+Vanessa C
+Ain't Nobody Got Time for That!-Original
+
+1 1 1
+
+Jonathan Feudi [14:56]
+The club is gettin’ routey today, naheyemean?
+
+Colin Hart [15:04]
+at least it isn’t directly under us
+
+Peter Nguyen [15:29]
+uploaded an image: Slack for iOS Upload
+Add Comment
+2
+
+Peter Petrov [16:46]
+Exit Ticket 1 @group
+http://goo.gl/forms/anI9lxQpGH
+Google Docs
+Lesson Exit Ticket 02/19 (138KB)
+
+
+[16:47]
+Exit Ticket 2 @group: http://goo.gl/forms/E6XUXVq24b
+Google Docs
+Exit Ticket 02/19
+End of week comments (157KB)
+
+
+Emine Koc [17:10]
+here is the video : https://ga-students.slack.com/files/eminekoc/F0N895WRJ/slack_for_ios_upload.mp4
+
+Jasmine Vollherbst [17:10]
+uploaded an image: Slack for iOS Upload
+Add Comment
+
+----- February 20th -----
+Emine Koc [10:56]
+Let the weekend fun begin :simple_smile:
+
+Viorel Belfiore [11:33]
+hey, there’s a group of us on the third floor if anyone else is interested in joining
+
+Jasmine Vollherbst [11:54]
+Running late, but I'm heading over now!
+
+Peter Petrov [12:02]
+#fun
+
+Lauren Golik [12:03]
+@pppetrov: your definition of fun scares me sometimes!
+
+Viorel Belfiore [12:03]
+@pppetrov:  http://i.imgur.com/p5YqKqh.jpg (185KB)
+
+5
+
+Emine Koc [12:03]
+@pppetrov: why dont you join us :smile:
+
+Peter Petrov [12:04]
+I'm having fun at home!
+
+Peter Petrov [12:05]
+uploaded an image: Slack for Android Upload
+Add Comment
+5 8 1
+
+Peter Petrov [12:05]
+With this guy
+
+Viorel Belfiore [12:33]
+Yo, here’s a link to my onedrive account.  I gots some vids and stuff.  https://onedrive.live.com/redir?resid=2F798F0A3E33C7D3!108&authkey=!AOAah4wrTrqrOT8&ithint=folder%2cjpg
+Week 5
+Folder (77KB)
+
+6
+
+KP Perez [13:11]
+Did somebody say fun?
+
+Daniel Lawrence [13:48]
+added a SQL snippet: arrays in postgres tables
+create table movies(
+	id serial primary key,
+  	showTimes text ARRAY
+)
+Add Comment
+Daniel Lawrence [13:49]
+movies=# select showtimes[1] from movies;
+
+[13:50]
+movies=# insert into movies (showtimes) values ('{"time1","time2","time3"}');
+
+Patrick McWilliams [14:40]
+PUPPYYYYYYYYY! … i mean. that’s cool.
+1
+
+Patrick McWilliams [15:00]
+so since i don’t see an explicit call for functionality on the delete or update buttons, i’m going to file that as bonus material
+
+Dan Dilorio [15:07]
+now you're thinking like a developer
+
+Adam Kriger [15:09]
+https://www.compose.io/articles/is-postgresql-your-next-json-database/
+Compose Articles
+Is PostgreSQL Your Next JSON Database?
+With PostgreSQL gaining more JSON capabilities, we've been asked if PostgreSQL could replace MongoDB as a JSON database. Here we show you the answer. (264KB)
+March 3rd, 2015 at 05:49
+
+
+Patrick McWilliams [15:10]
+“oh, you want the buttons to work, huh?”   “that’s gonna cost."
+
+
+Dan Dilorio [15:14]
+If we're posting articles, this one was a good read, even if it got me a bit worried for the future of GitHub: http://www.businessinsider.com/github-the-full-inside-story-2016-2?r=US&IR=T&uuid=censorship
+Business Insider
+GitHub is undergoing a full-blown overhaul as execs and employees depart — and we have the full inside story
+As GitHub grows up, disgruntled employees are telling startling stories, but it seems to be part of normal growing pains (23KB)
+
+
+Patrick McWilliams [22:53]
+weren’t we supposed to have an “upcoming lessons” thing on the wiki, or am i misremembering?
+
+[22:53]
+p.s. where is that
+
+
+----- February 21st -----
+Adam Kriger [08:38]
+Does anyone know how to get jquery to work with express?
+
+Harry Ganz [09:29]
+@adam on the front end? You can use the jquery CDN or download it to your public folder (assuming you are using express.static). If you want it on the back-end you can use the cheeriojs package, but I don't know any more about it than its name.
+
+Viorel Belfiore [09:41]
+I'm going to be going in today if anyone wants to meet up.  I'll be in around 12
+
+jason Seminara [10:50]
+oh. noes.
+
+[10:51]
+I’m gonna show those videos at christmas
+
+[10:53]
+I’m in love with him! Who’s that amazing teacher??
+1 1
+
+Adam Kriger [11:50]
+@harryg: thank you
+
+Ari Ingber [12:13]
+me rn
+
+[12:13]
+https://www.youtube.com/watch?v=OAUn3A4QtaI&app=desktop
+YouTube
+FOX 28 - myfoxspokane
+Interview with 110 Year Old Woman, Flossie Dickey
+
+1 1 1
+
+Emine Koc [12:14]
+uploaded and commented on a file
+Slack for iOS Upload.mp4
+315MB
+MPEG 4 Video
+ Click to download
+1 Comment
+@auvemma:  Here it is :wink:    The link expires, Please download it if you want to keep it .
+
+Emma Hou [12:22]
+Thank you!!!!:kissing_heart:
+
+Patrick McWilliams [15:52]
+i’m pretty sure im missing something basic, but i’ve looked for it and taken brakes and looked again and am not seeing it,
+
+Patrick McWilliams [15:52]
+added and commented on a JavaScript/JSON snippet
+ReferenceError: mID is not defined
+<br> &nbsp; &nbsp;at verify (/Users/Cthulu/dev/bowie/w05/d05/homework/moviehaus/routes/controller.js:9:10)
+<br> &nbsp; &nbsp;at /Users/Cthulu/dev/bowie/w05/d05/homework/moviehaus/routes/controller.js:46:5
+1 Comment
+error message
+
+Patrick McWilliams [15:52]
+added and commented on a JavaScript/JSON snippet
+<li> <%= movieID %> other text</li>
+1 Comment
+from view page
+
+Patrick McWilliams [15:53]
+added and commented on a JavaScript/JSON snippet
+.get( (req,res) => {
+    var mID = req.params.movieID;
+    console.log(mID);
+    console.log('above was mID');
+​
+1 Comment Click to expand inline 14 lines
+from controller
+
+Patrick McWilliams [15:54]
+ah, fixed it
+
+[15:54]
+all it takes is revealing your shame!
+1
+
+Maxwell Rayman [17:05]
+something people may get stuck on (like me 4 times already) make sure all of your functions have the parameters (req, res) instead of (res, req)...
+4
+
+Patrick McWilliams [17:15]
+what was the term to keep from using my actual username and password in the connection string line? i have to set an environmental variable in atom or something?
+
+Karolin Rafalski [17:16]
+`var dotenv                = require ('dotenv');`
+
+[17:17]
+make file .env on the same level as your server
+
+[17:17]
+in .env `DB_PASSWORD=`
+
+Jonathan Feudi [17:18]
+Yo, have any of you guys successfully made your server boot up your database and feed it the schema file without having to do anything in the terminal? Trying to figure out if I can make the whole thing be automated
+
+Karolin Rafalski [17:18]
+`dotenv.load();` in your server file
+
+Jonathan Feudi [17:19]
+@karolin Do you remember what day/exercise we covered dotENV on? Trying to find my example files
+
+Patrick McWilliams [17:19]
+the var dotenv happens in server or the pg file?
+
+Karolin Rafalski [17:21]
+Thursday February 18
+
+Jasmine Vollherbst [17:21]
+@patrickm: you also need to install: npm install dotenv --save
+1
+
+Jonathan Feudi [17:21]
+@karolin Thanks
+
+Patrick McWilliams [17:22]
+do i also have to git ignore it?
+
+[17:22]
+or rather, the .env file
+
+Karolin Rafalski [17:23]
+lastly in db/pg.js :
+var pg          = require ('pg');
+var connectionString ='postgres://karolinrafalski:' + process.env.DB_PASSWORD + '@localhost/movies’; (edited)
+3
+
+Patrick McWilliams [17:26]
+ty karolin
+
+[17:26]
+and var dotenv = require('dotenv’); was in server.js or pg.js or other?
+
+[17:27]
+there’s probably documentation isn’t there.
+
+
+Jasmine Vollherbst [17:28]
+@patrickm: I added it to my server.js file and it’s working :simple_smile:
+1
+
+Karolin Rafalski [17:28]
+I have var dotenv = require in server.js as well
+1
+
+Patrick McWilliams [17:29]
+so many shoutouts in exit ticket
+1
+
+
+added and commented on a Plain Text snippet: Using dotenv to store your password when using pg db
+- install dotenv into node modules:
+   npm install dotenv --save
+
+- touch .env on the same level as your server.js
+- inside .env type the following and put your password in after the =, quotes not needed:
+DB_PASSWORD=
+- in server.js:
+  var dotenv                = require ('dotenv');
+  dotenv.load();
+- in db directory in pg.js file:
+ var pg          = require ('pg');
+ var connectionString ='postgres://karolinrafalsi:' + process.env.DB_PASSWORD + '@localhost/movies’;
+ -use git ignore to not upload the password info (anyone have more specific instructions?)
+1 Comment Collapse
+Covered on February 18. Thanks  to Jasmine for the npm install info!  I tried to make it easier to read than the slack chat version...
+
+Jasmine Vollherbst [17:46]
+@karolin: this is great! thanks so much!
+
+Patrick McWilliams [17:53]
+
+
+Patrick McWilliams [17:53]
+added and commented on a JavaScript/JSON snippet
+in the same directory level as server.js,
+
+	touch .gitignore
+​
+then atom (or subl, or whatever) .gitignore
+1 Comment Click to expand inline 11 lines
+1
+it worked for me, if i’ve got anything wrong, please say so
+
+Patrick McWilliams [17:53]
+really, it should be the same directory as .env, but that should be in the same level as server.js, so it should work the same
+
+Jonathan Feudi [18:08]
+Hey, how did you guys go about submitting the proper information from your JSON search results in the body of a POST request to add to your database? When we did the DBZ homework, everything being submitted in the POST request was text being typed manually into input fields. Now, we already have the information - how do we go about getting it into the body of the POST request?
+
+Karolin Rafalski [18:09]
+I haven’t started on the JSON search part
+
+Patrick McWilliams [18:09]
+high-level goals: when getting the JSON info, save the relevant stuff to an object variable, then reference the specific keys/values as needed when posting
+
+[18:10]
+im not there yet, so i have no idea what it would look like
+
+[18:10]
+possibly an array?
+
+[18:10]
+probably an object
+
+Jonathan Feudi [18:10]
+The thing is
+
+[18:11]
+Err
+
+[18:11]
+Hang on, organizing thoughts lol
+
+[18:11]
+I know how to access the key value pairs of the JSON that my search returns
+
+[18:12]
+I guess I need to bind them all back together in EJS
+
+[18:12]
+Into a new object
+
+[18:12]
+And then send that with my form?
+
+Patrick McWilliams [18:12]
+sounds like a start
+
+Jonathan Feudi [18:12]
+Not sure how to make the form though
+
+[18:13]
+I’ll let you know if I make any progress
+
+Patrick McWilliams [18:13]
+don’t forget the { thingy:thingy } thing in the route
+
+[18:13]
+to pass along the info to the view page
+
+Bryce Krah [18:28]
+@feudi: look at html <input type="hidden"  value="your info  u wanna send">
+
+Jonathan Feudi [18:29]
+I’ll check it out, thanks @brycek
+
+Jonathan Feudi [18:38]
+Anyone getting thrown an error when trying to require(‘./db/pg) ?
+
+[18:38]
+It thinks it’s a module, and can’t load it
+
+[18:38]
+But didn’t have this problem with DBZ hw
+
+Karolin Rafalski [18:39]
+did you cut and paste that?
+
+Jonathan Feudi [18:39]
+Nah, typed it fresh
+
+Karolin Rafalski [18:39]
+arg, you missed a ‘ - that would have been an easy fix...
+
+Jonathan Feudi [18:39]
+Yeah, I’ve gone through and gotten out the typos
+
+Karolin Rafalski [18:41]
+do you have   "pg": "^4.4.6” in your dependencies in your package.json?
+
+Jonathan Feudi [18:41]
+Yup
+
+Karolin Rafalski [18:42]
+I am out of ideas, sorry
+
+Jonathan Feudi [18:44]
+Figured it out
+
+[18:44]
+It’s cause the file I was requiring from was in my routes folder
+
+[18:45]
+So, I had to say ‘../db/pg’ not ‘./db/pg'
+
+[18:45]
+Since I was another directory away
+
+[18:45]
+Damn, that took me too long… I forgot why I needed to fix that lol
+
+Karolin Rafalski [18:45]
+nice solve! The whole directory thing is challenging, especially when we have so many to handle now!
+
+Patrick McWilliams [19:33]
+was bodyParser covered on thursday, or is there a hole in my memory?
+
+Jonathan Feudi [19:36]
+It was covered very briefly
+
+[19:38]
+Having a problem getting the forms on my search results html.ejs page to return data in the req.body to my database
+
+[19:38]
+I know my routes are working, because a row gets created in the table in my database, but the req.body returns empty
+
+Jonathan Feudi [19:39]
+added a Plain Text snippet: Here’s the form
+<form action="/movies" method="post">
+              <label for="test">TEST</label>
+              <input type="text" name="test">
+              <input type="submit" value="Add Movie">
+              </form>
+Add Comment
+Jonathan Feudi [19:39]
+added a Plain Text snippet: Here’s the function from my pg.js
+function addMovie(req, res, next){
+  pg.connect(connectionString, function(err, client, done){
+    console.log(req.body);
+    if(err){
+      done();
+Add Comment Click to expand inline 19 lines
+Jonathan Feudi [19:40]
+added a Plain Text snippet: And the route
+movies.route('/')
+  .get(function(req, res){
+    res.render('index.html.ejs');
+  })
+  .post(db.addMovie, function(req, res){
+Add Comment Click to expand inline 7 lines
+Jonathan Feudi [19:40]
+Anyone care to take a look at these?
+
+[19:40]
+Whenever I use the button in the form, the body keeps coming back empty
+
+[19:40]
+I know the route works, though, because it adds a new row to my table
+
+[19:40]
+@group
+
+[19:41]
+Sorry I’m taking up the whole slack channel, lol
+
+Patrick McWilliams [19:42]
+try using a string or whatever the datatype for test is instead of $1
+
+[19:42]
+if that string/whatever goes in, it means the codes working but there’s a form data transfer issue?
+
+Jonathan Feudi [19:42]
+The only thing is, when I console.log(req.body.test) it comes back empty
+
+[19:43]
+Or console.log(req.body) it just gives an empty object
+
+[19:43]
+@patrickm How would I specify a string instead of $!?
+
+[19:43]
+$1
+
+Patrick McWilliams [19:44]
+added a JavaScript/JSON snippet
+client.query("INSERT INTO movietest (test) VALUES ('stringGoesHere')",
+Add Comment
+Jonathan Feudi [19:49]
+Didn’t work
+
+[19:49]
+Arg… this is proving insurmountable
+
+Colin Hart [19:51]
+If req.body.test is empty it's possibly an html naming issue
+
+Jonathan Feudi [19:52]
+As in, the word test may be a keyword or something?
+
+[19:53]
+Try something else?
+
+Harry Ganz [20:04]
+Q: What data structure hides in sand and can be painful to step on?
+
+A: A sting array
+1 1
+
+Dan Dilorio [20:09]
+OHHHHHHHHH
+
+[20:09]
+sting ray
+
+[20:09]
+just got that
+
+[20:09]
+I'm smart
+1
+
+Karolin Rafalski [20:11]
+I’m still thinking about that joke about the bucket…still makes no sense to me.
+
+Dan Dilorio [20:14]
+exactly
+
+Karolin Rafalski [20:16]
+I am all for a non sequitur, but not because I find it funny (edited)
+
+Jonathan Feudi [20:27]
+For the life of me, I can’t get my forms to return anything in the req.body… blowing my mind
+
+Caleb Rechten [20:32]
+In general, what do you need to have to get your functions to export to another file? I can't seem to figure out why they're saying the function is undefined. I checked the names to make sure they match, I did module.exports.function after writing the function in the original file, and then linked the file with "var db = require('../db/pg');" Any ideas?
+
+Jonathan Feudi [20:33]
+Are you requiring Postgres in the file?
+
+[20:34]
+And the path in your var db is correct, relative to where the file calling it is?
+
+Karolin Rafalski [20:34]
+module.exports.function=function;    ?
+
+Jonathan Feudi [20:34]
+Yeah, you can’t just write module.exports.function
+
+[20:35]
+For function addMovies
+
+[20:35]
+module.exports.addMovies = addMovies;
+
+[20:36]
+Also, those pg functions have LOTS of curly braces and parentheses, make sure everything is closed properly
+
+Caleb Rechten [20:41]
+Yep, all those check out.
+
+Harry Ganz [20:50]
+@umbrellagun: Yah, I had some issues with exports as well. Let's say you have a an express router object in routes/movies.js:
+``` var movies = express.Router() ```
+And you want to use in in server.js. You write the following at the bottom of your movies.js file:
+``` module.exports = movies ```
+Then the entire file can be treated as a function in your server.js file
+``` app.use('/movies', require('./routes/movies')) ```
+Alternatively, you can export an object:
+``` module.exports.movies = movies ```
+In which case you need to treat the file like an object with a movies property
+``` app.use('/movies', require('./routes/movies').movies) ```
+(edited)
+
+Jonathan Feudi [21:38]
+Hey, can you make a Request inside EJS?
+
+[21:40]
+WELL HEEEEERE I GO
+
+Adam Kriger [22:07]
+ Pinned Karolin Rafalski's text snippet Using dotenv to store your password when using pg db. See all pinned items in this channel.
+
+Adam Kriger [22:07]
+ Pinned Patrick McWilliams' text snippet Untitled. See all pinned items in this channel.
+
+Harry Ganz [22:08]
+I may have accidentally deleted my homework branch... welp.
+
+[22:08]
+Note: I haven't pushed any changes
+
+Patrick McWilliams [22:09]
+that sounds terrifying
+
+Harry Ganz [22:10]
+```git branch -a ```
+ Reveals all your branches
+```git branch -D  <branchname>```
+permanently deletes a branch (edited)
+
+[22:10]
+I accidentally did the latter while trying to do the former
+
+[22:11]
+It's ok. I am googling for a solution. And if there is none, I'll start over
+
+[22:13]
+Git is amazing: http://stackoverflow.com/questions/3640764/can-i-recover-branch-after-its-deletion-in-git
+
+Can I recover branch after its deletion in git?
+If I run git branch -d XYZ to delete branch 'XYZ', is there a way to recover the branch. In other words, is there a way to go back as if I didn't run the branch delete command?
+
+Jonathan Feudi [22:40]
+Hey, if anyone is still on, will you have a look at a snippet?
+
+Jonathan Feudi [22:40]
+added a Plain Text snippet
+movies.route('/')
+  .get(db.checkMovies, function(req, res){
+    var nowPlayingJSON = [];
+    for(var j = 0; j < res.rows.length; j++){
+      request('http://www.omdbapi.com/?i=' + res.rows[j].imdb, function(error, response, body){
+Add Comment Click to expand inline 16 lines
+Jonathan Feudi [22:41]
+Made an array for storing JSON objects that matched the imdb ID’s stored in my database
+
+[22:41]
+Inside the for loop, I make a request to get the full info on the movies that are playing
+
+[22:41]
+When I console.log that array from INSIDE the for loop, it returns the array, full of my JSON objects, as expected
+
+[22:41]
+But, when I console.log from OUTSIDE the for loop, but still within the same function, it returns an empty arrya
+
+[22:41]
+array*
+
+[22:42]
+I must somehow be resetting the array, but can’t figure out how, since it is declared before the loop that pushes to it
+
+Patrick McWilliams [23:09]
+aaaaaand my brain has checked out. lazy $^#%.
+
+[23:11]
+the spirit is willing, but the brain is spongey and bruised. time to fail to go to sleep for a few hours and maybe get some more done in the morning.
+
+Peter Petrov [23:24]
+@feudi: asynchronous javascript! Your callbacks in the for loop are executed after your console.log outside, because the Internet is slow
+
+Jonathan Feudi [23:25]
+The JSON objects still aren’t being pushed into the array, though, because when my ejs file loads, it can’t load anything from the array
+
+[23:26]
+Or, are they being ignored because the request doesn’t complete before the page renders?
+
+[23:30]
+Wait, just realized this is pointless because I don’t need to be rendering data for all those requests on one page.
+
+[23:30]
+#MVP
+
+Peter Petrov [23:37]
+yeah but regardless the ejs probably renders before you push anything into the array

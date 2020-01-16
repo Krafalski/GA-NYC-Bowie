@@ -1,0 +1,1102 @@
+
+
+----- March 7th -----
+Caleb Rechten [07:13]
+@harryg: I mean, we technically weren't asked to store actors as manipulatable data, so it can just be a string. The only thing I think you want to make sure is a joined table is one you'd make for the show times.
+1
+
+Jimmy Lin [11:49]
+Wednesday Venture @ http://www.chelseamarket.com/ for food & Picnic @ http://www.thehighline.org/
+Chelsea Market
+Chelsea Market is an enclosed urban food court, shopping mall, office building and television production facility located in the Chelsea neighborhood of the borough of Manhattan, in New York City. (194KB)
+
+
+The High Line
+The High Line | Friends of the High Line
+Welcome to the official site of the High Line and Friends of the High Line.
+2 1 1
+
+jason Seminara [11:54]
+https://en.wikipedia.org/wiki/Mutator_method (read the first 3 paragraphs)
+
+Colin Hart [12:12]
+```  <script src="//cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+```
+
+Emma Hou [12:12]
+Chelsea Market!!!!!
+
+jason Seminara [12:39]
+@group
+
+[12:39]
+https://www.w3.org/TR/xhtml1/#h-4.1
+
+Harry Ganz [12:49]
+uploaded and commented on an image: Slack for Android Upload
+1 Comment
+3
+They could use our crud apps!
+
+
+Harry Ganz [12:49]
+Handmade artisinal doughnuts. 19th between 5th and 6th ave
+
+Jonathan Feudi [13:57]
+@pppetrov: http://i260.photobucket.com/albums/ii32/unglamorouslife/GRAPHICS%20MAIN/cute%20animated%20comments/hope-you-feel-better.gif (178KB)
+
+2
+
+[13:58]
+@pppetrov: https://s-media-cache-ak0.pinimg.com/736x/48/45/60/484560779d7b081782a4c6c725f22d36.jpg (7KB)
+
+1
+
+[14:01]
+Remember, Peter, you have to get better, otherwise Skynet will overthrow the world in the future because of that Photoshop I made.
+
+Caleb Rechten [14:09]
+I would just like to point out the 'reaction' I just found in combination with it's description. :feelsgood:
+1 1 1 1 1 1
+
+Peter Petrov [14:14]
+:simple_smile: thanks guys, I’m feeling better I will be in tomorrow. Really sad I am missing your first REACTions to REACT (edited)
+9 10 6
+
+Jonathan Feudi [15:20]
+I’M GONNA TYPE A SEMICOLON
+
+[15:20]
+I’LL DO IT
+
+[15:20]
+DON’T TRY AND STOP ME FROM TYPING A SEMICOLON IN REACT
+
+[15:20]
+I’LL DO IT MAN
+3 4 2
+
+Colin Hart [17:31]
+pushed the calc solution and updates to the hw
+
+Colin Hart [20:03]
+https://www.reddit.com/r/reactjs/comments/3x0ipa/plugin_formatting_react_jsx_js_in_atom_sublime/
+
+reddit
+Plugin Formatting React JSX (*.js) in Atom / Sublime? • /r/reactjs
+Hello /r/reactjs I have been struggling to find a formatter for JSX Code in a (*.js) file. I currently use Atom but I wouldn't mind switching,...
+5
+
+[20:05]
+http://codepen.io/eduardoboucas/pen/jqWbdb
+CodePen
+React components lifecycle diagram
+A diagram showing the sequence of methods invoked in the lifecycle of a React component... (53KB)
+
+1
+
+Colin Hart [20:23]
+The FIRST principle in React
+
+Components Should Be Focused, Independent, Reusable, Small & Testable
+
+https://addyosmani.com/first/
+Title Components Should Be Focused, Independent, Reusable, Small And Testable (FIRST)
+Keeping components focused, independent, reusable, small and testable (FIRST) allows you to compose larger projects from them that are more easily maintainable. (5KB)
+
+
+Patrick McWilliams [21:50]
+p.s. for the “choose your own lessons” for the last week or whatever it was of class, i vote for one on testing
+
+[21:50]
+and no, i have no idea what that’s the post script to
+
+Jonathan Feudi [22:10]
+Anyone have any luck getting all the items in your list to render as separate HTML elements? Trying to make a function containing a loop that renders <li>’s - I can get one out by returning or none out by not returning. BABY STEPS
+
+[22:11]
+I’m gonna put the loop inside the return statement - hold on to your butts.
+
+[22:11]
+lolnope
+
+Patrick McWilliams [22:12]
+so do i keep holding on, or what?
+
+Jonathan Feudi [22:12]
+You may release your butts
+
+[22:12]
+At this time
+
+[22:12]
+Thank you for participating in this exercise
+
+[22:14]
+Ugh, do I finally need to learn how to use like .map or something? NOOOO
+
+Patrick McWilliams [22:17]
+@colinhart: using the same name/word/label for like, “fullGreeting” everywhere confuses me, cause i’m not sure what’s what when.
+
+Jonathan Feudi [22:33]
+OOOOH YEAH GOT IT
+
+[22:33]
+.map
+
+KP Perez [22:35]
+Congrats @feudi . With great power comes great responsibility
+
+Jonathan Feudi [22:37]
+I’LL MAKE YOU PROUD @kp_was_already_taken
+1
+
+Patrick McWilliams [22:41]
+i want to make an uncle joke, but i don’t know if it’s safe.
+
+
+----- March 8th -----
+Colin Hart [08:39]
+Yeah @patrickm, the greeting example is another common one used to explore new languages—the obvious transition from hello world. But I think i’m going to avoid it in the future. The naming in it is super, super confusing since everything is named the same.
+
+Jimmy Lin [08:40]
+@group great react hands-on tutorial .. not free   https://reactforbeginners.com/
+React For Beginners
+Want to upgrade your JavaScript skills and learn React.js? Learn how to build websites and web apps in just a couple of afternoons. (773KB)
+
+3
+
+Emine Koc [09:41]
+added a JavaScript/JSON snippet
+for (var i = 99; i >= 0; i--) {
+  switch (i){
+    case 0:
+    console.log(`celebration`)
+    break;
+Add Comment Click to expand inline 12 lines
+Peter Petrov [10:11]
+Consider a simple counter implemented with a loop
+
+```let counter = 10;
+
+while (counter > 0) {
+    console.log(counter--);
+};
+```
+
+Use recursion to implement this in a functional manner. Write a
+function `counter(max)` which calls itself recursively and logs to the
+console all the numbers counting down from `max`. (edited)
+
+Dan Dilorio [10:47]
+https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fmaglomaniac.com%2Fwp-content%2Fuploads%2F2014%2F01%2FThe-Legend-of-Zelda-A-Link-to-the-Past-Opening.gif&f=1 (324KB)
+
+1 2
+
+Jonathan Feudi [10:48]
+IT’S DANGEROUS TO GO ALONE
+
+Dan Dilorio [10:49]
+TAKE THIS RECURSION
+
+[10:49]
+IT'S DANGEROUS TO GO ALONE
+
+Caleb Rechten [10:55]
+TAKE THIS RECURSION
+IT'S DANGEROUS TO GO ALONE
+
+Dan Dilorio [10:55]
+`err: stack overflow`
+
+Dan Dilorio [11:24]
+I feel like it'd be interesting to aggregate some of the different solutions we came up with for `factorial()`
+
+[11:24]
+This is what I came up with:
+```function factorial(num, counter) {
+  if (counter == undefined) counter = num;
+  if (counter == 1) {
+    console.log(num);
+    return;
+  }
+  factorial(num*(counter-1), counter-1);
+}
+```
+(edited)
+
+Karolin Rafalski [11:25]
+added a JavaScript/JSON snippet
+function factorial (n){
+  if (n===1){
+    return n;
+  } else {
+ return n * factorial (n-1);
+Add Comment Click to expand inline 7 lines
+Peter Petrov [11:25]
+Someone compile the solutions in a wiki page maybe :simple_smile:
+
+Dan Dilorio [11:26]
+I was thinking that
+
+[11:26]
+not sure if everyone would be comfortable with that though
+
+Patrick McWilliams [11:30]
+added and commented on a JavaScript/JSON snippet
+function factorial (n) {
+  if (n>10){
+    console.log('pick a smaller number');
+  } else {
+    switch (n) {
+1 Comment Click to expand inline 20 lines
+now with not-break-your-computer limiter!
+
+Karolin Rafalski [11:33]
+I found this to be a helpful walkthrough: https://coderbyte.com/algorithm/step-by-step-solution-step-walking-using-recursion
+
+Peter Petrov [11:38]
+@group let me know if you want to go over how to traverse the DOM recursively tomorrow. It exactly what Jason just talked about, and it might give you some real life example of why you would use this
+9 2 2
+
+Adam Kriger [11:38]
+Yes, Peter, that would be great!
+
+Jonathan Feudi [11:38]
+FOR LOOPS CAN’T MELT STEEL TREES
+
+Jasmine Vollherbst [11:39]
+@pppetrov: if we have enough time, can we go over the sierpinski triangle too?
+
+Caleb Rechten [11:39]
+I'm a leaf
+
+Dan Dilorio [11:39]
+I'm a leaf that fell off the tree
+
+Jonathan Feudi [11:39]
+I’m a tree star guys
+
+Dan Dilorio [11:39]
+I AM THE LUMBERJACK
+
+[11:39]
+SCREW YO TREE
+
+Caleb Rechten [11:40]
+https://s-media-cache-ak0.pinimg.com/736x/70/4e/ae/704eae7e6cecc17b6564c4bb02380497.jpg (34KB)
+
+1 1 1
+
+Jimmy Lin [11:40]
+@pppetrov:  can we also go over passing this.props between siblings
+1
+
+Patrick McWilliams [11:41]
+data flow/passing data within react would be SUPER great
+1
+
+Sara Horowitz [11:41]
+@pppetrov: and postman please!
+4
+
+[11:42]
+nooooooo @pppetrov
+
+[11:42]
+elton :point_up_2:
+
+[11:43]
+that was eltons fake request
+
+[11:43]
+gah
+
+Peter Petrov [11:47]
+haha
+
+eric hegdahl [12:25]
+@group: Your "Into to the NY Market" EXIT TICKET! : https://goo.gl/4meXjC
+
+Dan Dilorio [12:45]
+https://www.youtube.com/watch?v=rDjrOaoHz9s
+YouTube
+Extra Credits
+Fail Faster - A Mantra for Creative Thinkers - Extra Credits
+
+
+[12:45]
+video relevant to what some of us were discussing at lunch
+
+Dan Dilorio [13:33]
+In case of emergency
+
+[13:33]
+https://twitter.com/emergencypuppy
+Emergency Cute Stuff (@EmergencyPuppy) | Twitter
+The latest Tweets from Emergency Cute Stuff (@EmergencyPuppy). Tweets by @truebe. I repost these from elsewhere on the web. I dont post sponsored tweets though, so that's nice. emergencypuppy@gmail.com. San Francisco, CA
+
+Caleb Rechten [13:35]
+I've seen that video before. It's on point.
+
+Colin Hart [14:02]
+@group http://facebook.github.io/react/docs/multiple-components.html#dynamic-children
+Multiple Components | React
+A JavaScript library for building user interfaces (24KB)
+
+
+[14:04]
+http://blog.arkency.com/2014/10/react-dot-js-and-dynamic-children-why-the-keys-are-important/
+
+Arkency Blog
+React.js and Dynamic Children - Why the Keys are Important
+Recently I've been building a pretty dynamic interface based on google analytics data for one of our customers. There was a bug that I couldn't quite figure out because of my wrong understanding of how react works. In the end it turned out to be a very easy fix and very important lesson on understanding react.js. It is even pretty accurately described in react documentation however without showing what will go wrong and what kind of bugs you can expect if you don't adhere to it. In other words, the Show more...
+
+Caleb Rechten [14:38]
+Found this an interesting read: https://www.airpair.com/angularjs/posts/angular-vs-react-the-tie-breaker
+Angular vs. React - the tie breaker
+Amit describes the process in choosing between AngularJS and React for Wix's flagship product, the html wysiwyg website editor. (92KB)
+
+
+Colin Hart [14:42]
+lol ^^
+>Everybody knows about the bumpy road to mastering Angular: it's quick to get started, then it improves and deteriorates as you go along, a lot like marriage…
+>We found that you can learn React to a high standard in just a week. It takes some time to get used to the one-way flow, especially for web developers, but once you do, it's very lucid.
+(edited)
+
+Caleb Rechten [14:43]
+Perfect, right? Huh, a week you say?
+
+Colin Hart [14:45]
+definitely
+
+[14:45]
+lol
+
+
+eric hegdahl [16:10]
+@group: At 5pm I’ll come to your classroom and pass pack the cover letters and resumes I have.
+2
+
+Maxwell Rayman [16:36]
+added and commented on a JavaScript/JSON snippet
+'use strict'
+​
+const App = React.createClass({
+  getInitialState: function() {
+    return {
+1 Comment Click to expand inline 135 lines
+5
+if anybody’s code isnt working and doesnt want to have to deal with pulling again copy/paste this
+
+Peter Petrov [16:42]
+@group: I’ve probably told most of you by now: DON’T use snippets when sharing code. Use a CODE BLOCK. When you copy and paste from a snippet to your editor you get weird invisible characters, which throw ILLEGAL TOKEN errors and are really hard to debug! A code block is formatted as plain text and can be directly pasted in your editor
+
+Dan Dilorio [16:43]
+You can define codeblocks in between triple back-ticks btw
+
+[16:43]
+```
+
+[16:43]
+stuff
+
+[16:44]
+```
+
+Caleb Rechten [16:44]
+```like
+```
+
+[16:44]
+AHA
+
+[16:44]
+I did it..
+
+Colin Hart [16:44]
+lol
+
+Dan Dilorio [16:44]
+```you did it
+```
+
+[16:44]
+ ```except you probably shouldn't use them like this
+```
+
+Caleb Rechten [16:44]
+```Wowie
+```
+
+Colin Hart [16:46]
+you can do `single tic marks too`
+
+Dan Dilorio [16:46]
+`but these are different and usually better for single-lines`
+
+Colin Hart [16:46]
+`so true`
+
+Dan Dilorio [16:46]
+`ikr`
+
+Colin Hart [16:46]
+`also prettier`
+
+[16:46]
+`that sweet sweet red serif font ` (edited)
+
+Dan Dilorio [16:46]
+`#red`
+
+[16:47]
+`#FF0000`
+
+[16:48]
+in other news, omfgdogs got their domain back: http://omfgdogs.com/
+
+Jonathan Feudi [16:48]
+`var newBandName = 'Sweet, Sweet Serif'`
+
+Peter Petrov [16:49]
+```if (this.textType === 'code' && this.textField === 'snippet`) {
+  person.think('Why am I doing this! I am making so much harder for other people');
+  person.do('Always use code blocks from now on');
+  person.feel('Sad');
+} else {
+  person.do('Feel good about yourself');
+}
+```
+(edited)
+3
+
+Colin Hart [16:50]
+http://codepen.io/eduardoboucas/pen/jqWbdb
+CodePen
+React components lifecycle diagram
+A diagram showing the sequence of methods invoked in the lifecycle of a React component... (53KB)
+
+
+Harry Ganz [21:36]
+http://www.stilldrinking.org/programming-sucks
+Programming Sucks (222KB)
+
+
+Patrick McWilliams [23:03]
+so, definitely have a timer. however, it counts exponentially and won’t stop when i want it to. i do have a medium sized window to close the tab before it crashes chrome.
+
+Peter Petrov [23:42]
+uploaded an image: Satchmo is skeptical of my lesson for tomorrow
+Add Comment
+1 1 1 1 1
+
+
+----- March 9th -----
+Caleb Rechten [08:17]
+Your secret is revealed! Satchmo is the real mastermind!
+
+Caleb Rechten [08:32]
+For any Star Wars Fans out there. Super well done fan made short film released a a few days ago on the 5th: https://www.youtube.com/watch?v=Djo_91jN3Pk
+YouTube
+T7pro
+DARTH MAUL: Apprentice - A Star Wars Fan-Film
+
+2 2
+
+Jonathan Feudi [09:28]
+ID’s are like the Highlander - there can be only one.
+
+Caleb Rechten [10:45]
+I think I missed this in the lesson, do we just name css classes that are in the jsx "className" instead so it can read it as a class? Is that what I was seeing?
+
+Lauren Golik [10:47]
+yes - i believe so. ‘class’ was already reserved for something else so className is used instead
+
+Caleb Rechten [10:47]
+Cool
+
+KP Perez [13:05]
+@umbrellagun: "class" is a reserved word in JavaScript - identifiers that can't be used as variables, labels, or function names. Best bet is to use the "className" attribute to give CSS classes to elements
+
+Scroll midway for a list of reserved words and future reserved words:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar
+
+Mozilla Developer Network
+Lexical grammar
+This page describes JavaScript's lexical grammar. The source text of ECMAScript scripts gets scanned from left to right and is converted into a sequence of input elements which are tokens, control characters, line terminators, comments or white space. ECMAScript also defines certain keywords and literals and has rules for automatic insertion of semicolons to end statements.
+
+Peter Nguyen [13:30]
+uploaded an image: Slack for iOS Upload
+Add Comment
+Peter Petrov [13:32]
+@group: pushed the code from today if you are interested
+
+Adam Kriger [13:32]
+thanks Peter
+
+Elton Cheng [13:41]
+uploaded an image: Slack for Android Upload
+Add Comment
+2 1
+
+KP Perez [13:43]
+Lol are you guys on the highline?
+
+Elton Cheng [13:49]
+Yes we are! @kp_was_already_taken
+
+Patrick McWilliams [14:28]
+No, i haven’t been photoshopped to be transparent and blend into the slack background, i’m just that white
+
+Patrick McWilliams [14:42]
+@pppetrov: i see you updated ga-students about 6 hours ago, did you push since then?
+
+Douglas Walker [14:42]
+uploaded an image: Jimmy knows pies
+Add Comment
+Peter Petrov [15:32]
+@patrickm: ooops. It was rejected and apparently I don’t read git messages messages
+
+[15:32]
+its up now :simple_smile:
+
+Emma Hou [16:18]
+looks really fun! I'm so sad to miss it! the weather is preventing me from doing home work today
+
+Emma Hou [16:19]
+uploaded an image: Slack for Android Upload
+Add Comment
+6 4
+
+Patrick McWilliams [16:32]
+are script src=“” links considered ‘served over http'
+
+Emine Koc [16:54]
+DM @patrickm http://stackoverflow.com/questions/33573352/splitting-react-components-into-separate-files
+
+Splitting React components into separate files
+This seems to be a common question, I'm finding a lot of people asking it and the responses are all very different and seem to be a bit hit and miss. I've watched various video tutorials, read plen...
+
+Patrick McWilliams [16:54]
+that may help yall with the hw
+
+[16:54]
+yes. yall
+
+Caleb Rechten [19:32]
+Just submitted the app pitch for Life Nav earlier today! And then Dan and I also submitted a pitch for a separate app pitch contest too! : D
+Wish us luck!
+3
+
+Emine Koc [19:44]
+Good Luck !! :ghost: (edited)
+
+Jasmine Vollherbst [20:16]
+@umbrellagun: That’s awesome!!! Good luck!!!
+
+Douglas Walker [21:15]
+@umbrellagun: Crush it!!
+
+Jonathan Feudi [21:57]
+Anyone have any luck getting DB functionality implemented? I managed to insert things to the DB and render from the DB when the page loads, can’t make components re-render after adding something to the database without reloading the page
+
+Douglas Walker [22:28]
+@feudi: I had this issue also when adding to the DB, the fix for my code was to remove data from the .done() function on the ajax post request
+
+Jonathan Feudi [22:30]
+Nothing in my .done() is happening at all, in fact, but the post request is going through, as the new task does appear in my DB
+
+[22:30]
+Not quite sure why the .done isn’t firing
+
+Jonathan Feudi [22:37]
+I’m guessing it’s some kind of lifecycle problem
+
+Douglas Walker [23:22]
+@feudi: oh, if you have the this.state.task = task and this.setState() inside of the ajax post, this might be causing the problem. I’d move it outside the request and have it above. So it sets the state and then fires the post request to the backend
+
+
+----- March 10th -----
+Caleb Rechten [08:52]
+So, if I happen to give you a completely blank or dead stare, it's because I am blank and dead.
+jaykay.
+Rather, I didn't get much sleep last night, so I apologize for the less interactive version of Caleb.
+
+Patrick McWilliams [08:59]
+i on the other hand, passed out as soon as i got home and need to try to finish the hw now
+
+Colin Hart [09:07]
+Caleb Unplugged: Live at General Assembly presented by Comedy Central
+1
+
+Patrick McWilliams [09:10]
+Welp. Guess I’m back to 4 hr sleep/night after that picture.
+
+Jonathan Feudi [09:14]
+@ariingber: Wait, give it back
+
+Ari Ingber [09:16]
+@feudi: it needs doctoring, can you help me make it my favicon?
+
+Jonathan Feudi [09:16]
+You know it!
+
+Ari Ingber [09:16]
+huge
+
+[09:16]
+prepare for direct message
+
+Viorel Belfiore [10:12]
+https://www.npmjs.com/package/bowserify
+
+npm
+bowserify
+Thank You Substack, But Our Princess Is In Another Package.
+
+Viorel Belfiore [10:27]
+bowser themed browserify
+
+Jonathan Feudi [10:36]
+@vbelfiore: npm install bowserify —save the princess
+
+Viorel Belfiore [10:37]
+what makes you think I’m trying to save her
+
+Harry Ganz [10:59]
+Memorize the command in the home page: https://www.npmjs.com/package/babelify
+
+npm
+babelify
+Babel browserify transform
+
+jason Seminara [12:12]
+@group fork this and clone it into a new place  git@github.com:ga-wdi-exercises/react_to-do.git
+
+GitHub
+ga-wdi-exercises/react_to-do
+react_to-do - A to-do app
+(edited)
+
+[12:13]
+create an upstream (called solutions) to my repo  git@github.com:jasonseminara/react_to-do.git
+
+GitHub
+jasonseminara/react_to-do
+react_to-do - A to-do app
+(edited)
+
+Maxwell Rayman [12:49]
+@adamscottkriger: maybe when youre done with GA you can rename your folders so instead of saying ‘w08’ it would say ‘React’ so when you `ls` your repo it will show you all of the subjects so you know where to look
+
+Adam Kriger [12:49]
+Nice idea. Thanks.
+
+Rachel Smyth [13:15]
+When looking at a repo you can also press `t` to open a search
+
+Rachel Smyth [13:16]
+uploaded and commented on an image: Screen Shot 2016-03-10 at 1.15.25 PM.png
+1 Comment
+1
+find all the things!
+
+Rachel Smyth [13:16]
+uploaded and commented on an image: Screen Shot 2016-03-10 at 1.15.07 PM.png
+1 Comment
+press t when viewing a repo to open the search
+
+Patrick McWilliams [13:28]
+added and commented on a JavaScript/JSON snippet
+https://www.youtube.com/watch?v=l-GsfyVCBu0
+1 Comment
+got 6 hours to kill? Watch the next step of AI taking over
+
+Douglas Walker [16:16]
+```   componentDidMount:function() {
+   // this is where you'll get the data from the 'db'
+   $.get('/tasks').done((data)=>{
+
+    // for each to push each object into an object instead of array
+    data.forEach((el) => {
+      this.state.tasks[el.taskid] = el;
+    });
+    this.setState({tasks: this.state.tasks});
+   });
+  }, ```
+
+[16:16]
+this will convert the data array into an object of objects. either or...
+
+Maxwell Rayman [17:02]
+```./node_modules/browserify/bin/cmd.js -t [ babelify --presets [react es2015 ] ] public/js/app.js -o public/js/bundle.js```
+i have this in my notes but not the installs
+
+Bryce Krah [17:40]
+added a Plain Text snippet
+npm install babelify --save
+npm install babel-preset-react babel-preset-es2015 --save
+npm install browserify --save
+Add Comment Click to expand inline 9 lines
+3
+
+Colin Hart [17:43]
+You also need to src=“bundle.js” in your html just above </body> in your html
+
+[17:44]
+also add -d to the end of
+
+```./node_modules/browserify/bin/cmd.js -t [ babelify --presets [react es2015 ] ] public/js/app.js -o public/js/bundle.js -d
+```
+
+[17:44]
+without the -d your errors in react are like, function addTodo undefined at line 27063 in bundle.js
+
+[17:46]
+with -d it’ll actually tell you where in the actual file
+
+Bryce Krah [19:49]
+```    "bundle": "watchify -t [ babelify --presets [react es2015 ] ] public/js/script.js -o public/js/bundle.js -d"
+```
+this can go in your "scripts": part of your package.json
+
+and then in a seperate terminal window do npm run bundle
+4 1
+
+Peter Petrov [21:13]
+@brycek +1 for the watchify usage
+
+Patrick McWilliams [21:52]
+-d dont seem to be working with watchify?
+
+[21:52]
+wait
+
+[21:52]
+no, i haven’t linked jquery
+
+[21:52]
+never mind
+
+Patrick McWilliams [23:09]
+damnedable precision.
+
+[23:09]
+don’t you know when i say “button.js” i ACTUALLY MEAN “./button.js"
+
+Jonathan Feudi [23:17]
+Anyone get a syntax error back from trying to babelify transform? Can’t get it to work!
+
+Patrick McWilliams [23:22]
+what is the error you’re getting?
+
+
+----- March 11th -----
+Jonathan Feudi [09:33]
+I gave up shortly after my last message last night, but thanks for asking, @patrickm
+
+Caleb Rechten [09:40]
+https://www.youtube.com/watch?v=SEEzQKJfNE0
+YouTube
+JK Brickworks
+Working LEGO Computer Keyboard
+
+
+Daniel Lawrence [09:42]
+```var str = '';
+function recall(word){
+  if(!!word){
+    // console.log('not base case');
+    str += word +' ';
+  } else{
+    console.log(str);
+    // console.log(arguments, this);
+    // console.log('base case');
+  }
+  return recall
+}
+```
+
+Harry Ganz [09:44]
+```var recall = function(word){
+    if(word){
+        if(this.sentence){
+            this.sentence += ' ' + word;
+        } else {
+            this.sentence = word;
+        }
+        return function(newWord){
+            return recall(newWord);
+        };
+    } else {
+       return this.sentence;
+    }
+};
+
+console.log(recall('that')('this')());
+```
+
+Jasmine Vollherbst [10:21]
+@group I updated the web design resource wiki with some links that might be helpful for the group projects. I’ll try to add more as I remember stuff https://github.com/ga-students/wdi-nyc-bowie_students/wiki/Design,-Web
+6
+
+Caleb Rechten [11:37]
+Okay,  broad question, just wondering, is there any reason we wouldn't want to use a framework when building an application? Maybe only if it's a really tiny application? I mean, otherwise I should always expect to be working with one framework or another, right?
+
+Jonathan Feudi [11:39]
+A reason to not use a framework: you don’t need it. If a framework makes your code that much more concise than what you’d write without it, I imagine it’s always worth it
+
+[11:40]
+But, I am but a humble wizard
+
+Patrick McWilliams [11:47]
+if time_to_setup_and_adjust_framework>time_to_manually_adjust_CSS, don’t framework
+
+Harry Ganz [11:50]
+@channel: I updated my wiki on making good database interfaces. Take a look at my solution 2 code. I used it on my coffees homework and it made working with the database much easier, and my routing/database queries easier to write and less fragile. https://github.com/ga-students/wdi-nyc-bowie_students/wiki/Semanticly-Named-Database-Models
+
+Caleb Rechten [11:50]
+Right, hence the large vs. small clarification. Just wondering if there are any other reasons. I'd think that most real world applications that we would be working on would use a framework.
+
+Patrick McWilliams [11:52]
+yes, most likely
+
+Harry Ganz [12:22]
+You'll find that most things you are trying to solve in web dev have already been solved and turned into a framework or library
+
+Peter Petrov [12:23]
+Also there are still a lot of websites running on server side rendering…in that case you will not need a front end framework
+
+[12:23]
+but as soon as you start treating the front end as a whole app with dynamic behavior you will most likely find the need for a framework
+
+[12:24]
+the most minimal framework I know about and love is Backbone.JS
+
+[12:27]
+it enforces very little specification, which means you have a lot of control, but you have to build a lot of things yourself
+1
+
+Caleb Rechten [12:36]
+Awesome, thank you for the feedback on the topic guys!
+
+[12:41]
+Did anyone ever use pg-promise for user sessions?
+
+Douglas Walker [13:41]
+uploaded and commented on an image: Screenshot 2016-03-11 13.40.39.png
+1 Comment
+LOL
+
+Peter Nguyen [13:43]
+he like you
+
+Jonathan Feudi [15:33]
+“Expect the unexpected… tokens"
+
+jason Seminara [16:01]
+@group
+```Array.prototype.indexByKey = function(keyName) {
+
+  return this.reduce( (obj, el) => {
+    obj[ el[keyName] ] = el;
+    return obj;
+  }, {});
+
+};```
+
+[16:02]
+^^ that’s an abstracted array that converts an array of objects into an object indexed by one of the keys of the objs
+
+[16:03]
+eg,
+```[{id:task_4,val:99}]  —> {task_4:{id:task_4,val:99}}```
+(edited)
+
+[16:03]
+this may help you bring arrays of objects from the db into the front-end by transforming it into an object
+
+[16:04]
+If your app is split up into components with different files, I would put the above in to something like `/js/helpers/util.js` and require it like anything else
+2
+
+Patrick McWilliams [16:05]
+i like JUST ran into this issue, i think
+
+Peter Nguyen [18:08]
+Hey guys, if anyone is interested, a few of us are planning to go shoot some hoops at Stuy Town (14st & 1ave) tomorrow after GA. The more the merrier!
+2
+
+
+Lauren Golik [16:52]
+uploaded an image: Vitaly strikes again!!!
+Add Comment
+7
+
+Patrick McWilliams [16:55]
+we should like
+
+[16:55]
+buy him a beer
+2
+
+Emine Koc [17:26]
+@group R You heading anywhere ?
+
+Ari Ingber [17:27]
+florr 3
+
+Emine Koc [17:51]
+nope after 6 :simple_smile:
+
+Lauren Golik [18:10]
+agreed @patrickm !
+1
+
+Caleb Rechten [19:35]
+Okay, so, I know we have a way of doing this that works, but I came across something I don't get. When I console.log(this.state.crud['1']['name']) I can access that name. But if I pass it down and try and do the same: console.log(this.props.crud['1']['name']) is says it can't find name of undefined. If I take ['name'] completely off the console.log, it brings back an object. Anyone know what's going on here?
+
+Patrick McWilliams [19:41]
+probably
+
+[19:42]
+you’re not referring to it correctly
+
+[19:42]
+umm, maybe not, the “this” may have changed as well
+
+[19:42]
+if you passed it as a prop, you would refer to it as this.prop.PROPNAMEHERE
+
+Caleb Rechten [19:42]
+I am
+
+Patrick McWilliams [19:43]
+try doing console.log(this, ‘this is this at LOCATION IN PROGRAM’) in each section
+
+Caleb Rechten [19:43]
+'this' isn't the issue
+
+[19:43]
+this.props.crud['1'] works
+
+Patrick McWilliams [19:43]
+you say you pass that somewhere
+
+Caleb Rechten [19:44]
+this.props.crud['1']['name'] doesn't
+
+Patrick McWilliams [19:44]
+what does this.props.crud[‘1’] log? (edited)
+
+Caleb Rechten [19:45]
+Object {id: 1, name: "test1", description: "test description 1"}
+
+[19:45]
+But it's the same answer if I do that for this.state.crud['1'] when it's back up at the parent.
+
+Patrick McWilliams [19:48]
+ok, and what does your pass it down look like
+
+Caleb Rechten [19:48]
+<Component crud={this.state.crud} />
+
+[19:51]
+The thing that's confusing me the most is that both this.state.crud['1'] AND this.props.crud['1'] output the same thing. But props doesn't like the extra ['name'] at the end of it and ['1'] is suddenly undefined.
+
+Patrick McWilliams [19:52]
+try logging Object.keys(this.props.crud[1]) and see what that puts out
+
+Caleb Rechten [19:52]
+I'm thinking maybe it only coerces the last item in the chain, but then why wouldn't it do that for .state also?
+
+[19:53]
+"Cannot convert undefined or null to object"
+
+Patrick McWilliams [20:01]
+and logging this.props.crud[1] there gives you what?
+
+Caleb Rechten [20:02]
+Object {id: 1, name: "test1", description: "test description 1"}
+
+[20:03]
+Like, I don't know. This isn't making any sense to me. Maybe it's a React thing?
+
+Patrick McWilliams [20:05]
+yeah, it sounds like what you’re trying SHOULD be working? but the return on the Object.keys() seems to indicate that the object being logged by this.props.crud[1] is NOT an object
+
+[20:06]
+so there is something going on there. what happens if you try .1 instead of [1]
+
+Caleb Rechten [20:06]
+You can't do that.
+
+Patrick McWilliams [20:07]
+and throwing … stuff at the wall, try logging this.props.crud.name
+
+Caleb Rechten [20:11]
+No, that won't work. there's nothing in crud that it would access by doing that.
+
+Patrick McWilliams [20:11]
+yeah, it shouldn’t, but i run in to stuff that shouldn’t happen a lot, so i like to check
+
+[20:12]
+sorry i couldn’t help, i’m off to dinner
+
+Caleb Rechten [20:12]
+Thank you anyway! I still have a few things to try.
+
+Karolin Rafalski [20:13]
+let me know…I’ve been stuck on the same sort of thing since coffee on Thursday
+
+
+----- March 13th -----
+Seif Dorani [12:27]
+hey guys take a look at this: https://generalassemb.ly/get/off-campus-nyc?utm_content=2016-03-09%20[new-york-city]%20%23OFFCAMPUS%20sl%20youre-invited&utm_medium=owner%7Cemail&utm_campaign=metro_dedicated_emails&utm_source=sailthru
+#OFFCAMPUS
+General Assembly transforms thinkers into creators through education and opportunities in technology, business, and design. (4KB)
+
+
+Patrick McWilliams [16:53]
+wtf is going on in the ‘age' example at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+
+Mozilla Developer Network
+Conditional (ternary) Operator
+The conditional (ternary) operator is the only JavaScript operator that takes three operands. This operator is frequently used as a shortcut for the if statement.
+(edited)
+
+Karolin Rafalski [16:55]
+which example are you looking at?
+
+Patrick McWilliams [16:55]
+first line is
+
+Patrick McWilliams [16:55]
+added a JavaScript/JSON snippet
+var stop = false, age = 23;
+Add Comment
+Karolin Rafalski [16:56]
+in that case, stop gets reassigned to true, yeah?
+
+Patrick McWilliams [16:57]
+it’s less about understanding the material, and more about the example subject
+
+Karolin Rafalski [16:58]
+I tend to rewrite ternary expressions into if/else, to figure out what is going on
+1
+
+Colin Hart [18:33]
+@patrickm: @karolin That line specifically
+
+``` var stop = false, age = 23;```
+
+Is just a way to assign multiple variables on one line. (edited)
+1
+
+Patrick McWilliams [21:20]
+so, i’ve come to believe there is no such thing as overplanning when working in a group.
+1

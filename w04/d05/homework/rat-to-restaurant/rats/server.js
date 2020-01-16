@@ -34,6 +34,6 @@ app.set('view engine', 'ejs');
 var port = 3000;
 var server = app.listen(port, function (){
   //this console.log will appear in node, when the server has started
-  console.log ("server started!");
+  console.log ("server started! on port", port);
 });
 //set up server //

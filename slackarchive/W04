@@ -1,0 +1,879 @@
+
+2
+
+
+----- February 8th -----
+Patrick McWilliams [11:30]
+@group does anyone have a link to the articles we were supposed to read for coach eric tomorrow?
+
+Dan Dilorio [11:31]
+I think they're pinned
+
+[11:31]
+but I forget how to get pinned items
+
+[11:32]
+https://ga-students.slack.com/archives/wdi-bowie-students/p1454433749000036
+eric hegdahl coacheric
+20 Awesome People in the New York Tech Scene You Need to Know About - AlleyWatch
+Your "Developing Your Network" EXIT TICKET! : https://goo.gl/4meXjC
+20 Influencers : http://goo.gl/QLy2kM
+Feb 2nd at 12:22
+
+[11:32]
+I figured it out you guys
+
+[11:32]
+be proud
+4
+
+jason Seminara [14:41]
+@group: the remaining presentation order @eminekoc , @ac @ariingber @webdevj @adamscottkriger @mxray333 @seif @lgolik
+
+Adam Kriger [16:59]
+Great job everyone ! Thanks for setting the bar so high.
+6
+
+KP Perez [17:13]
+uploaded an image: Slack for iOS Upload
+Add Comment
+KP Perez [17:13]
+Congrats on project 1 completion. In case you ever need a reminder of alllllllll the things you learned in 3 weeks, here it is. Yes, I know you can't read them, but they should be ingrained in your brain anyway
+
+Patrick McWilliams [17:24]
+Yes, for certain, broad, definitions of ingrained. :upside_down_face:
+1
+
+
+----- February 9th -----
+Caleb Rechten [06:47]
+QUESTION. I want to work on and make more changes to my project, but should I leave pushing it until after it's graded? Or...
+
+Adam Kriger [07:51]
+ Pinned KP Perez's file Slack for iOS Upload. See all pinned items in this channel.
+
+Colin Hart [09:00]
+@umbrellagun: do whatever you want man
+
+Caleb Rechten [09:06]
+@ziggy nodefun
+
+Jonathan Feudi [09:35]
+"`cowsay` is one of the most important applications in the toolbox of a code artisan.” - @pppetrov
+1 1
+
+Colin Hart [10:08]
+if you pull from upstream i’ve pushed an overall weekly schedule into the readme for this week (edited)
+
+Seif Dorani [10:20]
+@vbelfiore: hey V-12 can you send that pic out?
+
+Viorel Belfiore [10:21]
+yup
+
+Caleb Rechten [10:24]
+https://s-media-cache-ak0.pinimg.com/originals/03/5b/48/035b486b37463ddd99945c891eb7f439.jpg (74KB)
+
+
+Viorel Belfiore [10:27]
+uploaded an image: Morning pic of Server
+Add Comment
+Caleb Rechten [10:28]
+Who knows the reference?
+
+Dan Dilorio [10:31]
+enlighten me
+
+Patrick McWilliams [10:33]
+south park?
+
+Dan Dilorio [10:37]
+I know that one
+
+[10:37]
+great episode btw
+1
+
+Caleb Rechten [10:38]
+Nope
+
+[10:39]
+I'll give you a clue: Moss
+
+Jonathan Feudi [10:46]
+uploaded and commented on an image: al-gore.jpg
+1 Comment
+2
+Don’t listen to him, guys, I invented hyper text. Super serial.
+
+Caleb Rechten [10:48]
+No one's watched the IT Crowd?
+
+Dan Dilorio [10:48]
+I have, haven't seen that one
+
+Jasmine Vollherbst [10:50]
+https://www.youtube.com/watch?v=scWj1BMRHUA
+YouTube
+Vsauce
+The Web Is Not The Net
+
+1
+
+Jonathan Feudi [10:57]
+@trampolinetales You win one (1) Internet
+
+Dan Dilorio [10:57]
+woo
+
+Jonathan Feudi [10:57]
+Please allow 2-5 weeks for email
+
+Dan Dilorio [10:58]
+the majority of my early internet time was spent playing neopets
+1
+
+Jonathan Feudi [10:58]
+I’LL NEVER GET THOSE WELLINGTON BOOTS
+
+[10:59]
+I’m going back to Gaia
+
+Dan Dilorio [10:59]
+I had a grundo
+
+[11:00]
+he was cool
+
+Jonathan Feudi [11:00]
+That’s chinpokoriffic
+
+Caleb Rechten [11:07]
+Can you imagine a global water tower?
+
+Jonathan Feudi [11:07]
+About as well as I can imagine copper wires under the ocean
+
+eric hegdahl [12:31]
+@group: Your "Resume & Cover Letters" EXIT TICKET! : https://goo.gl/4meXjC
+
+You can book your 1:1 time with me here : coacheric.youcanbook.me
+
+Colin Hart [13:13]
+@group, Y’all know stuff now! Time to start hitting up meetups :stuck_out_tongue:
+
+http://www.meetup.com/Meteor-NY/events/228600979/
+
+- http://brooklynjs.com/
+
+- http://www.meetup.com/NYC-rb/
+
+- http://www.meetup.com/NYC-D3-JS/
+
+- http://www.meetup.com/nycruby/
+
+- http://www.meetup.com/betanyc/
+
+- http://www.meetup.com/hackerhours/
+1
+
+[13:14]
+All in the wiki >>>> https://github.com/ga-students/wdi-nyc-bowie_students/wiki/Meetups (edited)
+
+
+ Pinned a message. See all pinned items in this channel.
+Colin Hart colinhart
+@group, Y’all know stuff now! Time to start hitting up meetups :stuck_out_tongue:
+
+http://www.meetup.com/Meteor-NY/events/228600979/
+
+- http://brooklynjs.com/ Show more...
+Feb 9th at 13:13
+5
+
+Peter Petrov [14:44]
+@group: http://www.fullhdwpp.com/wp-content/uploads/Theres-no-place-like-127.0.0.1_www.FullHDWpp.com_.jpg (32KB)
+
+
+Viorel Belfiore [15:13]
+uploaded an image: Server stuff
+Add Comment
+1
+
+Peter Petrov [16:00]
+@ group if you get a favicon error add the following:
+```
+**Chrome and the favicon**
+ - Chrome makes two requests to the server... the second request is for the favicon. What a pain in the ass.
+
+```javascript
+ if (request.url === '/favicon.ico') {
+    request.writeHead(200, {'Content-Type': 'image/x-icon'} );
+    rrequest.end();
+    console.log('favicon requested');
+  }
+
+```
+
+Elton Cheng [16:06]
+http://jsbeautifier.org/
+
+Peter Petrov [16:29]
+@group: do your exit ticket
+http://goo.gl/forms/P7eqapYiG4
+Google Docs
+Lesson Exit Ticket 02/09 (128KB)
+
+
+Patrick McWilliams [19:31]
+ok, so i think there are some typos in peter’s code above? he may have gone over this when i had to step out of the room. i got node and chrome to stop spitting errors when i changed it to
+
+Patrick McWilliams [19:32]
+added and commented on a JavaScript/JSON snippet
+if (request.url === '/favicon.ico') {
+    response.writeHead(200, {'Content-Type': 'image/x-icon'} );
+    response.end();
+    console.log('favicon requested');
+  }
+1 Comment
+and threw it at the front of the “if… else…” train, but this part might not be necessary?
+
+Karolin Rafalski [19:34]
+I think we were told to put it aside for now, as it doesn’t affect the functionality of our code and it seemed really finicky when we tried to get it to work in class. Anyone else have any answers?
+
+Lauren Golik [20:40]
+@patrickm: I found the same issue in class and updated it the same way. Agreed that I don’t know if it’s absolutely necessary but they said it prevented errors that may come up when opening the page in chrome
+1
+
+Karolin Rafalski [21:22]
+Did anyone see a MacBook left behind on the third floor? I think I may have lost my laptop.
+
+Colin Hart [21:23]
+Not 100 percent but looking at it there is an extra r in request.end which is def not right
+
+Patrick McWilliams [21:29]
+@karolin: are you still at GA? assuming you tried the front desks, maybe try the #nyc channel? :worried:
+
+Colin Hart [21:40]
+Ack, yeah @karolin go to the front desk
+
+Jimmy Lin [22:22]
+@karolin: before I left, there was a small Mac left on third floor in the back area.. KP, Emine and I was wonder if any one had left the laptop by mistake.. not sure if that is yours or not
+
+
+----- February 10th -----
+Caleb Rechten [07:10]
+@pppetrov: Wanted to send post this yesterday, I also have an enthusiasm for movies. I have a list of all the movies I've seen which link back to imdb :stuck_out_tongue:
+http://calebsundance.com/movie-list/
+
+Caleb Pan Sundance
+Movie List
+This list is in the order I remembered and then transitions into the most current ones I’ve seen. (press F3 to search for titles if you’re curious!) 1. Teen Wolf (1985) 2. Death Race (2…
+April 16th, 2012 at 15:48
+
+Caleb Rechten [07:15]
+Also, if you glazed over Jason's explanation of the internet, here's a good supplement:  https://www.youtube.com/watch?v=iDbyYGrswtg
+YouTube
+The IT Crowd
+Moss Introduces Jen To The Internet | The IT Crowd Series 3 Episode 4: The Internet
+
+2
+
+[07:16]
+https://www.youtube.com/watch?v=Vywf48Dhyns
+YouTube
+The IT Crowd
+The Internet Speech The IT Crowd | Series 3 Episode 4
+
+2
+
+Harry Ganz [08:49]
+@channel If you're going for the bonus, this might be relevant. I learned the hard way: http://i.imgur.com/x1VN47w.png (238KB)
+
+1
+
+[08:50]
+If you put your arguments in double quotes, this isn't a problem
+
+[08:55]
+Also, you cannot use > or < in the terminal without escaping them
+
+Dan Dilorio [08:58]
+@channel: hey everyone, I'm not going to be able to come in today, so any pictures of the board or links to things we went over in class would be greatly appreciated (but please don't feel obligated). Have a good day you guys!
+5
+
+Viorel Belfiore [09:06]
+you got it
+
+
+jason Seminara [11:38]
+@group For the last half hour, you get to choose the topic! choose the one you want below, with an emoji
+
+[11:38]
+1. JavaScript Basics
+6 1
+
+[11:38]
+2. Jquery Basics
+2 1
+
+[11:38]
+3. Web Basics
+12 1
+
+Seif Dorani [11:38]
+3
+
+[11:38]
+oops
+
+[11:38]
+sorry
+
+[11:38]
+3.2
+
+jason Seminara [11:39]
+4. Command-line Basics
+1 4
+
+Patrick McWilliams [11:40]
+5. Small weekend homework
+9 2 2 1 1 4 1 2 2
+
+Jasmine Vollherbst [11:45]
+http://kurzgesagt.org/project/who-invented-the-internet/
+Kurzgesagt (German for „in a nutshell“) is a Munich based design studio with a distinctive perspective on design and animation within the fields of education, science and commerce.
+3
+
+Patrick McWilliams [11:47]
+Kurzgesagt is really good
+2
+
+Caleb Rechten [13:15]
+Ohai guys, it'd be awesome if you suddenly felt the need to endorse me for all the skills we've been learning at GA so far! Throw the skills up on your profiles too and I'll endorse back! https://www.linkedin.com/in/calebsundance
+
+[13:16]
+ENDORSING PARTY, INITIALIZE.
+1
+
+Patrick McWilliams [14:15]
+are switch statements like a fancy key-value pair thing or something else? i ask because colons.
+
+Peter Nguyen [14:44]
+They're a fancy version of if/else
+
+Patrick McWilliams [14:45]
+right, but the formatting reminds me of key:value
+
+[14:45]
+case x: expression
+
+[14:45]
+which kind of acts like an object in that if you call the case/key you get the expression/value
+
+Peter Nguyen [14:47]
+True but from what I understand switch case statements are just a fancier version of if/else statements
+1
+
+
+----- February 11th -----
+Adam Kriger [08:06]
+https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/
+1
+
+Emine Koc [08:25]
+@adamscottkriger:  This is also a good one :   http://nodeschool.io/ (edited)
+1
+
+Emine Koc [08:29]
+ Pinned a message. See all pinned items in this channel.
+Adam Kriger adamscottkriger
+https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/
+Feb 11th at 08:06
+
+Lauren Golik [08:30]
+ Pinned a message. See all pinned items in this channel.
+Emine Koc eminekoc
+@adamscottkriger:  This is also a good one :   http://nodeschool.io/
+Feb 11th at 08:25
+
+Colin Hart [08:39]
+There are resources in the wiki too! @lgolik @eminekoc @adamscottkriger
+3
+
+Adam Kriger [08:41]
+@colinhart: thank you
+
+jason Seminara [10:28]
+@group you can also edit the wiki, and add resources there!
+2
+
+Dan Dilorio [10:33]
+I don't think we have editing permissions :confused:
+
+[10:34]
+or I just can't figure out how to do it :stuck_out_tongue:
+
+Harry Ganz [14:50]
+```<% if(ejs === 'rocks'){ %>
+<h1><%= 'EJS ROCKS!' %></h1>
+<% } %>
+```
+
+Dan Dilorio [14:56]
+#WizardHats4Lyfe
+
+Jonathan Feudi [14:58]
+#WizardsNeverDie
+1
+
+[15:00]
+http://40.media.tumblr.com/tumblr_m6s07aiN0U1rzkvtqo1_500.png (598KB)
+
+2
+
+Dan Dilorio [15:04]
+how'd you find a picture of my LARP session?
+
+
+Jonathan Feudi [15:05]
+Should’ve used the RM command, Dan
+
+Dan Dilorio [15:05]
+<%
+
+Jonathan Feudi [15:05]
+#<%
+
+Dan Dilorio [15:05]
+I realized that it's a wizard wearing a hat if you turn sideways
+
+[15:05]
+that took me way too long
+
+Peter Petrov [16:45]
+@group: Exit Tickets
+http://goo.gl/forms/4Dqr1ktTWl
+Google Docs
+Lesson Exit Ticket 02/11 (149KB)
+
+
+Jonathan Feudi [20:36]
+Anybody else having problems using file system in your server.js?
+
+[20:36]
+Get thrown an error for trying to use the same set of variables from the homework the other night
+
+Karolin Rafalski [20:37]
+Those of us that are at GA have been suffering through typos breaking everything
+1
+
+Karolin Rafalski [20:39]
+added a JavaScript/JSON snippet: This is working for me
+var fs = require('fs');
+var sightingsDBText=fs.readFileSync('sightings.json', 'utf8');//link to json file sightings
+var sightingsDB =JSON.parse(sightingsDBText);
+Add Comment
+Jonathan Feudi [20:41]
+Weird, putting those above requiring express makes it work
+
+[20:41]
+LOAD ORDER IS FOR THE BIRDS
+2
+
+Harry Ganz [20:47]
+WHY DOES JAVASCRIPT START INDEXING MONTHS FROM 0!!!????? January First 2015 is 2015-0-1 !!!!
+1
+
+
+----- February 12th -----
+Karolin Rafalski [07:26]
+http://www.theatlantic.com/health/archive/2012/08/healthiest-desks-worst-to-best/261670/
+
+The Atlantic
+Healthiest Desks, Worst to Best
+Because standing is the new sitting, and sitting is the new dying
+
+Peter Petrov [09:10]
+"What are constructor functions? How do we use them?"
+"What is a prototype? Why do we care about them?"
+
+Peter Petrov [09:15]
+```What is the difference between an array and an object and why would we choose to use one over the other?
+What is the difference between invoking a function and calling it for it's object reference. What can we do with an object reference?
+```
+
+Peter Petrov [09:22]
+```What are callbacks and how do we use them?
+What is the request response cycle, how do we see it occur in Node/Express
+```
+
+Karolin Rafalski [10:11]
+http://www.ergoquest.com
+ErgoQuest Zero Gravity Chairs and Workstations
+Ergoquest Zero Gravity Chairs and Workstations
+Work without pain at your computer in a reclined position. Sit, stand, or recline. (22KB)
+
+
+Elton Cheng [10:11]
+dspzcxvo[usdbnvc par
+1
+
+Dan Dilorio [10:12]
+:seat:
+3
+
+Ari Ingber [10:14]
+wow you’re all sitting… thats  sooo January
+1
+
+Dan Dilorio [10:14]
+saving energy, man
+1
+
+Patrick McWilliams [10:28]
+I was standing before it was cool:face_with_rolling_eyes:
+1
+
+Dan Dilorio [10:29]
+I was born standing
+
+Patrick McWilliams [10:29]
+that’s amazing
+
+Caleb Rechten [10:29]
+before you were born?
+
+Jonathan Feudi [10:29]
+#born2stand #born2die
+
+Ari Ingber [10:31]
+stand tall friends
+1
+
+Jonathan Feudi [10:33]
+Y’all standers all look alike to me
+
+Dan Dilorio [10:49]
+if anyone needs help getting node 5.6 on a linux system, let me know, I just figured it out
+
+jason Seminara [11:05]
+https://dev.socrata.com/foundry/data.cityofnewyork.us/9w7m-hzhe
+
+jason Seminara [11:40]
+https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en
+
+JSONView
+Validate and view JSON documents
+
+Adam Kriger [11:40]
+ Pinned a message. See all pinned items in this channel.
+jason Seminara jasonseminara
+https://dev.socrata.com/foundry/data.cityofnewyork.us/9w7m-hzhe
+Feb 12th at 11:05
+
+Jonathan Feudi [11:40]
+You guys are a real pin in my side
+
+
+Jonathan Feudi [12:09]
+こんにちわ世界
+
+Dan Dilorio [12:10]
+こんにちは世界
+
+[12:10]
+aww
+
+Jonathan Feudi [12:10]
+You lose
+
+Dan Dilorio [12:10]
+Привет мир
+
+Jonathan Feudi [12:10]
+ガムオバア
+
+[12:10]
+err
+
+[12:10]
+ガムオバー
+
+Emma Hou [12:11]
+你好
+
+[12:11]
+你好世界
+
+Dan Dilorio [12:14]
+ellohay orldway
+
+[12:16]
+pig latin is the only language I speak besides english
+
+Ari Ingber [12:58]
+有
+
+Emine Koc [13:17]
+@group is anyone looking for his/her GA notebook ? I may have it.
+
+Colin Hart [13:58]
+@group http://stackoverflow.com/questions/1077412/what-is-an-idempotent-operation
+
+Dan Dilorio [15:18]
+http://i.imgur.com/FQeGVSu.gifv
+Imgur
+Imgur GIF
+
+3
+
+[15:19]
+http://i.imgur.com/Ct5IV.png (238KB)
+
+
+[15:19]
+real cyber attacks use open office
+
+[15:22]
+https://www.reddit.com/r/ProgrammerHumor/comments/44l93o/how_only_relying_on_javascript_for_html_form/
+
+reddit
+How only relying on JavaScript for HTML form input validation is like • /r/ProgrammerHumor
+4840 points and 300 comments so far on reddit
+1
+
+[15:22]
+okay, I'll stop posting /r/ProgrammerHumor links now
+
+Jasmine Vollherbst [16:11]
+uploaded an image: Slack for iOS Upload
+Add Comment
+Peter Petrov [16:31]
+@group: Exit Tickets:
+http://goo.gl/forms/v6YrR11VHH
+Google Docs
+Exit Ticket 02/12
+End of week comments (157KB)
+
+1
+
+Seif Dorani [16:42]
+https://qph.is.quoracdn.net/main-qimg-3a622faa25de31cc3e5958851f82a64c?convert_to_webp=true (45KB)
+
+
+[16:42]
+biggest rat in the game
+
+[16:43]
+https://www.google.com/search?q=biggest+rat+in+the+world&espv=2&biw=1280&bih=633&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwjQqaTCmPPKAhXDMz4KHYh3DhsQ7AkIMA&dpr=2#imgrc=iiFiOiWFhiFKvM%3A
+
+jason Seminara [17:03]
+today’s solution pushed @group
+
+
+Caleb Rechten [21:26]
+@seif: I think you meant...
+
+[21:26]
+https://ak-hdl.buzzfed.com/static/2014-06/26/17/enhanced/webdr11/anigif_enhanced-11604-1403817349-9.gif (Not automatically expanded because 2MB is too large. You can expand it anyway or open it in a new window.)
+2
+
+Jonathan Feudi [22:56]
+Deadpool was hilarious and awesome. Go see it.
+3 1
+
+Viorel Belfiore [23:28]
+Nice, seeing it sunday.
+
+
+----- February 13th -----
+Karolin Rafalski [08:26]
+G’morning everyone! Here is some mood music: https://www.youtube.com/watch?v=eU3DZxbTdUs
+YouTube
+Jesus Wolf
+Rats
+
+
+Adam Kriger [09:12]
+Is anyone else having trouble getting the demo file to run ? I get error module.js:341
+   throw err;
+   ^
+when I try to run it
+
+Karolin Rafalski [09:34]
+what do you mean by demo file?
+
+Elton Cheng [10:35]
+Anyone heading into GA today?
+
+Adam Kriger [10:36]
+I’m heading in at 1230
+
+Karolin Rafalski [10:36]
+undecided- maybe get there after 2. Definitely going in tomorrow
+
+Adam Kriger [10:37]
+@karolin: I mean the code that Jason uploaded for us to use as a model
+
+Karolin Rafalski [10:38]
+what’s the name of the file?
+
+Adam Kriger [10:40]
+@karolin: it’s called server.js in the restaurants directory within the classwork directory
+
+Karolin Rafalski [10:42]
+ah, I was looking at it but did not try to run it…let me try running it
+
+Adam Kriger [10:42]
+ok
+
+Karolin Rafalski [10:43]
+there are no node modules in the directory. Remember how we have git ignore and don’t pull the node module files down?
+
+[10:43]
+so to try to run those we’d have to do the npm installs of all the required modules in that directory
+
+Adam Kriger [10:44]
+Right, Elton also  suggested we have to install a bunch of things via npm installer to make it work
+
+[10:46]
+npm init, npm install express, npm install request, imp install morgan, npm install ejs, npm install express (edited)
+
+Karolin Rafalski [10:47]
+npm install express too
+
+Adam Kriger [11:14]
+thanks!!!
+
+Karolin Rafalski [11:15]
+cool. glad I could help!
+
+Lauren Golik [11:24]
+@elton912: I’ll be at GA then too
+
+[11:24]
+(at 12:30)
+
+Sara Horowitz [11:42]
+here on the 3rd floor
+
+Elton Cheng [12:02]
+I'm heading out soon!
+
+Jasmine Vollherbst [13:18]
+If anyone needs a break, here’s some data design inspiration: http://www.chenalexander.com/
+Alexander Chen makes interactive, musical work. Recent projects include MTA.ME, the NYC subway turned into a string instrument.
+1
+
+Colin Hart [13:44]
+@karolin: @adamscottkriger  You don’t have to install everything individually! Just run `npm install`
+
+Adam Kriger [13:44]
+@colinhart: thank you!
+
+Colin Hart [13:45]
+It looks in the package.json file and loads everything the codebase needs based on what’s in that file.
+1
+
+Karolin Rafalski [13:45]
+That’s great to know! Thanks Colin!
+
+Peter Petrov [14:01]
+@group: Interesting short talk on some javascript internals. Use your free time wisely: learn some more javascript :simple_smile:
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+YouTube
+JSConf
+Philip Roberts: What the heck is the event loop anyway? | JSConf EU 2014
+
+1 1
+
+Patrick McWilliams [14:59]
+i was about to start applauding at the end of that, when i realized how dumb that would be
+2
+
+Karolin Rafalski [15:13]
+I think, aside from possibly overindulging in too much schadenfreude, joy can’t ever be dumb. I say applaud!
+
+Patrick McWilliams [17:22]
+that mixture of shame, relief and joy when you get something working that you were being dumb about.
+4
+
+Peter Nguyen [19:48]
+does anyone know how the parameters `{url:restaurantRemoteData, qs:req.query}` are being  passed into `parseData` and how to extract them from within the function from the classwork example??
+
+```request.get({url:restaurantRemoteData, qs:req.query}, parseData.bind(res) )
+```
+2
+
+Karolin Rafalski [20:01]
+I’m giving it a thumbs up because I’ve been struggling with that all day too
+
+[20:01]
+But I couldn’t figure out the words to put together a coherent question
+
+Adam Kriger [20:05]
+https://github.com/request/request
+
+GitHub
+request/request
+Simplified HTTP request client.
+
+Karolin Rafalski [20:06]
+thanks Adam! I am going to check that out now
+
+Adam Kriger [20:14]
+added and commented on a Plain Text snippet: Request
+Form submission using request:
+var formData = {
+  my_field: 'my_value',
+  my_file: fs.createReadStream(__dirname + '/unicycle.jpg'),
+1 Comment Click to expand inline 13 lines
+I found this too. It provides more insight but I am also searching for a more direct answer to Peter’s original question.
+
+Adam Kriger [20:25]
+@karolin: np
+
+Peter Nguyen [20:31]
+thanks @adamscottkriger ill more into it
+
+
+----- February 14th -----
+Harry Ganz [08:16]
+It's 0F degrees outside. Better just stay inside and code.
+
+Jasmine Vollherbst [08:27]
+Oh no! I’m going to brave the cold and head into school around noon if anyone wants to meet up
+
+Lauren Golik [09:04]
+I'm braving it too
+2
+
+Emine Koc [09:45]
+I m coming, too. c u guys there.
+2
+
+Lauren Golik [11:04]
+in the 3rd floor common room again
+
+Karolin Rafalski [11:06]
+leaving in a few minutes. Hope to see you all around 1pm!
+
+jason Seminara [12:02]
+@group: re the qs:{} data structure being passed: request is expecting an object (simple key/vals) that it will stringify and append to the URL String (`{a:b,c:d}`   ----> `?a=b&c=d`) (edited)
+
+[12:03]
+It saves you from having to manually build a query string in text
+
+Jasmine Vollherbst [12:03]
+@jasonseminara: Thanks Jason! We were just discussing that!
+
+Ari Ingber [18:02]
+is it possible to link a .html.ejs page to a .css page?  anyone know how to get those things working together?
+
+Jasmine Vollherbst [18:45]
+@ariingber: add the following code to your JS file and then link your CSS as you normally would in your HTML.eja file. app.use( express.static('views') );
+
+Harry Ganz [19:28]
+```Hell is other people's APIs

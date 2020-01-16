@@ -1,0 +1,2063 @@
+Week One:
+
+
+jason Seminara [16:51]
+joined #wdi-bowie-students
+
+jason Seminara [16:51]
+set the channel purpose: Students channel for WDI-NYC-BOWIE
+
+Peter Petrov [16:51]
+joined #wdi-bowie-students by invitation from @jasonseminara, and invited @colinhart, @ziggy
+
+
+----- January 19th -----
+Peter Petrov [11:48]
+\invite @adamscottkriger @ac @brycek @umbrellagun @carriestreed @trampolinetales @douglas @elton912 @eminekoc @harryg @webdevj @jasminev @jimmylin @karolin @lgolik @penguyen @sarahorowitz @seif @tyler_gates @vbelfiore @auvemma @shani @waffle_iron @feudi @patrickm @razaik @mxray333
+
+Adam Kriger [11:48]
+joined #wdi-bowie-students by invitation from @pppetrov, along with @carriestreed, @ac, @umbrellagun, @brycek, @elton912, @douglas, @trampolinetales, @eminekoc, @harryg, @webdevj, @jasminev, @karolin, @jimmylin, @lgolik, @penguyen, @tyler_gates, @sarahorowitz, @seif, @auvemma, @vbelfiore, @feudi, @waffle_iron, @shani, @patrickm, @razaik, @mxray333
+
+
+Peter Petrov [11:48]
+@group Welcome Bowie!!!!!!
+
+Seif Dorani [11:57]
+yo!
+
+Peter Petrov [12:09]
+Here are some great lunch spots around campus:
+
+Chipotle - Mexican (on Broadway b/t E 17th and E 18th and on 6th Ave b/t W 21st and W 22nd)
+
+Lenny's - Sandwiches (on 23rd b/t 5th & 6th)
+
+Chop't - Salads (on E 23rd b/t Madison and Park and another on E 17th b/t Broadway and 5th Ave)
+
+Dig Inn - Seasonal, fresh food (on E 17th b/t Broadway and 5th Ave)
+
+Num Pang - Sandwiches (on Broadway b/t W 25th and W 26th)
+
+indikitch - Indian food (on W 23rd b/t 5th and 6th)
+
+Subway - Sandwiches (on E 23rd b/t Madison and Park)
+
+Maoz - Middle Eastern/falafel vegetarian (on Union Sq East b/t E 16th and E 17th)
+
+Pret A Manger - Sandwiches, Salads & More (on E 17th b/t Broadway and 5th Ave)
+
+Potbelly Sandwich Shop - Sandwiches, salads & more (on E 17th b/t Broadway and 5th Ave)
+
+Hale and Hearty Soup - Soups, sandwiches & more (on E 17th b/t Broadway and 5th Ave)
+
+New York Burger Co. - Burgers (on 6th Ave b/t W 21st and W 22nd)
+
+Tres Carnes - Mexican (on 6th Ave b/t W 21st and W 22nd)
+
+Taim - Falafel & smoothie truck (on Thursdays it's on 5th ave and 20th Street)
+
+Maison Kayser - Sandwiches, coffee & more (across the street on E 21st and Broadway)
+
+
+Another great option is Seamless.com. (Please inform the front desk [frontlines] that you ordered and they will let you know when it arrives).
+2
+
+Ari Ingber [13:22]
+joined #wdi-bowie-students by invitation from @pppetrov. Also, @coacheric joined.
+
+jason Seminara [13:41]
+re: digg inn, there’s another one on 23rd at the bottom of madison. Slightly different menu
+
+jason Seminara [14:01]
+renamed the private channel from "wdi-bowie-students" to "wdi-bowie-st-archived"
+
+jason Seminara [14:01]
+archived wdi-bowie-students
+
+jason Seminara [14:02]
+un-archived wdi-bowie-students
+
+jason Seminara [14:02]
+renamed the private channel from "wdi-bowie-st-archived" to "wdi-bowie-students"
+
+eric hegdahl [14:13]
+Your brand new chosen just for you . . .  ‘Intro to Outcomes’ EXIT TICKET!
+
+https://goo.gl/4meXjC
+
+
+
+Peter Petrov [15:28]
+added a Markdown (raw) snippet: readme.md
+
+
+
+jason Seminara [15:31]
+subl somefilename
+
+jason Seminara [15:38]
+@group Sublime users:
+ 1. install this https://packagecontrol.io/
+ 2. install this https://github.com/timonwong/OmniMarkupPreviewer#installation
+
+GitHub
+timonwong/OmniMarkupPreviewer
+OmniMarkupPreviewer - Sublime Text 2&3 plugin to live preview markup files, supported (not limited to) markup formats are markdown, reStructuredText, WikiCreole and textile.
+
+Colin Hart [15:45]
+https://richonrails.com/articles/uninstalling-rvm
+This short post will show you how to remove RVM from your machine.
+
+Peter Petrov [15:45]
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+GitHub
+adam-p/markdown-here
+markdown-here - Google Chrome, Firefox, and Thunderbird extension that lets you write email in Markdown and render it before sending.
+
+[15:47]
+ ```hey I'm a code block
+```
+
+Peter Petrov [16:33]
+@ziggy: hello
+
+Ziggy StardustBOT [16:33]
+Hello, @pppetrov
+
+Adam Kriger [16:33]
+@ziggy
+
+Jonathan Feudi [16:33]
+@ziggy Yo, Zigs!
+
+Adam Kriger [16:33]
+@ziggy hello
+
+Ziggy StardustBOT [16:33]
+Hello, @adamscottkriger
+
+Viorel Belfiore [16:33]
+@ziggy what's up man
+
+Tyler Gates [16:33]
+@ziggy:  sup
+
+Sara Horowitz [16:33]
+@ziggy: hello
+
+Ziggy StardustBOT [16:33]
+Hello, @sarahorowitz
+
+Emma Hou [16:33]
+ziggy
+
+[16:34]
+@ziggy (edited)
+
+Jonathan Feudi [16:34]
+back table rules!
+
+Peter Petrov [16:34]
+@ziggy: q me
+
+Ziggy StardustBOT [16:34]
+I'm always amazed that people take what I say seriously. I don't even take what I am seriously.
+
+​*Current Queue*​
+1) Peter Petrov
+
+Dan Dilorio [16:34]
+@ziggy: q me
+
+Ziggy StardustBOT [16:34]
+I don't know where I'm going from here, but I promise it won't be boring.
+
+​*Current Queue*​
+1) Peter Petrov
+2) Dan Dilorio
+
+Dan Dilorio [16:34]
+I'm second
+
+[16:34]
+woo
+
+Emma Hou [16:34]
+@ziggy: hello
+
+Ziggy StardustBOT [16:34]
+Hello, @auvemma
+
+Peter Petrov [16:34]
+@ziggy next
+
+Ziggy StardustBOT [16:34]
+Up now: @pppetrov!
+
+​*Current Queue*​
+1) Dan Dilorio
+
+Adam Kriger [16:34]
+@ziggy cue me
+
+Emma Hou [16:34]
+@ziggy q me
+
+Ziggy StardustBOT [16:34]
+I'm always amazed that people take what I say seriously. I don't even take what I am seriously.
+
+​*Current Queue*​
+1) Dan Dilorio
+2) Emma Hou
+
+Viorel Belfiore [16:34]
+@ziggy q me
+
+Ziggy StardustBOT [16:34]
+I don't know where I'm going from here, but I promise it won't be boring.
+
+​*Current Queue*​
+1) Dan Dilorio
+2) Emma Hou
+3) Viorel Belfiore
+
+Peter Petrov [16:34]
+@ziggy next
+
+Ziggy StardustBOT [16:34]
+Up now: @trampolinetales!
+
+​*Current Queue*​
+1) Emma Hou
+2) Viorel Belfiore
+
+Jonathan Feudi [16:34]
+Dan you’re number one now!
+
+Adam Kriger [16:35]
+@ziggy q me
+
+Ziggy StardustBOT [16:35]
+I'm always amazed that people take what I say seriously. I don't even take what I am seriously.
+
+​*Current Queue*​
+1) Emma Hou
+2) Viorel Belfiore
+3) Adam Kriger
+
+Peter Petrov [16:35]
+added a Markdown (raw) snippet: readme.md
+w01/d02/instructor
+Add Comment
+
+
+
+
+Jonathan Feudi [16:42]
+We da bess guise
+
+Dan Dilorio [16:42]
+I do not disagree
+
+jason Seminara [16:55]
+@channel: For any questions you do not feel comfortable discussing with the instructional team, please email StudentServicesNYC@generalassemb.ly
+
+Caleb Rechten [17:17]
+Hey guys, sorry for bouncing so early. I had exactly 0 hours of sleep last night. I plan on being around as late as possible in the future, but my sleeping habit of in bed by 4ish didn't jive with my early commute time. It'll snap in place soon, but it was super meeting all of you and I'm excited for the class! Cya tomorrow!
+2
+
+Rachel Smyth [17:36]
+joined #wdi-bowie-students by invitation from @pppetrov
+
+Rachel Smyth [17:36]
+@group hey everybody! It’s Rachel the daytime TA. You’ll be meeting your evening TA soon and she is AWESOME! (edited)
+
+KP Perez [17:37]
+joined #wdi-bowie-students by invitation from @pppetrov
+
+KP Perez [17:45]
+@ziggy status
+
+Ziggy StardustBOT [17:45]
+​*Current Queue*​
+​*​_empty_​*​
+
+Peter Petrov [17:46]
+@ziggy: q me
+
+Ziggy StardustBOT [17:46]
+I'm always amazed that people take what I say seriously. I don't even take what I am seriously.
+
+​*Current Queue*​
+1) Peter Petrov
+
+KP Perez [17:46]
+@ziggy next
+
+Ziggy StardustBOT [17:46]
+Up now: @pppetrov!
+
+​*Current Queue*​
+​*​_empty_​*​
+
+KP Perez [18:06]
+Helloooooooo Bowie! I'm the awesome evening TA Rachel told you about. I am upstairs on the 3rd floor if anyone wants to hangout. I'll come formally meet you all in class tomorrow.
+
+Lauren Golik [18:08]
+@ziggy: q me
+
+KP Perez [18:08]
+@ziggy: next
+
+[18:09]
+@lgolik: come on up to the 4th floor in the back, Peter is fixing the bot. (4th* it's been awhile lol)
+
+Lauren Golik [18:12]
+ha. I just got to the 4th - where are you?
+
+Peter Petrov [18:20]
+@ziggy was down for a bit but now he's jammin'
+
+[18:20]
+@ziggy hello
+
+Ziggy StardustBOT [18:20]
+Hello, @pppetrov
+
+KP Perez [18:33]
+@ziggy status
+
+Ziggy StardustBOT [18:33]
+​*Current Queue*​
+​*​_empty_​*​
+
+[18:35]
+I don't know where I'm going from here, but I promise it won't be boring.
+
+​*Current Queue*​
+1) Rachel Smyth
+
+[18:39]
+​*Current Queue*​
+1) Rachel Smyth
+1
+
+Rachel Smyth [21:19]
+@group hey everybody, some of you still haven’t started the rock-paper-scissors assignment from the pre-work! If you haven’t started, at least take a stab at writing the first three functions. Over-and-out! :information_desk_person:
+http://inspirationalquotes.gallery/wp-content/uploads/Quote-by-David-Bowie-You-can-neither-win-nor-lose-if-you-dont-run-the-race.png (85KB)
+
+
+Emma Hou [21:20]
+uploaded and commented on an image: Pasted image at 2016-01-19, 9:18 PM
+  1 Comment
+does anyone know how to do line break in a code block? I’m trying to make the right two lines the same of the left two lines. Thanks!
+
+Harry Ganz [21:35]
+I was able to do that by de-indenting the code (on the left) by selecting the lines and pressing shift-tab. I did for every line of code.
+
+Elton Cheng [21:37]
+You can double space at the end of the line to also create a line break!
+
+Emma Hou [21:38]
+Thank you Harry and Elton!
+
+Emma Hou [21:38]
+uploaded and commented on an image: Pasted image at 2016-01-19, 9:38 PM
+1 Comment
+I did this and it works!:)
+
+Peter Petrov [21:41]
+Good Job figuring out the indenting. Markdown has a few nice and smart ways it uses indentation!
+
+jason Seminara [23:16]
+@group just to clarify a few terms I stated in today’s lecture:
+a file in a filesystem can either be text-based or in binary, where:
+  - ​*text*​ files are readable by humans using some human alphabet (e.g. english, japanese, hebrew, etc)
+ - ​*binary*​ files are only readable by another software application, and are usually indecipherable if opened directly. (e.g. images, music, programs, etc)
+ - ​*executable*​ binaries are special binaries that are ​*executable*​. This means that another user or software can **activate** (start) them. (eg. applications, itunes, Firefox, etc)
+
+The main difference between the last two is that only applications can be ‘executed’ or ‘activated’, and all other files can be read.
+
+For example, Photoshop is an executable binary that can read and write images. A human cannot reliably read the contents of either the image or the Photoshop binary without special software to decode it. (edited)
+
+[23:19]
+​*all*​ files we work with in the command line/terminal will be text-based.
+
+Tyler Gates [23:46]
+Hey guys, I don’t know if anyone is up/looking at this, but for some reason when I’m trying to move the millenium_falcon into galaxy_far_far_away it keeps trying to rename it rather than moving it. What am I doing wrong?
+
+
+
+
+
+
+----- January 20th -----
+Elton Cheng [01:09]
+@tyler_gates: It sounds like you’re placing the millenium_falcon back into the same folder. You need to make sure you’re sending it to the correct location.
+
+mv ~/…/tatooine/millenium_falcon ~/…/galaxy_far_far_away
+It should look something like that.
+
+[01:11]
+@tyler_gates: the basic format is mv whereYouAreAt whereYouWantToGo. Also, since galaxy_far_far_away contains the tatooine directory, you can use the “..” shortcut. mv ~/…/tatooine/millenium_falcon ..             If I’ve said anything wrong please correct me!
+
+Adam Kriger [09:03]
+@ziggy bowie
+
+Ziggy StardustBOT [09:03]
+Adam Kriger Ground control to Major Tom
+Comencing countdown, Engines On
+
+Adam Kriger [09:03]
+@ziggy: bowie
+
+Ziggy StardustBOT [09:03]
+Adam Kriger Ground control to Major Tom
+Comencing countdown, Engines On
+
+Dan Dilorio [09:04]
+@ziggy: bowie
+
+Ziggy StardustBOT [09:04]
+Dan Dilorio Ground control to Major Tom
+Comencing countdown, Engines On
+
+Seif Dorani [09:04]
+@ziggy: bowie
+
+Ziggy StardustBOT [09:05]
+Seif Dorani Ground control to Major Tom
+Comencing countdown, Engines On
+
+Peter Petrov [09:06]
+https://github.com/ga-students/wdi-nyc-bowie_students
+
+Caleb Rechten [09:06]
+@ziggy: bowie
+
+Ziggy StardustBOT [09:06]
+Caleb Rechten Ground control to Major Tom
+Comencing countdown, Engines On
+
+Peter Petrov [09:06]
+https://github.com/ga-students/
+
+Daniel Lawrence [09:12]
+@ziggy: bowie
+
+Ziggy StardustBOT [09:12]
+Daniel Lawrence Ground control to Major Tom
+Comencing countdown, Engines On
+
+Carrie Streed [09:22]
+@ziggy: bowie (edited)
+
+
+(edited)
+
+Dan Dilorio [09:59]
+I got it working, posting the code
+
+[09:59]
+ ```source ~/.git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+source ~/.git-completion.bash
+
+```
+(edited)
+
+Patrick McWilliams [10:05]
+thanks!
+
+Karolin Rafalski [10:06]
+Thanks @trampolinetales!!!
+
+Peter Petrov [11:27]
+@group: Write meaningful commit messages! You don't want to be featured on this website http://www.commitlogsfromlastnight.com/. Employer can look at that. Your github is your portfolio. Treat it professionally
+
+[11:32]
+@group: Here is the tutorial jason pulled up https://help.github.com/articles/generating-ssh-keys/
+SSH keys are a way to identify trusted computers, without involving passwords. The steps below will walk you through generating an SSH key and adding the public key to your GitHub account. We recomme…
+
+Peter Petrov [11:47]
+Check this book out https://git-scm.com/book/en/v2
+
+Rachel Smyth [11:49]
+@pppetrov: where’s our wiki?
+
+Peter Petrov [11:54]
+https://github.com/ga-students/wdi-nyc-bowie_students/wiki
+
+Rachel Smyth [11:58]
+set the channel purpose: Students channel for WDI-NYC-BOWIE
+
+Class wiki for resources: https://github.com/ga-students/wdi-nyc-bowie_students/wiki
+
+Seif Dorani [13:21]
+uploaded an image: Pasted image at 2016-01-20, 1:21 PM
+Add Comment
+1 1 1
+
+Douglas Walker [13:22]
+awwh
+
+Jonathan Feudi [13:40]
+My life is enhanced
+
+Harry Ganz [16:07]
+@channel: If you don't understand javascript typing, you're in good company: https://www.destroyallsoftware.com/talks/wat
+1
+
+[16:09]
+It starts with ruby. Javascript at 1:27
+
+Dan Dilorio [16:10]
+great video, spoilers: batman
+
+KP Perez [18:00]
+@group hey friends, if you have any questions, need homework help or just want to talk about your first couple days / the course / making of a murderer  please queue using @ziggy
+2
+
+[18:03]
+@group additionally, if anyone wants to chat about the course and its time commitment please please come talk to me. Jason may have mentioned a stubborn student who insisted on doing a part time job until no longer humanly possible. That student was me. Feel free to private message me, email or find me
+1 1
+
+Tyler Gates [18:35]
+Hey guys, anyone else having any trouble with the Old Modems section of the homework? I would think it should provide us with the internet speed or something like that. Or am I just looking too deep into it?
+
+KP Perez [18:50]
+@tyler_gates: I ​*think*​ it should take a file size (gigabytes) and a bandwidth (kilobits) as input
+
+Arthur Chen [18:58]
+@tyler_gates: you’ll need to convert file size gigabyte to kilobit.
+1
+
+Arthur Chen [19:14]
+@ziggy q me;
+
+[19:14]
+@ziggy q me
+
+Ziggy StardustBOT [19:14]
+I'm always amazed that people take what I say seriously. I don't even take what I am seriously.
+
+​*Current Queue*​
+1) Arthur Chen
+
+Tyler Gates [19:23]
+ah okay, thanks guys!
+
+KP Perez [20:08]
+uploaded and commented on an image: Screen Shot 2016-01-20 at 7.58.36 PM.png
+  1 Comment
+1
+@group if you want to check your pull requests (see that your homework went through), click "pull requests" up at the top when you're signed into github
+
+KP Perez [21:00]
+If you're not all git-ed out from today, take a look at this simple guide: http://rogerdudler.github.io/git-guide/
+
+
+
+
+
+
+----- January 21st -----
+Ari Ingber [08:49]
+@meekanbot_scheduler: connect me
+
+Seif Dorani [09:17]
+@ziggy: bowie
+
+Jasmine Vollherbst [10:13]
+@group KP shared some resources yesterday that were super helpful. I wanted to re-post here. Git cheat sheet: http://rogerdudler.github.io/git-guide/files/git_cheat_sheet.pdf
+
+[10:13]
+command cheat sheet: cli.learncodethehardway.org
+
+Peter Nguyen [10:14]
+thank!
+
+Jasmine Vollherbst [10:14]
+@group sorry cheat sheet for command line here: http://cli.learncodethehardway.org/bash_cheat_sheet.pdf
+
+Colin Hart [10:20]
+https://github.com/airbnb/javascript
+
+GitHub
+airbnb/javascript
+javascript - JavaScript Style Guide
+
+jason Seminara [10:27]
+@group https://javascriptweblog.wordpress.com/2011/08/08/fixing-the-javascript-typeof-operator/
+JavaScript, JavaScript...
+Angus Croll
+Fixing the JavaScript typeof operator
+Working with JavaScript’s typeof operator is a bit like operating a clapped-out old car (or an early model Dell Inspiron). It gets the job done (mostly) and you learn to work around the quirks – but you probably aspire to something better.
+In this article I’ll give a brief overview of typeof before introducing a tiny new function which is a fully-loaded, more reliable alternative that works directly with the language internals.
+
+
+The typeOf Operator Show more...
+
+[10:30]
+@group https://github.com/ga-students/wdi-nyc-bowie_students/wiki
+
+Rachel Smyth [10:31]
+@group I’ll try to add all of your links to the wiki when I get through your hw, you can also pm me links to add for you.
+2
+
+Harry Ganz [11:32]
+@channel: What does this evaluate to in javascript (try it out)?
+```+[[]+[]]^[~[[]+[]]]
+```
+(edited)
+
+jason Seminara [11:41]
+@harryg: showboating! :unamused: (edited)
+
+[11:44]
+@harryg: here’s a better challenge: how many (actual) different operators are in your expression?
+
+Harry Ganz [11:45]
+Actually, I didn't need the XOR. This is equivalent:
+```~[[]+[]]
+```
+
+[11:45]
+= ~0 = -1
+
+
+
+
+
+
+
+
+
+
+
+Peter Petrov [12:20]
+# Data Structures!
+
+A big part of your job as programmers is going to be figuring out how to organize your data. For now lets focus on the javascript data structures we covered today. We are going to try and describe a simplified version of the MTA. For this exercise work in the node console.
+
+## Beginnings of the MTA
+Imagine you are a developer back in 1904 working with the city administration to model the first subway line built. Let's pretend it was called the "N" line. The N has 6 stops which are ​*Times Square, 34th, 28th, 23rd, Union Square, and 8th*​. Try figure out which data structure we talked about today which can accommodate the name of the line and its stops and allows for an easy way to access the different stops and list them in the console. Once you do this try to achieve the following:
+1. Log the first stop
+2. Log the 5th stop
+3. Log the last stop
+4. List all stops on separate lines
+
+Patrick McWilliams [12:20]
+I feel like I’m going to have nightmares starring that thing.
+
+Rachel Smyth [12:52]
+Today’s “food-for-thought” lunchtime tip:
+
+It’s never too early to start good habits. Practice writing ​*​_specific_​*​ commit messages on your hw. When you’ve got 2 or 3 commits, it’s easy to remember what happened in each one. But on a project with 102 commits `first draft of caffeine problem` or `fixed kilobits conversion error` is way clearer than `submitted draft` or `done`.
+
+Keep up the good work everyone! :smile: :+1: :100:
+
+Caleb Rechten [13:00]
+added and commented on a Plain Text snippet: Arbitrary Knowledge I Now Know
+~-8 === 7
+1 Comment
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#Bitwise_NOT
+
+Elton Cheng [13:17]
+Two goldfish are in a tank. One looks at the other and is like, “how do you drive this thing?"
+
+Jonathan Feudi [13:17]
+@patrickm JOIN US PATRICK
+
+[13:18]
+WE ARE BOWIE, WE ARE ONE
+1 1
+
+Patrick McWilliams [13:18]
+I’m already signed up with Cthulu
+
+Dan Dilorio [13:20]
+@elton912:
+Q: "What did the Buddhist say to the hot dog vendor?"
+A: "Make me one with everything!"
+
+Elton Cheng [13:20]
+> for (var i = 0; i < stops.length; i++]
+{
+    console.log([i]);
+}
+
+[13:20]
+oops  lol
+
+Dan Dilorio [13:20]
+@elton912: that joke's not as funny
+
+Elton Cheng [13:21]
+@trampolinetales: You’ll get it when you’re older.
+2
+
+Dan Dilorio [13:22]
+@elton912: :cry:
+
+Viorel Belfiore [13:25]
+Dan you forgot part 2 and 3 of the joke
+
+[13:27]
+After the hotdog vendor kept the change the buddhist asked “where is my change” to which the hot dog vendor replied “change comes from within”.
+
+Dan Dilorio [13:27]
+I've heard it told that way before, I like it better the other way :stuck_out_tongue:
+
+Viorel Belfiore [13:28]
+Then the buddhist pulled out a gun and the hot dog vender screamed “Wait… what happened to inner peace?”.  The buddhist replied “this is my inner peace"
+
+[13:28]
+inner piece*
+1
+
+Dan Dilorio [13:28]
+bahaha, haven't heard that part
+
+Jonathan Feudi [14:11]
+I object to this exercise
+
+Patrick McWilliams [14:11]
+I {} to that statement
+1
+
+Jonathan Feudi [14:11]
+Oh, he’s good
+
+Caleb Rechten [14:11]
+Woooooooooooow
+
+Peter Petrov [14:11]
+## The MTA Grows
+Fast forward a few years. The MTA has tripled in size and now has three separate lines.
+
+- The **N** line has the following stops: ​*Times Square, 34th, 28th, 23rd, Union Square, and 8th*​
+- The **L** line has the following stops: ​*8th, 6th, Union Square, 3rd, and 1st*​
+- The **6** line has the following stops: ​*Grand Central, 33rd, 28th, 23rd, Union Square, and Astor Place*​.
+
+As the main developer on the project you need to modify your data structure to accommodate all the new information. Design a data structure which you will store in a variable called `mta`, which will allow for an natural way to access everything. Here are a few things you should be able to do with the least amount of typing
+
+- Access all the stops for the **L** line. (note that you should be able to access the **L** line through its name, and not its index)
+- Access the 3rd stop of the **6** line
+- Access the last stop of the **N** line
+
+Bonus:
+
+Iterate through your data structure and log to the console
+
+   The N line has  6 stops. They are: Times Square, 34th, 28th, 23rd, Union Square, and 8th
+   The L line has 5 stops. They are: 8th, 6th, Union Square, 3rd, and 1st
+   The 6 line has 6 stops. They are: Grand Central, 33rd, 28th, 23rd, Union Square, and Astor Place
+
+Make sure your code does not have any **hard coded** information. All your specific line and stop names and their number come from your `mta` variable.
+
+Jonathan Feudi [14:11]
+WE ARE BOWIE WE ARE ONE
+
+Jonathan Feudi [14:32]
+var mta = {lTrain: ['8th', '6th', 'Onion Square', '3rd', '1st'], nTrain: ['Times Square', '34th', '28th', '23rd', 'Onion Square', '8th'], sixTrain: ['Grand Central', '33rd', '28th', '23rd', 'Onion Square', 'Astor Place']}
+
+Peter Nguyen [14:32]
+var mta = {
+    L: ['8th', '6th', 'Union Sq', '3rd', '1st'],
+    Six: ['Grand Central', '33rd', '28th', '23rd', 'Union Sq', 'Astor Pl'],
+    N: ['Times Sq', '34th', '28th', '23rd', 'Union Sq', 'Astor Pl']
+}
+
+console.log(mta.L);                            //all L line stops
+console.log(mta.Six[mta.Six.length-3]);        //3rd to last stop of 6 Line
+console.log(mta.N[mta.N.length-1]);            //last stop of N line
+
+Jonathan Feudi [14:33]
+Great job, Peter. Top notch.
+
+Peter Nguyen [14:33]
+You too, Onion square
+1
+
+Douglas Walker [14:33]
+:+1:
+
+Jonathan Feudi [14:54]
+if (feudiCaffeine != false) {
+  sleep = true;
+}
+
+Dan Dilorio [14:55]
+so if you have caffeine you sleep?
+
+Jonathan Feudi [14:55]
+Crap
+
+Seif Dorani [14:56]
+no it looks like if he has cafeine he craps? standard..
+2
+
+Harry Ganz [15:01]
+@feudi:
+```if (feudiCaffeine != false) ```
+can be simplified to
+```if(!feudiCaffeine)```
+, assuming feudiCaffeine is a boolean
+
+[15:01]
+sorry
+```if(feudiCaffeine)```
+1
+
+Jonathan Feudi [15:02]
+There’s definitely an else-if for when I drink too much coffee and throw up
+
+Dan Dilorio [15:03]
+that's the equivalent of your body throwing an error
+
+Seif Dorani [15:05]
+chunky errors
+
+Dan Dilorio [15:05]
+well, that's an image I didn't need
+2
+
+Jonathan Feudi [15:20]
+Guys, don’t tell anyone but… I heard Colin has a BIG crush on Ruby
+
+Harry Ganz [15:42]
+Goodbye ruby tuesday https://www.youtube.com/watch?v=a00_tPLcE_g
+YouTube
+TheRollingStonesHQ
+The Rolling Stones - Ruby Tuesday -HQ
+
+
+KP Perez [15:47]
+Sometimes reading this slack with zero classroom context is hilarious. It's like an improv scene
+4 2
+
+Caleb Rechten [18:07]
+Just realized Atom is cooler than I realized because I noticed it loosely keeping track of what's going on with the git branches!
+1
+
+Tyler Gates [18:57]
+Hey, you guys probably won’t be seeing me anymore (not in class at least) but I’d love to stay in touch with anyone that would want to. You can DM me for my steam/league/Facebook accounts. Good luck with the rest of the course! :nerd_face:
+1
+
+Dan Dilorio [18:58]
+@tyler_gates: wish you the best!
+
+Douglas Walker [20:04]
+@tyler_gates: All the best mate!
+
+Tyler Gates [20:35]
+Thanks! Same to you guys! @trampolinetales  @douglas
+
+KP Perez [20:50]
+@group
+
+Friendly reminder:
+1. Take breaks. Your code will thank you for it.
+2. If you have a big problem that you're a little overwhelmed by, break it down into more bite-size problems. (Example -- you know you have to manipulate something. First you need to identify what you need. Grab that thing. Then do what you need to it.)
+2 3
+
+Colin Hart [21:17]
+@group literally the best advice.
+
+[21:18]
++1
+
+Patrick McWilliams [21:50]
+trying to use value===(x||y||z) and it only seems to evaluate true when value===x. do i need to split that up into something like ( (value===x)||(value===y)||(value===z)) ? that seems like a lot of = signs
+
+Dan Dilorio [21:52]
+@patrickm: I believe you do have to split it up exactly as you said
+
+Peter Petrov [21:52]
+Seconded!
+
+Patrick McWilliams [21:53]
+booooo! thanks
+
+Peter Petrov [21:55]
+The reason your first one doesn't work is operator precedence. Think about what gets evaluated first and what to?
+
+Patrick McWilliams [22:00]
+if x is false, and since it’s OR, shouldn’t it check the next value (y)?
+
+Karolin Rafalski [22:08]
+I think you can assign variables that way, but not compare them. For example : `var value = false || false || 3;` evaluates to 3- which is similar to part of what we did for rock paper scissors.
+
+jason Seminara [22:34]
+@patrickm: I’m not sure what you’re seeing, but this syntax  works as expected (i even threw in some curveballs):
+```true === (undefined || null || false || true) //  evals to true
+```
+
+[22:37]
+@karolin is correct. Leveraging JS’s ability to eval falsey things and ’short-circuit' evaluation allows you to do something like this:
+```var a = (undefined || null||false||2||false) // a is 2
+```
+(edited)
+
+[22:38]
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators#Short-Circuit_Evaluation
+
+Mozilla Developer Network
+Logical Operators
+Logical operators are typically used with Boolean (logical) values. When they are, they return a Boolean value. However, the && and || operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they may return a non-Boolean value.
+
+Emma Hou [23:08]
+struggling all night all because of Union Square is different with union_square
+
+[23:08]
+be careful when you copy from readme.md
+1
+
+Emma Hou [23:11]
+uploaded and commented on an image: Pasted image at 2016-01-21, 11:11 PM
+  1 Comment
+1
+and make sure to use ‘Union Square’ as one argument
+
+Patrick McWilliams [23:20]
+@jasonseminara: I was trying to check a user input via process.argv[]  and it would only behave “correctly” for ===(x||y||z) when  x was used. y and z were completely ignored. works when using the extended version. would process.argv be throwing a wrench into the works? @karolin thanks, it seems that using it in a comparison was the problem. can you point me at any documentation that explains why it can’t be used that way?
+
+Karolin Rafalski [23:56]
+I have found that I need more explanations than what MDN provides, and have found that, for me and my learning process, the books Eloquent JavaScript by Marijn Haverbeke (free pdf version: http://eloquentjavascript.net ) and Learning Web Design: A Beginner’s Guide to HTML, CSS, JavaScript and Web Graphics have been helpful to me in trying to understand stuff.  I don’t have my copy of the latter around…but since I didn’t see it in Eloquent JavaScript, I think maybe it was in the latter book?
+2
+
+
+----- January 22nd -----
+Karolin Rafalski [00:02]
+Also, it wasn’t clear if the values you were trying to compare were all…er…truthy? Like `3|| "q" || "L" ` that will give you 3 in the console. Maybe that’s how it was working in your original expression?
+
+Jasmine Vollherbst [07:23]
+@karolin: Thanks for the link!
+
+Adam Kriger [08:22]
+@webdevj: Completeness: scale of 0 to [Last Part]
+Comfortability: scale of 0 to 5
+Win: What is something that felt good during the assignment?
+Challenge: What did you find the most challenging?
+Comments or Questions: Any other comments about this assignment?
+
+[08:22]
+@vbelfiore: Good morning
+
+Adam Kriger [08:29]
+Good morning Rachel. I submitted the HWK from last night and did a pull request. Please let me know if I did not do it properly this time. Thanks, Adam.
+
+Patrick McWilliams [09:13]
+fyi if you want to open a file in a new atom window, you can put -n in the command to do so:
+atom -n filename
+would open filename in a new atom window (instead of a new tab)
+
+Lauren Golik [09:14]
+thanks @patrickm !
+
+Seif Dorani [09:15]
+@ziggy: git
+
+Ziggy StardustBOT [09:15]
+Jimmy Lin Ground control to Major Tom
+Comencing countdown, Engines On
+
+[09:15]
+Seif Dorani Ground control to Major Tom
+Comencing countdown, Engines On
+
+Adam Kriger [09:15]
+@ziggy: git
+
+Ziggy StardustBOT [09:15]
+Adam Kriger Ground control to Major Tom
+Comencing countdown, Engines On
+
+Emma Hou [09:15]
+@ziggy: git
+
+Ziggy StardustBOT [09:15]
+Carrie Streed Ground control to Major Tom
+Comencing countdown, Engines On
+
+[09:15]
+Emma Hou Ground control to Major Tom
+Comencing countdown, Engines On
+
+Jonathan Feudi [09:15]
+@ziggy git
+
+Ziggy StardustBOT [09:15]
+Jonathan Feudi Ground control to Major Tom
+Comencing countdown, Engines On
+
+Jonathan Feudi [09:16]
+@ziggy Tell my git I love her very much… SHE KNOOOOOOOOWWS
+
+Seif Dorani [09:16]
+one of us
+
+Ziggy StardustBOT [09:57]
+left #wdi-bowie-students
+
+Colin Hart [10:09]
+https://github.com/ga-students/wdi-nyc-bowie_students/wiki/Styleguides
+
+js, jquery, git, and ruby styleguides
+
+jason Seminara [11:26]
+```function foo(){
+    function bar() {
+        return 3;
+    }
+    return bar();
+    function bar() {
+        return 8;
+    }
+}
+console.log(foo());
+```
+
+Dan Dilorio [11:32]
+#EightForLife
+
+Jonathan Feudi [11:32]
+#34eva
+
+[11:34]
+This is totally foobar
+
+Ari Ingber [11:40]
+3,8,8 is the champ
+
+Jonathan Feudi [11:40]
+#believe
+
+Douglas Walker [12:02]
+A read–eval–print loop (REPL), also known as an interactive toplevel or language shell, is a simple, interactive computer programming environment that takes single user inputs (i.e. single expressions), evaluates them, and returns the result to the user; a program written in a REPL environment is executed piecewise.
+2 2 1 1
+
+Peter Petrov [12:18]
+If you're still shaky on hoisting make sure you understand why each of these happens
+```foo(); // TypeError "foo is not a function"
+bar(); // valid
+baz(); // TypeError "baz is not a function"
+bin(); // ReferenceError "bin is not defined"
+
+var foo = function () {}; // anonymous function expression ('foo' gets hoisted)
+function bar() {}; // function declaration ('bar' and the function body get hoisted)
+var baz = function bin() {}; // named function expression (only 'baz' gets hoisted)
+
+foo(); // valid
+bar(); // valid
+baz(); // valid
+bin(); // ReferenceError "bin is not defined"
+```
+
+Colin Hart [12:20]
+uploaded and commented on an image: Pasted image at 2016 01 22 12 20 PM
+1 Comment
+2 1 1 1
+@group
+
+Dan Dilorio [12:21]
+nothing more depressing than a weekend snowday :disappointed:
+1 1
+
+Patrick McWilliams [13:11]
+just netflix and code all day saturday
+
+Elton Cheng [13:38]
+^ watch Silicon Valley.
+
+Peter Nguyen [13:39]
+for all coffee & tea lovers: http://www.coffeeandteafestival.com/nyc/index.html
+Coffee and Tea Festival NYC
+Join exhibitors from around the country as they pour tastings of their finest coffees and teas, and introduce you to new and award-winning products! This international extravaganza celebrating all things coffee and tea will offer two days of programs from well-known industry pros and pioneers, pairings, tastings and more! The exhibit hall will also feature some of the most delectable sweet and savory foods to compliment the spectacular collection of local and national coffees and teas. #CTFNYC
+
+Dan Dilorio [14:27]
+Great video on unicode for those curious: https://www.youtube.com/watch?v=MijmeoH9LT4
+YouTube
+Computerphile
+Characters, Symbols and the Unicode Miracle - Computerphile
+
+
+
+Jonathan Feudi [15:56]
+THIS is just the beginning
+1
+
+Seif Dorani [16:06]
+http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_4?ie=UTF8&qid=1453496371&sr=8-4&keywords=javascript
+
+Rachel Smyth [16:13]
+ohai books: https://drive.google.com/folderview?id=0B4J9U-XENlPMREdLRGVnTXVya1k&usp=sharing
+
+Several good ebooks for Javascript, including eloquent Javascript and Object-Oriented Javascript. (edited)
+1 1
+
+Emma Hou [16:21]
+uploaded an image: Slack for iOS Upload
+
+
+Seif Dorani [16:25]
+great...i just bought the book lol
+
+Jonathan Feudi [16:26]
+FOOL
+
+Seif Dorani [16:26]
+middle finga?
+1 2 1 2 1 1 1 1 1 1 1 2 2 2
+
+Seif Dorani [16:34]
+ogres are international
+
+Seif Dorani [16:34]
+uploaded an image: Pasted image at 2016-01-22, 4:34 PM
+Add Comment
+KP Perez [16:37]
+Congrats on surviving your first week! Only 11 more to go :nerd_face:
+1 1
+
+Dan Dilorio [16:37]
+WE STILL HAVE 23 MINUTES
+
+[16:37]
+DON'T PATRONIZE US
+1 1
+
+Jonathan Feudi [16:38]
+I have no idea what I’m doing:face_with_head_bandage:
+
+Rachel Smyth [16:38]
+@feudi: congrats! you’re officially a developer
+4
+
+Jonathan Feudi [16:58]
+oooooooh yeeeeeeah
+
+Karolin Rafalski [16:58]
+http://smallbiztrends.com/2016/01/skype-and-slack-integration.html
+Small Business Trends
+Slack Users Can Now Use Skype to Collaborate
+Microsoft revealed in a post last week that Skype will now integrate with Slack, the popular insta... (179KB)
+Jan 21st at 08:30
+
+
+Emine Koc [17:18]
+Hi Guys, if you get frustrated on coding, here is a great event  to think/dream new app ideas on snowy weekend. General Assembly also part of it, Enjoy  http://www.appideaawards.com/#home
+
+App Idea Awards
+The App Idea Awards
+Take Your App From Idea to Reality
+1
+
+Viorel Belfiore [17:19]
+uploaded and commented on an image: Bam Bam the Pom.jpg
+1 Comment
+4 1
+Our new Mascot.  Bam Bam the Pom
+
+Rachel Smyth [17:32]
+@group if you haven’t seen feedback on your hw, send me a slack message to make sure I saw your commits. Otherwise have a great weekend!
+
+Emma Hou [18:39]
+Whose dog is this!!!!! Sooooo cute!!!
+
+Caleb Rechten [18:40]
+@eminekoc I think I might have the perfect idea for that contest.
+
+Jasmine Vollherbst [18:50]
+Aww! Sooo cute!
+
+Emine Koc [20:10]
+@umbrellagun Wow, Perfect.  You can submit your idea :wink:  we ll support you   :nerd_face: Good Luck!
+
+Caleb Rechten [20:19]
+I'd love to share it with everyone and see what everyone thinks!
+
+Patrick McWilliams [20:24]
+how do we access stuff that jason typed on the board today?
+
+Emine Koc [20:43]
+@umbrellagun  I m in, I’d love to hear it when ever you want.  Anyone else?
+
+
+----- January 23rd -----
+Viorel Belfiore [00:06]
+@umbrellagun I'm in.  I'd love to hear the idea too.
+
+Jonathan Feudi [00:15]
+It’s @seif ’s dog
+
+Adam Kriger [09:49]
+Good morning! Has anyone started the homework yet?
+
+Karolin Rafalski [09:55]
+Reviewing classwork. Did not start homework yet!
+
+Adam Kriger [10:15]
+That's a good idea. It will likely help w the homework.
+
+Viorel Belfiore [10:31]
+I’m reviewing classwork too.  How’s the weather up there in NY?
+
+Karolin Rafalski [10:33]
+the snow is falling sideways and the lights flickered…I hope we don’t lose power! How is it out in…LI or NJ(sorry can’t remember! Either way it sounded like a beast of a commute!)
+
+
+Adam Kriger [10:56]
+shared a Plain Text snippet: Constructor Functions and the new Keyword
+//First create a constructor function that creates an Object Type
+function Contact(name, email) {
+    this.name = name;
+2 Comments Click to expand inline 13 lines
+Viorel Belfiore [10:59]
+nj about the same… we have a lot of snow… like easily over a foot so far
+
+Caleb Rechten [11:01]
+uploaded and commented on an image: How it is in NJ
+2 Comments
+3
+P.S. My sister defaced the 'Let it snow' gummies.
+
+Lauren Golik [11:02]
+that’s hilarious
+
+Dan Dilorio [11:03]
+morning
+
+Karolin Rafalski [11:03]
+g’morning!
+
+Jasmine Vollherbst [11:03]
+Good morning! So much snow here I can barely see outside my window :showman: catching up on reading/classwork before I even attempt the homework
+1
+
+Emine Koc [11:04]
+Same here, :wink: Good morning.
+
+Patrick McWilliams [11:11]
+pjs+tea=coding time
+
+[11:11]
+also, ctrl+shift+d duplicates a line in atom
+5
+
+Karolin Rafalski [11:38]
+in atom, highlight a block of code, then: command+] indents the code right, command+[ indents the code left
+
+Lauren Golik [11:44]
+@karolin: selecting tab and shit+tab will do the same
+1
+
+[11:45]
+shift… lol
+2
+
+Elton Cheng [12:06]
+Given weather permits, does anyone want to meet tomorrow  at the GA building to work on some homework?
+
+Karolin Rafalski [12:08]
+maybe. I want to see where I am at towards the end of the day. Then figure out a strategy for tomorrow.
+
+Jasmine Vollherbst [12:12]
+Same here.
+
+Lauren Golik [12:16]
+i’d be interested, weather permitting  - maybe after lunch or something
+
+Razaik Boparai [12:28]
+Morning everyone!! I would be interested in meeting up  tomorrow too maybe around  afternoon.
+
+Dan Dilorio [12:32]
+speaking of atom shortcuts... https://duckduckgo.com/?q=atom+shortcuts&t=canonical&ia=cheatsheet&iax=1
+
+[12:32]
+here's a cheatsheet
+3
+
+[12:33]
+and here's another cheatsheet for my fellow sublime text users :wink: https://duckduckgo.com/?q=sublime+text+cheatsheet&t=canonical&ia=cheatsheet&iax=1
+
+Jasmine Vollherbst [12:35]
+Also, if anyone else needs an alternative review of yesterday’s material, I highly recommend reading through this link that @karolin shared. Reposting here, as this has been super helpful! http://eloquentjavascript.net/03_functions.html
+
+[12:36]
+@trampolinetales: Thanks for the cheatsheet link!
+
+Dan Dilorio [12:37]
+@jasminev: no problem!
+
+Emine Koc [12:47]
+@jasminev @karolin Thank you for sharing. Did anyone try to color the calculator? Its a bonus problem on the calculator.
+
+Seif Dorani [13:06]
+if things get better with weather i will def come in tomorrow between 12-4pm.
+
+jason Seminara [14:05]
+@group: A few people took pics yesterday of the notes on the board. Could those people post them here?
+
+Adam Kriger [14:06]
+sure, no problem
+
+Adam Kriger [14:07]
+uploaded an image: Slack for iOS Upload
+Add Comment
+Adam Kriger [14:07]
+
+
+Karolin Rafalski [14:10]
+thanks Adam!
+
+Emma Hou [14:14]
+quick question: there are two render() function in the homework and they are slightly different, are they the same or two separate functions?
+
+Viorel Belfiore [14:16]
+uploaded an image: Slack for Android Upload
+Add Comment
+Adam Kriger [14:16]
+@auvemma: I’m not sure either
+
+[14:17]
+Does anyone know the scope of .this Can .this in one function call a property from another function?
+
+Viorel Belfiore [14:17]
+uploaded an image: Slack for Android Upload
+Add Comment
+Karolin Rafalski [14:20]
+@adamscottkriger: you are way ahead of where I am at with the homework!
+
+Adam Kriger [14:21]
+@karolin: where are you at?
+
+Karolin Rafalski [14:23]
+…it’s like when you are driving somewhere new and  you keep making turns and think you are making progress but then find yourself exactly back at the beginning.
+
+[14:23]
+(I’m lost but I’m still driving)
+2
+
+Dan Dilorio [14:24]
+@karolin: maybe, but as long as you learn from each "wrong" turn, it's not wasted time :simple_smile:
+4
+
+[14:26]
+if anyone needs some help with the hangman homework, feel free to DM me, I'm free pretty much all weekend
+
+Karolin Rafalski [14:27]
+did you finish it?!
+
+Dan Dilorio [14:28]
+pretty much except for the ASCII bonus, I woke up and started working though :sweat_smile:
+
+Karolin Rafalski [14:28]
+wow! that’s great! congrats!
+
+Dan Dilorio [14:29]
+Thanks! Sorry, I hope I didn't come across as bragging. If anyone needs help though, feel free to DM me. I've got a fair amount of experience with code and concepts like what was covered on Friday.
+
+[14:30]
+or post your questions in this channel, either or
+
+Adam Kriger [14:32]
+@karolin: good analogy
+
+Lauren Golik [14:33]
+thanks for the offer @trampolinetales
+
+Seif Dorani [14:37]
+thanks @trampolinetales !!
+
+Jasmine Vollherbst [14:41]
+@trampolinetales: you rock! I might have to take you up on that, but I’m going to try and  power through on my own first :grin:
+
+Dan Dilorio [14:43]
+@lgolik @seif @jasminev I'm happy to help!
+
+jason Seminara [15:15]
+@here
+1
+
+[15:16]
+@here I posted yesterday’s notes and exercises (`git pull upstream master`)
+1
+
+Patrick McWilliams [15:17]
+ty!
+
+Jasmine Vollherbst [15:18]
+Thank you!
+
+Lauren Golik [15:25]
+ty @jasonseminara …. anyone know how to pull the latest materials into our branch if you already checked out the branch?
+
+Patrick McWilliams [15:27]
+are you asking how to pull the updated notes into your branch or your master?
+
+Lauren Golik [15:28]
+into my branch
+
+[15:28]
+or is that not necessary?
+
+Patrick McWilliams [15:29]
+i think you can/should? be pulling the notes into your master
+
+[15:30]
+unrelated: if you’re getting ...
+
+Patrick McWilliams [15:30]
+added a Plain Text snippet
+SyntaxError: missing ) after argument list
+Add Comment
+Patrick McWilliams [15:30]
+you’ve probably left out a + when trying to insert a variable into a string
+
+Lauren Golik [15:31]
+i pulled them into my master, but now i want to get back into my branch… and i’m not sure how
+
+Elton Cheng [15:34]
+@lgolik: To switch branches you type ‘git checkout theBranchYouWant.'
+
+Lauren Golik [15:36]
+@elton912: TY!!!! I was trying to do ‘git checkout -b mybranch’ and it was giving me a fatal error message
+1
+
+Patrick McWilliams [15:42]
+what you were trying to do there is make ‘mybranch’, which i guess returns the error if it already exists?
+
+[15:45]
+well, i can’t find the note i THOUGHT i took on that git notation, so take the above with a grain of salt
+
+Karolin Rafalski [15:46]
+added a Plain Text snippet: from my notes from yesterday
+git branch <name> -create branch
+git checkout <name> -change to this branch
+can combine the above two into this:
+git checkout -b <branch name>
+Add Comment
+3
+
+Adam Kriger [18:28]
+added and commented on a Plain Text snippet: Readline-sync
+var rls = require('readline-sync');
+var response1 = rls.question("please enter first digit");
+var operation = rls.question("please enter + - * / ")
+2 Comments Click to expand inline 29 lines
+I’m getting an error when I try to run readline-sync? is anyone else having that problem. This is the code I am trying to run.
+
+Elton Cheng [18:32]
+Hey Adam, could you upload a picture of what your error says? I just ran your code in node and it ran perfectly for me.
+
+Adam Kriger [18:33]
+@elton912: Sure, thanks...
+
+Adam Kriger [18:35]
+uploaded an image: @elton912:
+1 Comment
+Elton Cheng [18:38]
+Looking at the picture. You don’t appear to be in “node” mode within your terminal.
+
+If you save your file and type “node fileName.js it should run fine!
+3
+
+Adam Kriger [18:40]
+ok thanks man…let me check
+1
+
+Maxwell Rayman [20:25]
+If you guys are getting ‘undefined' errors testing your program in node/repl.it, make sure you are referencing your object keys by objectname.key  EVERY time you reference them (I already found 5+ places where I messed this up in my code).
+2
+
+Karolin Rafalski [21:00]
+added and commented on a JavaScript/JSON snippet: My notes that (mostly) match with Adam Kriger’s 14:08 image post
+function BoundThingy(value) {
+this.value = value;
+this.hidden = true;
+this.something = function() {
+return this.hidden;
+2 Comments Click to expand inline 26 lines
+Sorry for the delay! I just got to looking at this part. caveat: I did my best to reconstruct/match the image…but I can’t guarantee how accurate it really is
+
+Jasmine Vollherbst [21:31]
+https://www.youtube.com/watch?v=7kBX0K9nxPc
+YouTube
+SqueezeMyLemonBabe
+Led Zeppelin-Gallows Pole
+
+2
+
+
+----- January 24th -----
+Jimmy Lin [10:00]
+any one going to be at school today?
+
+Jasmine Vollherbst [10:03]
+Good morning! I was aiming to get to school around 1:00.
+
+Seif Dorani [10:06]
+same
+
+Jasmine Vollherbst [10:06]
+cool! want to meet on the 3rd floor?
+
+Seif Dorani [10:07]
+def lets try to lock a table up
+
+Karolin Rafalski [10:07]
+metro North won’t start running trains until 3pm today, so I won’t be going in today.
+
+Seif Dorani [10:08]
+o shoot let me check the path that was down last night...
+
+[10:10]
+yea should be fine ill see you guys there
+
+Jasmine Vollherbst [10:21]
+@karolin: would you like to try and Skype? I can bring my iPad
+
+Jimmy Lin [10:21]
+I will be around noon to grab something to eat in the area then head to GA
+
+Karolin Rafalski [10:22]
+sure! Thanks Jasmine!
+
+Jasmine Vollherbst [10:23]
+no problem! my Skype name is jasmine.vollherbst
+
+Seif Dorani [10:23]
+ill try to get there sooner
+
+Lauren Golik [10:24]
+I'll be there too. See you guys later
+
+Bryce Krah [10:27]
+Has anyone figured out the Word() function? specifically the getLetters(newWord) part
+
+Emine Koc [10:40]
+uploaded an image: :(
+Add Comment
+Emine Koc [10:40]
+I Wish ı Could come
+
+[10:40]
+But it ll take me hours to rescue my car :(
+
+Peter Petrov [10:41]
+@group: Hey everyone hope you all survived the snow! Hopefully you've spend some time working on the homework. I just uploaded solutions to the mta exercise. In is in `w01/d05/instructor/mta_solution` folder. Read through the small readme I wrote for you and look at the code. Hopefully this will clear up some concepts for your. You will have to follow a very similar pattern for the homework.
+4
+
+Peter Petrov [10:54]
+@group: Also we are going to do weekly exit tickets, where we will ask you about how you felt about the week. Those are really important so please take a few minutes to complete them. We will give them to you usually on Friday. Here is the first one!
+http://goo.gl/forms/20RebRjWbc
+
+Google Docs
+Exit Ticket 01/22
+End of week comments
+
+Adam Kriger [11:11]
+Object Literals vs Constructor Functions: https://www.youtube.com/watch?v=O3JSPhwKowA
+YouTube
+kudvenkat
+Object literal vs object constructor
+
+
+Jasmine Vollherbst [11:11]
+Thanks Adam! I’ll take a look now!
+
+Adam Kriger [11:15]
+yw
+
+Jasmine Vollherbst [11:17]
+@adamscottkriger: This was super helpful!!!
+
+Adam Kriger [11:18]
+I’m glad it helped!
+
+
+[11:18]
+Have you come across anything else that’s been helpful?
+
+Jasmine Vollherbst [11:20]
+These articles were helpful, but that video summed very simply up what took me all day yesterday to understand: http://eloquentjavascript.net/06_object.html http://alistapart.com/article/getoutbindingsituations
+Getting Out of Binding Situations in JavaScript
+Every wonder who you really are? Congratulations! You have a lot in common with JavaScript. Learn once and for all how to train your JavaScript to remember who it is and what it's doing.
+
+Adam Kriger [11:22]
+@jasminev: ok, great! Thank you
+
+Ari Ingber [11:55]
+uploaded an image: Screen Shot 2016-01-24 at 11.51.05 AM.png
+Add Comment
+Ari Ingber [11:56]
+for some reason I cant stage or commit my files as normal, anyone see what I’m doing wrong?
+
+[11:56]
+thanks!
+
+Karolin Rafalski [11:58]
+hi Ari, I think you are in your classwork directory and hangman is in the homework directory either switch into homework and do git add .   or do git add /pathtohomework
+
+Ari Ingber [12:03]
+thanks Karolin I’ll try that
+
+[12:04]
+you’re right Karolin! thank you
+1
+
+Elton Cheng [12:21]
+Not sure they are open. Door appears locked
+
+Jimmy Lin [12:22]
+The school?
+
+Elton Cheng [12:22]
+Yea
+
+Jimmy Lin [12:23]
+I am @ Beecher getting something to get, plenty of space here, they have wifi too
+
+Elton Cheng [12:29]
+@jimmylin is that the cheese place?
+
+Caleb Rechten [12:29]
+Our internet is out. I have to do everything on my phone. :( I might have to head out somewhere too. (edited)
+
+Jimmy Lin [12:38]
+Elton and I are @ Starbucks
+14 W 23rd St, New York, NY 10010
+
+Elton Cheng [12:48]
+If anyone knows any better places to meet with wifi and outlets let us know so we can get a group going!
+
+Jasmine Vollherbst [12:52]
+Just got here yep school is closed. I'll meet you at the Starbucks
+
+Lauren Golik [12:52]
+Hey guys - not making it in, the subway is brutal from here! I think Brooklyn Roasting Company on 23 bet 5 and 6 has a decent amount of space
+
+Elton Cheng [12:53]
+Thank you @lgolik !
+
+Maxwell Rayman [12:54]
+Hey guys, probably cant make it today but I’ll be around slack to help people with whatever I can. I have a question though - does anybody remember / have written down the command in terminal for npm to make your working directory readline-sync compatible? My homework directory seems to not have it enabled.
+
+Karolin Rafalski [12:56]
+`npm install readline-sync`
+1
+
+Maxwell Rayman [12:56]
+@karolin: thanks!!!!
+
+Karolin Rafalski [12:56]
+I was just looking it up ~ 10 minutes ago!
+
+Patrick McWilliams [13:05]
+i’ve pulled upstream master and gotten the mta solution, but the readme just says “w01/d04/instructor"
+
+Sara Horowitz [13:06]
+@patrickm: are you accessing the instructor folder from the master branch? - when I tried accessing from the branch I created for hw (w01d05) it was empty too
+
+Jasmine Vollherbst [13:07]
+Wanted to repost this video Adam shared as it was super helpful! https://www.youtube.com/watch?v=O3JSPhwKowA
+YouTube
+kudvenkat
+Object literal vs object constructor
+
+
+Sara Horowitz [13:08]
+sooooo helpful! thanks @jasminev and @adamscottkriger !
+
+Patrick McWilliams [13:09]
+@sarahorowitz: that was it, had to change directory before opening. thanks!
+
+Adam Kriger [13:09]
+@sarahorowitz: yw glad it helped!
+
+Seif Dorani [13:09]
+hey guys cant come in its hard to move here.. but im on slack allll dayy
+
+Patrick McWilliams [13:11]
+uploaded an image: Sadfacecar
+Add Comment
+Patrick McWilliams [13:11]
+someone come up with an algorithm for me to decide how to split my time between coding and shoveling
+
+Dan Dilorio [13:13]
+```coding = true;
+shoveling = false;
+if (!coding) { shoveling = true; }
+if (!shoveling) { coding = true; }
+```
+1
+
+Jonathan Feudi [13:14]
+while(coding = true){
+
+[13:14]
+Whoops
+
+Dan Dilorio [13:14]
+`ERROR`
+
+Jonathan Feudi [13:14]
+This is why you don’t write your code directly into node
+
+Dan Dilorio [13:14]
+:wink:
+
+[13:15]
+@feudi: also, you can just say `if (coding) { ... }` instead of `if (coding == true) { ... }`
+
+Jonathan Feudi [13:15]
+This is why you don’t make coding jokes into the Slack channel
+1
+
+[13:16]
+:grimacing:
+
+
+Jasmine Vollherbst [13:21]
+shared Karolin Rafalski's JavaScript/JSON snippet: My notes that (mostly) match with Adam Kriger’s 14:08 image post
+function BoundThingy(value) {
+this.value = value;
+this.hidden = true;
+this.something = function() {
+return this.hidden;
+}
+}
+a = BoundThingy
+​
+a = BoundThingy('Jason')
+​
+​
+//KEYWORD = new
+​
+a = new BoundThingy ('Jason');
+//**magic happening**
+//becomes a constructor
+//—>BoundThingy
+​
+//creates new object
+//has a new real name
+//binds the this scope with all the values
+​
+​
+​
+//a.showValue = function () {returns q+this. value}
+2 Comments Collapse
+Jasmine Vollherbst [13:21]
+Reposting Karolin’s notes as well :simple_smile:
+
+Lauren Golik [13:39]
+@adamscottkriger: i think the video you posted was the most useful thing I’ve seen, but I also found this helpful: http://www.phpied.com/3-ways-to-define-a-javascript-class/
+
+Adam Kriger [13:39]
+@lgolik: thank you for sharing. Everything helps!!!
+
+Karolin Rafalski [13:50]
+@patrickm: while (sunIsUp) {dig!!!}
+1
+
+Patrick McWilliams [13:53]
+while(sunIsUp){ if(codingAccomplishment>=1){dig} else{code}}
+
+Karolin Rafalski [13:55]
+I dug my stuff out … no way I wanted to try it after it half melted all day and then formed a thick shell of ice...
+
+Patrick McWilliams [14:16]
+i’ve been mucking around with this for way too long. when i paste it into node and hit enter i get “…” on the next line and can’t figure out why. am I missing something super obvious (probably)? ...
+
+[14:16]
+`function Letter(guess) {
+ //this.data = guess;
+ var letterObj = {
+ this.value = guess,
+ this.hidden = true,
+ this.hide = function(){
+   this.hidden = true
+ },
+ this.show = function(){
+   this.hidden = false
+ },
+ this.render = function(){
+   if(this.hidden===true){
+     console.log{'_'};
+     return '_';
+   }
+ },
+}
+};`
+
+[14:16]
+tried to make a snippet with `, ignore those, they’re not in the code
+
+Karolin Rafalski [14:17]
+use the plus sign on the left of the text input in slack to create a snippet, post or upload a file
+1
+
+[14:20]
+what I do is when I think I have a syntax error- I paste the code into repl.it and look at it there: then it gives you the errors, red ‘x’es and if you mouse over them, they may give even more information (edited)
+1
+
+Patrick McWilliams [15:26]
+when colin orders the gold stars make sure he gives you a few extra. and omg that code was fugly
+
+Harry Ganz [17:23]
+@channel:  I am trying to do the last bonus and cannot figure out why my hangman is not displaying properly after the first incorrect guess. Here is my code https://ga-students.slack.com/files/harryg/F0K9006KT/game_object.js , and here is what I get https://ga-students.slack.com/files/harryg/F0K8WRFN1/hangman.jpg
+
+
+Harry Ganz [17:23]
+mentioned a JavaScript/JSON snippet: Game Object
+var game = {
+// Stuff
+startGame: function(wordsArray){
+      this.guesses = 10;
+      this.guessedLetters = [];
+      this.words = wordsArray;
+      // Create a new word object
+      var newWord = new Word();
+      // Choose a random word from words
+      newWord.getLetters(
+        this.words[Math.floor(Math.random()*this.words.length
+        )]);
+      this.currentWord = newWord;
+    },
+	// More stuff
+	  noose: [
+      '\n' +
+      '|     \n'+
+      '|     \n'+
+      '|     \n'+
+      '|     \n'+
+      '|     \n',
+      '-----' +
+      '|     \n'+
+      '|     \n'+
+      '|     \n'+
+      '|     \n'+
+      '|     \n',
+      '-----|\n'+
+      '|     \n'+
+      '|     \n'+
+      '|     \n'+
+      '|     \n'+
+      '|     \n',
+      '-----|\n'+
+      '|    |\n'+
+      '|     \n'+
+      '|     \n'+
+      '|     \n'+
+      '|     \n',
+      '-----|\n'+
+      '|    |\n'+
+      '|    O\n'+
+      '|     \n'+
+      '|     \n'+
+      '|     \n',
+      '-----|\n'+
+      '|    |\n'+
+      '|    O\n'+
+      '|    |\n'+
+      '|     \n'+
+      '|     \n',
+      '-----|\n'+
+      '|    |\n'+
+      '|    O\n'+
+      '|   /|\n'+
+      '|     \n'+
+      '|     \n',
+      '-----|\n'+
+      '|    |\n'+
+      '|    O\n'+
+      '|   /|\\\n'+
+      '|     \n'+
+      '|     \n',
+      '-----|\n'+
+      '|    |\n'+
+      '|    O\n'+
+      '|   /|\\\n'+
+      '|    |\n'+
+      '|     \n',
+      '-----|\n'+
+      '|    |\n'+
+      '|    O\n'+
+      '|   /|\\\n'+
+      '|    |\n'+
+      '|   / \n',
+      '-----|\n'+
+      '|    |\n'+
+      '|    O\n'+
+      '|   /|\\\n'+
+      '|    |\n'+
+      '|   / \\\n'
+     ],
+    render: function(){
+      return this.noose[10-this.guesses] +
+        this.currentWord.render() + '\n' +
+        'Guesses: ' + this.guesses + '\n' +
+        'Guessed Letters: ' + this.guessedLetters.join() + '\n';
+    }
+  };
+
+Add Comment Collapse
+Harry Ganz [17:23]
+mentioned an image: hangman.JPG
+Add Comment
+Harry Ganz [17:25]
+Lol, I figured it out. I am missing a line return after the ------ in the second element
+
+Patrick McWilliams [18:51]
+so after struggling with it for hours. i got part of Word working.
+
+[18:51]
+return statements are important folks, especially if you’re checking one function at a time.
+
+Patrick McWilliams [20:47]
+anyone else having difficulty getting the try function to reference the letters array?
+
+Peter Nguyen [20:55]
+@patrickm: what’s the problem that you’re having?
+
+Patrick McWilliams [20:56]
+so, letters and try are siblings as far as scope is concerned (i think)
+
+[20:57]
+i want to reference letters in my try function
+
+Harry Ganz [20:57]
+@patrickm:  Can you copy/paste a code snippet?
+
+Patrick McWilliams [20:57]
+added a Plain Text snippet
+function Word(){
+  console.log('Word was called');
+  var wordObj = {
+  letters : [''],
+  getLetters : function(newWord){
+Add Comment Click to expand inline 25 lines
+Harry Ganz [21:00]
+@patrick: If Word is a function, try using the "this" keyword, e.g.
+```function Word(){
+  this.letters = [];
+  this.getLetters = function(newWord){
+    this.letters = newWord.split('');
+  };
+ // etc
+}
+```
+
+[21:03]
+Also, yah. Use the this keyword, even if you keep the wordObj variable:
+```// some code
+for(var i = 0; i < this.letters.length; i++){
+  if(letter === this.letters[i]){
+    return true;
+  }
+// More code
+```
+(edited)
+
+[21:04]
+Just be careful if you use the "this" keyword in a callback, as it won't do what you think
+
+Jonathan Feudi [22:29]
+Anyone around?
+
+[22:30]
+I’ve gotten my first two functions written, but I have no idea how to test them really
+
+Karolin Rafalski [22:30]
+I was about to sign off, but I can spare a few more minutes
+
+Jonathan Feudi [22:30]
+I’m just not sure how to input a word and then test if my Word and Letter functions are working
+
+Karolin Rafalski [22:31]
+through node?
+
+Jonathan Feudi [22:31]
+Or repl.it
+
+Karolin Rafalski [22:31]
+3 ways
+
+Patrick McWilliams [22:31]
+i prefer node, but i use repl.it to check for syntax errors
+
+Karolin Rafalski [22:32]
+`var testWord ="bowie";` (edited)
+
+[22:32]
+it is static but easy to start with
+
+[22:33]
+for user input
+
+[22:33]
+again `var testLetter = "o";` //or whatever letter (edited)
+
+[22:34]
+in repl.it` var testLetter = prompt("give me a letter");` (edited)
+
+[22:34]
+in node make sure you have the npm readline-sync installed/working in the folder you are working in
+
+[22:35]
+then two lines of code for that one:
+
+[22:35]
+`var rls = require('readline-sync');` (edited)
+
+[22:35]
+`var testLetter = rls.question("What is the letter you want to test?");` (edited)
+
+Jonathan Feudi [22:36]
+So, when I answer the realine-sync prompts in node, will my input get assigned to the proper values?
+
+[22:36]
+Or, do I have to call the functions on my input?
+
+Karolin Rafalski [22:37]
+what the code above does is assign the input to a variable
+
+[22:38]
+you can see what was assigned to the variable by doing `console.log(testLetter);`
+
+[22:39]
+or you can make it a little more informative `console.log("this is the value for the variable testLetter: " + testLetter);`
+
+Jonathan Feudi [22:41]
+Okay, and then call my functions on those variables?
+
+Karolin Rafalski [22:41]
+yes
+
+Jonathan Feudi [22:41]
+Okay cool
+
+[22:41]
+I’ll give it a whirl
+
+[22:41]
+Thanks much
+
+Karolin Rafalski [22:41]
+good luck!
+
+Jonathan Feudi [22:41]
+Thanks… I need it
+
+Karolin Rafalski [22:42]
+and sleep!
+
+Karolin Rafalski [22:52]
+one more thing: make sure with repl.it you are using JavaScript(web) and not just JavaScript- prompt won’t work in non (web) JavaScript
+
+Patrick McWilliams [23:26]
+good night anyone still up, get the @$#% to sleep. it will be a miracle if i finish hangman on the train tomorrow morning.

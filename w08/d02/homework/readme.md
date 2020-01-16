@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Warm up
 
 Task: Build a react app which implements a stopwatch. 
@@ -71,3 +72,7 @@ might find this useful: [diagram](http://codepen.io/eduardoboucas/pen/jqWbdb).
 Build a react component nav bar, which allows you to switch to
 different todo lists, based on context (just like the GTD
 philosophy), such as `Work`, `Home`, `Errand`, `Call`. 
+=======
+w08/d02/homework
+updating something...to be able to commit
+>>>>>>> f7580b22c4e205c0458667aa77ddd37424665b56
